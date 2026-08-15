@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F6F3;
+    --bg-card:#FFFFFF;
+    --ink:#14212B;
+    --ink-soft:#51636D;
+    --ink-faint:#8A9BA4;
+    --accent:#1F7A5C;
+    --accent-soft:#E4F1EA;
+    --link:#1A56DB;
+    --line:#DDE2DE;
+    --radius:14px;
+    --display:'Space Grotesk', system-ui, sans-serif;
+    --body:'Inter', system-ui, sans-serif;
+    --mono:'JetBrains Mono', 'Courier New', monospace;
+    --maxw:820px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{display:block;max-width:100%;border-radius:10px;}
+  a{color:var(--link);}
+  h1,h2,h3{font-family:var(--display);letter-spacing:-0.01em;color:var(--ink);}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(245,246,243,0.9);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    max-width:1080px;margin:0 auto;padding:16px 28px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .nav .brand{
+    font-family:var(--mono);font-size:0.85rem;font-weight:500;
+    color:var(--ink);text-decoration:none;
+  }
+  .nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;flex-wrap:wrap;}
+  .nav a.navlink{
+    text-decoration:none;font-size:0.88rem;color:var(--ink-soft);
+    font-weight:500;transition:color .15s ease;
+  }
+  .nav a.navlink:hover, .nav a.navlink.active{color:var(--accent);}
+
+  main{padding:56px 0 80px;}
+
+  .eyebrow{
+    font-family:var(--mono);font-size:0.78rem;color:var(--accent);
+    text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:12px;
+  }
+
+  footer.site{border-top:1px solid var(--line);padding:36px 0;margin-top:40px;}
+  footer.site .wrap{
+    display:flex;justify-content:space-between;align-items:center;
+    font-size:0.85rem;color:var(--ink-faint);flex-wrap:wrap;gap:12px;
+  }
+  footer.site a{color:var(--ink-soft);text-decoration:none;}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="/">Herinirina Beranto <span style="color:var(--accent)">·</span> Rédacteur SEO</a>
+    <ul>
+      <li><a class="navlink" href="/">Accueil</a></li>
+      <li><a class="navlink" href="/apropos.html">À propos</a></li>
+      <li><a class="navlink" href="/cas-clients.html">Cas clients</a></li>
+      <li><a class="navlink active" href="/blog/">Blog</a></li>
+      <li><a class="navlink" href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap">
+    {{ content }}
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© {{ site.time | date: "%Y" }} Herinirina Beranto Rafalinjanahary</span>
+    <a href="mailto:herinirinaberanto@gmail.com">herinirinaberanto@gmail.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
