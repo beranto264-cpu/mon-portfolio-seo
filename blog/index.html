@@ -1,1 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Herinirina Beranto Rafalinjanahary</title>
+<meta name="description" content="Notes sur la rédaction SEO et le contenu web : réflexions et retours d'expérience sur l'écriture optimisée, la stratégie éditoriale et le référencement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F6F3;
+    --bg-card:#FFFFFF;
+    --ink:#14212B;
+    --ink-soft:#51636D;
+    --ink-faint:#8A9BA4;
+    --accent:#1F7A5C;
+    --accent-soft:#E4F1EA;
+    --link:#1A56DB;
+    --line:#DDE2DE;
+    --radius:14px;
+    --display:'Space Grotesk', system-ui, sans-serif;
+    --body:'Inter', system-ui, sans-serif;
+    --mono:'JetBrains Mono', 'Courier New', monospace;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--body);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  h1,h2,h3{font-family:var(--display);margin:0;letter-spacing:-0.01em;}
+  p{margin:0;}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
 
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(245,246,243,0.86);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;}
+  .nav .brand{
+    font-family:var(--mono);font-size:0.85rem;font-weight:500;
+    color:var(--ink);text-decoration:none;
+  }
+  .nav .brand .dot{color:var(--accent);}
+  .nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;}
+  .nav a.navlink{
+    text-decoration:none;font-size:0.88rem;color:var(--ink-soft);
+    font-weight:500;transition:color .15s ease;
+  }
+  .nav a.navlink:hover{color:var(--accent);}
+  .nav-toggle{display:none;}
+
+  .blog-hero{padding:64px 0 48px;}
+  .blog-hero .eyebrow{
+    font-family:var(--mono);font-size:0.78rem;color:var(--accent);
+    text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:14px;
+  }
+  .blog-hero h1{font-size:clamp(2rem, 3.2vw, 2.7rem);line-height:1.15;font-weight:700;margin-bottom:16px;}
+  .blog-hero p.lede{font-size:1.05rem;color:var(--ink-soft);max-width:52ch;}
+
+  section.articles{padding:0 0 80px;}
+  .article-list{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+  .article-card{
+    background:var(--bg-card);
+    padding:28px 30px;
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:24px;
+    text-decoration:none;
+    color:inherit;
+    transition:background .15s ease;
+  }
+  .article-card:hover{background:var(--accent-soft);}
+  .article-date{
+    font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);padding-top:4px;
+  }
+  .article-card h2{font-size:1.2rem;font-weight:600;margin-bottom:8px;}
+  .article-card p{color:var(--ink-soft);font-size:0.95rem;}
+  .empty-state{
+    background:var(--bg-card);border:1px dashed var(--line);border-radius:var(--radius);
+    padding:40px 30px;text-align:center;color:var(--ink-soft);font-size:0.95rem;
+  }
+
+  @media (max-width:700px){
+    .article-card{grid-template-columns:1fr;gap:6px;}
+    .nav ul{
+      position:fixed;top:60px;left:0;right:0;background:var(--bg);
+      flex-direction:column;gap:0;border-bottom:1px solid var(--line);
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+    }
+    .nav ul.open{max-height:280px;}
+    .nav ul li{width:100%;}
+    .nav a.navlink{display:block;padding:14px 28px;border-top:1px solid var(--line);}
+    .nav-toggle{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:36px;height:36px;background:none;border:1px solid var(--line);
+      border-radius:8px;cursor:pointer;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="/index.html#top">herinirina<span class="dot">.</span>seo</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul id="navList">
+      <li><a class="navlink" href="/index.html#profil">Profil</a></li>
+      <li><a class="navlink" href="/index.html#methode">Méthode</a></li>
+      <li><a class="navlink" href="/cas-clients.html">Cas clients</a></li>
+      <li><a class="navlink" href="/apropos.html">À propos</a></li>
+      <li><a class="navlink" href="/blog/" aria-current="page" style="color:var(--accent);">Blog</a></li>
+      <li><a class="navlink" href="/index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="blog-hero">
+    <div class="wrap">
+      <span class="eyebrow">Blog</span>
+      <h1>Notes sur la rédaction SEO &amp; le contenu web.</h1>
+      <p class="lede">Réflexions et retours d'expérience sur l'écriture optimisée, la stratégie éditoriale et le référencement.</p>
+    </div>
+  </section>
+
+  <section class="articles">
+    <div class="wrap">
+      <div class="article-list">
+
+        <a class="article-card" href="/blog/eeat-conventions-editoriales.html">
+          <span class="article-date">15 août 2026</span>
+          <div>
+            <h2>EEAT : ce que Google vérifie vraiment</h2>
+            <p>Experience, Expertise, Authoritativeness, Trust : comment ces quatre critères se traduisent concrètement dans un contenu SEO, au-delà de la simple case à cocher.</p>
+          </div>
+        </a>
+
+        <!--
+          Pour ajouter un nouvel article :
+          1. Crée un fichier HTML dans /blog/ (ex: /blog/mon-article.html)
+          2. Copie-colle un bloc <a class="article-card"> ci-dessus
+          3. Mets à jour la date, le titre, le lien href et la description
+          Aucun système de template n'est utilisé ici : chaque article est un fichier HTML autonome.
+        -->
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site" style="background:var(--ink);color:#EDEFEC;padding:40px 0;">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+    <p style="font-size:0.8rem;color:#7F9188;">© 2026 Herinirina Beranto Rafalinjanahary</p>
+    <a href="/index.html#contact" style="font-family:var(--mono);font-size:0.85rem;color:#8FD6B8;text-decoration:none;">Me contacter →</a>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var btn = document.getElementById('navToggle');
+    var list = document.getElementById('navList');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var open = list.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>
