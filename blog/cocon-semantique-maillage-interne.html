@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cocon sémantique : la structure qui fait vraiment gagner des positions, Blog Herinirina Beranto</title>
+<meta name="description" content="Le cocon sémantique est souvent réduit à un schéma de liens. Ce qui compte vraiment : la hiérarchie des intentions et un maillage interne pensé pour le lecteur autant que pour Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F6F3;
+    --bg-card:#FFFFFF;
+    --ink:#14212B;
+    --ink-soft:#51636D;
+    --ink-faint:#8A9BA4;
+    --accent:#1F7A5C;
+    --accent-soft:#E4F1EA;
+    --link:#1A56DB;
+    --line:#DDE2DE;
+    --radius:14px;
+    --display:'Space Grotesk', system-ui, sans-serif;
+    --body:'Inter', system-ui, sans-serif;
+    --mono:'JetBrains Mono', 'Courier New', monospace;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--link);}
+  h1,h2,h3{font-family:var(--display);letter-spacing:-0.01em;color:var(--ink);}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(245,246,243,0.86);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;}
+  .nav .brand{font-family:var(--mono);font-size:0.85rem;font-weight:500;color:var(--ink);text-decoration:none;}
+  .nav .brand .dot{color:var(--accent);}
+  .nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;}
+  .nav a.navlink{text-decoration:none;font-size:0.88rem;color:var(--ink-soft);font-weight:500;}
+  .nav a.navlink:hover{color:var(--accent);}
+  .nav-toggle{display:none;}
+
+  .article-header{padding:56px 0 32px;}
+  .breadcrumb{
+    font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);
+    margin-bottom:20px;text-decoration:none;display:inline-block;
+  }
+  .breadcrumb:hover{color:var(--accent);}
+  .eyebrow{
+    font-family:var(--mono);font-size:0.78rem;color:var(--accent);
+    text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:14px;
+  }
+  .article-header h1{font-size:clamp(1.9rem, 3.4vw, 2.5rem);line-height:1.18;font-weight:700;margin-bottom:16px;}
+  .meta{font-family:var(--mono);font-size:0.8rem;color:var(--ink-faint);}
+  .author{
+    display:flex;align-items:center;gap:8px;margin-top:18px;
+    font-size:0.92rem;color:var(--ink-soft);
+  }
+  .author a{color:var(--accent);font-weight:600;text-decoration:none;}
+  .author a:hover{text-decoration:underline;}
+
+  article.content{padding-bottom:64px;font-size:1.05rem;color:var(--ink);}
+  article.content p{margin:0 0 22px;color:var(--ink-soft);}
+  article.content h2{font-size:1.4rem;font-weight:700;margin:44px 0 16px;color:var(--ink);}
+  article.content h3{font-size:1.15rem;font-weight:600;margin:32px 0 12px;color:var(--ink);}
+  article.content ul, article.content ol{margin:0 0 22px;padding-left:22px;color:var(--ink-soft);}
+  article.content li{margin-bottom:8px;}
+  article.content strong{color:var(--ink);}
+  .pull-quote{
+    background:var(--ink);border-radius:var(--radius);padding:32px 34px;
+    margin:36px 0;position:relative;overflow:hidden;
+  }
+  .pull-quote p{
+    font-family:var(--display);font-size:1.15rem;font-weight:600;
+    color:#fff;line-height:1.45;margin:0;
+  }
+  hr.rule{border:none;border-top:1px solid var(--line);margin:44px 0;}
+
+  .article-footer{
+    padding:32px 0 64px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+  }
+  .article-footer a{
+    font-family:var(--mono);font-size:0.85rem;text-decoration:none;color:var(--accent);
+  }
+
+  footer.site{background:var(--ink);color:#EDEFEC;padding:40px 0;}
+  .footer-inner{
+    max-width:1080px;margin:0 auto;padding:0 28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
+  }
+  .footer-inner p{font-size:0.8rem;color:#7F9188;margin:0;}
+  .footer-inner a{font-family:var(--mono);font-size:0.85rem;color:#8FD6B8;text-decoration:none;}
+
+  @media (max-width:700px){
+    .nav ul{
+      position:fixed;top:60px;left:0;right:0;background:var(--bg);
+      flex-direction:column;gap:0;border-bottom:1px solid var(--line);
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+    }
+    .nav ul.open{max-height:280px;}
+    .nav ul li{width:100%;}
+    .nav a.navlink{display:block;padding:14px 28px;border-top:1px solid var(--line);}
+    .nav-toggle{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:36px;height:36px;background:none;border:1px solid var(--line);
+      border-radius:8px;cursor:pointer;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="/index.html#top">herinirina<span class="dot">.</span>seo</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul id="navList">
+      <li><a class="navlink" href="/index.html#profil">Profil</a></li>
+      <li><a class="navlink" href="/index.html#methode">Méthode</a></li>
+      <li><a class="navlink" href="/cas-clients.html">Cas clients</a></li>
+      <li><a class="navlink" href="/apropos.html">À propos</a></li>
+      <li><a class="navlink" href="/blog/" aria-current="page" style="color:var(--accent);">Blog</a></li>
+      <li><a class="navlink" href="/index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="wrap article-header">
+    <a class="breadcrumb" href="/blog/">← Retour au blog</a>
+    <span class="eyebrow">SEO technique</span>
+    <h1>Cocon sémantique : la structure qui fait vraiment gagner des positions</h1>
+    <span class="meta">28 août 2026 · 7 min de lecture</span>
+    <div class="author">Article écrit par <a href="/apropos.html">Beranto</a></div>
+  </div>
+
+  <div class="wrap">
+    <article class="content">
+
+      <p>Le cocon sémantique est l'un des concepts SEO français les plus recherchés, et aussi l'un des plus mal appliqués. La plupart des tutoriels le réduisent à un schéma : une page pilier au centre, des pages satellites autour, reliées par des liens internes en forme d'entonnoir. C'est vrai, mais incomplet — et c'est justement ce qui manque qui fait la différence entre un cocon qui fonctionne et un maillage qui ressemble à un cocon sans en avoir les effets.</p>
+
+      <p>Lors d'un audit technique récent pour un client B2B, j'ai vu un site respecter à la lettre le schéma visuel du cocon — pages pilier, sous-thématiques, liens descendants — sans gagner une seule position sur ses requêtes cibles pendant des mois. Le problème n'était pas la structure des liens. C'était la structure des intentions.</p>
+
+      <h2>Un cocon sémantique, ce n'est pas un plan de liens : c'est une hiérarchie de questions</h2>
+      <p>Avant de dessiner un cocon, il faut répondre à une question plus simple : dans quel ordre un lecteur se pose-t-il ses questions sur ce sujet ? Une page pilier doit répondre à l'intention la plus large et la plus fréquente ; chaque page satellite doit répondre à une sous-question plus précise, que le lecteur se pose <em>après</em> avoir compris la page pilier — pas à côté d'elle.</p>
+      <p>C'est là que l'audit de mots-clés avec Semrush prend tout son sens : il ne s'agit pas seulement de lister les requêtes qui ont du volume, mais de les organiser par proximité d'intention, pour que la logique de navigation du cocon corresponde à la logique de raisonnement du lecteur.</p>
+
+      <h2>Le maillage interne : un signal pour Google, un service pour le lecteur</h2>
+      <p>Le lien interne a deux fonctions qu'on a tendance à traiter séparément, alors qu'elles doivent se confondre :</p>
+      <ul>
+        <li><strong>Pour Google</strong> : il distribue le "jus de lien" (PageRank interne) de la page pilier vers les pages satellites, et inversement, pour renforcer la légitimité thématique de l'ensemble.</li>
+        <li><strong>Pour le lecteur</strong> : il doit apparaître exactement au moment où une question secondaire se pose dans sa tête, pas de façon générique en fin d'article.</li>
+      </ul>
+      <p>Un lien interne placé "parce qu'il faut un lien vers cette page" et un lien placé "parce que le lecteur vient de se poser cette question précise" n'ont pas le même impact — ni sur le comportement de lecture, ni sur le signal envoyé à l'algorithme.</p>
+
+      <div class="pull-quote">
+        <p>Un cocon sémantique qui ne convertit pas est presque toujours un cocon construit sur des mots-clés, et pas sur des intentions.</p>
+      </div>
+
+      <h2>L'audit technique : là où le cocon se casse le plus souvent</h2>
+      <p>Avec Screaming Frog, trois erreurs reviennent systématiquement dans les audits de cocons mal construits :</p>
+      <ol>
+        <li><strong>Des pages satellites orphelines</strong> : créées pour le cocon, mais jamais liées depuis la page pilier une fois publiées.</li>
+        <li><strong>Une profondeur de clic excessive</strong> : certaines pages satellites sont accessibles à 4 ou 5 clics de la page d'accueil, ce qui dilue leur importance aux yeux de Google.</li>
+        <li><strong>Des liens sortants du cocon non maîtrisés</strong> : des pages satellites qui renvoient vers des contenus hors thématique, cassant la cohérence sémantique que le cocon est censé construire.</li>
+      </ol>
+      <p>Ces trois points ne se voient pas en lisant le contenu : ils ne se voient qu'en croisant le crawl technique avec la carte des intentions établie en amont. C'est pour ça que rédaction et audit technique ne devraient jamais être traités comme deux métiers séparés sur un même projet.</p>
+
+      <h2>Un exemple concret : de l'audit à la restructuration</h2>
+      <p>Sur le site d'une agence de recrutement tech, l'audit du maillage interne a révélé qu'une page pilier générique ("recrutement développeurs") cannibalisait le classement de trois pages satellites plus précises censées la nourrir. La correction n'a pas consisté à ajouter du contenu, mais à réorganiser les liens et à clarifier, dans chaque page, quelle intention précise elle devait couvrir — et laquelle elle devait explicitement laisser à une autre page du cocon.</p>
+
+      <hr class="rule">
+
+      <h3>Ce qu'il faut retenir avant de construire un cocon</h3>
+      <p>Un cocon sémantique efficace se construit dans cet ordre : d'abord la hiérarchie des intentions de recherche, ensuite la structure éditoriale, et seulement à la fin le plan de liens internes. Faire l'inverse — partir du schéma de liens pour y caler du contenu après coup — produit presque toujours une structure qui ressemble à un cocon, sans en avoir la logique.</p>
+
+    </article>
+  </div>
+
+  <div class="wrap article-footer">
+    <a href="/blog/">← Tous les articles</a>
+    <a href="/index.html#contact">Discuter d'un audit ou d'une refonte →</a>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="footer-inner">
+    <p>© 2026 Herinirina Beranto Rafalinjanahary</p>
+    <a href="/index.html#contact">Me contacter</a>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var btn = document.getElementById('navToggle');
+    var list = document.getElementById('navList');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var open = list.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>
