@@ -68,6 +68,12 @@
   .author a{color:var(--accent);font-weight:600;text-decoration:none;}
   .author a:hover{text-decoration:underline;}
 
+  .hero-figure{margin:0 0 40px;}
+  .hero-figure img{
+    width:100%;height:auto;max-height:440px;object-fit:cover;
+    border-radius:var(--radius);display:block;
+  }
+
   article.content{padding-bottom:64px;font-size:1.05rem;color:var(--ink);}
   article.content p{margin:0 0 22px;color:var(--ink-soft);}
   article.content h2{font-size:1.4rem;font-weight:700;margin:44px 0 16px;color:var(--ink);}
@@ -102,6 +108,7 @@
   .footer-inner a{font-family:var(--mono);font-size:0.85rem;color:#8FD6B8;text-decoration:none;}
 
   @media (max-width:700px){
+    .hero-figure img{max-height:280px;}
     .nav ul{
       position:fixed;top:60px;left:0;right:0;background:var(--bg);
       flex-direction:column;gap:0;border-bottom:1px solid var(--line);
@@ -145,6 +152,10 @@
   </div>
 
   <div class="wrap">
+    <figure class="hero-figure">
+      <img src="/images/portrait-redaction-cocon.jpg" alt="Beranto au bureau, en train de travailler sur l'architecture d'un cocon sémantique" width="1200" height="440" loading="eager">
+    </figure>
+
     <article class="content">
 
       <p>Le cocon sémantique est l'un des concepts SEO français les plus recherchés, et aussi l'un des plus mal appliqués. La plupart des tutoriels le réduisent à un schéma : une page pilier au centre, des pages satellites autour, reliées par des liens internes en forme d'entonnoir. C'est vrai, mais incomplet — et c'est justement ce qui manque qui fait la différence entre un cocon qui fonctionne et un maillage qui ressemble à un cocon sans en avoir les effets.</p>

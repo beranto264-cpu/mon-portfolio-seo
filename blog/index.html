@@ -73,17 +73,29 @@
   .article-list{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
   .article-card{
     background:var(--bg-card);
-    padding:28px 30px;
+    padding:22px 30px;
     display:grid;
-    grid-template-columns:140px 1fr;
+    grid-template-columns:120px 1fr;
     gap:24px;
+    align-items:center;
     text-decoration:none;
     color:inherit;
     transition:background .15s ease;
   }
   .article-card:hover{background:var(--accent-soft);}
+  .article-thumb{
+    width:120px;
+    aspect-ratio:1/1;
+    border-radius:10px;
+    overflow:hidden;
+    background:var(--accent-soft);
+    flex-shrink:0;
+  }
+  .article-thumb img{
+    width:100%;height:100%;object-fit:cover;display:block;
+  }
   .article-date{
-    font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);padding-top:4px;
+    font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);display:block;margin-bottom:6px;
   }
   .article-card h2{font-size:1.2rem;font-weight:600;margin-bottom:8px;}
   .article-card p{color:var(--ink-soft);font-size:0.95rem;}
@@ -93,7 +105,8 @@
   }
 
   @media (max-width:700px){
-    .article-card{grid-template-columns:1fr;gap:6px;}
+    .article-card{grid-template-columns:72px 1fr;padding:18px 20px;gap:16px;}
+    .article-thumb{width:72px;}
     .nav ul{
       position:fixed;top:60px;left:0;right:0;background:var(--bg);
       flex-direction:column;gap:0;border-bottom:1px solid var(--line);
@@ -141,16 +154,22 @@
       <div class="article-list">
 
         <a class="article-card" href="/blog/cocon-semantique-maillage-interne.html">
-  <span class="article-date">28 août 2026</span>
-  <div>
-    <h2>Cocon sémantique : la structure qui fait vraiment gagner des positions</h2>
-    <p>Le cocon sémantique est souvent réduit à un schéma de liens. Ce qui compte vraiment : la hiérarchie des intentions et un maillage interne pensé pour le lecteur autant que pour Google.</p>
-  </div>
-</a>
-        
-        <a class="article-card" href="/blog/eeat-conventions-editoriales.html">
-          <span class="article-date">15 août 2026</span>
+          <div class="article-thumb">
+            <img src="/images/portrait-redaction-cocon.jpg" alt="Beranto travaillant sur l'architecture d'un cocon sémantique" loading="lazy" width="120" height="120">
+          </div>
           <div>
+            <span class="article-date">28 août 2026</span>
+            <h2>Cocon sémantique : la structure qui fait vraiment gagner des positions</h2>
+            <p>Le cocon sémantique est souvent réduit à un schéma de liens. Ce qui compte vraiment : la hiérarchie des intentions et un maillage interne pensé pour le lecteur autant que pour Google.</p>
+          </div>
+        </a>
+
+        <a class="article-card" href="/blog/eeat-conventions-editoriales.html">
+          <div class="article-thumb">
+            <img src="/images/portrait-redaction-eeat.jpg" alt="Beranto en train de rédiger un article sur l'EEAT" loading="lazy" width="120" height="120">
+          </div>
+          <div>
+            <span class="article-date">15 août 2026</span>
             <h2>EEAT : ce que Google vérifie vraiment</h2>
             <p>Experience, Expertise, Authoritativeness, Trust : comment ces quatre critères se traduisent concrètement dans un contenu SEO, au-delà de la simple case à cocher.</p>
           </div>
@@ -160,7 +179,7 @@
           Pour ajouter un nouvel article :
           1. Crée un fichier HTML dans /blog/ (ex: /blog/mon-article.html)
           2. Copie-colle un bloc <a class="article-card"> ci-dessus
-          3. Mets à jour la date, le titre, le lien href et la description
+          3. Mets à jour la date, le titre, le lien href, la description et l'image de la vignette
           Aucun système de template n'est utilisé ici : chaque article est un fichier HTML autonome.
         -->
 

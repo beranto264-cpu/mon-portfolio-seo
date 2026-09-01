@@ -68,6 +68,12 @@
   .author a{color:var(--accent);font-weight:600;text-decoration:none;}
   .author a:hover{text-decoration:underline;}
 
+  .hero-figure{margin:0 0 40px;}
+  .hero-figure img{
+    width:100%;height:auto;max-height:440px;object-fit:cover;
+    border-radius:var(--radius);display:block;
+  }
+
   article.content{padding-bottom:64px;font-size:1.05rem;color:var(--ink);}
   article.content p{margin:0 0 22px;color:var(--ink-soft);}
   article.content h2{font-size:1.4rem;font-weight:700;margin:44px 0 16px;color:var(--ink);}
@@ -102,6 +108,7 @@
   .footer-inner a{font-family:var(--mono);font-size:0.85rem;color:#8FD6B8;text-decoration:none;}
 
   @media (max-width:700px){
+    .hero-figure img{max-height:280px;}
     .nav ul{
       position:fixed;top:60px;left:0;right:0;background:var(--bg);
       flex-direction:column;gap:0;border-bottom:1px solid var(--line);
@@ -145,6 +152,10 @@
   </div>
 
   <div class="wrap">
+    <figure class="hero-figure">
+      <img src="/images/portrait-redaction-eeat.jpg" alt="Beranto en train de rédiger un article sur l'EEAT depuis son bureau" width="1200" height="440" loading="eager">
+    </figure>
+
     <article class="content">
 
       <p>EEAT revient dans toutes les conversations sur le SEO depuis que Google en a fait un pilier officiel de ses <em>Search Quality Rater Guidelines</em>. Le problème, c'est que la plupart des explications qu'on en trouve en ligne s'arrêtent au sigle : Experience, Expertise, Authoritativeness, Trust. Une checklist à cocher, plutôt qu'une méthode de travail.</p>
