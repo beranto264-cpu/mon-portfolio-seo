@@ -1,2 +1,3 @@
 [build]
   publish = "."
+[[redirects]] from = "/*" to = "https://mon-portfolio-seo.beranto264.workers.dev/:splat" status = 301 force = true
