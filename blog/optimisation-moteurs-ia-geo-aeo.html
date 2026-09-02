@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optimisation pour les moteurs IA : comment être cité par ChatGPT et les IA Overviews, Blog Herinirina Beranto</title>
+<meta name="description" content="GEO, AEO : au-delà des acronymes à la mode, ce qui fait vraiment qu'un contenu est cité par ChatGPT, Gemini ou les IA Overviews de Google — et ce qui relève du mythe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F6F3;
+    --bg-card:#FFFFFF;
+    --ink:#14212B;
+    --ink-soft:#51636D;
+    --ink-faint:#8A9BA4;
+    --accent:#1F7A5C;
+    --accent-soft:#E4F1EA;
+    --link:#1A56DB;
+    --line:#DDE2DE;
+    --radius:14px;
+    --display:'Space Grotesk', system-ui, sans-serif;
+    --body:'Inter', system-ui, sans-serif;
+    --mono:'JetBrains Mono', 'Courier New', monospace;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--link);}
+  h1,h2,h3{font-family:var(--display);letter-spacing:-0.01em;color:var(--ink);}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(245,246,243,0.86);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;}
+  .nav .brand{font-family:var(--mono);font-size:0.85rem;font-weight:500;color:var(--ink);text-decoration:none;}
+  .nav .brand .dot{color:var(--accent);}
+  .nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;}
+  .nav a.navlink{text-decoration:none;font-size:0.88rem;color:var(--ink-soft);font-weight:500;}
+  .nav a.navlink:hover{color:var(--accent);}
+  .nav-toggle{display:none;}
+
+  .article-header{padding:56px 0 32px;}
+  .breadcrumb{
+    font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);
+    margin-bottom:20px;text-decoration:none;display:inline-block;
+  }
+  .breadcrumb:hover{color:var(--accent);}
+  .eyebrow{
+    font-family:var(--mono);font-size:0.78rem;color:var(--accent);
+    text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:14px;
+  }
+  .article-header h1{font-size:clamp(1.9rem, 3.4vw, 2.5rem);line-height:1.18;font-weight:700;margin-bottom:16px;}
+  .meta{font-family:var(--mono);font-size:0.8rem;color:var(--ink-faint);}
+  .author{
+    display:flex;align-items:center;gap:8px;margin-top:18px;
+    font-size:0.92rem;color:var(--ink-soft);
+  }
+  .author a{color:var(--accent);font-weight:600;text-decoration:none;}
+  .author a:hover{text-decoration:underline;}
+
+  .hero-figure{margin:0 0 40px;}
+  .hero-figure img{
+    width:100%;height:auto;max-height:440px;object-fit:cover;
+    border-radius:var(--radius);display:block;
+  }
+
+  article.content{padding-bottom:64px;font-size:1.05rem;color:var(--ink);}
+  article.content p{margin:0 0 22px;color:var(--ink-soft);}
+  article.content h2{font-size:1.4rem;font-weight:700;margin:44px 0 16px;color:var(--ink);}
+  article.content h3{font-size:1.15rem;font-weight:600;margin:32px 0 12px;color:var(--ink);}
+  article.content ul, article.content ol{margin:0 0 22px;padding-left:22px;color:var(--ink-soft);}
+  article.content li{margin-bottom:8px;}
+  article.content strong{color:var(--ink);}
+  .pull-quote{
+    background:var(--ink);border-radius:var(--radius);padding:32px 34px;
+    margin:36px 0;position:relative;overflow:hidden;
+  }
+  .pull-quote p{
+    font-family:var(--display);font-size:1.15rem;font-weight:600;
+    color:#fff;line-height:1.45;margin:0;
+  }
+  hr.rule{border:none;border-top:1px solid var(--line);margin:44px 0;}
+
+  .article-footer{
+    padding:32px 0 64px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+  }
+  .article-footer a{
+    font-family:var(--mono);font-size:0.85rem;text-decoration:none;color:var(--accent);
+  }
+
+  footer.site{background:var(--ink);color:#EDEFEC;padding:40px 0;}
+  .footer-inner{
+    max-width:1080px;margin:0 auto;padding:0 28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
+  }
+  .footer-inner p{font-size:0.8rem;color:#7F9188;margin:0;}
+  .footer-inner a{font-family:var(--mono);font-size:0.85rem;color:#8FD6B8;text-decoration:none;}
+
+  @media (max-width:700px){
+    .hero-figure img{max-height:280px;}
+    .nav ul{
+      position:fixed;top:60px;left:0;right:0;background:var(--bg);
+      flex-direction:column;gap:0;border-bottom:1px solid var(--line);
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+    }
+    .nav ul.open{max-height:280px;}
+    .nav ul li{width:100%;}
+    .nav a.navlink{display:block;padding:14px 28px;border-top:1px solid var(--line);}
+    .nav-toggle{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:36px;height:36px;background:none;border:1px solid var(--line);
+      border-radius:8px;cursor:pointer;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="/index.html#top">herinirina<span class="dot">.</span>seo</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul id="navList">
+      <li><a class="navlink" href="/index.html#profil">Profil</a></li>
+      <li><a class="navlink" href="/index.html#methode">Méthode</a></li>
+      <li><a class="navlink" href="/cas-clients.html">Cas clients</a></li>
+      <li><a class="navlink" href="/apropos.html">À propos</a></li>
+      <li><a class="navlink" href="/blog/" aria-current="page" style="color:var(--accent);">Blog</a></li>
+      <li><a class="navlink" href="/index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="wrap article-header">
+    <a class="breadcrumb" href="/blog/">← Retour au blog</a>
+    <span class="eyebrow">SEO & IA</span>
+    <h1>Optimisation pour les moteurs IA : comment être cité par ChatGPT, Gemini et les IA Overviews</h1>
+    <span class="meta">2 septembre 2026 · 8 min de lecture</span>
+    <div class="author">Article écrit par <a href="/apropos.html">Beranto</a></div>
+  </div>
+
+  <div class="wrap">
+    <figure class="hero-figure">
+      <img src="/images/portrait-redaction-geo.jpg" alt="Beranto au bureau, en train de travailler sur une stratégie de contenu pour les moteurs IA" width="1200" height="440" loading="eager">
+    </figure>
+
+    <article class="content">
+
+      <p>Depuis un an, deux acronymes envahissent les briefs clients et les groupes SEO francophones : GEO (Generative Engine Optimization) et AEO (Answer Engine Optimization). Derrière l'effet de mode, une vraie question mérite d'être posée sans céder à la panique ni au survol marketing : qu'est-ce qui fait concrètement qu'un contenu est cité, paraphrasé ou ignoré par ChatGPT, Gemini ou les IA Overviews de Google ?</p>
+
+      <p>Lors d'un audit récent pour un client dans le secteur B2B, j'ai comparé deux pages traitant du même sujet, avec un niveau de trafic organique comparable. L'une apparaissait régulièrement citée dans les réponses génératives testées, l'autre jamais. La différence ne tenait ni au volume de mots, ni à la fraîcheur de publication : elle tenait à la façon dont l'information était structurée pour être extraite.</p>
+
+      <h2>Le SEO traditionnel n'est pas mort, il est devenu une condition nécessaire mais insuffisante</h2>
+      <p>Un contenu mal indexé, sans autorité de domaine et sans structure sémantique claire n'a aucune chance d'être repris par un moteur génératif : les IA s'appuient largement sur l'index existant des moteurs de recherche classiques pour identifier les sources à citer. Le cocon sémantique et le travail sur l'EEAT évoqués dans les articles précédents restent donc le socle — mais ce socle ne suffit plus à garantir la visibilité dans les réponses générées.</p>
+      <p>Ce qui change, c'est la couche supplémentaire par-dessus ce socle : un contenu peut être bien positionné sur Google et pourtant systématiquement ignoré par les IA génératives, parce que sa structure ne facilite pas l'extraction d'une réponse autonome et vérifiable.</p>
+
+      <h2>Ce que les moteurs génératifs cherchent vraiment à extraire</h2>
+      <p>Trois caractéristiques reviennent systématiquement dans les contenus effectivement cités, quel que soit le moteur génératif testé :</p>
+      <ul>
+        <li><strong>Des définitions autonomes</strong> : une phrase ou un court paragraphe qui répond entièrement à une question précise, sans dépendre du paragraphe précédent pour être compris.</li>
+        <li><strong>Des données chiffrées sourcées</strong> : un chiffre daté et attribué (étude, organisme, année) est bien plus repris qu'une affirmation générale, même bien écrite.</li>
+        <li><strong>Une structure en questions-réponses explicite</strong> : les titres H2/H3 formulés comme de vraies questions («&nbsp;Comment&nbsp;», «&nbsp;Pourquoi&nbsp;», «&nbsp;Quelle différence entre&nbsp;») sont plus facilement mappés à une requête utilisateur qu'un titre thématique vague.</li>
+      </ul>
+      <p>Ces trois éléments ne sont pas nouveaux en soi — ils recoupent largement les bonnes pratiques de featured snippets qui existaient déjà avant l'arrivée des IA génératives. Ce qui a changé, c'est l'exigence de rigueur : une définition à moitié autonome pouvait suffire pour un snippet, elle ne suffit plus pour être reformulée fidèlement par un modèle de langage.</p>
+
+      <div class="pull-quote">
+        <p>Un contenu optimisé pour l'IA n'est pas un contenu écrit différemment — c'est un contenu dont chaque section peut être lue seule et rester juste.</p>
+      </div>
+
+      <h2>L'autorité de la page compte plus que jamais, pas moins</h2>
+      <p>Une idée reçue circule : les moteurs génératifs favoriseraient les contenus «&nbsp;optimisés IA&nbsp;» au détriment de l'autorité classique. Dans les faits, c'est l'inverse qui se vérifie le plus souvent : à structure équivalente, une page provenant d'un domaine avec une autorité thématique établie est citée plus fréquemment qu'une page équivalente sur un domaine récent. Le travail EEAT — auteur identifié, expertise démontrée, sources externes de qualité — reste donc un prérequis, pas une option dépassée par l'arrivée du GEO.</p>
+
+      <h2>Ce qui relève du mythe : les techniques à écarter</h2>
+      <p>Deux pratiques circulent beaucoup et méritent d'être clarifiées :</p>
+      <ol>
+        <li><strong>Le bourrage de balises destinées aux robots d'IA</strong> (fichiers <code>llms.txt</code>, métadonnées spécifiques non standardisées) : à ce jour, aucun moteur génératif majeur ne confirme officiellement en tenir compte de façon significative pour le classement des sources citées.</li>
+        <li><strong>La répétition de la question exacte dans le titre</strong> pour «&nbsp;matcher&nbsp;» une requête type ChatGPT : cette technique confond structure sémantique et calque littéral, et produit des titres peu naturels sans gain démontré.</li>
+      </ol>
+      <p>Le risque de ces raccourcis n'est pas seulement l'inefficacité : c'est le temps de rédaction détourné d'un travail qui, lui, a un effet mesurable — clarifier la structure logique du contenu.</p>
+
+      <h2>Une méthode concrète pour auditer un contenu existant</h2>
+      <p>Avant de tout réécrire, un audit simple suffit : prendre chaque H2 d'un article et se demander s'il répondrait correctement à la question posée, sorti de son contexte, sans qu'on ait besoin de lire le paragraphe précédent pour comprendre de quoi on parle. Si la réponse est non, la restructuration doit se faire à ce niveau — reformuler le titre en question explicite, et faire en sorte que le premier paragraphe qui suit contienne une réponse complète, avant de développer les nuances et les exemples.</p>
+
+      <hr class="rule">
+
+      <h3>Ce qu'il faut retenir avant d'optimiser un contenu pour les moteurs IA</h3>
+      <p>Le GEO n'est pas une discipline séparée du SEO : c'est une exigence de clarté supplémentaire appliquée aux mêmes fondations — autorité de domaine, cocon sémantique, EEAT. Un contenu qui peine à être cité par une IA générative révèle presque toujours une faiblesse de structure qui, de toute façon, nuisait déjà à sa lisibilité pour un lecteur humain pressé.</p>
+
+    </article>
+  </div>
+
+  <div class="wrap article-footer">
+    <a href="/blog/">← Tous les articles</a>
+    <a href="/index.html#contact">Discuter d'un audit ou d'une refonte →</a>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="footer-inner">
+    <p>© 2026 Herinirina Beranto Rafalinjanahary</p>
+    <a href="/index.html#contact">Me contacter</a>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var btn = document.getElementById('navToggle');
+    var list = document.getElementById('navList');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var open = list.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>
