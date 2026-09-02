@@ -674,7 +674,10 @@
       overflow:hidden;
       transition:max-height .25s ease;
     }
-    .nav ul.open{max-height:280px;}
+    .nav ul.open{
+  max-height: 90vh;
+  overflow-y: auto;
+}
     .nav ul li{width:100%;}
     .nav a.navlink{
       display:block;
@@ -744,6 +747,14 @@
           <div class="chrome-bar">
             <span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span>
             <span class="chrome-addr">google.com/search?q=r%C3%A9dacteur+web+seo+antananarivo</span>
+            .chrome-addr{
+  min-width: 0; /* autorise enfin le rétrécissement + l'ellipsis */
+}
+
+/* filet de sécurité global, au cas où un autre élément déborderait un jour */
+html, body{
+  overflow-x: hidden;
+}
           </div>
           <div class="search-box">
             <div class="search-field">
