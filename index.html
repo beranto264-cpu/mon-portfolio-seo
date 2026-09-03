@@ -111,9 +111,13 @@
   }
   .hero-inner{
     display:grid;
-    grid-template-columns:1.05fr 0.95fr;
+    grid-template-columns:minmax(0, 1.05fr) minmax(0, 0.95fr);
     gap:56px;
     align-items:center;
+  }
+  .hero-copy,
+  .serp-wrap{
+    min-width:0; /* permet aux colonnes de se compresser sans couper le texte */
   }
   .hero-copy .eyebrow{
     font-family:var(--mono);
@@ -129,12 +133,14 @@
     line-height:1.12;
     font-weight:700;
     margin-bottom:18px;
+    overflow-wrap:break-word;
   }
   .hero-copy p.lede{
     font-size:1.05rem;
     color:var(--ink-soft);
     max-width:46ch;
     margin-bottom:30px;
+    overflow-wrap:break-word;
   }
   .hero-actions{
     display:flex;
