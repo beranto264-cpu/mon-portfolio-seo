@@ -35,4 +35,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+   <url>
+    <loc>https://mon-portfolio-seo.beranto264.workers.dev/blog/netlinking-backlinks-naturels</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
