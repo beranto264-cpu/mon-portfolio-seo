@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netlinking naturel : ce qui fait qu'un backlink compte vraiment pour Google, Blog Herinirina Beranto</title>
+<meta name="description" content="Un lien n'a de valeur que si le contenu autour de lui est pertinent. Ce qui distingue un netlinking qui muscle une page d'un netlinking qui ne sert à rien.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F6F3;
+    --bg-card:#FFFFFF;
+    --ink:#14212B;
+    --ink-soft:#51636D;
+    --ink-faint:#8A9BA4;
+    --accent:#1F7A5C;
+    --accent-soft:#E4F1EA;
+    --link:#1A56DB;
+    --line:#DDE2DE;
+    --radius:14px;
+    --display:'Space Grotesk', system-ui, sans-serif;
+    --body:'Inter', system-ui, sans-serif;
+    --mono:'JetBrains Mono', 'Courier New', monospace;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--link);}
+  h1,h2,h3{font-family:var(--display);letter-spacing:-0.01em;color:var(--ink);}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(245,246,243,0.86);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;}
+  .nav .brand{font-family:var(--mono);font-size:0.85rem;font-weight:500;color:var(--ink);text-decoration:none;}
+  .nav .brand .dot{color:var(--accent);}
+  .nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;}
+  .nav a.navlink{text-decoration:none;font-size:0.88rem;color:var(--ink-soft);font-weight:500;}
+  .nav a.navlink:hover{color:var(--accent);}
+  .nav-toggle{display:none;}
+
+  .article-header{padding:56px 0 32px;}
+  .breadcrumb{
+    font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);
+    margin-bottom:20px;text-decoration:none;display:inline-block;
+  }
+  .breadcrumb:hover{color:var(--accent);}
+  .eyebrow{
+    font-family:var(--mono);font-size:0.78rem;color:var(--accent);
+    text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:14px;
+  }
+  .article-header h1{font-size:clamp(1.9rem, 3.4vw, 2.5rem);line-height:1.18;font-weight:700;margin-bottom:16px;}
+  .meta{font-family:var(--mono);font-size:0.8rem;color:var(--ink-faint);}
+  .author{
+    display:flex;align-items:center;gap:8px;margin-top:18px;
+    font-size:0.92rem;color:var(--ink-soft);
+  }
+  .author a{color:var(--accent);font-weight:600;text-decoration:none;}
+  .author a:hover{text-decoration:underline;}
+
+  .hero-figure{margin:0 0 40px;}
+  .hero-figure img{
+    width:100%;height:auto;max-height:440px;object-fit:cover;
+    border-radius:var(--radius);display:block;
+  }
+
+  article.content{padding-bottom:64px;font-size:1.05rem;color:var(--ink);}
+  article.content p{margin:0 0 22px;color:var(--ink-soft);}
+  article.content h2{font-size:1.4rem;font-weight:700;margin:44px 0 16px;color:var(--ink);}
+  article.content h3{font-size:1.15rem;font-weight:600;margin:32px 0 12px;color:var(--ink);}
+  article.content ul, article.content ol{margin:0 0 22px;padding-left:22px;color:var(--ink-soft);}
+  article.content li{margin-bottom:8px;}
+  article.content strong{color:var(--ink);}
+  .pull-quote{
+    background:var(--ink);border-radius:var(--radius);padding:32px 34px;
+    margin:36px 0;position:relative;overflow:hidden;
+  }
+  .pull-quote p{
+    font-family:var(--display);font-size:1.15rem;font-weight:600;
+    color:#fff;line-height:1.45;margin:0;
+  }
+  hr.rule{border:none;border-top:1px solid var(--line);margin:44px 0;}
+
+  .article-footer{
+    padding:32px 0 64px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+  }
+  .article-footer a{
+    font-family:var(--mono);font-size:0.85rem;text-decoration:none;color:var(--accent);
+  }
+
+  footer.site{background:var(--ink);color:#EDEFEC;padding:40px 0;}
+  .footer-inner{
+    max-width:1080px;margin:0 auto;padding:0 28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
+  }
+  .footer-inner p{font-size:0.8rem;color:#7F9188;margin:0;}
+  .footer-inner a{font-family:var(--mono);font-size:0.85rem;color:#8FD6B8;text-decoration:none;}
+
+  @media (max-width:700px){
+    .hero-figure img{max-height:280px;}
+    .nav ul{
+      position:fixed;top:60px;left:0;right:0;background:var(--bg);
+      flex-direction:column;gap:0;border-bottom:1px solid var(--line);
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+    }
+    .nav ul.open{max-height:280px;}
+    .nav ul li{width:100%;}
+    .nav a.navlink{display:block;padding:14px 28px;border-top:1px solid var(--line);}
+    .nav-toggle{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:36px;height:36px;background:none;border:1px solid var(--line);
+      border-radius:8px;cursor:pointer;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="/index.html#top">herinirina<span class="dot">.</span>seo</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul id="navList">
+      <li><a class="navlink" href="/index.html#profil">Profil</a></li>
+      <li><a class="navlink" href="/index.html#methode">Méthode</a></li>
+      <li><a class="navlink" href="/cas-clients.html">Cas clients</a></li>
+      <li><a class="navlink" href="/apropos.html">À propos</a></li>
+      <li><a class="navlink" href="/blog/" aria-current="page" style="color:var(--accent);">Blog</a></li>
+      <li><a class="navlink" href="/index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="wrap article-header">
+    <a class="breadcrumb" href="/blog/">← Retour au blog</a>
+    <span class="eyebrow">Netlinking</span>
+    <h1>Netlinking naturel : ce qui fait qu'un backlink compte vraiment pour Google</h1>
+    <span class="meta">9 septembre 2026 · 6 min de lecture</span>
+    <div class="author">Article écrit par <a href="/apropos.html">Beranto</a></div>
+  </div>
+
+  <div class="wrap">
+    <figure class="hero-figure">
+      <img src="/images/portrait-redaction-netlinking.jpg" alt="Beranto au bureau, en train de travailler sur une stratégie de netlinking" width="1200" height="440" loading="eager">
+    </figure>
+
+    <article class="content">
+
+      <p>Le <strong>netlinking</strong> souffre du même travers que le cocon sémantique : on le réduit trop souvent à un chiffre. Combien de liens, sur quel Domain Rating, à quel prix. Cette logique de quantité a produit des années de campagnes qui gonflent artificiellement un profil de liens sans jamais faire bouger une seule position sur les requêtes qui comptent vraiment.</p>
+
+      <p>Sur un projet récent, j'ai comparé deux pages d'un même client : l'une avait reçu quinze backlinks en trois mois, l'autre seulement quatre. C'est la deuxième qui a progressé dans les résultats. La différence ne tenait pas au volume, mais à la <strong>pertinence contextuelle</strong> de chaque lien, et à l'endroit précis où il avait été placé dans le texte.</p>
+
+      <h2>Un backlink, ce n'est pas une case à cocher : c'est un vote de confiance contextuel</h2>
+      <p>Google ne lit pas un lien isolément. Il lit la page qui l'entoure, le sujet de cette page, et la cohérence entre ce sujet et celui de la page ciblée. Un lien depuis un site de jardinage vers une page de comparateur d'assurance ne transmet quasiment aucune <strong>autorité thématique</strong>, même si le site source a un bon score de domaine. Un lien depuis un article qui parle réellement du même sujet, même sur un site plus modeste, pèse davantage.</p>
+      <p>C'est pour ça qu'avant toute campagne de netlinking, je passe plus de temps à choisir le site et l'<strong>angle éditorial</strong> de l'article qu'à négocier le prix du lien lui-même. Un backlink pertinent sur un article que personne ne lira ne sert à rien ; un backlink discret dans un article qui a du sens pour les deux audiences fait le travail.</p>
+
+      <h2>L'ancre naturelle : le détail que la plupart des campagnes de netlinking loupent</h2>
+      <p>L'ancre optimisée à outrance, répéter le mot-clé exact sur chaque lien acquis, est l'un des signaux les plus faciles à repérer pour un algorithme, et l'un des plus faciles à corriger pour un rédacteur. Une <strong>ancre naturelle</strong> décrit ce que le lecteur va trouver en cliquant, dans la continuité de la phrase qui la porte, sans jamais donner l'impression d'avoir été plaquée après coup.</p>
+      <p>Concrètement, ça veut dire écrire l'article d'abord, trouver l'endroit où la ressource ciblée apporte une vraie valeur ajoutée à l'argument en cours, et seulement ensuite y glisser le lien. Faire l'inverse, partir du lien et écrire un article autour, donne presque toujours un texte qui sonne artificiel, même quand l'ancre elle-même est bien formulée.</p>
+
+      <div class="pull-quote">
+        <p>Un profil de liens qui ne convertit pas est presque toujours un profil construit sur des métriques de domaine, et pas sur la pertinence du contenu qui porte le lien.</p>
+      </div>
+
+      <h2>L'audit de backlinks : là où on voit vraiment ce qui fonctionne</h2>
+      <p>Avec <strong>Ahrefs</strong> ou <strong>Semrush</strong>, trois signaux reviennent systématiquement dans les profils de liens qui sous-performent :</p>
+      <ol>
+        <li><strong>Des liens hors thématique</strong> : acquis uniquement pour leur score de domaine, sans aucun rapport avec le sujet de la page ciblée.</li>
+        <li><strong>Des ancres suroptimisées et répétées</strong> : la même expression exacte revient sur la majorité des liens, un profil que Google finit par pénaliser plutôt que récompenser.</li>
+        <li><strong>Des liens techniquement invisibles</strong> : nofollow, en noindex sur la page source, ou insérés dans un widget que les moteurs ignorent, vendus comme un lien à part entière alors qu'ils ne transmettent rien.</li>
+      </ol>
+      <p>Ces trois problèmes ne se voient pas en comptant les liens dans un tableau de bord. Ils ne se voient qu'en ouvrant chaque page source et en se demandant, honnêtement, si un lecteur humain cliquerait sur ce lien sans qu'on le lui ait demandé.</p>
+
+      <h2>Un exemple concret : quand un seul lien vaut mieux qu'une campagne entière</h2>
+      <p>Pour un client du secteur des services aux entreprises, plutôt que de lancer une campagne de dix liens sur des sites génériques, j'ai proposé un seul <strong>article invité</strong> sur un site déjà lu par son audience cible, avec une ancre construite autour d'un vrai sous-sujet du texte plutôt que du mot-clé principal. Ce lien unique a généré plus de trafic référent qualifié en un mois que l'ensemble des liens achetés l'année précédente.</p>
+
+      <hr class="rule">
+
+      <h3>Ce qu'il faut retenir avant de lancer une campagne de netlinking</h3>
+      <p>Un netlinking efficace se construit dans cet ordre : d'abord la <strong>pertinence thématique</strong> du site cible, ensuite un contenu qui a une vraie valeur pour son audience, et seulement à la fin l'ancre et l'emplacement du lien. Faire l'inverse, partir du lien à obtenir et écrire un article pour le justifier, produit presque toujours un backlink qui ressemble à du netlinking, sans en avoir l'effet.</p>
+
+    </article>
+  </div>
+
+  <div class="wrap article-footer">
+    <a href="/blog/">← Tous les articles</a>
+    <a href="/index.html#contact">Discuter d'une stratégie de netlinking →</a>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="footer-inner">
+    <p>© 2026 Herinirina Beranto Rafalinjanahary</p>
+    <a href="/index.html#contact">Me contacter</a>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var btn = document.getElementById('navToggle');
+    var list = document.getElementById('navList');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var open = list.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>
