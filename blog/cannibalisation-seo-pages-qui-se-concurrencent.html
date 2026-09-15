@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cannibalisation SEO : pourquoi deux de vos pages se battent, Blog Herinirina Beranto</title>
+<meta name="description" content="La cannibalisation SEO ne se voit pas dans le contenu, mais dans les positions qui stagnent. Comment la repérer, la trancher, et surtout l'éviter avant qu'elle ne s'installe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F6F3;
+    --bg-card:#FFFFFF;
+    --ink:#14212B;
+    --ink-soft:#51636D;
+    --ink-faint:#8A9BA4;
+    --accent:#1F7A5C;
+    --accent-soft:#E4F1EA;
+    --link:#1A56DB;
+    --line:#DDE2DE;
+    --radius:14px;
+    --display:'Space Grotesk', system-ui, sans-serif;
+    --body:'Inter', system-ui, sans-serif;
+    --mono:'JetBrains Mono', 'Courier New', monospace;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--link);}
+  h1,h2,h3{font-family:var(--display);letter-spacing:-0.01em;color:var(--ink);}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(245,246,243,0.86);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;}
+  .nav .brand{font-family:var(--mono);font-size:0.85rem;font-weight:500;color:var(--ink);text-decoration:none;}
+  .nav .brand .dot{color:var(--accent);}
+  .nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;}
+  .nav a.navlink{text-decoration:none;font-size:0.88rem;color:var(--ink-soft);font-weight:500;}
+  .nav a.navlink:hover{color:var(--accent);}
+  .nav-toggle{display:none;}
+
+  .article-header{padding:56px 0 32px;}
+  .breadcrumb{
+    font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);
+    margin-bottom:20px;text-decoration:none;display:inline-block;
+  }
+  .breadcrumb:hover{color:var(--accent);}
+  .eyebrow{
+    font-family:var(--mono);font-size:0.78rem;color:var(--accent);
+    text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:14px;
+  }
+  .article-header h1{font-size:clamp(1.9rem, 3.4vw, 2.5rem);line-height:1.18;font-weight:700;margin-bottom:16px;}
+  .meta{font-family:var(--mono);font-size:0.8rem;color:var(--ink-faint);}
+  .author{
+    display:flex;align-items:center;gap:8px;margin-top:18px;
+    font-size:0.92rem;color:var(--ink-soft);
+  }
+  .author a{color:var(--accent);font-weight:600;text-decoration:none;}
+  .author a:hover{text-decoration:underline;}
+
+  .hero-figure{margin:0 0 40px;}
+  .hero-figure img{
+    width:100%;height:auto;max-height:440px;object-fit:cover;
+    border-radius:var(--radius);display:block;
+  }
+
+  article.content{padding-bottom:64px;font-size:1.05rem;color:var(--ink);}
+  article.content p{margin:0 0 22px;color:var(--ink-soft);}
+  article.content h2{font-size:1.4rem;font-weight:700;margin:44px 0 16px;color:var(--ink);}
+  article.content h3{font-size:1.15rem;font-weight:600;margin:32px 0 12px;color:var(--ink);}
+  article.content ul, article.content ol{margin:0 0 22px;padding-left:22px;color:var(--ink-soft);}
+  article.content li{margin-bottom:8px;}
+  article.content strong{color:var(--ink);}
+  .pull-quote{
+    background:var(--ink);border-radius:var(--radius);padding:32px 34px;
+    margin:36px 0;position:relative;overflow:hidden;
+  }
+  .pull-quote p{
+    font-family:var(--display);font-size:1.15rem;font-weight:600;
+    color:#fff;line-height:1.45;margin:0;
+  }
+  hr.rule{border:none;border-top:1px solid var(--line);margin:44px 0;}
+
+  .article-footer{
+    padding:32px 0 64px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+  }
+  .article-footer a{
+    font-family:var(--mono);font-size:0.85rem;text-decoration:none;color:var(--accent);
+  }
+
+  footer.site{background:var(--ink);color:#EDEFEC;padding:40px 0;}
+  .footer-inner{
+    max-width:1080px;margin:0 auto;padding:0 28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
+  }
+  .footer-inner p{font-size:0.8rem;color:#7F9188;margin:0;}
+  .footer-inner a{font-family:var(--mono);font-size:0.85rem;color:#8FD6B8;text-decoration:none;}
+
+  @media (max-width:700px){
+    .hero-figure img{max-height:280px;}
+    .nav ul{
+      position:fixed;top:60px;left:0;right:0;background:var(--bg);
+      flex-direction:column;gap:0;border-bottom:1px solid var(--line);
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+    }
+    .nav ul.open{max-height:280px;}
+    .nav ul li{width:100%;}
+    .nav a.navlink{display:block;padding:14px 28px;border-top:1px solid var(--line);}
+    .nav-toggle{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:36px;height:36px;background:none;border:1px solid var(--line);
+      border-radius:8px;cursor:pointer;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="/index.html#top">Beranto<span class="dot">.</span>seo</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul id="navList">
+      <li><a class="navlink" href="/index.html#profil">Profil</a></li>
+      <li><a class="navlink" href="/index.html#methode">Méthode</a></li>
+      <li><a class="navlink" href="/cas-clients.html">Cas clients</a></li>
+      <li><a class="navlink" href="/apropos.html">À propos</a></li>
+      <li><a class="navlink" href="/blog/" aria-current="page" style="color:var(--accent);">Blog</a></li>
+      <li><a class="navlink" href="/index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="wrap article-header">
+    <a class="breadcrumb" href="/blog/">← Retour au blog</a>
+    <span class="eyebrow">SEO technique</span>
+    <h1>Cannibalisation SEO : pourquoi deux de vos pages se battent (et comment trancher sans perdre le trafic)</h1>
+    <span class="meta">16 septembre 2026 · 8 min de lecture</span>
+    <div class="author">Article écrit par <a href="/apropos.html">Beranto</a></div>
+  </div>
+
+  <div class="wrap">
+    <figure class="hero-figure">
+      <img src="/images/portrait-redaction-cannibalisation.jpg" alt="Beranto au bureau, en train d'arbitrer entre deux pages qui ciblent le même mot-clé" width="1200" height="440" loading="eager">
+    </figure>
+
+    <article class="content">
+
+      <p>La <strong>cannibalisation SEO</strong> ne s'annonce jamais. Elle ne provoque aucune pénalité, aucune alerte dans Search Console, aucun message d'erreur. Elle se traduit juste par des <strong>positions qui n'avancent plus</strong>, ou qui alternent d'une semaine à l'autre entre deux URL du même site, sans qu'on comprenne pourquoi, jusqu'à ce qu'on aille regarder d'un peu plus près qui se dispute réellement la requête.</p>
+
+      <p>Dans l'article sur le <strong>cocon sémantique</strong>, j'évoquais un audit où une page pilier générique cannibalisait le classement de trois pages satellites censées la nourrir. C'est un cas fréquent, mais ce n'est qu'une des formes que prend le problème. Avant de corriger quoi que ce soit, il faut d'abord comprendre pourquoi deux pages d'un même site finissent par se marcher dessus, et surtout comment éviter d'en arriver là.</p>
+
+      <h2>Ce que la cannibalisation SEO n'est pas</h2>
+      <p>La confusion la plus fréquente est de la ranger avec le <strong>contenu dupliqué</strong>. Ce n'est pas la même chose. Le contenu dupliqué, c'est le même texte à deux endroits. La cannibalisation, c'est deux contenus <em>différents</em>, parfois très différents dans leur angle, qui répondent malgré tout à la même <strong>intention de recherche</strong> aux yeux de Google. Un guide d'achat et une fiche produit peuvent très bien coexister sans se cannibaliser, tant que chacun répond à une intention distincte : informationnelle pour l'un, transactionnelle pour l'autre. Le problème apparaît quand cette distinction s'efface, souvent sans que personne ne l'ait décidé consciemment.</p>
+
+      <h2>Comment elle s'installe, en pratique</h2>
+      <p>Trois scénarios reviennent le plus souvent dans les audits :</p>
+      <ul>
+        <li><strong>La dérive éditoriale</strong> : un article publié il y a deux ans, puis un autre écrit sur un sujet voisin sans vérifier ce qui existait déjà. Surtout fréquent sur les sites qui publient depuis longtemps, où personne ne garde une vue d'ensemble du corpus.</li>
+        <li><strong>Le cocon mal hiérarchisé</strong> : une page pilier trop large qui finit par répondre elle-même aux questions que ses pages satellites étaient censées couvrir, comme dans l'exemple cité plus haut.</li>
+        <li><strong>Le réflexe "il me faut du contenu sur ce mot-clé"</strong> : on part du mot-clé plutôt que de l'intention, et deux briefs différents convergent vers la même requête sans qu'on s'en rende compte au moment de la commande.</li>
+      </ul>
+      <p>Ce dernier point est celui qu'on peut traiter le plus en amont. Sur un projet récent, plutôt que de produire un article qui recoupait un contenu déjà existant sur le support client omnicanal, le choix a été de le rédiger sous un angle volontairement distinct, pour qu'il réponde à une intention différente plutôt que de concurrencer l'article en place. C'est une décision qui coûte cinq minutes de <strong>vérification avant l'écriture</strong>, et qui évite des mois de positions qui stagnent.</p>
+
+      <div class="pull-quote">
+        <p>La cannibalisation ne se corrige pas au moment où on la détecte. Elle se prévient au moment où on décide d'écrire un article.</p>
+      </div>
+
+      <h2>Diagnostiquer : deux méthodes gratuites suffisent</h2>
+      <p>Avant de corriger quoi que ce soit, il faut confirmer le diagnostic. Deux réflexes simples, sans outil payant :</p>
+      <ol>
+        <li><strong>Search Console, filtré sur la requête</strong> : dans le rapport de performances, filtrer sur le mot-clé suspect et regarder la colonne "Page". Si deux URL apparaissent en alternance sur les mêmes semaines, avec des positions qui se répondent en miroir, c'est le signal le plus fiable.</li>
+        <li><strong>L'opérateur <code>site:</code></strong> : chercher <code>site:votredomaine.com "expression exacte"</code> pour voir d'un coup d'œil combien de pages du site traitent visiblement la même chose.</li>
+      </ol>
+      <p>Un audit avec Screaming Frog permet d'aller plus loin en croisant titres, H1 et structure de <strong>maillage interne</strong>, pour repérer les cannibalisations qui ne se voient pas encore dans les positions mais qui couvent : deux pages très proches dans leur contenu, pas encore assez indexées pour qu'on observe l'alternance dans Search Console.</p>
+
+      <h2>Trancher : trois leviers, pas trente</h2>
+      <p>Une fois le diagnostic posé, la correction se résume à trois options, selon ce que les deux pages valent réellement :</p>
+      <ul>
+        <li><strong>Fusionner et rediriger</strong> : la bonne réponse quand les deux pages disent à peu près la même chose. On garde la plus forte (ancienneté, backlinks, trafic résiduel), on y intègre ce que l'autre avait d'unique, et on redirige l'URL faible en <strong>301</strong>. Toute l'autorité se concentre sur une seule page.</li>
+        <li><strong>Différencier les intentions</strong> : la bonne réponse quand les deux pages ont une vraie raison d'exister, mais que leur title, leur H1 ou leur contenu se sont mis à trop se ressembler. On retravaille l'une des deux pour qu'elle cible clairement une sous-intention distincte.</li>
+        <li><strong>Canoniser</strong> : utile quand une page est une variante technique de l'autre (filtres, tri, paramètres d'URL) plutôt qu'un vrai doublon éditorial. Moins pertinent pour deux articles de blog écrits indépendamment.</li>
+      </ul>
+      <p>L'erreur la plus coûteuse reste de supprimer une page sans redirection quand elle a accumulé des liens : toute l'autorité part avec elle. Si la page doit disparaître, elle doit disparaître vers quelque chose.</p>
+
+      <hr class="rule">
+
+      <h3>Ce qu'il faut retenir</h3>
+      <p>La cannibalisation SEO n'est jamais un accident isolé, c'est le symptôme d'un corpus qui a grandi sans carte. La correction (fusion, différenciation ou canonisation) ne demande pas d'outil sophistiqué, juste une vérification rigoureuse avant de corriger. Mais le vrai levier reste en amont : vérifier, avant d'écrire, si l'intention qu'on s'apprête à cibler n'est pas déjà couverte ailleurs sur le site. Un <strong>cocon sémantique</strong> bien pensé, comme évoqué dans l'article précédent, est justement ce qui rend cette vérification presque automatique.</p>
+
+    </article>
+  </div>
+
+  <div class="wrap article-footer">
+    <a href="/blog/">← Tous les articles</a>
+    <a href="/index.html#contact">Discuter d'un audit ou d'une refonte →</a>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="footer-inner">
+    <p>© 2026 Herinirina Beranto Rafalinjanahary</p>
+    <a href="/index.html#contact">Me contacter</a>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var btn = document.getElementById('navToggle');
+    var list = document.getElementById('navList');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var open = list.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>
