@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Migration de site : comment ne pas perdre son SEO, Blog Herinirina Beranto</title>
+<meta name="description" content="Changer d'hébergeur ou de nom de domaine est un chantier technique, mais c'est d'abord un chantier SEO. Ce qui protège vraiment les positions pendant une migration.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F6F3;
+    --bg-card:#FFFFFF;
+    --ink:#14212B;
+    --ink-soft:#51636D;
+    --ink-faint:#8A9BA4;
+    --accent:#1F7A5C;
+    --accent-soft:#E4F1EA;
+    --link:#1A56DB;
+    --line:#DDE2DE;
+    --radius:14px;
+    --display:'Space Grotesk', system-ui, sans-serif;
+    --body:'Inter', system-ui, sans-serif;
+    --mono:'JetBrains Mono', 'Courier New', monospace;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--link);}
+  h1,h2,h3{font-family:var(--display);letter-spacing:-0.01em;color:var(--ink);}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(245,246,243,0.86);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;}
+  .nav .brand{font-family:var(--mono);font-size:0.85rem;font-weight:500;color:var(--ink);text-decoration:none;}
+  .nav .brand .dot{color:var(--accent);}
+  .nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;}
+  .nav a.navlink{text-decoration:none;font-size:0.88rem;color:var(--ink-soft);font-weight:500;}
+  .nav a.navlink:hover{color:var(--accent);}
+  .nav-toggle{display:none;}
+
+  .article-header{padding:56px 0 32px;}
+  .breadcrumb{
+    font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);
+    margin-bottom:20px;text-decoration:none;display:inline-block;
+  }
+  .breadcrumb:hover{color:var(--accent);}
+  .eyebrow{
+    font-family:var(--mono);font-size:0.78rem;color:var(--accent);
+    text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:14px;
+  }
+  .article-header h1{font-size:clamp(1.9rem, 3.4vw, 2.5rem);line-height:1.18;font-weight:700;margin-bottom:16px;}
+  .meta{font-family:var(--mono);font-size:0.8rem;color:var(--ink-faint);}
+  .author{
+    display:flex;align-items:center;gap:8px;margin-top:18px;
+    font-size:0.92rem;color:var(--ink-soft);
+  }
+  .author a{color:var(--accent);font-weight:600;text-decoration:none;}
+  .author a:hover{text-decoration:underline;}
+
+  .hero-figure{margin:0 0 40px;}
+  .hero-figure img{
+    width:100%;height:auto;max-height:440px;object-fit:cover;
+    border-radius:var(--radius);display:block;
+  }
+
+  article.content{padding-bottom:64px;font-size:1.05rem;color:var(--ink);}
+  article.content p{margin:0 0 22px;color:var(--ink-soft);}
+  article.content h2{font-size:1.4rem;font-weight:700;margin:44px 0 16px;color:var(--ink);}
+  article.content h3{font-size:1.15rem;font-weight:600;margin:32px 0 12px;color:var(--ink);}
+  article.content ul, article.content ol{margin:0 0 22px;padding-left:22px;color:var(--ink-soft);}
+  article.content li{margin-bottom:8px;}
+  article.content strong{color:var(--ink);}
+  .pull-quote{
+    background:var(--ink);border-radius:var(--radius);padding:32px 34px;
+    margin:36px 0;position:relative;overflow:hidden;
+  }
+  .pull-quote p{
+    font-family:var(--display);font-size:1.15rem;font-weight:600;
+    color:#fff;line-height:1.45;margin:0;
+  }
+  hr.rule{border:none;border-top:1px solid var(--line);margin:44px 0;}
+
+  .article-footer{
+    padding:32px 0 64px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+  }
+  .article-footer a{
+    font-family:var(--mono);font-size:0.85rem;text-decoration:none;color:var(--accent);
+  }
+
+  footer.site{background:var(--ink);color:#EDEFEC;padding:40px 0;}
+  .footer-inner{
+    max-width:1080px;margin:0 auto;padding:0 28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
+  }
+  .footer-inner p{font-size:0.8rem;color:#7F9188;margin:0;}
+  .footer-inner a{font-family:var(--mono);font-size:0.85rem;color:#8FD6B8;text-decoration:none;}
+
+  @media (max-width:700px){
+    .hero-figure img{max-height:280px;}
+    .nav ul{
+      position:fixed;top:60px;left:0;right:0;background:var(--bg);
+      flex-direction:column;gap:0;border-bottom:1px solid var(--line);
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+    }
+    .nav ul.open{max-height:280px;}
+    .nav ul li{width:100%;}
+    .nav a.navlink{display:block;padding:14px 28px;border-top:1px solid var(--line);}
+    .nav-toggle{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:36px;height:36px;background:none;border:1px solid var(--line);
+      border-radius:8px;cursor:pointer;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="/index.html#top">Beranto<span class="dot">.</span>seo</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul id="navList">
+      <li><a class="navlink" href="/index.html#profil">Profil</a></li>
+      <li><a class="navlink" href="/index.html#methode">Méthode</a></li>
+      <li><a class="navlink" href="/cas-clients.html">Cas clients</a></li>
+      <li><a class="navlink" href="/apropos.html">À propos</a></li>
+      <li><a class="navlink" href="/blog/" aria-current="page" style="color:var(--accent);">Blog</a></li>
+      <li><a class="navlink" href="/index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="wrap article-header">
+    <a class="breadcrumb" href="/blog/">← Retour au blog</a>
+    <span class="eyebrow">SEO technique</span>
+    <h1>Migration de site : comment ne pas perdre son SEO en changeant d'hébergeur ou de domaine</h1>
+    <span class="meta">22 septembre 2026 · 7 min de lecture</span>
+    <div class="author">Article écrit par <a href="/apropos.html">Beranto</a></div>
+  </div>
+
+  <div class="wrap">
+    <figure class="hero-figure">
+      <img src="/images/portrait-redaction-migration.jpg" alt="Beranto au bureau, ordinateur ouvert, en train de préparer une migration de site" width="1200" height="440" loading="eager">
+    </figure>
+
+    <article class="content">
+
+      <p>Une <strong>migration de site</strong> (changement d'hébergeur, de nom de domaine, ou les deux) est souvent traitée comme un simple sujet technique : on déplace des fichiers, on reconfigure un DNS, et le site est en ligne ailleurs. Vu du SEO, c'est une tout autre histoire. Chaque URL qui change d'adresse sans redirection propre, chaque page qui disparaît du nouvel index avant que l'ancien ne soit désindexé, c'est de l'<strong>autorité accumulée</strong> qui part sans prévenir.</p>
+
+      <p>J'ai récemment migré mon propre portfolio d'un hébergeur à un autre, et le chantier ressemble beaucoup à ce que je gère pour mes clients : moins une question d'outils qu'une question de séquence. Ce qui suit est la checklist que je suis, dans l'ordre où elle compte vraiment.</p>
+
+      <h2>Avant de migrer quoi que ce soit : cartographier l'existant</h2>
+      <p>La première erreur, c'est de migrer d'abord et de vérifier ensuite. Avant de toucher au moindre fichier, il faut avoir une <strong>liste complète des URL indexées</strong> : un export Search Console, complété par un crawl (Screaming Frog fait l'affaire) pour attraper les pages que Search Console n'a pas encore remontées. Cette liste sert de référence tout au long du chantier, pour vérifier qu'aucune URL ne se perd en route.</p>
+      <p>C'est aussi le moment de relever les <strong>signaux existants</strong> qu'il faudra reproduire à l'identique sur la nouvelle plateforme : balises title et meta description, structure des Hn, données structurées, sitemap.xml, fichier robots.txt. Un changement d'hébergeur ne devrait rien changer à ces éléments, mais c'est justement le genre de détail qui se perd dans la précipitation d'un déploiement.</p>
+
+      <h2>Le cœur du sujet : les redirections 301</h2>
+      <p>Si une seule chose doit être parfaite dans une migration, c'est la correspondance entre chaque ancienne URL et sa nouvelle destination. Une <strong>redirection 301</strong> pour chaque page, vers l'équivalent le plus proche sur le nouveau site, jamais en bloc vers la page d'accueil. Une redirection générique vers l'accueil revient à dire à Google que rien ne correspond, ce qui dilue l'autorité au lieu de la transférer.</p>
+      <p>Sur ma propre migration, la difficulté n'était pas de rediriger (Cloudflare et Netlify gèrent tous deux ce cas sans problème), mais de le faire au bon endroit techniquement : un fichier <code>netlify.toml</code> mal placé peut entrer en conflit avec la gestion propre des redirections côté Cloudflare. Le détail qui bloque tout n'est presque jamais la stratégie de redirection elle-même, mais l'endroit où on la déclare.</p>
+
+      <div class="pull-quote">
+        <p>Une migration réussie, techniquement, c'est un site qui marche. Une migration réussie, en SEO, c'est un site qui marche et qui n'a rien oublié en chemin.</p>
+      </div>
+
+      <h2>Le jour J : la fenêtre la plus fragile</h2>
+      <p>Entre le moment où le nouveau site est en ligne et celui où Google a fini de le recrawler, il y a une fenêtre pendant laquelle les deux versions du site peuvent coexister aux yeux des moteurs. Quelques réflexes réduisent le risque :</p>
+      <ul>
+        <li><strong>Vérifier le robots.txt</strong> du nouvel environnement en priorité absolue. Un <code>Disallow: /</code> oublié depuis un environnement de test bloque l'indexation complète du nouveau site, souvent plusieurs jours avant qu'on ne s'en aperçoive.</li>
+        <li><strong>Soumettre le nouveau sitemap.xml</strong> immédiatement dans Search Console, en vérifiant que la propriété correspond bien au nouveau domaine ou à la nouvelle configuration si l'hébergement change sans changement de domaine.</li>
+        <li><strong>Contrôler l'indexation via <code>site:</code></strong> les jours suivants, pour repérer un écart anormal entre le nombre de pages connues et le nombre de pages réellement indexées.</li>
+      </ul>
+      <p>C'est exactement ce que j'ai suivi après ma propre bascule : nouvelle propriété vérifiée dans Search Console, sitemap mis à jour et soumis dès la mise en ligne effective, plutôt qu'après coup.</p>
+
+      <h2>Après la migration : surveiller, pas seulement espérer</h2>
+      <p>Les positions ne se stabilisent jamais instantanément après une migration. Une baisse temporaire de quelques jours à quelques semaines est normale, le temps que Google recrawle et réattribue les signaux aux nouvelles URL. Ce qui doit alerter, ce n'est pas une baisse passagère, c'est une <strong>baisse qui ne remonte pas</strong> passé ce délai, ou une requête qui disparaît complètement du classement alors qu'elle y figurait avant. Dans ce cas, le réflexe est le même que pour diagnostiquer une <strong>cannibalisation SEO</strong> : filtrer la requête dans Search Console et vérifier quelle URL Google associe désormais à cette page, pour confirmer que la redirection a bien été comprise et suivie.</p>
+
+      <hr class="rule">
+
+      <h3>Ce qu'il faut retenir</h3>
+      <p>Une migration de site n'est risquée que si elle est traitée comme un sujet purement technique. Cartographier l'existant avant de migrer, rediriger chaque URL individuellement plutôt qu'en bloc, vérifier le robots.txt et le sitemap dès la mise en ligne, puis surveiller les semaines qui suivent : ce sont quatre étapes simples, mais c'est leur ordre qui protège les positions acquises. Le reste (choix de l'hébergeur, configuration DNS, performance du nouveau serveur) est important, mais ne coûte jamais de trafic si les fondamentaux SEO de la bascule ont été respectés.</p>
+
+    </article>
+  </div>
+
+  <div class="wrap article-footer">
+    <a href="/blog/">← Tous les articles</a>
+    <a href="/index.html#contact">Discuter d'une migration ou d'une refonte →</a>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="footer-inner">
+    <p>© 2026 Herinirina Beranto Rafalinjanahary</p>
+    <a href="/index.html#contact">Me contacter</a>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var btn = document.getElementById('navToggle');
+    var list = document.getElementById('navList');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var open = list.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>
