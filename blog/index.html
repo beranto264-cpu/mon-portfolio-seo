@@ -50,18 +50,16 @@
   .nav .brand{
     font-family:var(--mono);font-size:0.85rem;font-weight:500;
     color:var(--ink);text-decoration:none;
-  }
-  .nav .brand .dot{color:var(--accent);}
-  .nav .brand{
     display:flex;
     align-items:center;
     gap:10px;
   }
+  .nav .brand .dot{color:var(--accent);}
   .nav .brand img{
-    width:36px;height:36px;
-    border-radius:50%;
-    object-fit:cover;
-    border:1px solid var(--line);
+    width:auto;
+    height:32px;
+    display:block;
+    object-fit:contain;
   }
   .nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;}
   .nav a.navlink{
@@ -133,7 +131,10 @@
 <body>
 <header class="site">
   <div class="wrap nav">
-    <img src="./images/Beranto-Logo-Vector.svg" alt="Herinirina Beranto - Logo SEO" class="brand-logo">
+    <a class="brand" href="/index.html">
+      <img src="/images/Beranto-Logo-Vector.svg" alt="Logo Herinirina Beranto">
+      <span>beranto<span class="dot">.</span>seo</span>
+    </a>
     <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
     <ul id="navList">
       <li><a class="navlink" href="/index.html#profil">Profil</a></li>
