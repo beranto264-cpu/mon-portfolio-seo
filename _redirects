@@ -1,1 +1,13 @@
-/* https://beranto-seo.com/:splat 301
+export default {
+  async fetch(request) {
+    const url = new URL(request.url);
+    
+    // Si c'est l'ancien domaine workers.dev, on redirige en 301
+    if (url.hostname.includes("workers.dev")) {
+      return Response.redirect("https://beranto-seo.com" + url.pathname + url.search, 301);
+    }
+    
+    // Si c'est beranto-seo.com, on laisse Cloudflare servir le site normalement
+    return fetch(request);
+  }
+}
