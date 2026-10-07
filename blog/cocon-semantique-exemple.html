@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cocon sémantique exemple : un modèle concret pas à pas | Beranto</title>
+<meta name="description" content="Exemple concret de cocon sémantique sur la randonnée en montagne : page pilier, 6 articles clusters et maillage interne expliqués pas à pas.">
+<link rel="canonical" href="https://beranto-seo.com/blog/cocon-semantique-exemple">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cocon sémantique exemple : un modèle concret pas à pas | Beranto">
+<meta property="og:description" content="Exemple concret de cocon sémantique sur la randonnée en montagne : page pilier, 6 articles clusters et maillage interne expliqués pas à pas.">
+<meta property="og:url" content="https://beranto-seo.com/blog/cocon-semantique-exemple">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://beranto-seo.com/images/cocon-semantique-exemple.webp">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cocon sémantique exemple : un modèle concret pas à pas | Beranto">
+<meta name="twitter:description" content="Exemple concret de cocon sémantique sur la randonnée en montagne : page pilier, 6 articles clusters et maillage interne expliqués pas à pas.">
+<meta name="twitter:image" content="https://beranto-seo.com/images/cocon-semantique-exemple.webp">
+
+<!-- Données structurées : Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Cocon sémantique exemple : un modèle concret pas à pas",
+  "description": "Exemple concret de cocon sémantique sur la randonnée en montagne : page pilier, 6 articles clusters et maillage interne expliqués pas à pas.",
+  "image": "https://beranto-seo.com/images/cocon-semantique-exemple.webp",
+  "datePublished": "2026-10-07",
+  "dateModified": "2026-10-07",
+  "inLanguage": "fr-FR",
+  "mainEntityOfPage": "https://beranto-seo.com/blog/cocon-semantique-exemple",
+  "author": {
+    "@type": "Person",
+    "name": "Herinirina Beranto Rafalinjanahary",
+    "url": "https://beranto-seo.com/apropos",
+    "jobTitle": "Rédactrice web SEO et stratégiste SEO freelance"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Herinirina Beranto Rafalinjanahary",
+    "url": "https://beranto-seo.com/"
+  }
+}
+</script>
+
+<!-- Données structurées : FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Combien d'articles clusters faut-il dans un cocon sémantique ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il n'existe pas de nombre idéal. Le bon nombre d'articles clusters correspond au nombre d'intentions de recherche distinctes que le sujet de la page pilier fait émerger. Dans l'exemple de la randonnée en montagne, six intentions ressortent. Un autre sujet peut en demander trois ou douze."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Les articles clusters doivent-ils tous être reliés entre eux ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. Chaque cluster doit être relié à la page pilier, dans les deux sens. Les liens entre clusters ne sont utiles que lorsqu'une question du lecteur y conduit naturellement, par exemple de l'équipement vers la sécurité. Relier tout à tout dilue la hiérarchie du cocon."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelle différence entre un cocon sémantique et un simple maillage interne ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le maillage interne désigne l'ensemble des liens entre les pages d'un site. Le cocon sémantique est une organisation précise de ces liens autour d'un sujet, avec une page pilier et des clusters classés par intention de recherche. Tout cocon repose sur du maillage, mais tout maillage n'est pas un cocon."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Un cocon sémantique aide-t-il à être cité par les moteurs IA ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aucune structure ne garantit une citation. En revanche, un cocon bien construit rend le site plus lisible pour les moteurs de recherche et les IA génératives : sujets clairement délimités, réponses directes, cohérence thématique entre les pages. Ce sont des conditions favorables, pas une promesse."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Peut-on appliquer un cocon sémantique à un site existant ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. On commence par un audit des pages existantes, on les regroupe par intention de recherche, puis on identifie les pages pilier, les clusters manquants et les pages qui se concurrencent. La restructuration passe souvent plus par la réorganisation des liens et des contenus que par la création de nouvelles pages."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#F5F6F3;
+    --bg-card:#FFFFFF;
+    --ink:#14212B;
+    --ink-soft:#51636D;
+    --ink-faint:#8A9BA4;
+    --accent:#1F7A5C;
+    --accent-soft:#E4F1EA;
+    --link:#1A56DB;
+    --line:#DDE2DE;
+    --radius:14px;
+    --display:'Space Grotesk', system-ui, sans-serif;
+    --body:'Inter', system-ui, sans-serif;
+    --mono:'JetBrains Mono', 'Courier New', monospace;
+    --maxw:760px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;overflow-x:hidden;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img,svg{display:block;max-width:100%;}
+  a{color:var(--link);}
+  h1,h2,h3{font-family:var(--display);letter-spacing:-0.01em;color:var(--ink);margin:0;}
+  p{margin:0;}
+
+  :focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  .wrap{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  /* ---------- Header ---------- */
+  header.site{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(245,246,243,0.86);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    max-width:1080px;
+    margin:0 auto;
+    padding:16px 28px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .nav .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:var(--mono);
+    font-size:0.85rem;
+    font-weight:500;
+    color:var(--ink);
+    text-decoration:none;
+  }
+  .nav .brand .dot{color:var(--accent);}
+  .nav .brand img{
+    width:36px;height:36px;
+    border-radius:50%;
+    object-fit:cover;
+    border:1px solid var(--line);
+  }
+  .nav ul{
+    list-style:none;
+    display:flex;
+    gap:26px;
+    margin:0;
+    padding:0;
+  }
+  .nav a.navlink{
+    text-decoration:none;
+    font-size:0.88rem;
+    color:var(--ink-soft);
+    font-weight:500;
+    transition:color .15s ease;
+  }
+  .nav a.navlink:hover{color:var(--accent);}
+  .nav-toggle{display:none;}
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:13px 22px;
+    border-radius:9px;
+    font-weight:600;
+    font-size:0.92rem;
+    text-decoration:none;
+    transition:transform .15s ease, box-shadow .15s ease;
+    border:1px solid transparent;
+  }
+  .btn-ghost{
+    background:transparent;
+    color:var(--ink);
+    border-color:var(--line);
+    font-family:var(--mono);
+  }
+  .btn-ghost:hover{border-color:var(--ink);}
+
+  /* ---------- Article header ---------- */
+  .article-header{padding:56px 0 32px;}
+  .breadcrumb{
+    font-family:var(--mono);
+    font-size:0.78rem;
+    color:var(--ink-faint);
+    margin-bottom:20px;
+    text-decoration:none;
+    display:inline-block;
+  }
+  .breadcrumb:hover{color:var(--accent);}
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:0.78rem;
+    color:var(--accent);
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    display:block;
+    margin-bottom:14px;
+  }
+  .article-header h1{
+    font-size:clamp(1.9rem, 3.4vw, 2.5rem);
+    line-height:1.18;
+    font-weight:700;
+    margin-bottom:16px;
+  }
+  .meta{
+    font-family:var(--mono);
+    font-size:0.8rem;
+    color:var(--ink-faint);
+  }
+  .author{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-top:18px;
+    font-size:0.92rem;
+    color:var(--ink-soft);
+    flex-wrap:wrap;
+  }
+  .author a{
+    color:var(--accent);
+    font-weight:600;
+    text-decoration:none;
+  }
+  .author a:hover{text-decoration:underline;}
+
+  /* ---------- Hero image ---------- */
+  .hero-figure{margin:0 0 40px;}
+  .hero-figure img{
+    width:100%;
+    height:auto;
+    border-radius:var(--radius);
+    border:1px solid var(--line);
+    display:block;
+  }
+  .hero-figure figcaption{
+    margin-top:10px;
+    font-size:0.85rem;
+    color:var(--ink-faint);
+  }
+
+  /* ---------- Content ---------- */
+  article.content{
+    padding-bottom:64px;
+    font-size:1.05rem;
+    color:var(--ink);
+  }
+  article.content p{
+    margin:0 0 22px;
+    color:var(--ink-soft);
+  }
+  article.content h2{
+    font-size:1.4rem;
+    font-weight:700;
+    margin:44px 0 16px;
+    color:var(--ink);
+  }
+  article.content h3{
+    font-size:1.15rem;
+    font-weight:600;
+    margin:32px 0 12px;
+    color:var(--ink);
+  }
+  article.content ul,
+  article.content ol{
+    margin:0 0 22px;
+    padding-left:22px;
+    color:var(--ink-soft);
+  }
+  article.content li{margin-bottom:8px;}
+  article.content strong{color:var(--ink);}
+  article.content em{font-style:italic;}
+
+  .summary-box{
+    background:var(--accent-soft);
+    border:1px solid #CFE6DA;
+    border-radius:var(--radius);
+    padding:22px 26px;
+    margin:0 0 36px;
+  }
+  .summary-box h2{
+    font-size:1.05rem;
+    margin:0 0 10px;
+  }
+  .summary-box ul{margin:0;padding-left:20px;}
+  .summary-box li{margin-bottom:6px;color:var(--ink);}
+
+  .table-scroll{
+    overflow-x:auto;
+    margin:0 0 26px;
+    border:1px solid var(--line);
+    border-radius:10px;
+    background:var(--bg-card);
+  }
+  .table-scroll table{
+    border-collapse:collapse;
+    width:100%;
+    min-width:560px;
+    font-size:0.92rem;
+  }
+  .table-scroll th,
+  .table-scroll td{
+    text-align:left;
+    padding:12px 14px;
+    border-bottom:1px solid var(--line);
+    vertical-align:top;
+    color:var(--ink-soft);
+  }
+  .table-scroll th{
+    font-family:var(--display);
+    color:var(--ink);
+    background:var(--accent-soft);
+    font-weight:600;
+  }
+  .table-scroll tr:last-child td{border-bottom:none;}
+
+  .pull-quote{
+    background:var(--ink);
+    border-radius:var(--radius);
+    padding:32px 34px;
+    margin:36px 0;
+    position:relative;
+    overflow:hidden;
+  }
+  .pull-quote p{
+    font-family:var(--display);
+    font-size:1.15rem;
+    font-weight:600;
+    color:#fff;
+    line-height:1.45;
+    margin:0;
+  }
+
+  .faq details{
+    background:var(--bg-card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:16px 20px;
+    margin-bottom:12px;
+  }
+  .faq summary{
+    cursor:pointer;
+    font-family:var(--display);
+    font-weight:600;
+    color:var(--ink);
+    font-size:1.02rem;
+  }
+  .faq details p{margin:12px 0 0;}
+
+  hr.rule{
+    border:none;
+    border-top:1px solid var(--line);
+    margin:44px 0;
+  }
+
+  /* ---------- Article footer ---------- */
+  .article-footer{
+    padding:32px 0 64px;
+    border-top:1px solid var(--line);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:16px;
+  }
+  .article-footer a{
+    font-family:var(--mono);
+    font-size:0.85rem;
+    text-decoration:none;
+    color:var(--accent);
+  }
+
+  /* ---------- Site footer ---------- */
+  footer.site{
+    background:var(--ink);
+    color:#EDEFEC;
+    padding:64px 0 32px;
+  }
+  .footer-head{
+    max-width:1080px;
+    margin:0 auto;
+    padding:0 28px 44px;
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:50px;
+    border-bottom:1px solid rgba(255,255,255,0.12);
+  }
+  footer.site h2{
+    color:#fff;
+    font-size:clamp(1.6rem, 2.4vw, 2rem);
+    margin-bottom:14px;
+  }
+  footer.site .lede{
+    color:#AEBAB8;
+    font-size:1rem;
+    max-width:44ch;
+  }
+  .contact-card{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  .contact-row{
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+    padding-bottom:14px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+  }
+  .contact-row:last-child{border-bottom:none;padding-bottom:0;}
+  .contact-row .k{
+    font-family:var(--mono);
+    font-size:0.72rem;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:#7F9188;
+  }
+  .contact-row a, .contact-row .v{
+    font-family:var(--mono);
+    font-size:0.98rem;
+    color:#fff;
+    text-decoration:none;
+  }
+  .contact-row a:hover{color:#8FD6B8;}
+  .copy-btn{
+    background:none;
+    border:none;
+    color:#7F9188;
+    font-family:var(--mono);
+    font-size:0.72rem;
+    cursor:pointer;
+    padding:0;
+    margin-left:10px;
+    text-decoration:underline;
+  }
+  .copy-btn:hover{color:#8FD6B8;}
+  .footer-bottom{
+    max-width:1080px;
+    margin:0 auto;
+    padding:26px 28px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .footer-bottom p{
+    font-size:0.8rem;
+    color:#7F9188;
+  }
+  .footer-bottom .badges{
+    display:flex;
+    gap:8px;
+  }
+  .chip{
+    font-family:var(--mono);
+    font-size:0.72rem;
+    color:var(--ink);
+    background:var(--accent-soft);
+    border:1px solid #CFE6DA;
+    padding:5px 11px;
+    border-radius:100px;
+  }
+  .footer-bottom .chip{
+    background:rgba(255,255,255,0.06);
+    border-color:rgba(255,255,255,0.14);
+    color:#AEBAB8;
+  }
+  .social-row{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-top:8px;
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:860px){
+    .footer-head{grid-template-columns:1fr;}
+    .nav ul{
+      position:fixed;
+      top:60px;left:0;right:0;
+      background:var(--bg);
+      flex-direction:column;
+      gap:0;
+      border-bottom:1px solid var(--line);
+      max-height:0;
+      overflow-y:auto;
+      transition:max-height .25s ease;
+    }
+    .nav ul.open{
+      max-height: min(70vh, 500px);
+    }
+    .nav ul li{width:100%;}
+    .nav a.navlink{
+      display:block;
+      padding:14px 28px;
+      border-top:1px solid var(--line);
+    }
+    .nav-toggle{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:36px;height:36px;
+      background:none;
+      border:1px solid var(--line);
+      border-radius:8px;
+      cursor:pointer;
+    }
+  }
+  @media (max-width:700px){
+    .wrap{padding:0 20px;}
+    .article-header{padding:48px 0 28px;}
+    .summary-box{padding:18px 20px;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="/">
+      <img src="/images/Beranto-Logo-Vector.svg" alt="Herinirina Beranto - Logo SEO" class="brand-logo">
+      <span class="brand-text">Beranto <span class="dot">.</span> seo</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul id="navList">
+      <li><a class="navlink" href="/#profil">Profil</a></li>
+      <li><a class="navlink" href="/#methode">Méthode</a></li>
+      <li><a class="navlink" href="/#competences">Compétences</a></li>
+      <li><a class="navlink" href="/#experience">Expérience</a></li>
+      <li><a class="navlink" href="/cas-clients">Cas clients</a></li>
+      <li><a class="navlink" href="/apropos">À propos</a></li>
+      <li><a class="navlink" href="/blog/" aria-current="page" style="color:var(--accent);">Blog</a></li>
+      <li><a class="navlink" href="/#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="wrap article-header">
+    <a class="breadcrumb" href="/blog/">← Retour au blog</a>
+    <span class="eyebrow">SEO technique</span>
+    <h1>Cocon sémantique exemple : un modèle concret pas à pas</h1>
+    <span class="meta">7 octobre 2026 · 8 min de lecture</span>
+    <div class="author">Article écrit par <a href="/apropos">Beranto</a>, rédactrice web et stratégiste SEO freelance</div>
+  </div>
+
+  <div class="wrap">
+    <article class="content">
+
+      <p>Un <strong>exemple de cocon sémantique</strong> se compose d'une page pilier qui traite un sujet central, de plusieurs articles clusters qui approfondissent chacun une intention de recherche précise, et de liens internes qui relient ces pages entre elles. Dans cet exemple, la page pilier « Randonnée en montagne » s'appuie sur six articles clusters : destination, équipement, itinéraire, hébergement, santé et sécurité, faune et flore.</p>
+
+      <p>Si vous cherchez d'abord la théorie, je l'ai détaillée dans mon article sur le <a href="/blog/cocon-semantique-maillage-interne"><strong>cocon sémantique et la hiérarchie des intentions</strong></a>. Ici, on passe à la pratique : un cas complet, lisible, que vous pouvez reproduire sur votre propre site.</p>
+
+      <div class="summary-box">
+        <h2>L'essentiel en 30 secondes</h2>
+        <ul>
+          <li>Le cocon de l'exemple tourne autour d'un sujet : la <strong>randonnée en montagne</strong>.</li>
+          <li>Une <strong>page pilier</strong> répond à la question large : comment bien préparer sa randonnée ?</li>
+          <li>Six <strong>articles clusters</strong> répondent chacun à une sous-question précise.</li>
+          <li>Les <strong>liens internes</strong> suivent le raisonnement du lecteur, pas un schéma décoratif.</li>
+          <li>Chaque page garde une seule intention pour éviter la <strong>cannibalisation</strong>.</li>
+        </ul>
+      </div>
+
+      <figure class="hero-figure">
+        <img src="/images/cocon-semantique-exemple.webp" alt="Schéma d'un exemple de cocon sémantique : la page pilier Randonnée en montagne au centre, reliée à six articles clusters (choisir sa destination, équipement nécessaire, préparer son itinéraire, où dormir en montagne, conseils santé et sécurité, faune et flore)" width="1536" height="1024" loading="eager">
+        <figcaption>Exemple de cocon sémantique : une page pilier centrale et six articles clusters reliés par des liens internes.</figcaption>
+      </figure>
+
+      <h2>Quel sujet choisir pour un exemple de cocon sémantique ?</h2>
+      <p>J'ai retenu la <strong>randonnée en montagne</strong> parce que ce sujet illustre bien ce qu'un cocon doit faire : organiser des questions que le lecteur se pose réellement, dans un ordre logique. Personne ne réserve un refuge avant d'avoir choisi sa destination, et personne ne choisit son sac à dos sans savoir combien de jours dure la sortie.</p>
+      <p>Précision de transparence : cet exemple est pédagogique. Il ne s'agit pas du site d'un client, mais d'un modèle construit selon la même méthode que celle que j'applique en audit. Vous pouvez le transposer à n'importe quel domaine : un service B2B, une boutique en ligne, un blog spécialisé.</p>
+
+      <h2>La page pilier : le guide complet qui répond à l'intention large</h2>
+      <p>Au centre du cocon, la page pilier « <strong>Randonnée en montagne</strong> » propose le guide complet pour bien préparer sa sortie. Elle répond à l'intention la plus large et la plus fréquente, et elle ne cherche pas à tout détailler. Son rôle est de donner une vue d'ensemble, puis d'orienter le lecteur vers l'article cluster qui répond à sa question suivante.</p>
+      <p>Une bonne page pilier contient généralement :</p>
+      <ul>
+        <li>une <strong>définition claire du sujet</strong> dès les premières lignes ;</li>
+        <li>un <strong>sommaire</strong> qui reprend les grandes étapes de la préparation ;</li>
+        <li>un <strong>court résumé de chaque thème</strong>, suivi d'un lien vers l'article cluster correspondant ;</li>
+        <li>des <strong>liens de retour</strong> vers elle depuis chaque cluster.</li>
+      </ul>
+
+      <h2>Les six articles clusters de l'exemple, un par un</h2>
+      <p>Chaque cluster approfondit un aspect du sujet principal et cible une intention de recherche distincte. Les requêtes ci-dessous sont des exemples de formulations, à valider avec un outil comme Semrush avant toute rédaction.</p>
+
+      <h3>1. Choisir sa destination</h3>
+      <p>Intention : <strong>choisir</strong>. Le lecteur hésite entre plusieurs massifs et cherche des repères. L'article traite les plus belles montagnes, le niveau de difficulté et la meilleure période pour partir. Requêtes possibles : « quand partir en randonnée en montagne », « randonnée montagne niveau débutant ».</p>
+
+      <h3>2. Équipement nécessaire</h3>
+      <p>Intention : <strong>s'équiper</strong>. L'article couvre le sac à dos, les vêtements adaptés et le matériel indispensable. C'est souvent un cluster à fort potentiel, car l'intention est concrète et proche de l'action. Requêtes possibles : « équipement randonnée montagne », « que mettre dans son sac de randonnée ».</p>
+
+      <h3>3. Préparer son itinéraire</h3>
+      <p>Intention : <strong>planifier</strong>. Cartes et applications, points d'intérêt, temps de marche : le lecteur veut un parcours réaliste. Requêtes possibles : « calculer son temps de marche en montagne », « application de randonnée ».</p>
+
+      <h3>4. Où dormir en montagne</h3>
+      <p>Intention : <strong>se loger</strong>. Refuges, bivouac, campings : trois options, trois réglementations, trois niveaux de confort. Requêtes possibles : « dormir en refuge de montagne », « bivouac en montagne règles ».</p>
+
+      <h3>5. Conseils santé et sécurité</h3>
+      <p>Intention : <strong>se protéger</strong>. Prévenir les risques, gérer la fatigue, savoir quoi faire en cas d'urgence. C'est un cluster où la fiabilité de l'information compte plus qu'ailleurs, ce qui nous ramène à l'EEAT (voir plus bas).</p>
+
+      <h3>6. Faune et flore</h3>
+      <p>Intention : <strong>comprendre et respecter</strong>. Les espèces à découvrir, la réglementation et le respect de l'environnement. Ce cluster élargit la couverture thématique du cocon et touche un lecteur plus curieux que pressé.</p>
+
+      <h2>Comment fonctionne le maillage interne de cet exemple ?</h2>
+      <p>Le schéma montre des flèches entre la page pilier et chaque cluster. Dans la pratique, le <strong>maillage interne</strong> se construit avec quelques règles simples :</p>
+
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Type de lien</th>
+              <th>Exemple dans le cocon</th>
+              <th>Pourquoi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pilier vers cluster</td>
+              <td>De « Randonnée en montagne » vers « Où dormir en montagne »</td>
+              <td>Oriente le lecteur vers la réponse détaillée et transmet de l'autorité à la page cible</td>
+            </tr>
+            <tr>
+              <td>Cluster vers pilier</td>
+              <td>De « Faune et flore » vers « Randonnée en montagne »</td>
+              <td>Renforce la page pilier et rappelle le contexte global</td>
+            </tr>
+            <tr>
+              <td>Cluster vers cluster (sélectif)</td>
+              <td>De « Équipement nécessaire » vers « Conseils santé et sécurité »</td>
+              <td>Répond à une question qui surgit naturellement dans la lecture</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Deux principes à retenir. D'abord, chaque lien doit apparaître <strong>au moment où le lecteur se pose la question</strong>, avec une ancre descriptive (« dormir en refuge ») plutôt qu'une ancre générique (« cliquez ici »). Ensuite, les liens entre clusters restent <strong>sélectifs</strong> : relier toutes les pages entre elles dilue la hiérarchie et brouille le signal thématique.</p>
+
+      <div class="pull-quote">
+        <p>Un lien interne utile répond à une question que le lecteur est en train de se poser. Tout le reste est du bruit.</p>
+      </div>
+
+      <h2>Comment construire un cocon sémantique sur votre site en 6 étapes</h2>
+      <ol>
+        <li><strong>Choisir un sujet central</strong> qui correspond à votre activité et à une vraie demande de votre audience.</li>
+        <li><strong>Relever les requêtes associées</strong> avec un outil de recherche de mots-clés (Semrush, Search Console).</li>
+        <li><strong>Regrouper les requêtes par intention</strong> : chaque groupe devient un cluster potentiel.</li>
+        <li><strong>Vérifier les risques de cannibalisation</strong> : si deux groupes répondent à la même question, fusionnez-les ou tranchez. J'explique la méthode dans mon article sur la <a href="/blog/cannibalisation-seo-pages-qui-se-concurrencent"><strong>cannibalisation SEO</strong></a>.</li>
+        <li><strong>Rédiger d'abord la page pilier, puis les clusters</strong>, en gardant une seule intention par page.</li>
+        <li><strong>Poser les liens internes en dernier</strong>, puis contrôler le résultat avec un crawl (Screaming Frog) pour détecter pages orphelines et profondeur de clic excessive.</li>
+      </ol>
+
+      <h2>Quelles erreurs éviter quand on s'inspire d'un exemple de cocon ?</h2>
+      <ul>
+        <li><strong>Copier le schéma sans la logique.</strong> Un joli diagramme ne remplace pas une hiérarchie d'intentions.</li>
+        <li><strong>Créer des clusters trop proches.</strong> Deux articles qui visent la même requête se concurrencent au lieu de se renforcer.</li>
+        <li><strong>Oublier le lien retour vers la page pilier.</strong> Sans lui, le cocon devient une arborescence à sens unique.</li>
+        <li><strong>Publier sans contrôle technique.</strong> Pages orphelines, liens cassés ou liens sortants hors thématique cassent la cohérence.</li>
+      </ul>
+
+      <h2>Pourquoi un cocon sémantique renforce l'EEAT et le référencement par les IA</h2>
+      <p>Un cocon bien construit sert aussi les critères <strong>EEAT</strong> (Experience, Expertise, Authoritativeness, Trust). En traitant un sujet sous tous ses angles, le site démontre une expertise visible, page après page. Pour le cluster santé et sécurité de notre exemple, cela suppose en plus d'indiquer l'auteur, de citer des sources reconnues et de dater les mises à jour. J'ai détaillé cette logique dans mon article sur ce que <a href="/blog/eeat-conventions-editoriales"><strong>Google vérifie vraiment avec l'EEAT</strong></a>.</p>
+      <p>Côté <strong>moteurs IA</strong>, la structure aide à rendre le contenu lisible : un sujet clairement délimité par page, une réponse directe en tête de section, des titres formulés comme de vraies questions. Aucune structure ne garantit d'être cité, mais ces conditions facilitent l'extraction. Le sujet est approfondi dans mon article sur l'<a href="/blog/optimisation-moteurs-ia-geo-aeo"><strong>optimisation pour les moteurs IA (GEO et AEO)</strong></a>.</p>
+
+      <h2>Mon retour d'expérience : ce que l'audit change à l'exemple</h2>
+      <p>Dans mes audits, le problème d'un cocon qui ne performe pas vient rarement du schéma. Sur le site d'une agence de recrutement tech, une page pilier générique cannibalisait trois pages satellites plus précises. La correction a consisté à réorganiser les liens et à clarifier l'intention de chaque page, pas à produire du contenu supplémentaire. Le cas est détaillé dans l'article sur le <a href="/blog/cocon-semantique-maillage-interne"><strong>cocon sémantique</strong></a>.</p>
+      <p>C'est pour cette raison que je traite toujours la rédaction et l'audit technique ensemble : l'un sans l'autre produit un cocon qui ressemble à un cocon, sans en avoir les effets.</p>
+
+      <hr class="rule">
+
+      <h2>Questions fréquentes sur le cocon sémantique</h2>
+      <div class="faq">
+        <details>
+          <summary>Combien d'articles clusters faut-il dans un cocon sémantique ?</summary>
+          <p>Il n'existe pas de nombre idéal. Le bon nombre d'articles clusters correspond au nombre d'intentions de recherche distinctes que le sujet de la page pilier fait émerger. Dans l'exemple de la randonnée en montagne, six intentions ressortent. Un autre sujet peut en demander trois ou douze.</p>
+        </details>
+        <details>
+          <summary>Les articles clusters doivent-ils tous être reliés entre eux ?</summary>
+          <p>Non. Chaque cluster doit être relié à la page pilier, dans les deux sens. Les liens entre clusters ne sont utiles que lorsqu'une question du lecteur y conduit naturellement, par exemple de l'équipement vers la sécurité. Relier tout à tout dilue la hiérarchie du cocon.</p>
+        </details>
+        <details>
+          <summary>Quelle différence entre un cocon sémantique et un simple maillage interne ?</summary>
+          <p>Le maillage interne désigne l'ensemble des liens entre les pages d'un site. Le cocon sémantique est une organisation précise de ces liens autour d'un sujet, avec une page pilier et des clusters classés par intention de recherche. Tout cocon repose sur du maillage, mais tout maillage n'est pas un cocon.</p>
+        </details>
+        <details>
+          <summary>Un cocon sémantique aide-t-il à être cité par les moteurs IA ?</summary>
+          <p>Aucune structure ne garantit une citation. En revanche, un cocon bien construit rend le site plus lisible pour les moteurs de recherche et les IA génératives : sujets clairement délimités, réponses directes, cohérence thématique entre les pages. Ce sont des conditions favorables, pas une promesse.</p>
+        </details>
+        <details>
+          <summary>Peut-on appliquer un cocon sémantique à un site existant ?</summary>
+          <p>Oui. On commence par un audit des pages existantes, on les regroupe par intention de recherche, puis on identifie les pages pilier, les clusters manquants et les pages qui se concurrencent. La restructuration passe souvent plus par la réorganisation des liens et des contenus que par la création de nouvelles pages.</p>
+        </details>
+      </div>
+
+      <h3>Ce qu'il faut retenir</h3>
+      <p>Un bon exemple de cocon sémantique ne se juge pas à son schéma, mais à la logique qui le sous-tend : une page pilier claire, des clusters qui répondent chacun à une intention distincte, et des liens internes posés là où le lecteur en a besoin. Si vous voulez appliquer cette méthode à votre site, commencez par la hiérarchie des intentions, puis seulement par le plan de liens.</p>
+    </article>
+  </div>
+
+  <div class="wrap article-footer">
+    <a href="/blog/">← Tous les articles</a>
+    <a href="/#contact">Discuter d'un audit ou d'une refonte →</a>
+  </div>
+</main>
+
+<footer class="site" id="contact">
+  <div class="footer-head">
+    <div>
+      <h2>Travaillons ensemble.</h2>
+      <p class="lede">Un projet de contenu SEO, un audit technique ou une refonte éditoriale ? Écrivez-moi, je réponds sous 24h.</p>
+      <div class="social-row">
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/herinirina-beranto-4b4932333" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,0.2);color:#fff;">LinkedIn</a>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-row">
+        <span class="k">Email</span>
+        <span>
+          <a href="mailto:herinirinaberanto@gmail.com" id="emailLink">herinirinaberanto@gmail.com</a>
+          <button class="copy-btn" id="copyEmail" type="button">copier</button>
+        </span>
+      </div>
+      <div class="contact-row">
+        <span class="k">Téléphone</span>
+        <a href="tel:+261342375859">+261 34 23 758 59</a>
+      </div>
+      <div class="contact-row">
+        <span class="k">Adresse</span>
+        <span class="v">Andoharanofotsy, Antananarivo 102, Madagascar</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Herinirina Beranto Rafalinjanahary</p>
+    <div class="badges">
+      <span class="chip">Disponible en freelance</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  (function(){
+    var btn = document.getElementById('navToggle');
+    var list = document.getElementById('navList');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var open = list.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    list.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        list.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+
+  // Copy email button
+  (function(){
+    var copyBtn = document.getElementById('copyEmail');
+    if(!copyBtn) return;
+    copyBtn.addEventListener('click', function(){
+      navigator.clipboard.writeText('herinirinaberanto@gmail.com').then(function(){
+        var original = copyBtn.textContent;
+        copyBtn.textContent = 'copié !';
+        setTimeout(function(){ copyBtn.textContent = original; }, 1800);
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
