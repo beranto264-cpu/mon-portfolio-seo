@@ -3,830 +3,246 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>À propos — Herinirina Beranto Rafalinjanahary</title>
+<title>À propos | Herinirina Beranto Rafalinjanahary</title>
 <meta name="description" content="Le parcours derrière le rédacteur : d'une salle de classe à Ampangabe à la rédaction SEO pour des marchés B2B européens. Formation, langues et vision du métier.">
-  <link rel="canonical" href="https://beranto-seo.com/apropos">
+<link rel="canonical" href="https://beranto-seo.com/apropos">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="À propos | Herinirina Beranto Rafalinjanahary">
+<meta property="og:description" content="Le parcours derrière le rédacteur : d'une salle de classe à Ampangabe à la rédaction SEO pour des marchés B2B européens. Formation, langues et vision du métier.">
+<meta property="og:url" content="https://beranto-seo.com/apropos">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://beranto-seo.com/images/ma-photo.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="À propos | Herinirina Beranto Rafalinjanahary">
+<meta name="twitter:description" content="Le parcours derrière le rédacteur : d'une salle de classe à Ampangabe à la rédaction SEO pour des marchés B2B européens. Formation, langues et vision du métier.">
+<meta name="twitter:image" content="https://beranto-seo.com/images/ma-photo.webp">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfilePage",
+  "url":"https://beranto-seo.com/apropos",
+  "mainEntity":{
+    "@type":"Person",
+    "name":"Herinirina Beranto Rafalinjanahary",
+    "jobTitle":"Rédacteur web & stratège SEO",
+    "image":"https://beranto-seo.com/images/ma-photo.webp",
+    "url":"https://beranto-seo.com/",
+    "address":{"@type":"PostalAddress","addressLocality":"Antananarivo","addressCountry":"MG"},
+    "knowsLanguage":["mg","fr","en"],
+    "knowsAbout":["Rédaction SEO","SEO technique","EEAT","Stratégie éditoriale"],
+    "sameAs":["https://www.linkedin.com/in/herinirina-beranto-4b4932333"]
+  }
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 <style>
-  :root{
-    --bg:#F5F6F3;
-    --bg-card:#FFFFFF;
-    --ink:#14212B;
-    --ink-soft:#51636D;
-    --ink-faint:#8A9BA4;
-    --accent:#1F7A5C;
-    --accent-soft:#E4F1EA;
-    --link:#1A56DB;
-    --gold:#C98A2C;
-    --line:#DDE2DE;
-    --radius:14px;
-    --display:'Space Grotesk', system-ui, sans-serif;
-    --body:'Inter', system-ui, sans-serif;
-    --mono:'JetBrains Mono', 'Courier New', monospace;
-    --maxw:1080px;
-  }
+:root{
+  --bg:#F5F6F3;--bg-card:#FFFFFF;--ink:#14212B;--ink-soft:#51636D;
+  --ink-faint:#66777F; /* foncé pour passer le contraste AA */
+  --accent:#1F7A5C;--accent-soft:#E4F1EA;--link:#1A56DB;--line:#DDE2DE;--radius:14px;
+  --display:'Space Grotesk',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono','Courier New',monospace;--maxw:1080px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;scroll-padding-top:80px;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;}
+h1,h2,h3{font-family:var(--display);margin:0;letter-spacing:-0.01em;}
+p{margin:0;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+.eyebrow{font-family:var(--mono);font-size:0.78rem;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:12px;}
 
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;overflow-x:hidden;}
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
-    font-family:var(--body);
-    line-height:1.55;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  img,svg{display:block;max-width:100%;}
-  a{color:inherit;}
-  h1,h2,h3{font-family:var(--display);margin:0;letter-spacing:-0.01em;}
-  p{margin:0;}
+/* Header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(245,246,243,0.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:0.85rem;font-weight:500;color:var(--ink);text-decoration:none;}
+.brand .dot{color:var(--accent);}
+.brand img{width:36px;height:36px;}
+.nav ul{list-style:none;display:flex;align-items:center;gap:26px;margin:0;padding:0;}
+a.navlink{text-decoration:none;font-size:0.9rem;color:var(--ink-soft);font-weight:500;transition:color .15s ease;}
+a.navlink:hover{color:var(--accent);}
+.nav-toggle{display:none;}
 
-  :focus-visible{
-    outline:2px solid var(--accent);
-    outline-offset:3px;
-    border-radius:4px;
-  }
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:9px;font-weight:600;font-size:0.92rem;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease;border:1px solid transparent;cursor:pointer;font-family:var(--body);}
+.btn-primary{background:var(--ink);color:#fff;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,33,43,0.18);}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line);font-family:var(--mono);}
+.btn-ghost:hover{border-color:var(--ink);}
+.nav-cta{padding:9px 16px;font-size:0.85rem;}
 
-  .wrap{
-    max-width:var(--maxw);
-    margin:0 auto;
-    padding:0 28px;
-  }
+/* Hero */
+.hero{padding:76px 0 64px;}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr);gap:56px;align-items:center;}
+.hero-copy h1{font-size:clamp(2.1rem,3.4vw,2.9rem);line-height:1.12;font-weight:700;margin-bottom:18px;overflow-wrap:break-word;}
+.lede{font-size:1.05rem;color:var(--ink-soft);max-width:46ch;margin-bottom:30px;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.browser-chrome{background:var(--bg-card);border-radius:var(--radius);border:1px solid var(--line);box-shadow:0 24px 60px -20px rgba(20,33,43,0.22);overflow:hidden;}
+.chrome-bar{display:flex;align-items:center;gap:8px;padding:12px 16px;background:#EEF0EC;border-bottom:1px solid var(--line);}
+.chrome-dot{width:9px;height:9px;border-radius:50%;background:#D6DBD5;}
+.chrome-addr{flex:1;margin-left:8px;background:#fff;border-radius:6px;padding:6px 12px;font-family:var(--mono);font-size:0.72rem;color:var(--ink-faint);border:1px solid var(--line);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;min-width:0;}
+.search-box{padding:20px 20px 8px;}
+.search-field{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:100px;padding:11px 18px;font-size:0.94rem;background:#fff;}
+#typed-query::after{content:'';display:inline-block;width:1px;height:1em;background:var(--ink-faint);margin-left:2px;vertical-align:-2px;animation:blink 1s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.serp-result{padding:18px 22px 24px;}
+.serp-breadcrumb{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:0.74rem;color:var(--ink-soft);margin-bottom:6px;}
+.favicon{width:18px;height:18px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:0.62rem;font-weight:700;}
+.serp-title{font-weight:600;font-size:1.14rem;color:var(--link);margin-bottom:4px;}
+.serp-desc{font-size:0.92rem;color:var(--ink-soft);margin:8px 0 16px;}
+.serp-chips{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{font-family:var(--mono);font-size:0.72rem;color:var(--ink);background:var(--accent-soft);border:1px solid #CFE6DA;padding:5px 11px;border-radius:100px;}
 
-  /* ---------- Header ---------- */
-  header.site{
-    position:sticky;
-    top:0;
-    z-index:50;
-    background:rgba(245,246,243,0.86);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:16px 0;
-  }
-  .nav .brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-family:var(--mono);
-    font-size:0.85rem;
-    font-weight:500;
-    color:var(--ink);
-    text-decoration:none;
-  }
-  .nav .brand .dot{color:var(--accent);}
-  .nav .brand img{
-    width:36px;height:36px;
-    border-radius:50%;
-    object-fit:cover;
-    border:1px solid var(--line);
-  }
-  .nav ul{
-    list-style:none;
-    display:flex;
-    gap:26px;
-    margin:0;
-    padding:0;
-  }
-  .nav a.navlink{
-    text-decoration:none;
-    font-size:0.88rem;
-    color:var(--ink-soft);
-    font-weight:500;
-    transition:color .15s ease;
-  }
-  .nav a.navlink:hover{color:var(--accent);}
-  .nav-toggle{display:none;}
+/* Sections */
+section{padding:72px 0;}
+.alt{background:var(--bg-card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.section-head{max-width:640px;margin-bottom:44px;}
+.section-head h2{font-size:clamp(1.7rem,2.6vw,2.15rem);font-weight:700;margin-bottom:14px;line-height:1.18;}
+.section-head p{color:var(--ink-soft);}
+.more{display:inline-block;margin-top:26px;font-family:var(--mono);font-size:0.85rem;color:var(--link);text-decoration:none;font-weight:500;}
+.more:hover{text-decoration:underline;}
 
-  /* ---------- Hero ---------- */
-  .hero{
-    padding:76px 0 64px;
-  }
-  .hero-inner{
-    display:grid;
-    grid-template-columns:1.05fr 0.95fr;
-    gap:56px;
-    align-items:center;
-  }
-  .hero-copy .eyebrow{
-    font-family:var(--mono);
-    font-size:0.78rem;
-    color:var(--accent);
-    text-transform:uppercase;
-    letter-spacing:0.08em;
-    margin-bottom:14px;
-    display:block;
-  }
-  .hero-copy h1{
-    font-size:clamp(2.1rem, 3.4vw, 2.9rem);
-    line-height:1.12;
-    font-weight:700;
-    margin-bottom:18px;
-  }
-  .hero-copy p.lede{
-    font-size:1.05rem;
-    color:var(--ink-soft);
-    max-width:46ch;
-    margin-bottom:30px;
-  }
-  .hero-actions{
-    display:flex;
-    gap:14px;
-    flex-wrap:wrap;
-  }
-  .btn{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    padding:13px 22px;
-    border-radius:9px;
-    font-weight:600;
-    font-size:0.92rem;
-    text-decoration:none;
-    transition:transform .15s ease, box-shadow .15s ease;
-    border:1px solid transparent;
-  }
-  .btn-primary{
-    background:var(--ink);
-    color:#fff;
-  }
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,33,43,0.18);}
-  .btn-ghost{
-    background:transparent;
-    color:var(--ink);
-    border-color:var(--line);
-    font-family:var(--mono);
-  }
-  .btn-ghost:hover{border-color:var(--ink);}
+/* Profil */
+.profil-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:start;}
+.profil-text p{color:var(--ink-soft);font-size:1.03rem;margin-bottom:16px;}
+.profil-text strong{color:var(--ink);}
+.profil-side{display:flex;flex-direction:column;gap:22px;}
+.portrait{position:relative;margin:0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 44px -22px rgba(20,33,43,0.28);aspect-ratio:4/5;}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:top center;}
+.portrait figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(180deg,rgba(20,33,43,0),rgba(20,33,43,0.72));color:#fff;font-family:var(--mono);font-size:0.76rem;}
+.signals{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+.signal{background:var(--bg-card);padding:20px;}
+.signal .num{font-family:var(--display);font-size:1.7rem;font-weight:700;color:var(--accent);display:block;margin-bottom:4px;}
+.signal .label{font-size:0.82rem;color:var(--ink-soft);}
 
-  /* ---- SERP mockup: signature element ---- */
-  .serp-wrap{position:relative;}
-  .serp-badge{
-    position:absolute;
-    top:-16px;
-    right:18px;
-    background:var(--accent);
-    color:#fff;
-    font-family:var(--mono);
-    font-size:0.72rem;
-    font-weight:500;
-    padding:7px 12px;
-    border-radius:100px;
-    box-shadow:0 6px 16px rgba(31,122,92,0.28);
-    z-index:2;
-    display:flex;
-    align-items:center;
-    gap:6px;
-  }
-  .serp-badge .n{font-family:var(--display);font-weight:700;font-size:0.82rem;}
+/* Cas clients */
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.case{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:10px;text-decoration:none;transition:border-color .15s ease;}
+.case:hover{border-color:var(--accent);}
+.case .tag{font-family:var(--mono);font-size:0.75rem;color:var(--accent);}
+.case h3{font-size:1.15rem;line-height:1.3;}
+.case p{color:var(--ink-soft);font-size:0.93rem;}
+.case .go{margin-top:auto;font-family:var(--mono);font-size:0.82rem;color:var(--link);font-weight:500;}
+.cta-band{margin-top:34px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:var(--accent-soft);border:1px solid #CFE6DA;border-radius:var(--radius);padding:22px 26px;}
+.cta-band p{font-family:var(--display);font-weight:600;font-size:1.1rem;}
 
-  .browser-chrome{
-    background:var(--bg-card);
-    border-radius:var(--radius);
-    border:1px solid var(--line);
-    box-shadow:0 24px 60px -20px rgba(20,33,43,0.22);
-    overflow:hidden;
-  }
-  .chrome-bar{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    padding:12px 16px;
-    background:#EEF0EC;
-    border-bottom:1px solid var(--line);
-  }
-  .chrome-dot{width:9px;height:9px;border-radius:50%;background:#D6DBD5;}
-  .chrome-addr{
-    flex:1;
-    margin-left:8px;
-    background:#fff;
-    border-radius:6px;
-    padding:6px 12px;
-    font-family:var(--mono);
-    font-size:0.72rem;
-    color:var(--ink-faint);
-    border:1px solid var(--line);
-    overflow:hidden;
-    white-space:nowrap;
-    text-overflow:ellipsis;
-    min-width:0;
-  }
+/* Méthode */
+.method-item{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:26px 0;border-top:1px solid var(--line);}
+.method-item:last-child{border-bottom:1px solid var(--line);}
+.method-step{font-family:var(--mono);font-size:0.95rem;color:var(--ink-faint);padding-top:2px;}
+.method-item h3{font-size:1.08rem;font-weight:600;margin-bottom:6px;}
+.method-item p{color:var(--ink-soft);font-size:0.95rem;max-width:62ch;}
 
-  .search-box{
-    padding:20px 20px 8px;
-  }
-  .search-field{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    border:1px solid var(--line);
-    border-radius:100px;
-    padding:11px 18px;
-    font-family:var(--body);
-    font-size:0.94rem;
-    color:var(--ink);
-    background:#fff;
-  }
-  .search-field .glass{color:var(--ink-faint);flex-shrink:0;}
-  #typed-query::after{
-    content:'';
-    display:inline-block;
-    width:1px;
-    height:1em;
-    background:var(--ink-faint);
-    margin-left:2px;
-    vertical-align:-2px;
-    animation:blink 1s steps(1) infinite;
-  }
-  @keyframes blink{50%{opacity:0;}}
+/* Compétences */
+.tools-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+.tool-card{background:var(--bg-card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;}
+.tool-card.hl{border-color:var(--accent);background:var(--accent-soft);}
+.tool-name{font-family:var(--display);font-weight:600;font-size:1rem;margin-bottom:4px;}
+.tool-desc{font-size:0.86rem;color:var(--ink-soft);}
+.tools-note{margin-top:22px;font-family:var(--mono);font-size:0.8rem;color:var(--ink-faint);}
 
-  .serp-result{
-    padding:18px 22px 24px;
-  }
-  .serp-breadcrumb{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    font-family:var(--mono);
-    font-size:0.74rem;
-    color:var(--ink-soft);
-    margin-bottom:6px;
-  }
-  .favicon{
-    width:18px;height:18px;
-    border-radius:50%;
-    background:var(--accent);
-    color:#fff;
-    display:flex;align-items:center;justify-content:center;
-    font-family:var(--display);
-    font-size:0.62rem;
-    font-weight:700;
-    flex-shrink:0;
-  }
-  .serp-title{
-    font-family:var(--body);
-    font-weight:600;
-    font-size:1.14rem;
-    color:var(--link);
-    margin-bottom:4px;
-  }
-  .serp-url{
-    font-family:var(--mono);
-    font-size:0.76rem;
-    color:var(--accent);
-    margin-bottom:8px;
-  }
-  .serp-desc{
-    font-size:0.92rem;
-    color:var(--ink-soft);
-    line-height:1.5;
-    margin-bottom:16px;
-  }
-  .serp-chips{
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-  }
-  .chip{
-    font-family:var(--mono);
-    font-size:0.72rem;
-    color:var(--ink);
-    background:var(--accent-soft);
-    border:1px solid #CFE6DA;
-    padding:5px 11px;
-    border-radius:100px;
-  }
+/* Expérience */
+.timeline{position:relative;padding-left:28px;}
+.timeline::before{content:'';position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:var(--line);}
+.tl-item{position:relative;padding-bottom:34px;}
+.tl-item:last-child{padding-bottom:0;}
+.tl-item::before{content:'';position:absolute;left:-28px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--bg-card);border:2px solid var(--accent);}
+.tl-dates{font-family:var(--mono);font-size:0.78rem;color:var(--accent);margin-bottom:6px;display:block;}
+.tl-item h3{font-size:1.05rem;font-weight:600;margin-bottom:6px;}
+.tl-item h3 span{font-weight:400;color:var(--ink-soft);}
+.tl-item p{color:var(--ink-soft);font-size:0.94rem;max-width:62ch;}
 
-  /* ---------- Section shell ---------- */
-  section{padding:72px 0;}
-  .section-head{
-    max-width:640px;
-    margin-bottom:44px;
-  }
-  .section-head .eyebrow{
-    font-family:var(--mono);
-    font-size:0.78rem;
-    color:var(--accent);
-    text-transform:uppercase;
-    letter-spacing:0.08em;
-    display:block;
-    margin-bottom:12px;
-  }
-  .section-head h2{
-    font-size:clamp(1.7rem, 2.6vw, 2.15rem);
-    font-weight:700;
-    margin-bottom:14px;
-    line-height:1.18;
-  }
-  .section-head p{
-    color:var(--ink-soft);
-    font-size:1rem;
-  }
+/* Articles */
+.latest-list{display:flex;flex-direction:column;}
+.latest-list a{display:block;text-decoration:none;padding:16px 0;border-bottom:1px solid var(--line);}
+.latest-list a:first-child{border-top:1px solid var(--line);}
+.latest-list .t{display:block;font-family:var(--display);font-weight:600;font-size:1.02rem;transition:color .15s ease;}
+.latest-list a:hover .t{color:var(--accent);}
+.latest-list .d{display:block;font-family:var(--mono);font-size:0.74rem;color:var(--ink-faint);margin-bottom:4px;}
+.latest-list .x{display:block;font-size:0.9rem;color:var(--ink-soft);margin-top:3px;max-width:70ch;}
 
-  hr.rule{border:none;border-top:1px solid var(--line);margin:0;}
+/* Footer */
+footer.site{background:var(--ink);color:#EDEFEC;padding:64px 0 32px;}
+.footer-head{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,0.12);}
+footer.site h2{color:#fff;font-size:clamp(1.6rem,2.4vw,2rem);margin-bottom:14px;}
+footer.site .lede{color:#AEBAB8;margin-bottom:22px;}
+.footer-links{display:flex;gap:12px;flex-wrap:wrap;}
+.footer-links .btn-ghost{border-color:rgba(255,255,255,0.25);color:#fff;}
+.contact-direct{margin-top:26px;font-family:var(--mono);font-size:0.85rem;color:#AEBAB8;}
+.contact-direct a{color:#fff;text-decoration:none;}
+.contact-direct a:hover{color:#8FD6B8;}
+.copy-btn{background:none;border:none;color:#AEBAB8;font-family:var(--mono);font-size:0.75rem;cursor:pointer;padding:0;margin-left:10px;text-decoration:underline;}
+form.contact{display:flex;flex-direction:column;gap:14px;}
+form.contact label{font-family:var(--mono);font-size:0.75rem;color:#AEBAB8;display:flex;flex-direction:column;gap:6px;}
+form.contact input,form.contact textarea,form.contact select{font:inherit;font-family:var(--body);font-size:0.95rem;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:8px;padding:11px 13px;}
+form.contact select option{color:#14212B;}
+form.contact textarea{min-height:110px;resize:vertical;}
+form.contact input:focus-visible,form.contact textarea:focus-visible,form.contact select:focus-visible{outline-color:#8FD6B8;}
+form.contact .btn-primary{background:#fff;color:var(--ink);align-self:flex-start;}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:26px;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{font-size:0.8rem;color:#9DAEA6;}
+.footer-bottom .chip{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.14);color:#AEBAB8;}
 
-  /* ---------- Profil ---------- */
-  .profil-grid{
-    display:grid;
-    grid-template-columns:1.3fr 1fr;
-    gap:50px;
-    align-items:start;
-  }
-  .profil-text p{
-    color:var(--ink-soft);
-    font-size:1.03rem;
-    margin-bottom:16px;
-  }
-  .profil-text strong{color:var(--ink);}
-  .profil-side{
-    display:flex;
-    flex-direction:column;
-    gap:22px;
-  }
-  .portrait{
-    position:relative;
-    border-radius:var(--radius);
-    overflow:hidden;
-    border:1px solid var(--line);
-    box-shadow:0 20px 44px -22px rgba(20,33,43,0.28);
-    aspect-ratio:4/5;
-  }
-  .portrait img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-  }
-  .portrait figcaption{
-    position:absolute;
-    left:0;right:0;bottom:0;
-    padding:14px 16px;
-    background:linear-gradient(180deg, rgba(20,33,43,0) 0%, rgba(20,33,43,0.72) 100%);
-    color:#fff;
-    font-family:var(--mono);
-    font-size:0.76rem;
-  }
-  .signals{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:1px;
-    background:var(--line);
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    overflow:hidden;
-  }
-  .signal{
-    background:var(--bg-card);
-    padding:22px 20px;
-  }
-  .signal .num{
-    font-family:var(--display);
-    font-size:1.7rem;
-    font-weight:700;
-    color:var(--accent);
-    display:block;
-    margin-bottom:4px;
-  }
-  .signal .label{
-    font-size:0.82rem;
-    color:var(--ink-soft);
-  }
+/* Responsive */
+@media (max-width:860px){
+  .hero-inner,.profil-grid,.footer-head,.cases{grid-template-columns:1fr;gap:36px;}
+  .cases{gap:16px;}
+  .nav ul{position:absolute;top:100%;left:0;right:0;background:var(--bg);flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:max-height .25s ease;}
+  .nav ul.open{max-height:min(75vh,480px);overflow-y:auto;}
+  a.navlink{display:block;padding:14px 28px;border-top:1px solid var(--line);}
+  .nav-cta{margin:14px 28px;}
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:none;border:1px solid var(--line);border-radius:8px;cursor:pointer;font-size:1.1rem;color:var(--ink);}
+}
+@media (max-width:600px){
+  .tools-grid{grid-template-columns:1fr;}
+  .wrap{padding:0 20px;}
+  .hero{padding:52px 0 44px;}
+  section{padding:52px 0;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:0.001ms !important;transition-duration:0.001ms !important;}
+}
 
-  /* ---------- Méthode ---------- */
-  .method-list{
-    display:flex;
-    flex-direction:column;
-  }
-  .method-item{
-    display:grid;
-    grid-template-columns:64px 1fr;
-    gap:22px;
-    padding:26px 0;
-    border-top:1px solid var(--line);
-  }
-  .method-item:last-child{border-bottom:1px solid var(--line);}
-  .method-step{
-    font-family:var(--mono);
-    font-size:0.95rem;
-    color:var(--ink-faint);
-    padding-top:2px;
-  }
-  .method-item h3{
-    font-size:1.08rem;
-    font-weight:600;
-    margin-bottom:6px;
-  }
-  .method-item p{
-    color:var(--ink-soft);
-    font-size:0.95rem;
-    max-width:62ch;
-  }
-
-  /* ---------- Compétences ---------- */
-  .tools-grid{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:14px;
-  }
-  .tool-card{
-    background:var(--bg-card);
-    border:1px solid var(--line);
-    border-radius:12px;
-    padding:18px 20px;
-    transition:border-color .15s ease, transform .15s ease;
-  }
-  .tool-card:hover{border-color:var(--accent);transform:translateY(-2px);}
-  .tool-card .tool-name{
-    font-family:var(--display);
-    font-weight:600;
-    font-size:1rem;
-    margin-bottom:4px;
-  }
-  .tool-card .tool-desc{
-    font-size:0.86rem;
-    color:var(--ink-soft);
-  }
-  .tools-note{
-    margin-top:22px;
-    font-family:var(--mono);
-    font-size:0.8rem;
-    color:var(--ink-faint);
-  }
-
-  /* ---------- Expérience ---------- */
-  .timeline{
-    position:relative;
-    padding-left:28px;
-  }
-  .timeline::before{
-    content:'';
-    position:absolute;
-    left:5px;
-    top:6px;
-    bottom:6px;
-    width:1px;
-    background:var(--line);
-  }
-  .tl-item{
-    position:relative;
-    padding-bottom:34px;
-  }
-  .tl-item:last-child{padding-bottom:0;}
-  .tl-item::before{
-    content:'';
-    position:absolute;
-    left:-28px;
-    top:5px;
-    width:11px;height:11px;
-    border-radius:50%;
-    background:var(--bg-card);
-    border:2px solid var(--accent);
-  }
-  .tl-dates{
-    font-family:var(--mono);
-    font-size:0.78rem;
-    color:var(--accent);
-    margin-bottom:6px;
-    display:block;
-  }
-  .tl-item h3{
-    font-size:1.05rem;
-    font-weight:600;
-    margin-bottom:6px;
-  }
-  .tl-item h3 span{
-    font-weight:400;
-    color:var(--ink-soft);
-  }
-  .tl-item p{
-    color:var(--ink-soft);
-    font-size:0.94rem;
-    max-width:62ch;
-  }
-
-  /* ---------- Contact / Footer ---------- */
-  footer.site{
-    background:var(--ink);
-    color:#EDEFEC;
-    padding:64px 0 32px;
-  }
-  .footer-head{
-    display:grid;
-    grid-template-columns:1.2fr 1fr;
-    gap:50px;
-    padding-bottom:44px;
-    border-bottom:1px solid rgba(255,255,255,0.12);
-  }
-  footer.site h2{
-    color:#fff;
-    font-size:clamp(1.6rem, 2.4vw, 2rem);
-    margin-bottom:14px;
-  }
-  footer.site .lede{
-    color:#AEBAB8;
-    font-size:1rem;
-    max-width:44ch;
-  }
-  .contact-card{
-    display:flex;
-    flex-direction:column;
-    gap:16px;
-  }
-  .contact-row{
-    display:flex;
-    flex-direction:column;
-    gap:3px;
-    padding-bottom:14px;
-    border-bottom:1px solid rgba(255,255,255,0.1);
-  }
-  .contact-row:last-child{border-bottom:none;padding-bottom:0;}
-  .contact-row .k{
-    font-family:var(--mono);
-    font-size:0.72rem;
-    text-transform:uppercase;
-    letter-spacing:0.06em;
-    color:#7F9188;
-  }
-  .contact-row a, .contact-row .v{
-    font-family:var(--mono);
-    font-size:0.98rem;
-    color:#fff;
-    text-decoration:none;
-  }
-  .contact-row a:hover{color:#8FD6B8;}
-  .copy-btn{
-    background:none;
-    border:none;
-    color:#7F9188;
-    font-family:var(--mono);
-    font-size:0.72rem;
-    cursor:pointer;
-    padding:0;
-    margin-left:10px;
-    text-decoration:underline;
-  }
-  .copy-btn:hover{color:#8FD6B8;}
-  .footer-bottom{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding-top:26px;
-    flex-wrap:wrap;
-    gap:10px;
-  }
-  .footer-bottom p{
-    font-size:0.8rem;
-    color:#7F9188;
-  }
-  .footer-bottom .badges{
-    display:flex;
-    gap:8px;
-  }
-  .footer-bottom .chip{
-    background:rgba(255,255,255,0.06);
-    border-color:rgba(255,255,255,0.14);
-    color:#AEBAB8;
-  }
-
-  /* ---------- Responsive ---------- */
-  @media (max-width:860px){
-    .hero-inner{grid-template-columns:1fr;gap:44px;}
-    .profil-grid{grid-template-columns:1fr;}
-    .footer-head{grid-template-columns:1fr;}
-    .nav ul{
-      position:fixed;
-      top:60px;left:0;right:0;
-      background:var(--bg);
-      flex-direction:column;
-      gap:0;
-      border-bottom:1px solid var(--line);
-      max-height:0;
-      overflow-y:auto;
-      transition:max-height .25s ease;
-    }
-    .nav ul.open{
-      max-height: min(70vh, 500px);
-    }
-    .nav ul li{width:100%;}
-    .nav a.navlink{
-      display:block;
-      padding:14px 28px;
-      border-top:1px solid var(--line);
-    }
-    .nav-toggle{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      width:36px;height:36px;
-      background:none;
-      border:1px solid var(--line);
-      border-radius:8px;
-      cursor:pointer;
-    }
-  }
-  @media (max-width:600px){
-    .tools-grid{grid-template-columns:1fr;}
-    .signals{grid-template-columns:1fr 1fr;}
-    .wrap{padding:0 20px;}
-    .hero{padding:52px 0 44px;}
-    section{padding:52px 0;}
-  }
-
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
-  }
-
-  /* ---------- About hero ---------- */
-  .about-hero{padding:64px 0 56px;}
-  .about-hero-inner{
-    display:grid;
-    grid-template-columns:1.3fr 0.7fr;
-    gap:50px;
-    align-items:center;
-  }
-  .about-hero h1{
-    font-size:clamp(2rem, 3.2vw, 2.7rem);
-    line-height:1.15;
-    font-weight:700;
-    margin-bottom:18px;
-  }
-  .about-hero p.lede{
-    font-size:1.05rem;
-    color:var(--ink-soft);
-    max-width:52ch;
-  }
-  .about-portrait{
-    border-radius:var(--radius);
-    overflow:hidden;
-    border:1px solid var(--line);
-    box-shadow:0 20px 44px -22px rgba(20,33,43,0.28);
-    aspect-ratio:4/5;
-    position:relative;
-  }
-  .about-portrait img{width:100%;height:100%;object-fit:cover;object-position:top center;}
-  .about-portrait figcaption{
-    position:absolute;left:0;right:0;bottom:0;
-    padding:14px 16px;
-    background:linear-gradient(180deg, rgba(20,33,43,0) 0%, rgba(20,33,43,0.72) 100%);
-    color:#fff;
-    font-family:var(--mono);
-    font-size:0.76rem;
-  }
-
-  /* ---------- Story / parcours ---------- */
-  .story-grid{
-    display:grid;
-    grid-template-columns:1.3fr 1fr;
-    gap:50px;
-    align-items:start;
-  }
-  .story-text p{
-    color:var(--ink-soft);
-    font-size:1.03rem;
-    margin-bottom:16px;
-  }
-  .story-text strong{color:var(--ink);}
-  .before-timeline{
-    position:relative;
-    padding-left:28px;
-  }
-  .before-timeline::before{
-    content:'';
-    position:absolute;
-    left:5px;top:6px;bottom:6px;
-    width:1px;
-    background:var(--line);
-  }
-  .bt-item{position:relative;padding-bottom:26px;}
-  .bt-item:last-child{padding-bottom:0;}
-  .bt-item::before{
-    content:'';
-    position:absolute;
-    left:-28px;top:5px;
-    width:10px;height:10px;
-    border-radius:50%;
-    background:var(--bg-card);
-    border:2px solid var(--ink-faint);
-  }
-  .bt-dates{
-    font-family:var(--mono);
-    font-size:0.74rem;
-    color:var(--ink-faint);
-    display:block;
-    margin-bottom:4px;
-  }
-  .bt-item h4{
-    font-family:var(--display);
-    font-size:0.95rem;
-    font-weight:600;
-    margin:0 0 3px;
-  }
-  .bt-item p{
-    font-size:0.86rem;
-    color:var(--ink-soft);
-    margin:0;
-  }
-
-  /* ---------- Pull quote (signature element for this page) ---------- */
-  .pull-quote{
-    background:var(--ink);
-    border-radius:var(--radius);
-    padding:44px 40px;
-    position:relative;
-    overflow:hidden;
-  }
-  .pull-quote::before{
-    content:'“';
-    position:absolute;
-    top:-18px;left:20px;
-    font-family:var(--display);
-    font-size:7rem;
-    color:rgba(255,255,255,0.08);
-    line-height:1;
-  }
-  .pull-quote p{
-    position:relative;
-    font-family:var(--display);
-    font-size:clamp(1.25rem, 2vw, 1.55rem);
-    font-weight:600;
-    color:#fff;
-    line-height:1.4;
-    max-width:56ch;
-  }
-  .pull-quote .attribution{
-    position:relative;
-    display:block;
-    margin-top:18px;
-    font-family:var(--mono);
-    font-size:0.8rem;
-    color:#8FD6B8;
-  }
-
-  /* ---------- Learning list ---------- */
-  .learning-list{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:16px;
-  }
-  .learning-card{
-    background:var(--bg-card);
-    border:1px solid var(--line);
-    border-radius:12px;
-    padding:20px 22px;
-  }
-  .learning-card .tag{
-    display:inline-block;
-    font-family:var(--mono);
-    font-size:0.7rem;
-    color:var(--accent);
-    background:var(--accent-soft);
-    border:1px solid #CFE6DA;
-    padding:3px 10px;
-    border-radius:100px;
-    margin-bottom:10px;
-  }
-  .learning-card h3{
-    font-size:1rem;
-    font-weight:600;
-    margin-bottom:6px;
-  }
-  .learning-card p{
-    font-size:0.9rem;
-    color:var(--ink-soft);
-  }
-
-  /* ---------- Interests ---------- */
-  .interest-chips{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-  }
-  .interest-chips .chip{
-    font-size:0.82rem;
-    padding:8px 16px;
-  }
-
-  /* ---------- Social row ---------- */
-  .social-row{
-    display:flex;
-    gap:14px;
-    flex-wrap:wrap;
-    margin-top:8px;
-  }
-
-  @media (max-width:860px){
-    .about-hero-inner{grid-template-columns:1fr;gap:36px;}
-    .story-grid{grid-template-columns:1fr;}
-    .learning-list{grid-template-columns:1fr;}
-  }
+/* Page à propos */
+.about-hero{padding:64px 0 56px;}
+.about-hero-inner{display:grid;grid-template-columns:1.3fr 0.7fr;gap:50px;align-items:center;}
+.about-hero h1{font-size:clamp(2rem,3.2vw,2.7rem);line-height:1.15;font-weight:700;margin-bottom:18px;}
+.about-hero .lede{max-width:52ch;}
+.about-portrait{margin:0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 44px -22px rgba(20,33,43,0.28);aspect-ratio:4/5;position:relative;}
+.about-portrait img{width:100%;height:100%;object-fit:cover;object-position:top center;}
+.about-portrait figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(180deg,rgba(20,33,43,0),rgba(20,33,43,0.72));color:#fff;font-family:var(--mono);font-size:0.76rem;}
+.story-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:start;}
+.story-text p{color:var(--ink-soft);font-size:1.03rem;margin-bottom:16px;}
+.story-text strong{color:var(--ink);}
+.before-timeline{position:relative;padding-left:28px;}
+.before-timeline::before{content:'';position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:var(--line);}
+.bt-item{position:relative;padding-bottom:26px;}
+.bt-item:last-child{padding-bottom:0;}
+.bt-item::before{content:'';position:absolute;left:-28px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--bg-card);border:2px solid var(--ink-faint);}
+.bt-dates{font-family:var(--mono);font-size:0.74rem;color:var(--ink-faint);display:block;margin-bottom:4px;}
+.bt-item h3{font-size:0.95rem;font-weight:600;margin:0 0 3px;}
+.bt-item p{font-size:0.86rem;color:var(--ink-soft);}
+.pull-quote{background:var(--ink);border-radius:var(--radius);padding:44px 40px;position:relative;overflow:hidden;margin:0;}
+.pull-quote::before{content:'\201C';position:absolute;top:-18px;left:20px;font-family:var(--display);font-size:7rem;color:rgba(255,255,255,0.08);line-height:1;}
+.pull-quote p{position:relative;font-family:var(--display);font-size:clamp(1.25rem,2vw,1.55rem);font-weight:600;color:#fff;line-height:1.4;max-width:56ch;}
+.pull-quote figcaption{position:relative;display:block;margin-top:18px;font-family:var(--mono);font-size:0.8rem;color:#8FD6B8;}
+.chips-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px;}
+.chips-row .chip{font-size:0.82rem;padding:8px 16px;}
+.learning-card{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:20px 22px;max-width:520px;}
+.learning-card h3{font-size:1rem;font-weight:600;margin-bottom:6px;}
+.learning-card p{font-size:0.9rem;color:var(--ink-soft);}
+@media (max-width:860px){.about-hero-inner,.story-grid{grid-template-columns:1fr;gap:36px;}}
+@media (max-width:600px){.about-hero{padding:52px 0 44px;}.pull-quote{padding:36px 24px;}}
 </style>
 </head>
 <body>
@@ -834,19 +250,16 @@
 <header class="site">
   <div class="wrap nav">
     <a class="brand" href="/">
-    <img src="images/Beranto-Logo-Vector.svg" alt="Herinirina Beranto - Logo SEO" class="brand-logo">
-    <span class="brand-text">Beranto <span class="dot">.</span> seo</span>
-</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <img src="/images/Beranto-Logo-Vector.svg" alt="Herinirina Beranto, logo SEO" width="36" height="36">
+      <span>Beranto <span class="dot">.</span> seo</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navList">☰</button>
     <ul id="navList">
-      <li><a class="navlink" href="/#profil">Profil</a></li>
+      <li><a class="navlink" href="/cas-clients">Cas clients</a></li>
       <li><a class="navlink" href="/#methode">Méthode</a></li>
-      <li><a class="navlink" href="/#competences">Compétences</a></li>
-      <li><a class="navlink" href="/#experience">Expérience</a></li>
-      <li><a class="navlink" href="cas-clients">Cas clients</a></li>
-      <li><a class="navlink" href="apropos" aria-current="page" style="color:var(--accent);">À propos</a></li>
       <li><a class="navlink" href="/blog/">Blog</a></li>
-      <li><a class="navlink" href="/#contact">Contact</a></li>
+      <li><a class="navlink" href="/apropos" aria-current="page" style="color:var(--accent);">À propos</a></li>
+      <li><a class="btn btn-primary nav-cta" href="/#contact">Me contacter</a></li>
     </ul>
   </div>
 </header>
@@ -855,45 +268,33 @@
   <section class="about-hero">
     <div class="wrap about-hero-inner">
       <div>
-        <span class="eyebrow" style="font-family:var(--mono);font-size:0.78rem;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:14px;">À propos</span>
+        <span class="eyebrow">À propos</span>
         <h1>Avant les mots-clés, il y a une trajectoire.</h1>
-        <p class="lede">D'une salle de classe à Ampangabe à la rédaction de contenus B2B pour des marchés européens, le chemin n'a rien d'évident. Voici comment j'y suis arrivé — et ce que ça change dans ma façon d'écrire.</p>
+        <p class="lede">D'une salle de classe à Ampangabe à la rédaction de contenus B2B pour des marchés européens, le chemin n'a rien d'évident. Voici comment j'y suis arrivé, et ce que ça change dans ma façon d'écrire.</p>
+        <div class="hero-actions" style="margin-top:28px;">
+          <a class="btn btn-primary" href="/cas-clients">Voir les cas clients</a>
+          <a class="btn btn-ghost" href="#contact">Me contacter</a>
+        </div>
       </div>
       <figure class="about-portrait">
-        <img src="images/ma-photo.webp" 
-     alt="Portrait de Herinirina Beranto Rafalinjanahary" 
-     width="400" 
-     height="500" 
-     loading="lazy">
+        <img src="/images/ma-photo.webp" alt="Portrait de Herinirina Beranto Rafalinjanahary" width="400" height="500" fetchpriority="high">
         <figcaption>Antananarivo, Madagascar</figcaption>
       </figure>
     </div>
   </section>
 
-  <section id="parcours" style="background:var(--bg-card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <section id="parcours" class="alt">
     <div class="wrap story-grid">
       <div class="story-text">
-        <span class="eyebrow" style="font-family:var(--mono);font-size:0.78rem;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:14px;">Mon parcours</span>
+        <span class="eyebrow">Mon parcours</span>
         <p>Je n'ai pas commencé par le SEO. J'ai commencé par une salle de classe, à Ampangabe, où j'enseignais le français à des élèves de premier cycle. Deux ans plus tard, j'en dirigeais l'établissement.</p>
         <p>Ce qu'on ne raconte pas souvent, c'est à quel point <strong>enseigner et écrire pour le web se ressemblent</strong>. Dans les deux cas, il faut prendre une idée complexe, la découper, l'ordonner, et la rendre compréhensible à quelqu'un qui découvre le sujet pour la première fois. Un bon article structuré en H2/H3 n'est, au fond, qu'une leçon bien préparée.</p>
         <p>Le virage vers la rédaction web s'est fait progressivement, à partir de 2018, puis s'est précisé autour du SEO à partir de 2021 : plus de rigueur méthodologique, plus de données, un vrai terrain de jeu pour quelqu'un qui aime autant la langue que la logique.</p>
       </div>
       <div class="before-timeline">
-        <div class="bt-item">
-          <span class="bt-dates">2014 — 2016</span>
-          <h4>Enseignant de français</h4>
-          <p>Collège Privé Mikolo Tsara, Ampangabe</p>
-        </div>
-        <div class="bt-item">
-          <span class="bt-dates">2016 — 2017</span>
-          <h4>Directeur d'établissement</h4>
-          <p>Collège Privé Mikolo Tsara, Ampangabe</p>
-        </div>
-        <div class="bt-item">
-          <span class="bt-dates">2018 →</span>
-          <h4>Rédaction web & SEO</h4>
-          <p>La suite sur la page <a href="/#experience" style="color:var(--accent);">Expérience</a></p>
-        </div>
+        <div class="bt-item"><span class="bt-dates">2014 à 2016</span><h3>Enseignant de français</h3><p>Collège Privé Mikolo Tsara, Ampangabe</p></div>
+        <div class="bt-item"><span class="bt-dates">2016 à 2017</span><h3>Directeur d'établissement</h3><p>Collège Privé Mikolo Tsara, Ampangabe</p></div>
+        <div class="bt-item"><span class="bt-dates">Depuis 2018</span><h3>Rédaction web &amp; SEO</h3><p>La suite dans la section <a href="/#experience" style="color:var(--accent);">Expérience</a></p></div>
       </div>
     </div>
   </section>
@@ -904,21 +305,26 @@
         <span class="eyebrow">Ma vision</span>
         <h2>Pourquoi j'écris comme j'écris.</h2>
       </div>
-      <div class="pull-quote">
+      <figure class="pull-quote">
         <p>Un contenu qui trompe l'algorithme finit toujours par tromper le lecteur. Je préfère écrire des choses qui restent vraies même quand Google change ses règles.</p>
-        <span class="attribution">— sur l'EEAT comme discipline, pas comme case à cocher</span>
-      </div>
+        <figcaption>Sur l'EEAT comme discipline, pas comme case à cocher</figcaption>
+      </figure>
     </div>
   </section>
 
-  <section id="langues" style="background:var(--bg-card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <section id="langues" class="alt">
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow">Langues & marchés</span>
+        <span class="eyebrow">Langues &amp; marchés</span>
         <h2>Écrire nativement dans deux langues.</h2>
         <p>Le malgache est ma langue maternelle, le français mon outil de travail depuis l'enseignement. J'écris aussi en anglais pour des clients anglophones, avec la même exigence de clarté que dans ma langue de travail.</p>
       </div>
-      <div class="learning-card" style="max-width:520px;">
+      <div class="chips-row">
+        <span class="chip">Malgache, langue maternelle</span>
+        <span class="chip">Français</span>
+        <span class="chip">Anglais</span>
+      </div>
+      <div class="learning-card">
         <h3>Email marketing</h3>
         <p>Formation pratique (cas d'usage, outils d'automatisation) pour élargir mes compétences au-delà du seul contenu SEO.</p>
       </div>
@@ -930,9 +336,9 @@
       <div class="section-head">
         <span class="eyebrow">En dehors des mots-clés</span>
         <h2>Ce qui nourrit l'écriture.</h2>
-        <p>La lecture, la musique et le cinéma restent mes meilleures sources de vocabulaire, de rythme et d'idées — bien avant n'importe quel outil SEO.</p>
+        <p>La lecture, la musique et le cinéma restent mes meilleures sources de vocabulaire, de rythme et d'idées, bien avant n'importe quel outil SEO.</p>
       </div>
-      <div class="interest-chips">
+      <div class="chips-row" style="margin-bottom:0;">
         <span class="chip">Lecture</span>
         <span class="chip">Musique</span>
         <span class="chip">Cinéma</span>
@@ -947,67 +353,68 @@
       <div>
         <h2>Travaillons ensemble.</h2>
         <p class="lede">Un projet de contenu SEO, un audit technique ou une refonte éditoriale ? Écrivez-moi, je réponds sous 24h.</p>
-        <div class="social-row">
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/herinirina-beranto-4b4932333" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,0.2);color:#fff;">LinkedIn</a>
+        <div class="footer-links">
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/herinirina-beranto-4b4932333" target="_blank" rel="noopener">LinkedIn</a>
         </div>
+        <p class="contact-direct">
+          <a href="mailto:herinirinaberanto@gmail.com">herinirinaberanto@gmail.com</a>
+          <button class="copy-btn" id="copyEmail" type="button">copier</button><br>
+          <a href="tel:+261342375859">+261 34 23 758 59</a> · Antananarivo, Madagascar
+        </p>
       </div>
-      <div class="contact-card">
-        <div class="contact-row">
-          <span class="k">Email</span>
-          <span>
-            <a href="mailto:herinirinaberanto@gmail.com" id="emailLink">herinirinaberanto@gmail.com</a>
-            <button class="copy-btn" id="copyEmail" type="button">copier</button>
-          </span>
-        </div>
-        <div class="contact-row">
-          <span class="k">Téléphone</span>
-          <a href="tel:+261342375859">+261 34 23 758 59</a>
-        </div>
-        <div class="contact-row">
-          <span class="k">Adresse</span>
-          <span class="v">Andoharanofotsy, Antananarivo 102, Madagascar</span>
-        </div>
-      </div>
+      <!-- Formulaire via Formspree : identifiant du formulaire -->
+      <form class="contact" id="contactForm" method="POST" action="https://formspree.io/f/xnpjywpw">
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>Nom<input type="text" name="nom" required autocomplete="name"></label>
+        <label>Email<input type="email" name="email" required autocomplete="email"></label>
+        <label>Type de projet
+          <select name="projet">
+            <option>Rédaction SEO</option>
+            <option>Audit technique</option>
+            <option>Stratégie éditoriale</option>
+            <option>Autre</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Envoyer le message</button>
+        <p id="formStatus" role="status" style="font-size:0.9rem;color:#8FD6B8;margin:0;"></p>
+      </form>
     </div>
     <div class="footer-bottom">
       <p>© 2026 Herinirina Beranto Rafalinjanahary</p>
-      <div class="badges">
-        <span class="chip">Disponible en freelance</span>
-      </div>
+      <span class="chip">Disponible en freelance</span>
     </div>
   </div>
 </footer>
 
 <script>
-  // Mobile nav toggle
-  (function(){
-    var btn = document.getElementById('navToggle');
-    var list = document.getElementById('navList');
-    if(!btn) return;
-    btn.addEventListener('click', function(){
-      var open = list.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+(function(){
+  var b=document.getElementById('navToggle'),l=document.getElementById('navList');
+  b.addEventListener('click',function(){var o=l.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+  l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open');b.setAttribute('aria-expanded','false');});});
+})();
+(function(){
+  var c=document.getElementById('copyEmail');
+  c.addEventListener('click',function(){
+    navigator.clipboard.writeText('herinirinaberanto@gmail.com').then(function(){
+      var o=c.textContent;c.textContent='copié !';setTimeout(function(){c.textContent=o;},1800);
     });
-    list.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        list.classList.remove('open');
-        btn.setAttribute('aria-expanded', 'false');
-      });
-    });
-  })();
-
-  // Copy email button
-  (function(){
-    var copyBtn = document.getElementById('copyEmail');
-    if(!copyBtn) return;
-    copyBtn.addEventListener('click', function(){
-      navigator.clipboard.writeText('herinirinaberanto@gmail.com').then(function(){
-        var original = copyBtn.textContent;
-        copyBtn.textContent = 'copié !';
-        setTimeout(function(){ copyBtn.textContent = original; }, 1800);
-      });
-    });
-  })();
+  });
+})();
+(function(){
+  var f=document.getElementById('contactForm'),st=document.getElementById('formStatus');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    st.textContent='Envoi en cours...';
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();st.textContent='Merci, votre message est envoyé. Je vous réponds sous 24h.';}
+        else{st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";}
+      })
+      .catch(function(){st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";});
+  });
+})();
 </script>
 
 </body>
