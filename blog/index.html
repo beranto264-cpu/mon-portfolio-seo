@@ -259,23 +259,34 @@ form.contact .btn-primary{background:#fff;color:var(--ink);align-self:flex-start
   *{animation-duration:0.001ms !important;transition-duration:0.001ms !important;}
 }
 
-/* Page blog */
-.blog-hero{padding:64px 0 48px;}
+/* Blog : style magazine */
+.blog-hero{padding:64px 0 40px;}
 .blog-hero h1{font-size:clamp(2rem,3.2vw,2.7rem);line-height:1.15;font-weight:700;margin-bottom:16px;}
 .blog-hero .lede{max-width:52ch;margin-bottom:0;}
 section.articles{padding:0 0 80px;}
-.article-list{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
-.article-card{background:var(--bg-card);padding:22px 30px;display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;text-decoration:none;color:inherit;transition:background .15s ease;}
-.article-card:hover{background:var(--accent-soft);}
-.article-thumb{width:120px;aspect-ratio:1/1;border-radius:10px;overflow:hidden;background:var(--accent-soft);}
-.article-thumb img{width:100%;height:100%;object-fit:cover;}
-.article-date{font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);display:block;margin-bottom:6px;}
-.article-card h2{font-size:1.2rem;font-weight:600;margin-bottom:8px;line-height:1.3;}
-.article-card p{color:var(--ink-soft);font-size:0.95rem;}
-@media (max-width:700px){
-  .article-card{grid-template-columns:72px 1fr;padding:18px 20px;gap:16px;}
-  .article-thumb{width:72px;}
-  .blog-hero{padding:52px 0 40px;}
+.post{display:flex;flex-direction:column;background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;transition:border-color .15s ease;}
+.post:hover{border-color:var(--accent);}
+.post-thumb{aspect-ratio:16/10;background:var(--accent-soft);overflow:hidden;}
+.post-thumb img{width:100%;height:100%;object-fit:cover;}
+.post-body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.post-date{font-family:var(--mono);font-size:0.76rem;color:var(--ink-faint);}
+.post h2{font-size:1.1rem;font-weight:600;line-height:1.3;}
+.post p{color:var(--ink-soft);font-size:0.92rem;}
+.post-more{margin-top:auto;padding-top:6px;font-family:var(--mono);font-size:0.8rem;color:var(--link);font-weight:500;}
+.post.featured{flex-direction:row;margin-bottom:24px;}
+.post.featured .post-thumb{flex:1.1;aspect-ratio:auto;min-height:320px;}
+.post.featured .post-body{flex:1;padding:36px 36px 40px;justify-content:center;gap:12px;}
+.post.featured h2{font-size:clamp(1.4rem,2.2vw,1.8rem);line-height:1.25;}
+.post.featured p{font-size:1rem;}
+.badge-new{align-self:flex-start;font-family:var(--mono);font-size:0.72rem;color:var(--accent);background:var(--accent-soft);border:1px solid #CFE6DA;padding:4px 10px;border-radius:100px;}
+.post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+@media (max-width:980px){.post-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:760px){
+  .post.featured{flex-direction:column;}
+  .post.featured .post-thumb{min-height:0;aspect-ratio:16/10;flex:none;}
+  .post.featured .post-body{padding:24px;}
+  .post-grid{grid-template-columns:1fr;}
+  .blog-hero{padding:52px 0 32px;}
 }
 </style>
 </head>
@@ -309,84 +320,100 @@ section.articles{padding:0 0 80px;}
 
   <section class="articles">
     <div class="wrap">
-      <div class="article-list">
+      <div>
 
-        <a class="article-card" href="/blog/recherche-mots-cles-seo">
-          <div class="article-thumb"><img src="/images/portrait-redaction-recherche-mots-cles.webp" alt="Carnet de notes avec une carte mentale de mots-clés posé devant un ordinateur" width="120" height="120"></div>
-          <div>
-            <time class="article-date" datetime="2026-10-21">21 octobre 2026</time>
+        <a class="post featured" href="/blog/recherche-mots-cles-seo">
+          <div class="post-thumb"><img src="/images/portrait-redaction-recherche-mots-cles.webp" alt="Carnet de notes avec une carte mentale de mots-clés posé devant un ordinateur" width="640" height="400"></div>
+          <div class="post-body">
+            <span class="badge-new">Dernier article</span>
+            <time class="post-date" datetime="2026-10-21">21 octobre 2026</time>
             <h2>Recherche mots-clés SEO : comment construire sa liste avant d'écrire</h2>
             <p>Avant d'écrire, il faut savoir ce que votre audience cherche vraiment. La méthode en cinq étapes pour passer d'une idée à une liste de mots-clés classés par intention.</p>
+            <span class="post-more">Lire l'article</span>
           </div>
         </a>
-
-        <a class="article-card" href="/blog/cocon-semantique-exemple">
-          <div class="article-thumb"><img src="/images/portrait-redaction-cocon-exemple.webp" alt="Schéma d'un exemple de cocon sémantique sur la randonnée en montagne" width="120" height="120"></div>
-          <div>
-            <time class="article-date" datetime="2026-10-07">7 octobre 2026</time>
+      <div class="post-grid">
+        <a class="post" href="/blog/cocon-semantique-exemple">
+          <div class="post-thumb"><img src="/images/portrait-redaction-cocon-exemple.webp" alt="Schéma d'un exemple de cocon sémantique sur la randonnée en montagne" width="640" height="400"></div>
+          <div class="post-body">
+            
+            <time class="post-date" datetime="2026-10-07">7 octobre 2026</time>
             <h2>Cocon sémantique exemple : un modèle concret pas à pas</h2>
             <p>Une page pilier, six articles clusters et un maillage interne expliqués sur un cas concret, la randonnée en montagne, à reproduire sur votre site.</p>
+            <span class="post-more">Lire l'article</span>
           </div>
         </a>
 
-        <a class="article-card" href="/blog/migration-site-preserver-seo">
-          <div class="article-thumb"><img src="/images/portrait-redaction-migration.jpg" alt="Beranto préparant une migration de site" loading="lazy" width="120" height="120"></div>
-          <div>
-            <time class="article-date" datetime="2026-09-22">22 septembre 2026</time>
+        <a class="post" href="/blog/migration-site-preserver-seo">
+          <div class="post-thumb"><img src="/images/portrait-redaction-migration.jpg" alt="Beranto préparant une migration de site" loading="lazy" width="640" height="400"></div>
+          <div class="post-body">
+            
+            <time class="post-date" datetime="2026-09-22">22 septembre 2026</time>
             <h2>Migration de site : comment ne pas perdre son SEO en changeant d'hébergeur ou de domaine</h2>
             <p>Changer d'hébergeur ou de nom de domaine est un chantier technique, mais c'est d'abord un chantier SEO. Ce qui protège vraiment les positions pendant une migration.</p>
+            <span class="post-more">Lire l'article</span>
           </div>
         </a>
 
-        <a class="article-card" href="/blog/cannibalisation-seo-pages-qui-se-concurrencent">
-          <div class="article-thumb"><img src="/images/portrait-redaction-cannibalisation.jpg" alt="Beranto en train d'arbitrer entre deux pages qui ciblent le même mot-clé" loading="lazy" width="120" height="120"></div>
-          <div>
-            <time class="article-date" datetime="2026-09-16">16 septembre 2026</time>
+        <a class="post" href="/blog/cannibalisation-seo-pages-qui-se-concurrencent">
+          <div class="post-thumb"><img src="/images/portrait-redaction-cannibalisation.jpg" alt="Beranto en train d'arbitrer entre deux pages qui ciblent le même mot-clé" loading="lazy" width="640" height="400"></div>
+          <div class="post-body">
+            
+            <time class="post-date" datetime="2026-09-16">16 septembre 2026</time>
             <h2>Cannibalisation SEO : pourquoi deux de vos pages se battent (et comment trancher sans perdre le trafic)</h2>
             <p>Elle ne provoque ni pénalité ni alerte, juste des positions qui stagnent. Comment la diagnostiquer, la corriger, et surtout l'éviter avant qu'elle ne s'installe.</p>
+            <span class="post-more">Lire l'article</span>
           </div>
         </a>
 
-        <a class="article-card" href="/blog/netlinking-backlinks-naturels">
-          <div class="article-thumb"><img src="/images/portrait-redaction-netlinking.jpg" alt="Beranto travaillant sur une stratégie de netlinking" loading="lazy" width="120" height="120"></div>
-          <div>
-            <time class="article-date" datetime="2026-09-09">9 septembre 2026</time>
+        <a class="post" href="/blog/netlinking-backlinks-naturels">
+          <div class="post-thumb"><img src="/images/portrait-redaction-netlinking.jpg" alt="Beranto travaillant sur une stratégie de netlinking" loading="lazy" width="640" height="400"></div>
+          <div class="post-body">
+            
+            <time class="post-date" datetime="2026-09-09">9 septembre 2026</time>
             <h2>Netlinking naturel : ce qui fait qu'un backlink compte vraiment pour Google</h2>
             <p>Un lien n'a de valeur que si le contenu autour de lui est pertinent. Ce qui distingue un netlinking qui muscle une page d'un netlinking qui ne sert à rien.</p>
+            <span class="post-more">Lire l'article</span>
           </div>
         </a>
 
-        <a class="article-card" href="/blog/optimisation-moteurs-ia-geo-aeo">
-          <div class="article-thumb"><img src="/images/portrait-redaction-geo.jpg" alt="Beranto travaillant sur une stratégie de contenu pour les moteurs IA" loading="lazy" width="120" height="120"></div>
-          <div>
-            <time class="article-date" datetime="2026-09-02">2 septembre 2026</time>
+        <a class="post" href="/blog/optimisation-moteurs-ia-geo-aeo">
+          <div class="post-thumb"><img src="/images/portrait-redaction-geo.jpg" alt="Beranto travaillant sur une stratégie de contenu pour les moteurs IA" loading="lazy" width="640" height="400"></div>
+          <div class="post-body">
+            
+            <time class="post-date" datetime="2026-09-02">2 septembre 2026</time>
             <h2>Optimisation pour les moteurs IA : comment être cité par ChatGPT, Gemini et les IA Overviews</h2>
             <p>GEO, AEO : au-delà des acronymes à la mode, ce qui fait vraiment qu'un contenu est cité par une IA générative, et ce qui relève du mythe.</p>
+            <span class="post-more">Lire l'article</span>
           </div>
         </a>
 
-        <a class="article-card" href="/blog/cocon-semantique-maillage-interne">
-          <div class="article-thumb"><img src="/images/portrait-redaction-cocon.jpg" alt="Beranto travaillant sur l'architecture d'un cocon sémantique" loading="lazy" width="120" height="120"></div>
-          <div>
-            <time class="article-date" datetime="2026-08-28">28 août 2026</time>
+        <a class="post" href="/blog/cocon-semantique-maillage-interne">
+          <div class="post-thumb"><img src="/images/portrait-redaction-cocon.jpg" alt="Beranto travaillant sur l'architecture d'un cocon sémantique" loading="lazy" width="640" height="400"></div>
+          <div class="post-body">
+            
+            <time class="post-date" datetime="2026-08-28">28 août 2026</time>
             <h2>Cocon sémantique : la structure qui fait vraiment gagner des positions</h2>
             <p>Le cocon sémantique est souvent réduit à un schéma de liens. Ce qui compte vraiment : la hiérarchie des intentions et un maillage interne pensé pour le lecteur autant que pour Google.</p>
+            <span class="post-more">Lire l'article</span>
           </div>
         </a>
 
-        <a class="article-card" href="/blog/eeat-conventions-editoriales">
-          <div class="article-thumb"><img src="/images/portrait-redaction-eeat.jpg" alt="Beranto en train de rédiger un article sur l'EEAT" loading="lazy" width="120" height="120"></div>
-          <div>
-            <time class="article-date" datetime="2026-08-15">15 août 2026</time>
+        <a class="post" href="/blog/eeat-conventions-editoriales">
+          <div class="post-thumb"><img src="/images/portrait-redaction-eeat.jpg" alt="Beranto en train de rédiger un article sur l'EEAT" loading="lazy" width="640" height="400"></div>
+          <div class="post-body">
+            
+            <time class="post-date" datetime="2026-08-15">15 août 2026</time>
             <h2>EEAT : ce que Google vérifie vraiment</h2>
             <p>Experience, Expertise, Authoritativeness, Trust : comment ces quatre critères se traduisent concrètement dans un contenu SEO, au-delà de la simple case à cocher.</p>
+            <span class="post-more">Lire l'article</span>
           </div>
         </a>
-
+      </div>
         <!--
           Pour ajouter un nouvel article :
           1. Créez la page de l'article dans /blog/
-          2. Copiez un bloc <a class="article-card"> ci-dessus, en haut de la liste
+          2. Copiez un bloc <a class="post"> de la grille, puis passez le plus récent en "post featured" (avec le badge) et remettez l'ancien dans la grille
           3. Mettez à jour la date (texte et datetime), le titre, le href, la description et la vignette
           4. Ajoutez l'article dans le JSON-LD du head et dans la section "Derniers articles" de l'accueil
         -->
