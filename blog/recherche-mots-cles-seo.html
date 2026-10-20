@@ -6,48 +6,39 @@
 <title>Recherche mots-clés SEO : méthode pas à pas | Beranto</title>
 <meta name="description" content="Recherche mots-clés SEO : méthode en 5 étapes pour choisir vos mots-clés selon l'intention de recherche, regrouper vos requêtes et prioriser avant de rédiger.">
 <link rel="canonical" href="https://beranto-seo.com/blog/recherche-mots-cles-seo">
-
-<!-- Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="Recherche mots-clés SEO : méthode pas à pas | Beranto">
 <meta property="og:description" content="Recherche mots-clés SEO : méthode en 5 étapes pour choisir vos mots-clés selon l'intention de recherche, regrouper vos requêtes et prioriser avant de rédiger.">
 <meta property="og:url" content="https://beranto-seo.com/blog/recherche-mots-cles-seo">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:image" content="https://beranto-seo.com/images/recherche-mots-cles-seo.webp">
-
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Recherche mots-clés SEO : méthode pas à pas | Beranto">
 <meta name="twitter:description" content="Recherche mots-clés SEO : méthode en 5 étapes pour choisir vos mots-clés selon l'intention de recherche, regrouper vos requêtes et prioriser avant de rédiger.">
 <meta name="twitter:image" content="https://beranto-seo.com/images/recherche-mots-cles-seo.webp">
-
-<!-- Données structurées : Article -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Recherche mots-clés SEO : comment construire sa liste avant d'écrire",
-  "description": "Recherche mots-clés SEO : méthode en 5 étapes pour choisir vos mots-clés selon l'intention de recherche, regrouper vos requêtes et prioriser avant de rédiger.",
-  "image": "https://beranto-seo.com/images/recherche-mots-cles-seo.webp",
-  "datePublished": "2026-10-15",
-  "dateModified": "2026-10-",
-  "inLanguage": "fr-FR",
-  "mainEntityOfPage": "https://beranto-seo.15com/blog/recherche-mots-cles-seo",
-  "author": {
-    "@type": "Person",
-    "name": "Herinirina Beranto Rafalinjanahary",
-    "url": "https://beranto-seo.com/apropos",
-    "jobTitle": "Rédacteur web SEO et stratégiste SEO freelance"
-  },
-  "publisher": {
-    "@type": "Person",
-    "name": "Herinirina Beranto Rafalinjanahary",
-    "url": "https://beranto-seo.com/"
-  }
+ "@context": "https://schema.org",
+ "@type": "BlogPosting",
+ "headline": "Recherche mots-clés SEO : comment construire sa liste avant d'écrire",
+ "description": "Recherche mots-clés SEO : méthode en 5 étapes pour choisir vos mots-clés selon l'intention de recherche, regrouper vos requêtes et prioriser avant de rédiger.",
+ "image": "https://beranto-seo.com/images/recherche-mots-cles-seo.webp",
+ "mainEntityOfPage": "https://beranto-seo.com/blog/recherche-mots-cles-seo",
+ "datePublished": "2026-10-15",
+ "dateModified": "2026-10-15",
+ "inLanguage": "fr",
+ "author": {
+  "@type": "Person",
+  "name": "Herinirina Beranto Rafalinjanahary",
+  "url": "https://beranto-seo.com/apropos"
+ },
+ "publisher": {
+  "@type": "Person",
+  "name": "Herinirina Beranto Rafalinjanahary",
+  "url": "https://beranto-seo.com/"
+ }
 }
 </script>
-
-<!-- Données structurées : FAQ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -96,858 +87,386 @@
   ]
 }
 </script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
 <style>
-  :root{
-    --bg:#F5F6F3;
-    --bg-card:#FFFFFF;
-    --ink:#14212B;
-    --ink-soft:#51636D;
-    --ink-faint:#8A9BA4;
-    --accent:#1F7A5C;
-    --accent-soft:#E4F1EA;
-    --link:#1A56DB;
-    --line:#DDE2DE;
-    --radius:14px;
-    --display:'Space Grotesk', system-ui, sans-serif;
-    --body:'Inter', system-ui, sans-serif;
-    --mono:'JetBrains Mono', 'Courier New', monospace;
-    --maxw:760px;
-  }
-
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;overflow-x:hidden;}
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
-    font-family:var(--body);
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  img,svg{display:block;max-width:100%;}
-  a{color:var(--link);}
-  h1,h2,h3{font-family:var(--display);letter-spacing:-0.01em;color:var(--ink);margin:0;}
-  p{margin:0;}
-
-  :focus-visible{
-    outline:2px solid var(--accent);
-    outline-offset:3px;
-    border-radius:4px;
-  }
-
-  .wrap{
-    max-width:var(--maxw);
-    margin:0 auto;
-    padding:0 28px;
-  }
-
-  /* ---------- Header ---------- */
-  header.site{
-    position:sticky;
-    top:0;
-    z-index:50;
-    background:rgba(245,246,243,0.86);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav{
-    max-width:1080px;
-    margin:0 auto;
-    padding:16px 28px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-  }
-  .nav .brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-family:var(--mono);
-    font-size:0.85rem;
-    font-weight:500;
-    color:var(--ink);
-    text-decoration:none;
-  }
-  .nav .brand .dot{color:var(--accent);}
-  .nav .brand img{
-    width:36px;height:36px;
-    border-radius:50%;
-    object-fit:cover;
-    border:1px solid var(--line);
-  }
-  .nav ul{
-    list-style:none;
-    display:flex;
-    gap:26px;
-    margin:0;
-    padding:0;
-  }
-  .nav a.navlink{
-    text-decoration:none;
-    font-size:0.88rem;
-    color:var(--ink-soft);
-    font-weight:500;
-    transition:color .15s ease;
-  }
-  .nav a.navlink:hover{color:var(--accent);}
-  .nav-toggle{display:none;}
-
-  /* ---------- Buttons ---------- */
-  .btn{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    padding:13px 22px;
-    border-radius:9px;
-    font-weight:600;
-    font-size:0.92rem;
-    text-decoration:none;
-    transition:transform .15s ease, box-shadow .15s ease;
-    border:1px solid transparent;
-  }
-  .btn-ghost{
-    background:transparent;
-    color:var(--ink);
-    border-color:var(--line);
-    font-family:var(--mono);
-  }
-  .btn-ghost:hover{border-color:var(--ink);}
-
-  /* ---------- Article header ---------- */
-  .article-header{padding:56px 0 32px;}
-  .breadcrumb{
-    font-family:var(--mono);
-    font-size:0.78rem;
-    color:var(--ink-faint);
-    margin-bottom:20px;
-    text-decoration:none;
-    display:inline-block;
-  }
-  .breadcrumb:hover{color:var(--accent);}
-  .eyebrow{
-    font-family:var(--mono);
-    font-size:0.78rem;
-    color:var(--accent);
-    text-transform:uppercase;
-    letter-spacing:0.08em;
-    display:block;
-    margin-bottom:14px;
-  }
-  .article-header h1{
-    font-size:clamp(1.9rem, 3.4vw, 2.5rem);
-    line-height:1.18;
-    font-weight:700;
-    margin-bottom:16px;
-  }
-  .meta{
-    font-family:var(--mono);
-    font-size:0.8rem;
-    color:var(--ink-faint);
-  }
-  .author{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    margin-top:18px;
-    font-size:0.92rem;
-    color:var(--ink-soft);
-    flex-wrap:wrap;
-  }
-  .author a{
-    color:var(--accent);
-    font-weight:600;
-    text-decoration:none;
-  }
-  .author a:hover{text-decoration:underline;}
-
-  /* ---------- Hero image ---------- */
-  .hero-figure{margin:0 0 40px;}
-  .hero-figure img{
-    width:100%;
-    height:auto;
-    border-radius:var(--radius);
-    border:1px solid var(--line);
-    display:block;
-  }
-  .hero-figure figcaption{
-    margin-top:10px;
-    font-size:0.85rem;
-    color:var(--ink-faint);
-  }
-
-  /* ---------- Content ---------- */
-  article.content{
-    padding-bottom:64px;
-    font-size:1.05rem;
-    color:var(--ink);
-  }
-  article.content p{
-    margin:0 0 22px;
-    color:var(--ink-soft);
-  }
-  article.content h2{
-    font-size:1.4rem;
-    font-weight:700;
-    margin:44px 0 16px;
-    color:var(--ink);
-  }
-  article.content h3{
-    font-size:1.15rem;
-    font-weight:600;
-    margin:32px 0 12px;
-    color:var(--ink);
-  }
-  article.content ul,
-  article.content ol{
-    margin:0 0 22px;
-    padding-left:22px;
-    color:var(--ink-soft);
-  }
-  article.content li{margin-bottom:8px;}
-  article.content strong{color:var(--ink);}
-  article.content em{font-style:italic;}
-
-  .summary-box{
-    background:var(--accent-soft);
-    border:1px solid #CFE6DA;
-    border-radius:var(--radius);
-    padding:22px 26px;
-    margin:0 0 36px;
-  }
-  .summary-box h2{
-    font-size:1.05rem;
-    margin:0 0 10px;
-  }
-  .summary-box ul{margin:0;padding-left:20px;}
-  .summary-box li{margin-bottom:6px;color:var(--ink);}
-
-  .table-scroll{
-    overflow-x:auto;
-    margin:0 0 26px;
-    border:1px solid var(--line);
-    border-radius:10px;
-    background:var(--bg-card);
-  }
-  .table-scroll table{
-    border-collapse:collapse;
-    width:100%;
-    min-width:560px;
-    font-size:0.92rem;
-  }
-  .table-scroll th,
-  .table-scroll td{
-    text-align:left;
-    padding:12px 14px;
-    border-bottom:1px solid var(--line);
-    vertical-align:top;
-    color:var(--ink-soft);
-  }
-  .table-scroll th{
-    font-family:var(--display);
-    color:var(--ink);
-    background:var(--accent-soft);
-    font-weight:600;
-  }
-  .table-scroll tr:last-child td{border-bottom:none;}
-
-  .pull-quote{
-    background:var(--ink);
-    border-radius:var(--radius);
-    padding:32px 34px;
-    margin:36px 0;
-    position:relative;
-    overflow:hidden;
-  }
-  .pull-quote p{
-    font-family:var(--display);
-    font-size:1.15rem;
-    font-weight:600;
-    color:#fff;
-    line-height:1.45;
-    margin:0;
-  }
-
-  .faq details{
-    background:var(--bg-card);
-    border:1px solid var(--line);
-    border-radius:10px;
-    padding:16px 20px;
-    margin-bottom:12px;
-  }
-  .faq summary{
-    cursor:pointer;
-    font-family:var(--display);
-    font-weight:600;
-    color:var(--ink);
-    font-size:1.02rem;
-  }
-  .faq details p{margin:12px 0 0;}
-
-  hr.rule{
-    border:none;
-    border-top:1px solid var(--line);
-    margin:44px 0;
-  }
-
-  /* ---------- Article footer ---------- */
-  .article-footer{
-    padding:32px 0 64px;
-    border-top:1px solid var(--line);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:16px;
-  }
-  .article-footer a{
-    font-family:var(--mono);
-    font-size:0.85rem;
-    text-decoration:none;
-    color:var(--accent);
-  }
-
-  /* ---------- Site footer ---------- */
-  footer.site{
-    background:var(--ink);
-    color:#EDEFEC;
-    padding:64px 0 32px;
-  }
-  .footer-head{
-    max-width:1080px;
-    margin:0 auto;
-    padding:0 28px 44px;
-    display:grid;
-    grid-template-columns:1.2fr 1fr;
-    gap:50px;
-    border-bottom:1px solid rgba(255,255,255,0.12);
-  }
-  footer.site h2{
-    color:#fff;
-    font-size:clamp(1.6rem, 2.4vw, 2rem);
-    margin-bottom:14px;
-  }
-  footer.site .lede{
-    color:#AEBAB8;
-    font-size:1rem;
-    max-width:44ch;
-  }
-  .contact-card{
-    display:flex;
-    flex-direction:column;
-    gap:16px;
-  }
-  .contact-row{
-    display:flex;
-    flex-direction:column;
-    gap:3px;
-    padding-bottom:14px;
-    border-bottom:1px solid rgba(255,255,255,0.1);
-  }
-  .contact-row:last-child{border-bottom:none;padding-bottom:0;}
-  .contact-row .k{
-    font-family:var(--mono);
-    font-size:0.72rem;
-    text-transform:uppercase;
-    letter-spacing:0.06em;
-    color:#7F9188;
-  }
-  .contact-row a, .contact-row .v{
-    font-family:var(--mono);
-    font-size:0.98rem;
-    color:#fff;
-    text-decoration:none;
-  }
-  .contact-row a:hover{color:#8FD6B8;}
-  .copy-btn{
-    background:none;
-    border:none;
-    color:#7F9188;
-    font-family:var(--mono);
-    font-size:0.72rem;
-    cursor:pointer;
-    padding:0;
-    margin-left:10px;
-    text-decoration:underline;
-  }
-  .copy-btn:hover{color:#8FD6B8;}
-  .footer-bottom{
-    max-width:1080px;
-    margin:0 auto;
-    padding:26px 28px 0;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:10px;
-  }
-  .footer-bottom p{
-    font-size:0.8rem;
-    color:#7F9188;
-  }
-  .footer-bottom .badges{
-    display:flex;
-    gap:8px;
-  }
-  .chip{
-    font-family:var(--mono);
-    font-size:0.72rem;
-    color:var(--ink);
-    background:var(--accent-soft);
-    border:1px solid #CFE6DA;
-    padding:5px 11px;
-    border-radius:100px;
-  }
-  .footer-bottom .chip{
-    background:rgba(255,255,255,0.06);
-    border-color:rgba(255,255,255,0.14);
-    color:#AEBAB8;
-  }
-  .social-row{
-    display:flex;
-    gap:14px;
-    flex-wrap:wrap;
-    margin-top:8px;
-  }
-
-  /* ---------- Responsive ---------- */
-  @media (max-width:860px){
-    .footer-head{grid-template-columns:1fr;}
-    .nav ul{
-      position:fixed;
-      top:60px;left:0;right:0;
-      background:var(--bg);
-      flex-direction:column;
-      gap:0;
-      border-bottom:1px solid var(--line);
-      max-height:0;
-      overflow-y:auto;
-      transition:max-height .25s ease;
-    }
-    .nav ul.open{
-      max-height: min(70vh, 500px);
-    }
-    .nav ul li{width:100%;}
-    .nav a.navlink{
-      display:block;
-      padding:14px 28px;
-      border-top:1px solid var(--line);
-    }
-    .nav-toggle{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      width:36px;height:36px;
-      background:none;
-      border:1px solid var(--line);
-      border-radius:8px;
-      cursor:pointer;
-    }
-  }
-  @media (max-width:700px){
-    .wrap{padding:0 20px;}
-    .article-header{padding:48px 0 28px;}
-    .summary-box{padding:18px 20px;}
-  }
-
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
-  }
+:root{--bg:#F5F6F3;--bg-card:#FFFFFF;--ink:#14212B;--ink-soft:#51636D;--ink-faint:#66777F;--accent:#1F7A5C;--accent-soft:#E4F1EA;--link:#1A56DB;--line:#DDE2DE;--radius:14px;--display:'Space Grotesk', system-ui, sans-serif;--body:'Inter', system-ui, sans-serif;--mono:'JetBrains Mono', 'Courier New', monospace;--maxw:760px;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img,svg{display:block;max-width:100%;}
+a{color:var(--link);}
+h1,h2,h3{font-family:var(--display);letter-spacing:-0.01em;color:var(--ink);margin:0;}
+p{margin:0;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+header.site{position:sticky;top:0;z-index:50;background:rgba(245,246,243,0.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.nav{max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;}
+.nav .brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:0.85rem;font-weight:500;color:var(--ink);text-decoration:none;}
+.nav .brand .dot{color:var(--accent);}
+.nav .brand img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:1px solid var(--line);}
+.nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;}
+.nav a.navlink{text-decoration:none;font-size:0.88rem;color:var(--ink-soft);font-weight:500;transition:color .15s ease;}
+.nav a.navlink:hover{color:var(--accent);}
+.nav-toggle{display:none;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:9px;font-weight:600;font-size:0.92rem;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease;border:1px solid transparent;}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line);font-family:var(--mono);}
+.btn-ghost:hover{border-color:var(--ink);}
+.article-header{padding:56px 0 32px;}
+.breadcrumb{font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);margin-bottom:20px;text-decoration:none;display:inline-block;}
+.breadcrumb:hover{color:var(--accent);}
+.eyebrow{font-family:var(--mono);font-size:0.78rem;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:14px;}
+.article-header h1{font-size:clamp(1.9rem, 3.4vw, 2.5rem);line-height:1.18;font-weight:700;margin-bottom:16px;}
+.meta{font-family:var(--mono);font-size:0.8rem;color:var(--ink-faint);}
+.author{display:flex;align-items:center;gap:8px;margin-top:18px;font-size:0.92rem;color:var(--ink-soft);flex-wrap:wrap;}
+.author a{color:var(--accent);font-weight:600;text-decoration:none;}
+.author a:hover{text-decoration:underline;}
+.hero-figure{margin:0 0 40px;}
+.hero-figure img{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line);display:block;}
+.hero-figure figcaption{margin-top:10px;font-size:0.85rem;color:var(--ink-faint);}
+article.content{padding-bottom:64px;font-size:1.05rem;color:var(--ink);}
+article.content p{margin:0 0 22px;color:var(--ink-soft);}
+article.content h2{font-size:1.4rem;font-weight:700;margin:44px 0 16px;color:var(--ink);}
+article.content h3{font-size:1.15rem;font-weight:600;margin:32px 0 12px;color:var(--ink);}
+article.content ul,article.content ol{margin:0 0 22px;padding-left:22px;color:var(--ink-soft);}
+article.content li{margin-bottom:8px;}
+article.content strong{color:var(--ink);}
+article.content em{font-style:italic;}
+.pull-quote{background:var(--ink);border-radius:var(--radius);padding:32px 34px;margin:36px 0;position:relative;overflow:hidden;}
+.pull-quote p{font-family:var(--display);font-size:1.15rem;font-weight:600;color:#fff;line-height:1.45;margin:0;}
+.summary-box{background:var(--accent-soft);border:1px solid #CFE6DA;border-radius:var(--radius);padding:22px 26px;margin:0 0 36px;}
+.summary-box h2{font-size:1.05rem;margin:0 0 10px;}
+.summary-box ul{margin:0;padding-left:20px;}
+.summary-box li{margin-bottom:6px;color:var(--ink);}
+.table-scroll{overflow-x:auto;margin:0 0 26px;border:1px solid var(--line);border-radius:10px;background:var(--bg-card);}
+.table-scroll table{border-collapse:collapse;width:100%;min-width:560px;font-size:0.92rem;}
+.table-scroll th,.table-scroll td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-soft);}
+.table-scroll th{font-family:var(--display);color:var(--ink);background:var(--accent-soft);font-weight:600;}
+.table-scroll tr:last-child td{border-bottom:none;}
+.faq details{background:var(--bg-card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin-bottom:12px;}
+.faq summary{cursor:pointer;font-family:var(--display);font-weight:600;color:var(--ink);font-size:1.02rem;}
+.faq details p{margin:12px 0 0;}
+hr.rule{border:none;border-top:1px solid var(--line);margin:44px 0;}
+.article-footer{padding:32px 0 64px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+.article-footer a{font-family:var(--mono);font-size:0.85rem;text-decoration:none;color:var(--accent);}
+footer.site{background:var(--ink);color:#EDEFEC;padding:64px 0 32px;}
+.footer-head{max-width:1080px;margin:0 auto;padding:0 28px 44px;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;border-bottom:1px solid rgba(255,255,255,0.12);}
+footer.site h2{color:#fff;font-size:clamp(1.6rem, 2.4vw, 2rem);margin-bottom:14px;}
+footer.site .lede{color:#AEBAB8;font-size:1rem;max-width:44ch;}
+.copy-btn{background:none;border:none;color:#7F9188;font-family:var(--mono);font-size:0.72rem;cursor:pointer;padding:0;margin-left:10px;text-decoration:underline;}
+.copy-btn:hover{color:#8FD6B8;}
+.footer-bottom{max-width:1080px;margin:0 auto;padding:26px 28px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{font-size:0.8rem;color:#7F9188;}
+.footer-bottom .badges{display:flex;gap:8px;}
+.chip{font-family:var(--mono);font-size:0.72rem;color:var(--ink);background:var(--accent-soft);border:1px solid #CFE6DA;padding:5px 11px;border-radius:100px;}
+.footer-bottom .chip{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.14);color:#AEBAB8;}
+@media (max-width:860px){
+.footer-head{grid-template-columns:1fr;}
+.nav ul{position:fixed;top:60px;left:0;right:0;background:var(--bg);flex-direction:column;gap:0;border-bottom:1px solid var(--line);max-height:0;overflow-y:auto;transition:max-height .25s ease;}
+.nav ul.open{max-height:min(70vh, 500px);}
+.nav ul li{width:100%;}
+.nav a.navlink{display:block;padding:14px 28px;border-top:1px solid var(--line);}
+.nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:none;border:1px solid var(--line);border-radius:8px;cursor:pointer;}
+}
+@media (max-width:700px){
+.wrap{padding:0 20px;}
+.article-header{padding:48px 0 28px;}
+.summary-box{padding:18px 20px;}
+}
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto;}
+*{animation-duration:0.001ms !important;transition-duration:0.001ms !important;}
+}
+.btn{font-family:var(--body);cursor:pointer;justify-content:center;}
+.btn-primary{background:var(--ink);color:#fff;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,33,43,0.18);}
+.nav ul{align-items:center;}
+.nav-cta{padding:9px 16px;font-size:0.85rem;}
+footer.site .lede{margin-bottom:22px;}
+.footer-links{display:flex;gap:12px;flex-wrap:wrap;}
+.footer-links .btn-ghost{border-color:rgba(255,255,255,0.25);color:#fff;}
+.contact-direct{margin-top:26px;font-family:var(--mono);font-size:0.85rem;color:#AEBAB8;}
+.contact-direct a{color:#fff;text-decoration:none;}
+.contact-direct a:hover{color:#8FD6B8;}
+.copy-btn{color:#AEBAB8;font-size:0.75rem;}
+form.contact{display:flex;flex-direction:column;gap:14px;}
+form.contact label{font-family:var(--mono);font-size:0.75rem;color:#AEBAB8;display:flex;flex-direction:column;gap:6px;}
+form.contact input,form.contact textarea,form.contact select{font:inherit;font-family:var(--body);font-size:0.95rem;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:8px;padding:11px 13px;}
+form.contact select option{color:#14212B;}
+form.contact textarea{min-height:110px;resize:vertical;}
+form.contact .btn-primary{background:#fff;color:var(--ink);align-self:flex-start;}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;}
+.footer-bottom p{color:#9DAEA6;}
+@media (max-width:860px){
+  .nav ul{position:absolute;top:100%;}
+  .nav-cta{margin:14px 28px;}
+  .nav-toggle{width:40px;height:40px;font-size:1.1rem;color:var(--ink);}
+}
 </style>
 </head>
 <body>
-
 <header class="site">
-  <div class="nav">
-    <a class="brand" href="/">
-      <img src="/images/Beranto-Logo-Vector.svg" alt="Herinirina Beranto - Logo SEO" class="brand-logo">
-      <span class="brand-text">Beranto <span class="dot">.</span> seo</span>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-    <ul id="navList">
-      <li><a class="navlink" href="/#profil">Profil</a></li>
-      <li><a class="navlink" href="/#methode">Méthode</a></li>
-      <li><a class="navlink" href="/#competences">Compétences</a></li>
-      <li><a class="navlink" href="/#experience">Expérience</a></li>
+<div class="nav">
+<a class="brand" href="/">
+<img src="/images/Beranto-Logo-Vector.svg" alt="Herinirina Beranto - Logo SEO" width="36" height="36" class="brand-logo">
+<span class="brand-text">Beranto <span class="dot">.</span> seo</span>
+</a>
+<button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+<ul id="navList">
       <li><a class="navlink" href="/cas-clients">Cas clients</a></li>
-      <li><a class="navlink" href="/apropos">À propos</a></li>
+      <li><a class="navlink" href="/#methode">Méthode</a></li>
       <li><a class="navlink" href="/blog/" aria-current="page" style="color:var(--accent);">Blog</a></li>
-      <li><a class="navlink" href="/#contact">Contact</a></li>
+      <li><a class="navlink" href="/apropos">À propos</a></li>
+      <li><a class="btn btn-primary nav-cta" href="/#contact">Me contacter</a></li>
     </ul>
-  </div>
+</div>
 </header>
-
 <main>
-  <div class="wrap article-header">
-    <a class="breadcrumb" href="/blog/">← Retour au blog</a>
-    <span class="eyebrow">Stratégie éditoriale</span>
-    <h1>Recherche mots-clés SEO : comment construire sa liste avant d'écrire</h1>
-    <span class="meta">15 octobre 2026 · 11 min de lecture</span>
-    <div class="author">Article écrit par <a href="/apropos">Beranto</a>, rédacteur web et stratégiste SEO freelance</div>
-  </div>
-
-  <div class="wrap">
-    <article class="content">
-
-      <p>La <strong>recherche mots-clés SEO</strong> (ou recherche de mots-clés) consiste à identifier les requêtes que votre audience saisit dans les moteurs de recherche, à comprendre l'intention derrière chacune, puis à décider quelle page répondra à quelle requête. Elle se fait avant la rédaction, en cinq étapes : partir de votre sujet, élargir la liste, lire la page de résultats, regrouper par intention, prioriser.</p>
-
-      <p>C'est le point de départ du <a href="/blog/cocon-semantique-maillage-interne"><strong>cocon sémantique</strong></a> : on ne peut pas hiérarchiser des intentions qu'on n'a pas encore listées. C'est aussi la meilleure protection contre la <a href="/blog/cannibalisation-seo-pages-qui-se-concurrencent"><strong>cannibalisation SEO</strong></a>, qui naît presque toujours d'une liste de mots-clés mal regroupée.</p>
-
-      <div class="summary-box">
-        <h2>L'essentiel en 30 secondes</h2>
-        <ul>
-          <li>Le <strong>mot-clé</strong> est la requête tapée ; l'<strong>intention</strong> est la raison pour laquelle l'internaute la tape. C'est l'intention qui décide du contenu à écrire.</li>
-          <li>Cinq étapes : <strong>sujet et vocabulaire, élargissement, lecture de la page de résultats, regroupement par intention, priorisation</strong>.</li>
-          <li>Une page vise <strong>une intention principale</strong> et un mot-clé principal, avec des variantes sémantiques.</li>
-          <li>Les volumes de recherche sont des <strong>estimations</strong> : des ordres de grandeur, jamais des promesses de trafic.</li>
-          <li>La <strong>Search Console</strong> est la seule source qui donne les données réelles de votre propre site.</li>
-        </ul>
-      </div>
-
-      <figure class="hero-figure">
-        <img src="/images/recherche-mots-cles-seo.webp" alt="Bureau de travail avec un ordinateur affichant des résultats de recherche et un carnet où une carte mentale de mots-clés est dessinée à l'aide de notes adhésives colorées" width="1536" height="1024" loading="eager">
-        <figcaption>La recherche de mots-clés commence souvent sur papier : une idée centrale, puis les questions qui en découlent.</figcaption>
-      </figure>
-
-      <h2>Qu'est-ce que la recherche de mots-clés SEO, et pourquoi la faire avant d'écrire ?</h2>
-      <p>En SEO, un <strong>mot-clé</strong> est une requête, un mot ou une phrase, tapée ou dictée par un internaute. La recherche de mots-clés sert à trois choses : savoir ce que votre audience cherche vraiment, avec ses propres mots ; savoir quel type de contenu attend chaque requête ; éviter d'écrire deux pages pour la même demande.</p>
-      <p>Sans cette étape, on écrit sur ce qu'on connaît, avec le vocabulaire du métier, et on découvre ensuite que personne ne tape ces termes. Avec elle, l'article part d'une base observable. Google le rappelle dans sa documentation : les mesures de SEO sont utiles lorsqu'elles s'appliquent à un contenu pensé d'abord pour les personnes, pas pour les moteurs (<a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=fr" target="_blank" rel="noopener">Créer des contenus utiles, fiables et people-first</a>). La recherche de mots-clés n'est donc pas un exercice de bourrage : c'est une façon d'écouter la demande.</p>
-
-      <h2>Quels sont les 4 types d'intention de recherche ?</h2>
-      <p>L'<strong>intention de recherche</strong> est le besoin derrière la requête. On distingue généralement quatre familles.</p>
-
-      <div class="table-scroll">
-        <table>
-          <thead>
-            <tr>
-              <th>Intention</th>
-              <th>Ce que cherche l'internaute</th>
-              <th>Exemple de requête</th>
-              <th>Contenu adapté</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Informationnelle</td>
-              <td>Comprendre, apprendre</td>
-              <td>« qu'est-ce que la longue traîne »</td>
-              <td>Guide, définition, article explicatif</td>
-            </tr>
-            <tr>
-              <td>Navigationnelle</td>
-              <td>Atteindre un site ou un outil précis</td>
-              <td>« google search console »</td>
-              <td>Page d'accueil ou page de l'outil concerné</td>
-            </tr>
-            <tr>
-              <td>Commerciale</td>
-              <td>Comparer avant de choisir</td>
-              <td>« meilleur outil recherche mots-clés »</td>
-              <td>Comparatif, avis, guide de choix</td>
-            </tr>
-            <tr>
-              <td>Transactionnelle</td>
-              <td>Acheter, s'inscrire, contacter</td>
-              <td>« ahrefs tarif »</td>
-              <td>Page de service, fiche produit, page de contact</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p>Une même requête peut mêler deux intentions. C'est pourquoi l'étape 3 de la méthode ci-dessous, la lecture de la page de résultats, est indispensable.</p>
-
-      <h2>Comment faire une recherche de mots-clés SEO en 5 étapes ?</h2>
-
-      <h3>1. Partir de votre sujet et du vocabulaire de vos lecteurs</h3>
-      <p>Notez cinq à dix termes de départ, les « mots-clés graines » : votre activité, les problèmes que vous résolvez, les questions que vos clients posent en rendez-vous, par e-mail ou dans leurs avis. Le vocabulaire des clients diffère souvent de celui des professionnels, et c'est le leur qui est tapé dans la barre de recherche.</p>
-
-      <h3>2. Élargir la liste avec des sources gratuites, puis un outil</h3>
-      <ul>
-        <li><strong>L'autocomplétion de Google</strong> : tapez un terme de départ et notez les suggestions.</li>
-        <li><strong>Le bloc « Autres questions posées »</strong> et les recherches associées en bas de page : ce sont des formulations réelles.</li>
-        <li><strong>La <a href="https://search.google.com/search-console" target="_blank" rel="noopener">Search Console</a></strong>, si votre site existe déjà : les requêtes pour lesquelles vous apparaissez, notamment celles qui ont beaucoup d'impressions mais peu de clics.</li>
-        <li><strong>Google Trends</strong> pour comparer deux formulations et repérer la saisonnalité.</li>
-        <li><strong>Un outil de mots-clés</strong> (Semrush, Ahrefs, Ubersuggest, Keyword Planner) pour estimer volumes et difficulté.</li>
-      </ul>
-      <p>Visez plusieurs dizaines de requêtes brutes pour un même sujet. Le tri vient ensuite.</p>
-
-      <h3>3. Lire la page de résultats pour confirmer l'intention</h3>
-      <p>C'est l'étape que l'on saute le plus souvent. Tapez la requête et observez les dix premiers résultats : guides ou fiches produits ? comparatifs ou définitions ? forums ? Y a-t-il des extraits en vedette, des questions associées, un aperçu généré par IA ? La page de résultats montre ce que Google considère comme la meilleure réponse à cette requête.</p>
-      <p>Si les dix résultats sont des comparatifs et que vous préparez un guide théorique, vous visez à côté. L'intention se lit dans les résultats, pas dans le mot-clé lui-même.</p>
-
-      <h3>4. Regrouper les mots-clés par intention</h3>
-      <p>Deux requêtes appartiennent à la même page lorsqu'elles reçoivent le même type de réponse. Le test pratique : comparez leurs pages de résultats. Si elles se recoupent largement, une seule page suffit. Sinon, ce sont deux pages. Reprenons le sujet de mon <a href="/blog/cocon-semantique-exemple"><strong>exemple de cocon sémantique</strong></a>, la randonnée en montagne :</p>
-
-      <div class="table-scroll">
-        <table>
-          <thead>
-            <tr>
-              <th>Requêtes brutes</th>
-              <th>Intention</th>
-              <th>Page cible</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>« équipement randonnée montagne », « que mettre dans son sac de randonnée », « liste matériel rando »</td>
-              <td>Informationnelle : s'équiper</td>
-              <td>Un seul article « Équipement nécessaire ». Un mot-clé principal, les autres en variantes</td>
-            </tr>
-            <tr>
-              <td>« dormir en refuge de montagne », « bivouac en montagne règles »</td>
-              <td>Informationnelle : se loger</td>
-              <td>Un article « Où dormir en montagne »</td>
-            </tr>
-            <tr>
-              <td>« meilleures chaussures de randonnée »</td>
-              <td>Commerciale : comparer</td>
-              <td>Un comparatif distinct : la page de résultats attendue n'est pas celle de l'équipement général</td>
-            </tr>
-            <tr>
-              <td>« réserver un refuge »</td>
-              <td>Transactionnelle : réserver</td>
-              <td>Pas d'article dédié sauf si vous proposez le service. Sinon, un lien depuis « Où dormir en montagne »</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p>Ce tableau est un exemple pédagogique : les pages de résultats réelles sont à vérifier avant de décider.</p>
-
-      <h3>5. Prioriser avec une grille simple</h3>
-      <p>Classez les regroupements avec quatre critères : le <strong>volume estimé</strong>, la <strong>difficulté</strong> (la concurrence en place), la <strong>valeur pour votre activité</strong> et votre capacité à apporter une <strong>expérience ou une expertise réelle</strong> sur le sujet. Commencez par les requêtes à la fois utiles à votre activité et accessibles. Un site récent progresse plus vite sur une requête précise que sur un terme générique occupé par de gros sites.</p>
-      <p>Un tableau de suivi minimal suffit :</p>
-
-      <div class="table-scroll">
-        <table>
-          <thead>
-            <tr>
-              <th>Mot-clé principal</th>
-              <th>Intention</th>
-              <th>Volume estimé</th>
-              <th>Difficulté</th>
-              <th>Valeur (1 à 3)</th>
-              <th>Page cible</th>
-              <th>Statut</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>équipement randonnée montagne</td>
-              <td>Informationnelle</td>
-              <td>à relever dans votre outil</td>
-              <td>à relever dans votre outil</td>
-              <td>3</td>
-              <td>Article « Équipement nécessaire »</td>
-              <td>À rédiger</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="pull-quote">
-        <p>Un mot-clé sans page cible est une idée. Une page sans mot-clé principal est un pari.</p>
-      </div>
-
-      <h2>Quels outils utiliser pour la recherche de mots-clés ?</h2>
-      <p>Aucun outil ne suffit seul. Croisez au moins deux sources : une qui montre ce que les internautes tapent, une qui montre ce que votre site obtient déjà.</p>
-
-      <div class="table-scroll">
-        <table>
-          <thead>
-            <tr>
-              <th>Source</th>
-              <th>Ce qu'elle apporte</th>
-              <th>Limite à connaître</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Autocomplétion, « Autres questions posées »</td>
-              <td>Formulations réelles, gratuit</td>
-              <td>Aucun chiffre de volume</td>
-            </tr>
-            <tr>
-              <td>Google Search Console</td>
-              <td>Vos requêtes réelles : impressions, clics, position moyenne, sur 16 mois</td>
-              <td>Uniquement les requêtes pour lesquelles votre site apparaît déjà. Certaines requêtes rares sont masquées par Google</td>
-            </tr>
-            <tr>
-              <td>Google Trends</td>
-              <td>Comparaison de formulations, saisonnalité</td>
-              <td>Indices relatifs, pas de volumes absolus</td>
-            </tr>
-            <tr>
-              <td>Google Keyword Planner</td>
-              <td>Données issues de Google, accessible avec un compte Google Ads</td>
-              <td>Sans dépenses publicitaires actives, les volumes s'affichent en fourchettes larges</td>
-            </tr>
-            <tr>
-              <td>Semrush, Ahrefs, Ubersuggest</td>
-              <td>Volumes estimés, difficulté, analyse des concurrents</td>
-              <td>Estimations propres à chaque outil. La difficulté n'est pas comparable d'un outil à l'autre. Offres en partie payantes</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h2>Comment lire un volume de recherche sans se tromper ?</h2>
-      <ul>
-        <li><strong>Un volume est une estimation.</strong> Deux outils affichent rarement le même chiffre pour la même requête. Comparez des ordres de grandeur.</li>
-        <li><strong>Les variantes de formulation se comptent différemment selon les outils.</strong> « Recherche mots-clés SEO » et « recherche de mots-clés SEO » expriment en général la même demande, mais certains outils les regroupent et d'autres les séparent. Choisissez la formulation la plus recherchée pour le titre, le H1 et l'URL, et employez l'autre naturellement dans le texte. C'est le choix fait pour cet article.</li>
-        <li><strong>Un faible volume ne veut pas dire « sans intérêt ».</strong> Une requête précise et peu recherchée peut mieux convertir qu'un terme générique très recherché.</li>
-        <li><strong>Volume et visites ne sont pas équivalents.</strong> L'affichage de la page de résultats (extraits, aperçus IA, annonces) influe sur le nombre de clics qu'une position rapporte.</li>
-        <li><strong>La saisonnalité fausse les moyennes.</strong> Vérifiez l'évolution sur douze mois dans Google Trends ou dans votre outil.</li>
-      </ul>
-
-      <h2>Recherche de mots-clés et moteurs IA : qu'est-ce qui change ?</h2>
-      <p>Les internautes formulent des questions de plus en plus longues et conversationnelles, y compris auprès d'assistants IA. Trois conséquences pratiques pour votre liste :</p>
-      <ul>
-        <li><strong>Listez des questions, pas seulement des mots-clés.</strong> Chaque titre de section peut reprendre une question réelle, avec la réponse directe dans les deux premières phrases.</li>
-        <li><strong>Appuyez-vous sur des données observables.</strong> Les données de volume sur les questions posées aux assistants IA restent moins fiables que celles de la recherche classique. La Search Console, les questions de vos clients et « Autres questions posées » sont des sources plus sûres.</li>
-        <li><strong>Misez sur un contenu unique.</strong> Pour ses expériences IA, Google recommande de se concentrer sur un contenu original et utile pour les visiteurs (<a href="https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search" target="_blank" rel="noopener">billet de Google Search Central sur les expériences IA, en anglais</a>).</li>
-      </ul>
-      <p>Aucune méthode ne garantit d'être cité par une IA. Pour aller plus loin, lisez mon article sur l'<a href="/blog/optimisation-moteurs-ia-geo-aeo"><strong>optimisation pour les moteurs IA (GEO et AEO)</strong></a>.</p>
-
-      <h2>Quelles erreurs éviter en recherche de mots-clés ?</h2>
-      <ul>
-        <li><strong>Choisir sur le seul volume.</strong> Un mot-clé très recherché dont l'intention ne correspond pas à votre page ne vous apportera pas le bon public.</li>
-        <li><strong>Ignorer la page de résultats.</strong> Elle seule révèle le type de contenu attendu.</li>
-        <li><strong>Viser un terme trop général avec un site récent.</strong> Partez de requêtes plus précises, puis élargissez.</li>
-        <li><strong>Créer une page par variante.</strong> « Recherche mots-clés SEO » et « recherche de mots-clés SEO » appellent la même page. Deux pages se concurrenceraient : c'est la cannibalisation SEO évoquée en introduction.</li>
-        <li><strong>Oublier le vocabulaire de vos clients.</strong> Leurs questions valent plus que n'importe quelle liste générée par un outil.</li>
-        <li><strong>Répéter le mot-clé de façon mécanique.</strong> Écrivez pour la personne qui lit, avec des variantes naturelles et des réponses précises.</li>
-        <li><strong>Ne jamais revenir sur sa liste.</strong> Les requêtes évoluent : réexaminez vos pages à intervalle régulier avec la Search Console.</li>
-      </ul>
-
-      <h2>Du mot-clé au cocon sémantique : par où continuer ?</h2>
-      <p>Une fois la liste regroupée par intention, vous avez la matière de votre cocon : chaque regroupement devient un cluster, et la requête la plus large devient la page pilier. La logique est celle du cocon sémantique et de la hiérarchie des intentions, appliquée pas à pas dans l'exemple sur la randonnée en montagne.</p>
-      <p>Pour chaque page, demandez-vous aussi quelle expérience et quelles preuves vous pouvez apporter : c'est ce que vérifie l'<a href="/blog/eeat-conventions-editoriales"><strong>EEAT</strong></a>. Un mot-clé bien choisi ne compense pas un contenu sans substance.</p>
-
-      <h2>Ce que j'observe en audit</h2>
-      <!-- À COMPLÉTER PAR L'AUTEUR : ajouter ici un exemple réel de recherche de mots-clés tiré d'un projet (contexte, erreur repérée, correction, résultat si mesuré). Le cas ci-dessous est repris de l'article sur le cocon sémantique exemple, déjà publié. -->
-      <p>Sur le site d'une agence de recrutement tech, une page pilier générique cannibalisait trois pages satellites plus précises. La correction a consisté à réorganiser les liens et à clarifier l'intention de chaque page, pas à produire du contenu supplémentaire. C'est l'illustration la plus nette de ce que cette étape évite : quand les intentions ne sont pas séparées avant d'écrire, on se retrouve à les démêler après coup.</p>
-      <p>Transparence : les requêtes de la randonnée en montagne sont des exemples pédagogiques, pas les données d'un client. Les volumes et les difficultés sont à relever dans votre propre outil, pour votre langue et votre pays.</p>
-
-      <hr class="rule">
-
-      <h2>Questions fréquentes sur la recherche de mots-clés SEO</h2>
-      <div class="faq">
-        <details>
-          <summary>Combien de mots-clés faut-il cibler par page ?</summary>
-          <p>Un mot-clé principal par page, accompagné de variantes et de questions proches qui répondent à la même intention. Si une requête appelle une réponse différente, elle mérite sa propre page. C'est cette règle qui protège de la cannibalisation.</p>
-        </details>
-        <details>
-          <summary>Quelle différence entre un mot-clé et une intention de recherche ?</summary>
-          <p>Le mot-clé est la requête saisie par l'internaute. L'intention est le besoin qui se cache derrière : comprendre, comparer, acheter, trouver un site. Deux mots-clés différents peuvent avoir la même intention et relever d'une seule page. Un même mot-clé peut aussi cacher deux intentions, d'où l'importance de lire la page de résultats.</p>
-        </details>
-        <details>
-          <summary>Peut-on faire une recherche de mots-clés gratuitement ?</summary>
-          <p>Oui, en grande partie. L'autocomplétion, le bloc « Autres questions posées », Google Trends et la Search Console (pour un site déjà en ligne) sont gratuits. Les volumes chiffrés demandent en général un outil : le Keyword Planner nécessite un compte Google Ads et affiche des fourchettes larges sans dépenses publicitaires actives, les outils comme Semrush ou Ahrefs sont payants ou freemium.</p>
-        </details>
-        <details>
-          <summary>À quelle fréquence refaire sa recherche de mots-clés ?</summary>
-          <p>Avant chaque nouveau contenu, puis à intervalle régulier sur les pages existantes, par exemple chaque trimestre. La Search Console conserve 16 mois de données de performance : c'est assez pour repérer les requêtes nouvelles, les pages qui stagnent et les saisonnalités.</p>
-        </details>
-        <details>
-          <summary>Une IA peut-elle remplacer la recherche de mots-clés ?</summary>
-          <p>Un assistant IA aide à brainstormer des idées, des formulations et des regroupements. Il ne remplace ni la lecture de la page de résultats, ni vos données réelles de la Search Console, ni un outil de volumes. Utilisez-le pour élargir la liste, puis vérifiez chaque requête avec des sources mesurées.</p>
-        </details>
-      </div>
-
-      <h3>Ce qu'il faut retenir</h3>
-      <p>Une bonne recherche de mots-clés ne produit pas une longue liste, mais un plan : chaque page a une intention principale, un mot-clé principal et sa place dans la structure du site. Partez du vocabulaire de vos lecteurs, vérifiez l'intention sur la page de résultats, regroupez avant d'écrire, puis priorisez selon la valeur pour votre activité. Les chiffres guident, ils ne décident pas.</p>
-
-      <div class="summary-box">
-        <h2>Méthode et sources</h2>
-        <ul>
-          <li>Dernière mise à jour : 15 octobre 2026.</li>
-          <li>Sources : documentation Google Search Central sur les contenus people-first, billet de Google Search Central sur les expériences IA (2025) et données de la Search Console.</li>
-          <li>Les exemples de requêtes sont pédagogiques. Vérifiez les volumes et les pages de résultats dans votre propre outil avant toute décision.</li>
-        </ul>
-      </div>
-
-    </article>
-  </div>
-
-  <div class="wrap article-footer">
-    <a href="/blog/">← Tous les articles</a>
-    <a href="/#contact">Discuter d'un audit ou d'une refonte →</a>
-  </div>
+<div class="wrap article-header">
+<a class="breadcrumb" href="/blog/">← Retour au blog</a>
+<span class="eyebrow">Stratégie éditoriale</span>
+<h1>Recherche mots-clés SEO : comment construire sa liste avant d'écrire</h1>
+<span class="meta">15 octobre 2026 · 11 min de lecture</span>
+<div class="author">Article écrit par <a href="/apropos">Beranto</a>, rédacteur web et stratégiste SEO freelance</div>
+</div>
+<div class="wrap">
+<article class="content">
+<p>La <strong>recherche mots-clés SEO</strong> (ou recherche de mots-clés) consiste à identifier les requêtes que votre audience saisit dans les moteurs de recherche, à comprendre l'intention derrière chacune, puis à décider quelle page répondra à quelle requête. Elle se fait avant la rédaction, en cinq étapes : partir de votre sujet, élargir la liste, lire la page de résultats, regrouper par intention, prioriser.</p>
+<p>C'est le point de départ du <a href="/blog/cocon-semantique-maillage-interne"><strong>cocon sémantique</strong></a> : on ne peut pas hiérarchiser des intentions qu'on n'a pas encore listées. C'est aussi la meilleure protection contre la <a href="/blog/cannibalisation-seo-pages-qui-se-concurrencent"><strong>cannibalisation SEO</strong></a>, qui naît presque toujours d'une liste de mots-clés mal regroupée.</p>
+<div class="summary-box">
+<h2>L'essentiel en 30 secondes</h2>
+<ul>
+<li>Le <strong>mot-clé</strong> est la requête tapée ; l'<strong>intention</strong> est la raison pour laquelle l'internaute la tape. C'est l'intention qui décide du contenu à écrire.</li>
+<li>Cinq étapes : <strong>sujet et vocabulaire, élargissement, lecture de la page de résultats, regroupement par intention, priorisation</strong>.</li>
+<li>Une page vise <strong>une intention principale</strong> et un mot-clé principal, avec des variantes sémantiques.</li>
+<li>Les volumes de recherche sont des <strong>estimations</strong> : des ordres de grandeur, jamais des promesses de trafic.</li>
+<li>La <strong>Search Console</strong> est la seule source qui donne les données réelles de votre propre site.</li>
+</ul>
+</div>
+<figure class="hero-figure">
+<img src="/images/recherche-mots-cles-seo.webp" alt="Bureau de travail avec un ordinateur affichant des résultats de recherche et un carnet où une carte mentale de mots-clés est dessinée à l'aide de notes adhésives colorées" width="1536" height="1024" fetchpriority="high">
+<figcaption>La recherche de mots-clés commence souvent sur papier : une idée centrale, puis les questions qui en découlent.</figcaption>
+</figure>
+<h2>Qu'est-ce que la recherche de mots-clés SEO, et pourquoi la faire avant d'écrire ?</h2>
+<p>En SEO, un <strong>mot-clé</strong> est une requête, un mot ou une phrase, tapée ou dictée par un internaute. La recherche de mots-clés sert à trois choses : savoir ce que votre audience cherche vraiment, avec ses propres mots ; savoir quel type de contenu attend chaque requête ; éviter d'écrire deux pages pour la même demande.</p>
+<p>Sans cette étape, on écrit sur ce qu'on connaît, avec le vocabulaire du métier, et on découvre ensuite que personne ne tape ces termes. Avec elle, l'article part d'une base observable. Google le rappelle dans sa documentation : les mesures de SEO sont utiles lorsqu'elles s'appliquent à un contenu pensé d'abord pour les personnes, pas pour les moteurs (<a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=fr" target="_blank" rel="noopener">Créer des contenus utiles, fiables et people-first</a>). La recherche de mots-clés n'est donc pas un exercice de bourrage : c'est une façon d'écouter la demande.</p>
+<h2>Quels sont les 4 types d'intention de recherche ?</h2>
+<p>L'<strong>intention de recherche</strong> est le besoin derrière la requête. On distingue généralement quatre familles.</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th>Intention</th><th>Ce que cherche l'internaute</th><th>Exemple de requête</th><th>Contenu adapté</th></tr>
+</thead>
+<tbody>
+<tr><td>Informationnelle</td><td>Comprendre, apprendre</td><td>« qu'est-ce que la longue traîne »</td><td>Guide, définition, article explicatif</td></tr>
+<tr><td>Navigationnelle</td><td>Atteindre un site ou un outil précis</td><td>« google search console »</td><td>Page d'accueil ou page de l'outil concerné</td></tr>
+<tr><td>Commerciale</td><td>Comparer avant de choisir</td><td>« meilleur outil recherche mots-clés »</td><td>Comparatif, avis, guide de choix</td></tr>
+<tr><td>Transactionnelle</td><td>Acheter, s'inscrire, contacter</td><td>« ahrefs tarif »</td><td>Page de service, fiche produit, page de contact</td></tr>
+</tbody>
+</table>
+</div>
+<p>Une même requête peut mêler deux intentions. C'est pourquoi l'étape 3 de la méthode ci-dessous, la lecture de la page de résultats, est indispensable.</p>
+<h2>Comment faire une recherche de mots-clés SEO en 5 étapes ?</h2>
+<h3>1. Partir de votre sujet et du vocabulaire de vos lecteurs</h3>
+<p>Notez cinq à dix termes de départ, les « mots-clés graines » : votre activité, les problèmes que vous résolvez, les questions que vos clients posent en rendez-vous, par e-mail ou dans leurs avis. Le vocabulaire des clients diffère souvent de celui des professionnels, et c'est le leur qui est tapé dans la barre de recherche.</p>
+<h3>2. Élargir la liste avec des sources gratuites, puis un outil</h3>
+<ul>
+<li><strong>L'autocomplétion de Google</strong> : tapez un terme de départ et notez les suggestions.</li>
+<li><strong>Le bloc « Autres questions posées »</strong> et les recherches associées en bas de page : ce sont des formulations réelles.</li>
+<li><strong>La <a href="https://search.google.com/search-console" target="_blank" rel="noopener">Search Console</a></strong>, si votre site existe déjà : les requêtes pour lesquelles vous apparaissez, notamment celles qui ont beaucoup d'impressions mais peu de clics.</li>
+<li><strong>Google Trends</strong> pour comparer deux formulations et repérer la saisonnalité.</li>
+<li><strong>Un outil de mots-clés</strong> (Semrush, Ahrefs, Ubersuggest, Keyword Planner) pour estimer volumes et difficulté.</li>
+</ul>
+<p>Visez plusieurs dizaines de requêtes brutes pour un même sujet. Le tri vient ensuite.</p>
+<h3>3. Lire la page de résultats pour confirmer l'intention</h3>
+<p>C'est l'étape que l'on saute le plus souvent. Tapez la requête et observez les dix premiers résultats : guides ou fiches produits ? comparatifs ou définitions ? forums ? Y a-t-il des extraits en vedette, des questions associées, un aperçu généré par IA ? La page de résultats montre ce que Google considère comme la meilleure réponse à cette requête.</p>
+<p>Si les dix résultats sont des comparatifs et que vous préparez un guide théorique, vous visez à côté. L'intention se lit dans les résultats, pas dans le mot-clé lui-même.</p>
+<h3>4. Regrouper les mots-clés par intention</h3>
+<p>Deux requêtes appartiennent à la même page lorsqu'elles reçoivent le même type de réponse. Le test pratique : comparez leurs pages de résultats. Si elles se recoupent largement, une seule page suffit. Sinon, ce sont deux pages. Reprenons le sujet de mon <a href="/blog/cocon-semantique-exemple"><strong>exemple de cocon sémantique</strong></a>, la randonnée en montagne :</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th>Requêtes brutes</th><th>Intention</th><th>Page cible</th></tr>
+</thead>
+<tbody>
+<tr><td>« équipement randonnée montagne », « que mettre dans son sac de randonnée », « liste matériel rando »</td><td>Informationnelle : s'équiper</td><td>Un seul article « Équipement nécessaire ». Un mot-clé principal, les autres en variantes</td></tr>
+<tr><td>« dormir en refuge de montagne », « bivouac en montagne règles »</td><td>Informationnelle : se loger</td><td>Un article « Où dormir en montagne »</td></tr>
+<tr><td>« meilleures chaussures de randonnée »</td><td>Commerciale : comparer</td><td>Un comparatif distinct : la page de résultats attendue n'est pas celle de l'équipement général</td></tr>
+<tr><td>« réserver un refuge »</td><td>Transactionnelle : réserver</td><td>Pas d'article dédié sauf si vous proposez le service. Sinon, un lien depuis « Où dormir en montagne »</td></tr>
+</tbody>
+</table>
+</div>
+<p>Ce tableau est un exemple pédagogique : les pages de résultats réelles sont à vérifier avant de décider.</p>
+<h3>5. Prioriser avec une grille simple</h3>
+<p>Classez les regroupements avec quatre critères : le <strong>volume estimé</strong>, la <strong>difficulté</strong> (la concurrence en place), la <strong>valeur pour votre activité</strong> et votre capacité à apporter une <strong>expérience ou une expertise réelle</strong> sur le sujet. Commencez par les requêtes à la fois utiles à votre activité et accessibles. Un site récent progresse plus vite sur une requête précise que sur un terme générique occupé par de gros sites.</p>
+<p>Un tableau de suivi minimal suffit :</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th>Mot-clé principal</th><th>Intention</th><th>Volume estimé</th><th>Difficulté</th><th>Valeur (1 à 3)</th><th>Page cible</th><th>Statut</th></tr>
+</thead>
+<tbody>
+<tr><td>équipement randonnée montagne</td><td>Informationnelle</td><td>à relever dans votre outil</td><td>à relever dans votre outil</td><td>3</td><td>Article « Équipement nécessaire »</td><td>À rédiger</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pull-quote">
+<p>Un mot-clé sans page cible est une idée. Une page sans mot-clé principal est un pari.</p>
+</div>
+<h2>Quels outils utiliser pour la recherche de mots-clés ?</h2>
+<p>Aucun outil ne suffit seul. Croisez au moins deux sources : une qui montre ce que les internautes tapent, une qui montre ce que votre site obtient déjà.</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th>Source</th><th>Ce qu'elle apporte</th><th>Limite à connaître</th></tr>
+</thead>
+<tbody>
+<tr><td>Autocomplétion, « Autres questions posées »</td><td>Formulations réelles, gratuit</td><td>Aucun chiffre de volume</td></tr>
+<tr><td>Google Search Console</td><td>Vos requêtes réelles : impressions, clics, position moyenne, sur 16 mois</td><td>Uniquement les requêtes pour lesquelles votre site apparaît déjà. Certaines requêtes rares sont masquées par Google</td></tr>
+<tr><td>Google Trends</td><td>Comparaison de formulations, saisonnalité</td><td>Indices relatifs, pas de volumes absolus</td></tr>
+<tr><td>Google Keyword Planner</td><td>Données issues de Google, accessible avec un compte Google Ads</td><td>Sans dépenses publicitaires actives, les volumes s'affichent en fourchettes larges</td></tr>
+<tr><td>Semrush, Ahrefs, Ubersuggest</td><td>Volumes estimés, difficulté, analyse des concurrents</td><td>Estimations propres à chaque outil. La difficulté n'est pas comparable d'un outil à l'autre. Offres en partie payantes</td></tr>
+</tbody>
+</table>
+</div>
+<h2>Comment lire un volume de recherche sans se tromper ?</h2>
+<ul>
+<li><strong>Un volume est une estimation.</strong> Deux outils affichent rarement le même chiffre pour la même requête. Comparez des ordres de grandeur.</li>
+<li><strong>Les variantes de formulation se comptent différemment selon les outils.</strong> « Recherche mots-clés SEO » et « recherche de mots-clés SEO » expriment en général la même demande, mais certains outils les regroupent et d'autres les séparent. Choisissez la formulation la plus recherchée pour le titre, le H1 et l'URL, et employez l'autre naturellement dans le texte. C'est le choix fait pour cet article.</li>
+<li><strong>Un faible volume ne veut pas dire « sans intérêt ».</strong> Une requête précise et peu recherchée peut mieux convertir qu'un terme générique très recherché.</li>
+<li><strong>Volume et visites ne sont pas équivalents.</strong> L'affichage de la page de résultats (extraits, aperçus IA, annonces) influe sur le nombre de clics qu'une position rapporte.</li>
+<li><strong>La saisonnalité fausse les moyennes.</strong> Vérifiez l'évolution sur douze mois dans Google Trends ou dans votre outil.</li>
+</ul>
+<h2>Recherche de mots-clés et moteurs IA : qu'est-ce qui change ?</h2>
+<p>Les internautes formulent des questions de plus en plus longues et conversationnelles, y compris auprès d'assistants IA. Trois conséquences pratiques pour votre liste :</p>
+<ul>
+<li><strong>Listez des questions, pas seulement des mots-clés.</strong> Chaque titre de section peut reprendre une question réelle, avec la réponse directe dans les deux premières phrases.</li>
+<li><strong>Appuyez-vous sur des données observables.</strong> Les données de volume sur les questions posées aux assistants IA restent moins fiables que celles de la recherche classique. La Search Console, les questions de vos clients et « Autres questions posées » sont des sources plus sûres.</li>
+<li><strong>Misez sur un contenu unique.</strong> Pour ses expériences IA, Google recommande de se concentrer sur un contenu original et utile pour les visiteurs (<a href="https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search" target="_blank" rel="noopener">billet de Google Search Central sur les expériences IA, en anglais</a>).</li>
+</ul>
+<p>Aucune méthode ne garantit d'être cité par une IA. Pour aller plus loin, lisez mon article sur l'<a href="/blog/optimisation-moteurs-ia-geo-aeo"><strong>optimisation pour les moteurs IA (GEO et AEO)</strong></a>.</p>
+<h2>Quelles erreurs éviter en recherche de mots-clés ?</h2>
+<ul>
+<li><strong>Choisir sur le seul volume.</strong> Un mot-clé très recherché dont l'intention ne correspond pas à votre page ne vous apportera pas le bon public.</li>
+<li><strong>Ignorer la page de résultats.</strong> Elle seule révèle le type de contenu attendu.</li>
+<li><strong>Viser un terme trop général avec un site récent.</strong> Partez de requêtes plus précises, puis élargissez.</li>
+<li><strong>Créer une page par variante.</strong> « Recherche mots-clés SEO » et « recherche de mots-clés SEO » appellent la même page. Deux pages se concurrenceraient : c'est la cannibalisation SEO évoquée en introduction.</li>
+<li><strong>Oublier le vocabulaire de vos clients.</strong> Leurs questions valent plus que n'importe quelle liste générée par un outil.</li>
+<li><strong>Répéter le mot-clé de façon mécanique.</strong> Écrivez pour la personne qui lit, avec des variantes naturelles et des réponses précises.</li>
+<li><strong>Ne jamais revenir sur sa liste.</strong> Les requêtes évoluent : réexaminez vos pages à intervalle régulier avec la Search Console.</li>
+</ul>
+<h2>Du mot-clé au cocon sémantique : par où continuer ?</h2>
+<p>Une fois la liste regroupée par intention, vous avez la matière de votre cocon : chaque regroupement devient un cluster, et la requête la plus large devient la page pilier. La logique est celle du cocon sémantique et de la hiérarchie des intentions, appliquée pas à pas dans l'exemple sur la randonnée en montagne.</p>
+<p>Pour chaque page, demandez-vous aussi quelle expérience et quelles preuves vous pouvez apporter : c'est ce que vérifie l'<a href="/blog/eeat-conventions-editoriales"><strong>EEAT</strong></a>. Un mot-clé bien choisi ne compense pas un contenu sans substance.</p>
+<h2>Ce que j'observe en audit</h2>
+<!-- À COMPLÉTER PAR L'AUTEUR : ajouter ici un exemple réel de recherche de mots-clés tiré d'un projet (contexte, erreur repérée, correction, résultat si mesuré). Le cas ci-dessous est repris de l'article sur le cocon sémantique exemple, déjà publié. -->
+<p>Sur le site d'une agence de recrutement tech, une page pilier générique cannibalisait trois pages satellites plus précises. La correction a consisté à réorganiser les liens et à clarifier l'intention de chaque page, pas à produire du contenu supplémentaire. C'est l'illustration la plus nette de ce que cette étape évite : quand les intentions ne sont pas séparées avant d'écrire, on se retrouve à les démêler après coup.</p>
+<p>Transparence : les requêtes de la randonnée en montagne sont des exemples pédagogiques, pas les données d'un client. Les volumes et les difficultés sont à relever dans votre propre outil, pour votre langue et votre pays.</p>
+<hr class="rule">
+<h2>Questions fréquentes sur la recherche de mots-clés SEO</h2>
+<div class="faq">
+<details>
+<summary>Combien de mots-clés faut-il cibler par page ?</summary>
+<p>Un mot-clé principal par page, accompagné de variantes et de questions proches qui répondent à la même intention. Si une requête appelle une réponse différente, elle mérite sa propre page. C'est cette règle qui protège de la cannibalisation.</p>
+</details>
+<details>
+<summary>Quelle différence entre un mot-clé et une intention de recherche ?</summary>
+<p>Le mot-clé est la requête saisie par l'internaute. L'intention est le besoin qui se cache derrière : comprendre, comparer, acheter, trouver un site. Deux mots-clés différents peuvent avoir la même intention et relever d'une seule page. Un même mot-clé peut aussi cacher deux intentions, d'où l'importance de lire la page de résultats.</p>
+</details>
+<details>
+<summary>Peut-on faire une recherche de mots-clés gratuitement ?</summary>
+<p>Oui, en grande partie. L'autocomplétion, le bloc « Autres questions posées », Google Trends et la Search Console (pour un site déjà en ligne) sont gratuits. Les volumes chiffrés demandent en général un outil : le Keyword Planner nécessite un compte Google Ads et affiche des fourchettes larges sans dépenses publicitaires actives, les outils comme Semrush ou Ahrefs sont payants ou freemium.</p>
+</details>
+<details>
+<summary>À quelle fréquence refaire sa recherche de mots-clés ?</summary>
+<p>Avant chaque nouveau contenu, puis à intervalle régulier sur les pages existantes, par exemple chaque trimestre. La Search Console conserve 16 mois de données de performance : c'est assez pour repérer les requêtes nouvelles, les pages qui stagnent et les saisonnalités.</p>
+</details>
+<details>
+<summary>Une IA peut-elle remplacer la recherche de mots-clés ?</summary>
+<p>Un assistant IA aide à brainstormer des idées, des formulations et des regroupements. Il ne remplace ni la lecture de la page de résultats, ni vos données réelles de la Search Console, ni un outil de volumes. Utilisez-le pour élargir la liste, puis vérifiez chaque requête avec des sources mesurées.</p>
+</details>
+</div>
+<h3>Ce qu'il faut retenir</h3>
+<p>Une bonne recherche de mots-clés ne produit pas une longue liste, mais un plan : chaque page a une intention principale, un mot-clé principal et sa place dans la structure du site. Partez du vocabulaire de vos lecteurs, vérifiez l'intention sur la page de résultats, regroupez avant d'écrire, puis priorisez selon la valeur pour votre activité. Les chiffres guident, ils ne décident pas.</p>
+<div class="summary-box">
+<h2>Méthode et sources</h2>
+<ul>
+<li>Dernière mise à jour : 15 octobre 2026.</li>
+<li>Sources : documentation Google Search Central sur les contenus people-first, billet de Google Search Central sur les expériences IA (2025) et données de la Search Console.</li>
+<li>Les exemples de requêtes sont pédagogiques. Vérifiez les volumes et les pages de résultats dans votre propre outil avant toute décision.</li>
+</ul>
+</div>
+</article>
+</div>
+<div class="wrap article-footer">
+<a href="/blog/">← Tous les articles</a>
+<a href="/#contact">Discuter d'un audit ou d'une refonte →</a>
+</div>
 </main>
-
 <footer class="site" id="contact">
   <div class="footer-head">
     <div>
       <h2>Travaillons ensemble.</h2>
       <p class="lede">Un projet de contenu SEO, un audit technique ou une refonte éditoriale ? Écrivez-moi, je réponds sous 24h.</p>
-      <div class="social-row">
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/herinirina-beranto-4b4932333" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,0.2);color:#fff;">LinkedIn</a>
+      <div class="footer-links">
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/herinirina-beranto-4b4932333" target="_blank" rel="noopener">LinkedIn</a>
       </div>
+      <p class="contact-direct">
+        <a href="mailto:herinirinaberanto@gmail.com">herinirinaberanto@gmail.com</a>
+        <button class="copy-btn" id="copyEmail" type="button">copier</button><br>
+        <a href="tel:+261342375859">+261 34 23 758 59</a> · Antananarivo, Madagascar
+      </p>
     </div>
-    <div class="contact-card">
-      <div class="contact-row">
-        <span class="k">Email</span>
-        <span>
-          <a href="mailto:herinirinaberanto@gmail.com" id="emailLink">herinirinaberanto@gmail.com</a>
-          <button class="copy-btn" id="copyEmail" type="button">copier</button>
-        </span>
-      </div>
-      <div class="contact-row">
-        <span class="k">Téléphone</span>
-        <a href="tel:+261342375859">+261 34 23 758 59</a>
-      </div>
-      <div class="contact-row">
-        <span class="k">Adresse</span>
-        <span class="v">Andoharanofotsy, Antananarivo 102, Madagascar</span>
-      </div>
-    </div>
+    <form class="contact" id="contactForm" method="POST" action="https://formspree.io/f/xnpjywpw">
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label>Nom<input type="text" name="nom" required autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Type de projet
+        <select name="projet">
+          <option>Rédaction SEO</option>
+          <option>Audit technique</option>
+          <option>Stratégie éditoriale</option>
+          <option>Autre</option>
+        </select>
+      </label>
+      <label>Message<textarea name="message" required></textarea></label>
+      <button class="btn btn-primary" type="submit">Envoyer le message</button>
+      <p id="formStatus" role="status" style="font-size:0.9rem;color:#8FD6B8;margin:0;"></p>
+    </form>
   </div>
   <div class="footer-bottom">
     <p>© 2026 Herinirina Beranto Rafalinjanahary</p>
-    <div class="badges">
-      <span class="chip">Disponible en freelance</span>
-    </div>
+    <div class="badges"><span class="chip">Disponible en freelance</span></div>
   </div>
 </footer>
-
 <script>
-  // Mobile nav toggle
-  (function(){
-    var btn = document.getElementById('navToggle');
-    var list = document.getElementById('navList');
-    if(!btn) return;
-    btn.addEventListener('click', function(){
-      var open = list.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    list.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        list.classList.remove('open');
-        btn.setAttribute('aria-expanded', 'false');
-      });
-    });
-  })();
-
-  // Copy email button
-  (function(){
-    var copyBtn = document.getElementById('copyEmail');
-    if(!copyBtn) return;
-    copyBtn.addEventListener('click', function(){
-      navigator.clipboard.writeText('herinirinaberanto@gmail.com').then(function(){
-        var original = copyBtn.textContent;
-        copyBtn.textContent = 'copié !';
-        setTimeout(function(){ copyBtn.textContent = original; }, 1800);
-      });
-    });
-  })();
+(function(){
+var btn=document.getElementById('navToggle'),list=document.getElementById('navList');
+btn.addEventListener('click',function(){var open=list.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});
+list.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){list.classList.remove('open');btn.setAttribute('aria-expanded','false');});});
+})();
+(function(){
+var c=document.getElementById('copyEmail');
+if(!c)return;
+c.addEventListener('click',function(){navigator.clipboard.writeText('herinirinaberanto@gmail.com').then(function(){var o=c.textContent;c.textContent='copié !';setTimeout(function(){c.textContent=o;},1800);});});
+})();
 </script>
-
+<script>
+(function(){
+  var f=document.getElementById('contactForm'),st=document.getElementById('formStatus');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    st.textContent='Envoi en cours...';
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();st.textContent='Merci, votre message est envoyé. Je vous réponds sous 24h.';}
+        else{st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";}
+      })
+      .catch(function(){st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";});
+  });
+})();
+</script>
 </body>
 </html>
