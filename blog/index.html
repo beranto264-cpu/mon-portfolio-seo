@@ -3,367 +3,280 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog — Herinirina Beranto Rafalinjanahary</title>
+<title>Blog | Herinirina Beranto Rafalinjanahary</title>
 <meta name="description" content="Notes sur la rédaction SEO et le contenu web : réflexions et retours d'expérience sur l'écriture optimisée, la stratégie éditoriale et le référencement.">
 <link rel="canonical" href="https://beranto-seo.com/blog/">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Blog — Herinirina Beranto Rafalinjanahary">
+<meta property="og:title" content="Blog | Herinirina Beranto Rafalinjanahary">
 <meta property="og:description" content="Notes sur la rédaction SEO et le contenu web : réflexions et retours d'expérience sur l'écriture optimisée, la stratégie éditoriale et le référencement.">
 <meta property="og:url" content="https://beranto-seo.com/blog/">
 <meta property="og:locale" content="fr_FR">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Blog — Herinirina Beranto Rafalinjanahary">
+<meta property="og:image" content="https://beranto-seo.com/images/ma-photo.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog | Herinirina Beranto Rafalinjanahary">
 <meta name="twitter:description" content="Notes sur la rédaction SEO et le contenu web : réflexions et retours d'expérience sur l'écriture optimisée, la stratégie éditoriale et le référencement.">
+<meta name="twitter:image" content="https://beranto-seo.com/images/ma-photo.webp">
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Blog",
+ "name": "Blog de Herinirina Beranto Rafalinjanahary",
+ "url": "https://beranto-seo.com/blog/",
+ "inLanguage": "fr",
+ "author": {
+  "@type": "Person",
+  "name": "Herinirina Beranto Rafalinjanahary",
+  "url": "https://beranto-seo.com/"
+ },
+ "blogPost": [
+  {
+   "@type": "BlogPosting",
+   "headline": "Recherche mots-clés SEO : comment construire sa liste avant d'écrire",
+   "url": "https://beranto-seo.com/blog/recherche-mots-cles-seo",
+   "datePublished": "2026-10-21"
+  },
+  {
+   "@type": "BlogPosting",
+   "headline": "Cocon sémantique exemple : un modèle concret pas à pas",
+   "url": "https://beranto-seo.com/blog/cocon-semantique-exemple",
+   "datePublished": "2026-10-07"
+  },
+  {
+   "@type": "BlogPosting",
+   "headline": "Migration de site : comment ne pas perdre son SEO en changeant d'hébergeur ou de domaine",
+   "url": "https://beranto-seo.com/blog/migration-site-preserver-seo",
+   "datePublished": "2026-09-22"
+  },
+  {
+   "@type": "BlogPosting",
+   "headline": "Cannibalisation SEO : pourquoi deux de vos pages se battent (et comment trancher sans perdre le trafic)",
+   "url": "https://beranto-seo.com/blog/cannibalisation-seo-pages-qui-se-concurrencent",
+   "datePublished": "2026-09-16"
+  },
+  {
+   "@type": "BlogPosting",
+   "headline": "Netlinking naturel : ce qui fait qu'un backlink compte vraiment pour Google",
+   "url": "https://beranto-seo.com/blog/netlinking-backlinks-naturels",
+   "datePublished": "2026-09-09"
+  },
+  {
+   "@type": "BlogPosting",
+   "headline": "Optimisation pour les moteurs IA : comment être cité par ChatGPT, Gemini et les IA Overviews",
+   "url": "https://beranto-seo.com/blog/optimisation-moteurs-ia-geo-aeo",
+   "datePublished": "2026-09-02"
+  },
+  {
+   "@type": "BlogPosting",
+   "headline": "Cocon sémantique : la structure qui fait vraiment gagner des positions",
+   "url": "https://beranto-seo.com/blog/cocon-semantique-maillage-interne",
+   "datePublished": "2026-08-28"
+  },
+  {
+   "@type": "BlogPosting",
+   "headline": "EEAT : ce que Google vérifie vraiment",
+   "url": "https://beranto-seo.com/blog/eeat-conventions-editoriales",
+   "datePublished": "2026-08-15"
+  }
+ ]
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
-  :root{
-    --bg:#F5F6F3;
-    --bg-card:#FFFFFF;
-    --ink:#14212B;
-    --ink-soft:#51636D;
-    --ink-faint:#8A9BA4;
-    --accent:#1F7A5C;
-    --accent-soft:#E4F1EA;
-    --link:#1A56DB;
-    --line:#DDE2DE;
-    --radius:14px;
-    --display:'Space Grotesk', system-ui, sans-serif;
-    --body:'Inter', system-ui, sans-serif;
-    --mono:'JetBrains Mono', 'Courier New', monospace;
-    --maxw:1080px;
-  }
+:root{
+  --bg:#F5F6F3;--bg-card:#FFFFFF;--ink:#14212B;--ink-soft:#51636D;
+  --ink-faint:#66777F; /* foncé pour passer le contraste AA */
+  --accent:#1F7A5C;--accent-soft:#E4F1EA;--link:#1A56DB;--line:#DDE2DE;--radius:14px;
+  --display:'Space Grotesk',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono','Courier New',monospace;--maxw:1080px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;scroll-padding-top:80px;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;}
+h1,h2,h3{font-family:var(--display);margin:0;letter-spacing:-0.01em;}
+p{margin:0;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+.eyebrow{font-family:var(--mono);font-size:0.78rem;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:12px;}
 
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;overflow-x:hidden;}
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
-    font-family:var(--body);
-    line-height:1.55;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  img,svg{display:block;max-width:100%;}
-  a{color:inherit;}
-  h1,h2,h3{font-family:var(--display);margin:0;letter-spacing:-0.01em;}
-  p{margin:0;}
+/* Header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(245,246,243,0.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:0.85rem;font-weight:500;color:var(--ink);text-decoration:none;}
+.brand .dot{color:var(--accent);}
+.brand img{width:36px;height:36px;}
+.nav ul{list-style:none;display:flex;align-items:center;gap:26px;margin:0;padding:0;}
+a.navlink{text-decoration:none;font-size:0.9rem;color:var(--ink-soft);font-weight:500;transition:color .15s ease;}
+a.navlink:hover{color:var(--accent);}
+.nav-toggle{display:none;}
 
-  :focus-visible{
-    outline:2px solid var(--accent);
-    outline-offset:3px;
-    border-radius:4px;
-  }
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:9px;font-weight:600;font-size:0.92rem;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease;border:1px solid transparent;cursor:pointer;font-family:var(--body);}
+.btn-primary{background:var(--ink);color:#fff;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,33,43,0.18);}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line);font-family:var(--mono);}
+.btn-ghost:hover{border-color:var(--ink);}
+.nav-cta{padding:9px 16px;font-size:0.85rem;}
 
-  .wrap{
-    max-width:var(--maxw);
-    margin:0 auto;
-    padding:0 28px;
-  }
+/* Hero */
+.hero{padding:76px 0 64px;}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr);gap:56px;align-items:center;}
+.hero-copy h1{font-size:clamp(2.1rem,3.4vw,2.9rem);line-height:1.12;font-weight:700;margin-bottom:18px;overflow-wrap:break-word;}
+.lede{font-size:1.05rem;color:var(--ink-soft);max-width:46ch;margin-bottom:30px;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.browser-chrome{background:var(--bg-card);border-radius:var(--radius);border:1px solid var(--line);box-shadow:0 24px 60px -20px rgba(20,33,43,0.22);overflow:hidden;}
+.chrome-bar{display:flex;align-items:center;gap:8px;padding:12px 16px;background:#EEF0EC;border-bottom:1px solid var(--line);}
+.chrome-dot{width:9px;height:9px;border-radius:50%;background:#D6DBD5;}
+.chrome-addr{flex:1;margin-left:8px;background:#fff;border-radius:6px;padding:6px 12px;font-family:var(--mono);font-size:0.72rem;color:var(--ink-faint);border:1px solid var(--line);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;min-width:0;}
+.search-box{padding:20px 20px 8px;}
+.search-field{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:100px;padding:11px 18px;font-size:0.94rem;background:#fff;}
+#typed-query::after{content:'';display:inline-block;width:1px;height:1em;background:var(--ink-faint);margin-left:2px;vertical-align:-2px;animation:blink 1s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.serp-result{padding:18px 22px 24px;}
+.serp-breadcrumb{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:0.74rem;color:var(--ink-soft);margin-bottom:6px;}
+.favicon{width:18px;height:18px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:0.62rem;font-weight:700;}
+.serp-title{font-weight:600;font-size:1.14rem;color:var(--link);margin-bottom:4px;}
+.serp-desc{font-size:0.92rem;color:var(--ink-soft);margin:8px 0 16px;}
+.serp-chips{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{font-family:var(--mono);font-size:0.72rem;color:var(--ink);background:var(--accent-soft);border:1px solid #CFE6DA;padding:5px 11px;border-radius:100px;}
 
-  /* ---------- Header ---------- */
-  header.site{
-    position:sticky;
-    top:0;
-    z-index:50;
-    background:rgba(245,246,243,0.86);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:16px 0;
-  }
-  .nav .brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-family:var(--mono);
-    font-size:0.85rem;
-    font-weight:500;
-    color:var(--ink);
-    text-decoration:none;
-  }
-  .nav .brand .dot{color:var(--accent);}
-  .nav .brand img{
-    width:36px;height:36px;
-    border-radius:50%;
-    object-fit:cover;
-    border:1px solid var(--line);
-  }
-  .nav ul{
-    list-style:none;
-    display:flex;
-    gap:26px;
-    margin:0;
-    padding:0;
-  }
-  .nav a.navlink{
-    text-decoration:none;
-    font-size:0.88rem;
-    color:var(--ink-soft);
-    font-weight:500;
-    transition:color .15s ease;
-  }
-  .nav a.navlink:hover{color:var(--accent);}
-  .nav-toggle{display:none;}
+/* Sections */
+section{padding:72px 0;}
+.alt{background:var(--bg-card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.section-head{max-width:640px;margin-bottom:44px;}
+.section-head h2{font-size:clamp(1.7rem,2.6vw,2.15rem);font-weight:700;margin-bottom:14px;line-height:1.18;}
+.section-head p{color:var(--ink-soft);}
+.more{display:inline-block;margin-top:26px;font-family:var(--mono);font-size:0.85rem;color:var(--link);text-decoration:none;font-weight:500;}
+.more:hover{text-decoration:underline;}
 
-  /* ---------- Buttons ---------- */
-  .btn{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    padding:13px 22px;
-    border-radius:9px;
-    font-weight:600;
-    font-size:0.92rem;
-    text-decoration:none;
-    transition:transform .15s ease, box-shadow .15s ease;
-    border:1px solid transparent;
-  }
-  .btn-ghost{
-    background:transparent;
-    color:var(--ink);
-    border-color:var(--line);
-    font-family:var(--mono);
-  }
-  .btn-ghost:hover{border-color:var(--ink);}
+/* Profil */
+.profil-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:start;}
+.profil-text p{color:var(--ink-soft);font-size:1.03rem;margin-bottom:16px;}
+.profil-text strong{color:var(--ink);}
+.profil-side{display:flex;flex-direction:column;gap:22px;}
+.portrait{position:relative;margin:0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 44px -22px rgba(20,33,43,0.28);aspect-ratio:4/5;}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:top center;}
+.portrait figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(180deg,rgba(20,33,43,0),rgba(20,33,43,0.72));color:#fff;font-family:var(--mono);font-size:0.76rem;}
+.signals{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+.signal{background:var(--bg-card);padding:20px;}
+.signal .num{font-family:var(--display);font-size:1.7rem;font-weight:700;color:var(--accent);display:block;margin-bottom:4px;}
+.signal .label{font-size:0.82rem;color:var(--ink-soft);}
 
-  /* ---------- Blog hero ---------- */
-  .blog-hero{padding:64px 0 48px;}
-  .blog-hero .eyebrow{
-    font-family:var(--mono);
-    font-size:0.78rem;
-    color:var(--accent);
-    text-transform:uppercase;
-    letter-spacing:0.08em;
-    display:block;
-    margin-bottom:14px;
-  }
-  .blog-hero h1{
-    font-size:clamp(2rem, 3.2vw, 2.7rem);
-    line-height:1.15;
-    font-weight:700;
-    margin-bottom:16px;
-  }
-  .blog-hero p.lede{
-    font-size:1.05rem;
-    color:var(--ink-soft);
-    max-width:52ch;
-  }
+/* Cas clients */
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.case{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:10px;text-decoration:none;transition:border-color .15s ease;}
+.case:hover{border-color:var(--accent);}
+.case .tag{font-family:var(--mono);font-size:0.75rem;color:var(--accent);}
+.case h3{font-size:1.15rem;line-height:1.3;}
+.case p{color:var(--ink-soft);font-size:0.93rem;}
+.case .go{margin-top:auto;font-family:var(--mono);font-size:0.82rem;color:var(--link);font-weight:500;}
+.cta-band{margin-top:34px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:var(--accent-soft);border:1px solid #CFE6DA;border-radius:var(--radius);padding:22px 26px;}
+.cta-band p{font-family:var(--display);font-weight:600;font-size:1.1rem;}
 
-  /* ---------- Articles list ---------- */
-  section.articles{padding:0 0 80px;}
-  .article-list{
-    display:flex;
-    flex-direction:column;
-    gap:1px;
-    background:var(--line);
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    overflow:hidden;
-  }
-  .article-card{
-    background:var(--bg-card);
-    padding:22px 30px;
-    display:grid;
-    grid-template-columns:120px 1fr;
-    gap:24px;
-    align-items:center;
-    text-decoration:none;
-    color:inherit;
-    transition:background .15s ease;
-  }
-  .article-card:hover{background:var(--accent-soft);}
-  .article-thumb{
-    width:120px;
-    aspect-ratio:1/1;
-    border-radius:10px;
-    overflow:hidden;
-    background:var(--accent-soft);
-    flex-shrink:0;
-  }
-  .article-thumb img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-  }
-  .article-date{
-    font-family:var(--mono);
-    font-size:0.78rem;
-    color:var(--ink-faint);
-    display:block;
-    margin-bottom:6px;
-  }
-  .article-card h2{
-    font-size:1.2rem;
-    font-weight:600;
-    margin-bottom:8px;
-  }
-  .article-card p{
-    color:var(--ink-soft);
-    font-size:0.95rem;
-  }
+/* Méthode */
+.method-item{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:26px 0;border-top:1px solid var(--line);}
+.method-item:last-child{border-bottom:1px solid var(--line);}
+.method-step{font-family:var(--mono);font-size:0.95rem;color:var(--ink-faint);padding-top:2px;}
+.method-item h3{font-size:1.08rem;font-weight:600;margin-bottom:6px;}
+.method-item p{color:var(--ink-soft);font-size:0.95rem;max-width:62ch;}
 
-  /* ---------- Footer ---------- */
-  footer.site{
-    background:var(--ink);
-    color:#EDEFEC;
-    padding:64px 0 32px;
-  }
-  .footer-head{
-    display:grid;
-    grid-template-columns:1.2fr 1fr;
-    gap:50px;
-    padding-bottom:44px;
-    border-bottom:1px solid rgba(255,255,255,0.12);
-  }
-  footer.site h2{
-    color:#fff;
-    font-size:clamp(1.6rem, 2.4vw, 2rem);
-    margin-bottom:14px;
-  }
-  footer.site .lede{
-    color:#AEBAB8;
-    font-size:1rem;
-    max-width:44ch;
-  }
-  .contact-card{
-    display:flex;
-    flex-direction:column;
-    gap:16px;
-  }
-  .contact-row{
-    display:flex;
-    flex-direction:column;
-    gap:3px;
-    padding-bottom:14px;
-    border-bottom:1px solid rgba(255,255,255,0.1);
-  }
-  .contact-row:last-child{border-bottom:none;padding-bottom:0;}
-  .contact-row .k{
-    font-family:var(--mono);
-    font-size:0.72rem;
-    text-transform:uppercase;
-    letter-spacing:0.06em;
-    color:#7F9188;
-  }
-  .contact-row a, .contact-row .v{
-    font-family:var(--mono);
-    font-size:0.98rem;
-    color:#fff;
-    text-decoration:none;
-  }
-  .contact-row a:hover{color:#8FD6B8;}
-  .copy-btn{
-    background:none;
-    border:none;
-    color:#7F9188;
-    font-family:var(--mono);
-    font-size:0.72rem;
-    cursor:pointer;
-    padding:0;
-    margin-left:10px;
-    text-decoration:underline;
-  }
-  .copy-btn:hover{color:#8FD6B8;}
-  .footer-bottom{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding-top:26px;
-    flex-wrap:wrap;
-    gap:10px;
-  }
-  .footer-bottom p{
-    font-size:0.8rem;
-    color:#7F9188;
-  }
-  .footer-bottom .badges{
-    display:flex;
-    gap:8px;
-  }
-  .chip{
-    font-family:var(--mono);
-    font-size:0.72rem;
-    color:var(--ink);
-    background:var(--accent-soft);
-    border:1px solid #CFE6DA;
-    padding:5px 11px;
-    border-radius:100px;
-  }
-  .footer-bottom .chip{
-    background:rgba(255,255,255,0.06);
-    border-color:rgba(255,255,255,0.14);
-    color:#AEBAB8;
-  }
-  .social-row{
-    display:flex;
-    gap:14px;
-    flex-wrap:wrap;
-    margin-top:8px;
-  }
+/* Compétences */
+.tools-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+.tool-card{background:var(--bg-card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;}
+.tool-card.hl{border-color:var(--accent);background:var(--accent-soft);}
+.tool-name{font-family:var(--display);font-weight:600;font-size:1rem;margin-bottom:4px;}
+.tool-desc{font-size:0.86rem;color:var(--ink-soft);}
+.tools-note{margin-top:22px;font-family:var(--mono);font-size:0.8rem;color:var(--ink-faint);}
 
-  /* ---------- Responsive ---------- */
-  @media (max-width:860px){
-    .footer-head{grid-template-columns:1fr;}
-    .nav ul{
-      position:fixed;
-      top:60px;left:0;right:0;
-      background:var(--bg);
-      flex-direction:column;
-      gap:0;
-      border-bottom:1px solid var(--line);
-      max-height:0;
-      overflow-y:auto;
-      transition:max-height .25s ease;
-    }
-    .nav ul.open{
-      max-height: min(70vh, 500px);
-    }
-    .nav ul li{width:100%;}
-    .nav a.navlink{
-      display:block;
-      padding:14px 28px;
-      border-top:1px solid var(--line);
-    }
-    .nav-toggle{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      width:36px;height:36px;
-      background:none;
-      border:1px solid var(--line);
-      border-radius:8px;
-      cursor:pointer;
-    }
-  }
-  @media (max-width:700px){
-    .article-card{
-      grid-template-columns:72px 1fr;
-      padding:18px 20px;
-      gap:16px;
-    }
-    .article-thumb{width:72px;}
-    .wrap{padding:0 20px;}
-    .blog-hero{padding:52px 0 40px;}
-  }
+/* Expérience */
+.timeline{position:relative;padding-left:28px;}
+.timeline::before{content:'';position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:var(--line);}
+.tl-item{position:relative;padding-bottom:34px;}
+.tl-item:last-child{padding-bottom:0;}
+.tl-item::before{content:'';position:absolute;left:-28px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--bg-card);border:2px solid var(--accent);}
+.tl-dates{font-family:var(--mono);font-size:0.78rem;color:var(--accent);margin-bottom:6px;display:block;}
+.tl-item h3{font-size:1.05rem;font-weight:600;margin-bottom:6px;}
+.tl-item h3 span{font-weight:400;color:var(--ink-soft);}
+.tl-item p{color:var(--ink-soft);font-size:0.94rem;max-width:62ch;}
 
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
-  }
+/* Articles */
+.latest-list{display:flex;flex-direction:column;}
+.latest-list a{display:block;text-decoration:none;padding:16px 0;border-bottom:1px solid var(--line);}
+.latest-list a:first-child{border-top:1px solid var(--line);}
+.latest-list .t{display:block;font-family:var(--display);font-weight:600;font-size:1.02rem;transition:color .15s ease;}
+.latest-list a:hover .t{color:var(--accent);}
+.latest-list .d{display:block;font-family:var(--mono);font-size:0.74rem;color:var(--ink-faint);margin-bottom:4px;}
+.latest-list .x{display:block;font-size:0.9rem;color:var(--ink-soft);margin-top:3px;max-width:70ch;}
+
+/* Footer */
+footer.site{background:var(--ink);color:#EDEFEC;padding:64px 0 32px;}
+.footer-head{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,0.12);}
+footer.site h2{color:#fff;font-size:clamp(1.6rem,2.4vw,2rem);margin-bottom:14px;}
+footer.site .lede{color:#AEBAB8;margin-bottom:22px;}
+.footer-links{display:flex;gap:12px;flex-wrap:wrap;}
+.footer-links .btn-ghost{border-color:rgba(255,255,255,0.25);color:#fff;}
+.contact-direct{margin-top:26px;font-family:var(--mono);font-size:0.85rem;color:#AEBAB8;}
+.contact-direct a{color:#fff;text-decoration:none;}
+.contact-direct a:hover{color:#8FD6B8;}
+.copy-btn{background:none;border:none;color:#AEBAB8;font-family:var(--mono);font-size:0.75rem;cursor:pointer;padding:0;margin-left:10px;text-decoration:underline;}
+form.contact{display:flex;flex-direction:column;gap:14px;}
+form.contact label{font-family:var(--mono);font-size:0.75rem;color:#AEBAB8;display:flex;flex-direction:column;gap:6px;}
+form.contact input,form.contact textarea,form.contact select{font:inherit;font-family:var(--body);font-size:0.95rem;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:8px;padding:11px 13px;}
+form.contact select option{color:#14212B;}
+form.contact textarea{min-height:110px;resize:vertical;}
+form.contact input:focus-visible,form.contact textarea:focus-visible,form.contact select:focus-visible{outline-color:#8FD6B8;}
+form.contact .btn-primary{background:#fff;color:var(--ink);align-self:flex-start;}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:26px;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{font-size:0.8rem;color:#9DAEA6;}
+.footer-bottom .chip{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.14);color:#AEBAB8;}
+
+/* Responsive */
+@media (max-width:860px){
+  .hero-inner,.profil-grid,.footer-head,.cases{grid-template-columns:1fr;gap:36px;}
+  .cases{gap:16px;}
+  .nav ul{position:absolute;top:100%;left:0;right:0;background:var(--bg);flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:max-height .25s ease;}
+  .nav ul.open{max-height:min(75vh,480px);overflow-y:auto;}
+  a.navlink{display:block;padding:14px 28px;border-top:1px solid var(--line);}
+  .nav-cta{margin:14px 28px;}
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:none;border:1px solid var(--line);border-radius:8px;cursor:pointer;font-size:1.1rem;color:var(--ink);}
+}
+@media (max-width:600px){
+  .tools-grid{grid-template-columns:1fr;}
+  .wrap{padding:0 20px;}
+  .hero{padding:52px 0 44px;}
+  section{padding:52px 0;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:0.001ms !important;transition-duration:0.001ms !important;}
+}
+
+/* Page blog */
+.blog-hero{padding:64px 0 48px;}
+.blog-hero h1{font-size:clamp(2rem,3.2vw,2.7rem);line-height:1.15;font-weight:700;margin-bottom:16px;}
+.blog-hero .lede{max-width:52ch;margin-bottom:0;}
+section.articles{padding:0 0 80px;}
+.article-list{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+.article-card{background:var(--bg-card);padding:22px 30px;display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;text-decoration:none;color:inherit;transition:background .15s ease;}
+.article-card:hover{background:var(--accent-soft);}
+.article-thumb{width:120px;aspect-ratio:1/1;border-radius:10px;overflow:hidden;background:var(--accent-soft);}
+.article-thumb img{width:100%;height:100%;object-fit:cover;}
+.article-date{font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);display:block;margin-bottom:6px;}
+.article-card h2{font-size:1.2rem;font-weight:600;margin-bottom:8px;line-height:1.3;}
+.article-card p{color:var(--ink-soft);font-size:0.95rem;}
+@media (max-width:700px){
+  .article-card{grid-template-columns:72px 1fr;padding:18px 20px;gap:16px;}
+  .article-thumb{width:72px;}
+  .blog-hero{padding:52px 0 40px;}
+}
 </style>
 </head>
 <body>
@@ -371,19 +284,16 @@
 <header class="site">
   <div class="wrap nav">
     <a class="brand" href="/">
-      <img src="/images/Beranto-Logo-Vector.svg" alt="Herinirina Beranto - Logo SEO" class="brand-logo">
-      <span class="brand-text">Beranto <span class="dot">.</span> seo</span>
+      <img src="/images/Beranto-Logo-Vector.svg" alt="Herinirina Beranto, logo SEO" width="36" height="36">
+      <span>Beranto <span class="dot">.</span> seo</span>
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navList">☰</button>
     <ul id="navList">
-      <li><a class="navlink" href="/#profil">Profil</a></li>
-      <li><a class="navlink" href="/#methode">Méthode</a></li>
-      <li><a class="navlink" href="/#competences">Compétences</a></li>
-      <li><a class="navlink" href="/#experience">Expérience</a></li>
       <li><a class="navlink" href="/cas-clients">Cas clients</a></li>
-      <li><a class="navlink" href="/apropos">À propos</a></li>
+      <li><a class="navlink" href="/#methode">Méthode</a></li>
       <li><a class="navlink" href="/blog/" aria-current="page" style="color:var(--accent);">Blog</a></li>
-      <li><a class="navlink" href="/#contact">Contact</a></li>
+      <li><a class="navlink" href="/apropos">À propos</a></li>
+      <li><a class="btn btn-primary nav-cta" href="/#contact">Me contacter</a></li>
     </ul>
   </div>
 </header>
@@ -402,88 +312,72 @@
       <div class="article-list">
 
         <a class="article-card" href="/blog/recherche-mots-cles-seo">
-          <div class="article-thumb">
-            <img src="/images/portrait-redaction-recherche-mots-cles.webp" alt="Carnet de notes avec une carte mentale de mots-clés posé devant un ordinateur" loading="lazy" width="120" height="120">
-          </div>
+          <div class="article-thumb"><img src="/images/portrait-redaction-recherche-mots-cles.webp" alt="Carnet de notes avec une carte mentale de mots-clés posé devant un ordinateur" width="120" height="120"></div>
           <div>
-            <span class="article-date">21 octobre 2026</span>
+            <time class="article-date" datetime="2026-10-21">21 octobre 2026</time>
             <h2>Recherche mots-clés SEO : comment construire sa liste avant d'écrire</h2>
             <p>Avant d'écrire, il faut savoir ce que votre audience cherche vraiment. La méthode en cinq étapes pour passer d'une idée à une liste de mots-clés classés par intention.</p>
           </div>
         </a>
 
         <a class="article-card" href="/blog/cocon-semantique-exemple">
-          <div class="article-thumb">
-            <img src="/images/portrait-redaction-cocon-exemple.webp" alt="Schéma d'un exemple de cocon sémantique sur la randonnée en montagne" loading="lazy" width="120" height="120">
-          </div>
+          <div class="article-thumb"><img src="/images/portrait-redaction-cocon-exemple.webp" alt="Schéma d'un exemple de cocon sémantique sur la randonnée en montagne" width="120" height="120"></div>
           <div>
-            <span class="article-date">7 octobre 2026</span>
+            <time class="article-date" datetime="2026-10-07">7 octobre 2026</time>
             <h2>Cocon sémantique exemple : un modèle concret pas à pas</h2>
             <p>Une page pilier, six articles clusters et un maillage interne expliqués sur un cas concret, la randonnée en montagne, à reproduire sur votre site.</p>
           </div>
         </a>
 
         <a class="article-card" href="/blog/migration-site-preserver-seo">
-          <div class="article-thumb">
-            <img src="/images/portrait-redaction-migration.jpg" alt="Beranto préparant une migration de site" loading="lazy" width="120" height="120">
-          </div>
+          <div class="article-thumb"><img src="/images/portrait-redaction-migration.jpg" alt="Beranto préparant une migration de site" loading="lazy" width="120" height="120"></div>
           <div>
-            <span class="article-date">22 septembre 2026</span>
+            <time class="article-date" datetime="2026-09-22">22 septembre 2026</time>
             <h2>Migration de site : comment ne pas perdre son SEO en changeant d'hébergeur ou de domaine</h2>
             <p>Changer d'hébergeur ou de nom de domaine est un chantier technique, mais c'est d'abord un chantier SEO. Ce qui protège vraiment les positions pendant une migration.</p>
           </div>
         </a>
 
         <a class="article-card" href="/blog/cannibalisation-seo-pages-qui-se-concurrencent">
-          <div class="article-thumb">
-            <img src="/images/portrait-redaction-cannibalisation.jpg" alt="Beranto en train d'arbitrer entre deux pages qui ciblent le même mot-clé" loading="lazy" width="120" height="120">
-          </div>
+          <div class="article-thumb"><img src="/images/portrait-redaction-cannibalisation.jpg" alt="Beranto en train d'arbitrer entre deux pages qui ciblent le même mot-clé" loading="lazy" width="120" height="120"></div>
           <div>
-            <span class="article-date">16 septembre 2026</span>
+            <time class="article-date" datetime="2026-09-16">16 septembre 2026</time>
             <h2>Cannibalisation SEO : pourquoi deux de vos pages se battent (et comment trancher sans perdre le trafic)</h2>
             <p>Elle ne provoque ni pénalité ni alerte, juste des positions qui stagnent. Comment la diagnostiquer, la corriger, et surtout l'éviter avant qu'elle ne s'installe.</p>
           </div>
         </a>
 
         <a class="article-card" href="/blog/netlinking-backlinks-naturels">
-          <div class="article-thumb">
-            <img src="/images/portrait-redaction-netlinking.jpg" alt="Beranto travaillant sur une stratégie de netlinking" loading="lazy" width="120" height="120">
-          </div>
+          <div class="article-thumb"><img src="/images/portrait-redaction-netlinking.jpg" alt="Beranto travaillant sur une stratégie de netlinking" loading="lazy" width="120" height="120"></div>
           <div>
-            <span class="article-date">9 septembre 2026</span>
+            <time class="article-date" datetime="2026-09-09">9 septembre 2026</time>
             <h2>Netlinking naturel : ce qui fait qu'un backlink compte vraiment pour Google</h2>
             <p>Un lien n'a de valeur que si le contenu autour de lui est pertinent. Ce qui distingue un netlinking qui muscle une page d'un netlinking qui ne sert à rien.</p>
           </div>
         </a>
 
         <a class="article-card" href="/blog/optimisation-moteurs-ia-geo-aeo">
-          <div class="article-thumb">
-            <img src="/images/portrait-redaction-geo.jpg" alt="Beranto travaillant sur une stratégie de contenu pour les moteurs IA" loading="lazy" width="120" height="120">
-          </div>
+          <div class="article-thumb"><img src="/images/portrait-redaction-geo.jpg" alt="Beranto travaillant sur une stratégie de contenu pour les moteurs IA" loading="lazy" width="120" height="120"></div>
           <div>
-            <span class="article-date">2 septembre 2026</span>
+            <time class="article-date" datetime="2026-09-02">2 septembre 2026</time>
             <h2>Optimisation pour les moteurs IA : comment être cité par ChatGPT, Gemini et les IA Overviews</h2>
-            <p>GEO, AEO : au-delà des acronymes à la mode, ce qui fait vraiment qu'un contenu est cité par une IA générative — et ce qui relève du mythe.</p>
+            <p>GEO, AEO : au-delà des acronymes à la mode, ce qui fait vraiment qu'un contenu est cité par une IA générative, et ce qui relève du mythe.</p>
           </div>
         </a>
 
         <a class="article-card" href="/blog/cocon-semantique-maillage-interne">
-          <div class="article-thumb">
-            <img src="/images/portrait-redaction-cocon.jpg" alt="Beranto travaillant sur l'architecture d'un cocon sémantique" loading="lazy" width="120" height="120">
-          </div>
+          <div class="article-thumb"><img src="/images/portrait-redaction-cocon.jpg" alt="Beranto travaillant sur l'architecture d'un cocon sémantique" loading="lazy" width="120" height="120"></div>
           <div>
-            <span class="article-date">28 août 2026</span>
+            <time class="article-date" datetime="2026-08-28">28 août 2026</time>
             <h2>Cocon sémantique : la structure qui fait vraiment gagner des positions</h2>
             <p>Le cocon sémantique est souvent réduit à un schéma de liens. Ce qui compte vraiment : la hiérarchie des intentions et un maillage interne pensé pour le lecteur autant que pour Google.</p>
           </div>
         </a>
 
         <a class="article-card" href="/blog/eeat-conventions-editoriales">
-          <div class="article-thumb">
-            <img src="/images/portrait-redaction-eeat.jpg" alt="Beranto en train de rédiger un article sur l'EEAT" loading="lazy" width="120" height="120">
-          </div>
+          <div class="article-thumb"><img src="/images/portrait-redaction-eeat.jpg" alt="Beranto en train de rédiger un article sur l'EEAT" loading="lazy" width="120" height="120"></div>
           <div>
-            <span class="article-date">15 août 2026</span>
+            <time class="article-date" datetime="2026-08-15">15 août 2026</time>
             <h2>EEAT : ce que Google vérifie vraiment</h2>
             <p>Experience, Expertise, Authoritativeness, Trust : comment ces quatre critères se traduisent concrètement dans un contenu SEO, au-delà de la simple case à cocher.</p>
           </div>
@@ -491,9 +385,10 @@
 
         <!--
           Pour ajouter un nouvel article :
-          1. Crée un fichier HTML dans /blog/ (ex: /blog/mon-article.html)
-          2. Copie-colle un bloc <a class="article-card"> ci-dessus
-          3. Mets à jour la date, le titre, le lien href, la description et l'image de la vignette
+          1. Créez la page de l'article dans /blog/
+          2. Copiez un bloc <a class="article-card"> ci-dessus, en haut de la liste
+          3. Mettez à jour la date (texte et datetime), le titre, le href, la description et la vignette
+          4. Ajoutez l'article dans le JSON-LD du head et dans la section "Derniers articles" de l'accueil
         -->
       </div>
     </div>
@@ -506,67 +401,68 @@
       <div>
         <h2>Travaillons ensemble.</h2>
         <p class="lede">Un projet de contenu SEO, un audit technique ou une refonte éditoriale ? Écrivez-moi, je réponds sous 24h.</p>
-        <div class="social-row">
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/herinirina-beranto-4b4932333" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,0.2);color:#fff;">LinkedIn</a>
+        <div class="footer-links">
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/herinirina-beranto-4b4932333" target="_blank" rel="noopener">LinkedIn</a>
         </div>
+        <p class="contact-direct">
+          <a href="mailto:herinirinaberanto@gmail.com">herinirinaberanto@gmail.com</a>
+          <button class="copy-btn" id="copyEmail" type="button">copier</button><br>
+          <a href="tel:+261342375859">+261 34 23 758 59</a> · Antananarivo, Madagascar
+        </p>
       </div>
-      <div class="contact-card">
-        <div class="contact-row">
-          <span class="k">Email</span>
-          <span>
-            <a href="mailto:herinirinaberanto@gmail.com" id="emailLink">herinirinaberanto@gmail.com</a>
-            <button class="copy-btn" id="copyEmail" type="button">copier</button>
-          </span>
-        </div>
-        <div class="contact-row">
-          <span class="k">Téléphone</span>
-          <a href="tel:+261342375859">+261 34 23 758 59</a>
-        </div>
-        <div class="contact-row">
-          <span class="k">Adresse</span>
-          <span class="v">Andoharanofotsy, Antananarivo 102, Madagascar</span>
-        </div>
-      </div>
+      <!-- Formulaire via Formspree : identifiant du formulaire -->
+      <form class="contact" id="contactForm" method="POST" action="https://formspree.io/f/xnpjywpw">
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>Nom<input type="text" name="nom" required autocomplete="name"></label>
+        <label>Email<input type="email" name="email" required autocomplete="email"></label>
+        <label>Type de projet
+          <select name="projet">
+            <option>Rédaction SEO</option>
+            <option>Audit technique</option>
+            <option>Stratégie éditoriale</option>
+            <option>Autre</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Envoyer le message</button>
+        <p id="formStatus" role="status" style="font-size:0.9rem;color:#8FD6B8;margin:0;"></p>
+      </form>
     </div>
     <div class="footer-bottom">
       <p>© 2026 Herinirina Beranto Rafalinjanahary</p>
-      <div class="badges">
-        <span class="chip">Disponible en freelance</span>
-      </div>
+      <span class="chip">Disponible en freelance</span>
     </div>
   </div>
 </footer>
 
 <script>
-  // Mobile nav toggle
-  (function(){
-    var btn = document.getElementById('navToggle');
-    var list = document.getElementById('navList');
-    if(!btn) return;
-    btn.addEventListener('click', function(){
-      var open = list.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+(function(){
+  var b=document.getElementById('navToggle'),l=document.getElementById('navList');
+  b.addEventListener('click',function(){var o=l.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+  l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open');b.setAttribute('aria-expanded','false');});});
+})();
+(function(){
+  var c=document.getElementById('copyEmail');
+  c.addEventListener('click',function(){
+    navigator.clipboard.writeText('herinirinaberanto@gmail.com').then(function(){
+      var o=c.textContent;c.textContent='copié !';setTimeout(function(){c.textContent=o;},1800);
     });
-    list.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        list.classList.remove('open');
-        btn.setAttribute('aria-expanded', 'false');
-      });
-    });
-  })();
-
-  // Copy email button
-  (function(){
-    var copyBtn = document.getElementById('copyEmail');
-    if(!copyBtn) return;
-    copyBtn.addEventListener('click', function(){
-      navigator.clipboard.writeText('herinirinaberanto@gmail.com').then(function(){
-        var original = copyBtn.textContent;
-        copyBtn.textContent = 'copié !';
-        setTimeout(function(){ copyBtn.textContent = original; }, 1800);
-      });
-    });
-  })();
+  });
+})();
+(function(){
+  var f=document.getElementById('contactForm'),st=document.getElementById('formStatus');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    st.textContent='Envoi en cours...';
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();st.textContent='Merci, votre message est envoyé. Je vous réponds sous 24h.';}
+        else{st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";}
+      })
+      .catch(function(){st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";});
+  });
+})();
 </script>
 
 </body>
