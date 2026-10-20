@@ -3,460 +3,225 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cas clients — Herinirina Beranto Rafalinjanahary</title>
+<title>Cas clients | Herinirina Beranto Rafalinjanahary</title>
 <meta name="description" content="Deux missions SEO récentes présentées de façon anonymisée : correction d'une erreur de canonicalisation bloquant l'indexation, et fiabilisation de données Analytics faussées par du trafic de bots.">
-<link rel="canonical" href="https://https://beranto-seo.com/cas-clients">
+<link rel="canonical" href="https://beranto-seo.com/cas-clients">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Cas clients — Herinirina Beranto Rafalinjanahary">
+<meta property="og:title" content="Cas clients | Herinirina Beranto Rafalinjanahary">
 <meta property="og:description" content="Deux missions SEO récentes présentées de façon anonymisée : correction d'une erreur de canonicalisation bloquant l'indexation, et fiabilisation de données Analytics faussées par du trafic de bots.">
-<meta property="og:url" content="https://https://beranto-seo.com/cas-clients">
+<meta property="og:url" content="https://beranto-seo.com/cas-clients">
 <meta property="og:locale" content="fr_FR">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cas clients — Herinirina Beranto Rafalinjanahary">
+<meta property="og:image" content="https://beranto-seo.com/images/ma-photo.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cas clients | Herinirina Beranto Rafalinjanahary">
 <meta name="twitter:description" content="Deux missions SEO récentes présentées de façon anonymisée : correction d'une erreur de canonicalisation bloquant l'indexation, et fiabilisation de données Analytics faussées par du trafic de bots.">
+<meta name="twitter:image" content="https://beranto-seo.com/images/ma-photo.webp">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
-  :root{
-    --bg:#F5F6F3;
-    --bg-card:#FFFFFF;
-    --ink:#14212B;
-    --ink-soft:#51636D;
-    --ink-faint:#8A9BA4;
-    --accent:#1F7A5C;
-    --accent-soft:#E4F1EA;
-    --link:#1A56DB;
-    --line:#DDE2DE;
-    --radius:14px;
-    --display:'Space Grotesk', system-ui, sans-serif;
-    --body:'Inter', system-ui, sans-serif;
-    --mono:'JetBrains Mono', 'Courier New', monospace;
-    --maxw:1080px;
-  }
+:root{
+  --bg:#F5F6F3;--bg-card:#FFFFFF;--ink:#14212B;--ink-soft:#51636D;
+  --ink-faint:#66777F; /* foncé pour passer le contraste AA */
+  --accent:#1F7A5C;--accent-soft:#E4F1EA;--link:#1A56DB;--line:#DDE2DE;--radius:14px;
+  --display:'Space Grotesk',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono','Courier New',monospace;--maxw:1080px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;scroll-padding-top:80px;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;}
+h1,h2,h3{font-family:var(--display);margin:0;letter-spacing:-0.01em;}
+p{margin:0;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+.eyebrow{font-family:var(--mono);font-size:0.78rem;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:12px;}
 
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;overflow-x:hidden;}
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
-    font-family:var(--body);
-    line-height:1.55;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  img,svg{display:block;max-width:100%;}
-  a{color:inherit;}
-  h1,h2,h3{font-family:var(--display);margin:0;letter-spacing:-0.01em;}
-  p{margin:0;}
+/* Header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(245,246,243,0.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:0.85rem;font-weight:500;color:var(--ink);text-decoration:none;}
+.brand .dot{color:var(--accent);}
+.brand img{width:36px;height:36px;}
+.nav ul{list-style:none;display:flex;align-items:center;gap:26px;margin:0;padding:0;}
+a.navlink{text-decoration:none;font-size:0.9rem;color:var(--ink-soft);font-weight:500;transition:color .15s ease;}
+a.navlink:hover{color:var(--accent);}
+.nav-toggle{display:none;}
 
-  :focus-visible{
-    outline:2px solid var(--accent);
-    outline-offset:3px;
-    border-radius:4px;
-  }
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:9px;font-weight:600;font-size:0.92rem;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease;border:1px solid transparent;cursor:pointer;font-family:var(--body);}
+.btn-primary{background:var(--ink);color:#fff;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,33,43,0.18);}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line);font-family:var(--mono);}
+.btn-ghost:hover{border-color:var(--ink);}
+.nav-cta{padding:9px 16px;font-size:0.85rem;}
 
-  .wrap{
-    max-width:var(--maxw);
-    margin:0 auto;
-    padding:0 28px;
-  }
+/* Hero */
+.hero{padding:76px 0 64px;}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr);gap:56px;align-items:center;}
+.hero-copy h1{font-size:clamp(2.1rem,3.4vw,2.9rem);line-height:1.12;font-weight:700;margin-bottom:18px;overflow-wrap:break-word;}
+.lede{font-size:1.05rem;color:var(--ink-soft);max-width:46ch;margin-bottom:30px;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.browser-chrome{background:var(--bg-card);border-radius:var(--radius);border:1px solid var(--line);box-shadow:0 24px 60px -20px rgba(20,33,43,0.22);overflow:hidden;}
+.chrome-bar{display:flex;align-items:center;gap:8px;padding:12px 16px;background:#EEF0EC;border-bottom:1px solid var(--line);}
+.chrome-dot{width:9px;height:9px;border-radius:50%;background:#D6DBD5;}
+.chrome-addr{flex:1;margin-left:8px;background:#fff;border-radius:6px;padding:6px 12px;font-family:var(--mono);font-size:0.72rem;color:var(--ink-faint);border:1px solid var(--line);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;min-width:0;}
+.search-box{padding:20px 20px 8px;}
+.search-field{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:100px;padding:11px 18px;font-size:0.94rem;background:#fff;}
+#typed-query::after{content:'';display:inline-block;width:1px;height:1em;background:var(--ink-faint);margin-left:2px;vertical-align:-2px;animation:blink 1s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.serp-result{padding:18px 22px 24px;}
+.serp-breadcrumb{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:0.74rem;color:var(--ink-soft);margin-bottom:6px;}
+.favicon{width:18px;height:18px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:0.62rem;font-weight:700;}
+.serp-title{font-weight:600;font-size:1.14rem;color:var(--link);margin-bottom:4px;}
+.serp-desc{font-size:0.92rem;color:var(--ink-soft);margin:8px 0 16px;}
+.serp-chips{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{font-family:var(--mono);font-size:0.72rem;color:var(--ink);background:var(--accent-soft);border:1px solid #CFE6DA;padding:5px 11px;border-radius:100px;}
 
-  /* ---------- Header ---------- */
-  header.site{
-    position:sticky;
-    top:0;
-    z-index:50;
-    background:rgba(245,246,243,0.86);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:16px 0;
-  }
-  .nav .brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-family:var(--mono);
-    font-size:0.85rem;
-    font-weight:500;
-    color:var(--ink);
-    text-decoration:none;
-  }
-  .nav .brand .dot{color:var(--accent);}
-  .nav .brand img{
-    width:36px;height:36px;
-    border-radius:50%;
-    object-fit:cover;
-    border:1px solid var(--line);
-  }
-  .nav ul{
-    list-style:none;
-    display:flex;
-    gap:26px;
-    margin:0;
-    padding:0;
-  }
-  .nav a.navlink{
-    text-decoration:none;
-    font-size:0.88rem;
-    color:var(--ink-soft);
-    font-weight:500;
-    transition:color .15s ease;
-  }
-  .nav a.navlink:hover{color:var(--accent);}
-  .nav-toggle{display:none;}
+/* Sections */
+section{padding:72px 0;}
+.alt{background:var(--bg-card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.section-head{max-width:640px;margin-bottom:44px;}
+.section-head h2{font-size:clamp(1.7rem,2.6vw,2.15rem);font-weight:700;margin-bottom:14px;line-height:1.18;}
+.section-head p{color:var(--ink-soft);}
+.more{display:inline-block;margin-top:26px;font-family:var(--mono);font-size:0.85rem;color:var(--link);text-decoration:none;font-weight:500;}
+.more:hover{text-decoration:underline;}
 
-  /* ---------- Buttons ---------- */
-  .btn{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    padding:13px 22px;
-    border-radius:9px;
-    font-weight:600;
-    font-size:0.92rem;
-    text-decoration:none;
-    transition:transform .15s ease, box-shadow .15s ease;
-    border:1px solid transparent;
-  }
-  .btn-ghost{
-    background:transparent;
-    color:var(--ink);
-    border-color:var(--line);
-    font-family:var(--mono);
-  }
-  .btn-ghost:hover{border-color:var(--ink);}
+/* Profil */
+.profil-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:start;}
+.profil-text p{color:var(--ink-soft);font-size:1.03rem;margin-bottom:16px;}
+.profil-text strong{color:var(--ink);}
+.profil-side{display:flex;flex-direction:column;gap:22px;}
+.portrait{position:relative;margin:0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 44px -22px rgba(20,33,43,0.28);aspect-ratio:4/5;}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:top center;}
+.portrait figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(180deg,rgba(20,33,43,0),rgba(20,33,43,0.72));color:#fff;font-family:var(--mono);font-size:0.76rem;}
+.signals{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+.signal{background:var(--bg-card);padding:20px;}
+.signal .num{font-family:var(--display);font-size:1.7rem;font-weight:700;color:var(--accent);display:block;margin-bottom:4px;}
+.signal .label{font-size:0.82rem;color:var(--ink-soft);}
 
-  /* ---------- Page hero ---------- */
-  .page-hero{padding:64px 0 56px;}
-  .page-hero .eyebrow{
-    font-family:var(--mono);
-    font-size:0.78rem;
-    color:var(--accent);
-    text-transform:uppercase;
-    letter-spacing:0.08em;
-    display:block;
-    margin-bottom:14px;
-  }
-  .page-hero h1{
-    font-size:clamp(2rem, 3.2vw, 2.7rem);
-    line-height:1.15;
-    font-weight:700;
-    margin-bottom:18px;
-  }
-  .page-hero p.lede{
-    font-size:1.05rem;
-    color:var(--ink-soft);
-    max-width:58ch;
-  }
+/* Cas clients */
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.case{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:10px;text-decoration:none;transition:border-color .15s ease;}
+.case:hover{border-color:var(--accent);}
+.case .tag{font-family:var(--mono);font-size:0.75rem;color:var(--accent);}
+.case h3{font-size:1.15rem;line-height:1.3;}
+.case p{color:var(--ink-soft);font-size:0.93rem;}
+.case .go{margin-top:auto;font-family:var(--mono);font-size:0.82rem;color:var(--link);font-weight:500;}
+.cta-band{margin-top:34px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:var(--accent-soft);border:1px solid #CFE6DA;border-radius:var(--radius);padding:22px 26px;}
+.cta-band p{font-family:var(--display);font-weight:600;font-size:1.1rem;}
 
-  /* ---------- Stats strip ---------- */
-  .cas-clients-intro-strip{
-    display:flex;
-    flex-wrap:wrap;
-    gap:28px;
-    margin-top:28px;
-    padding-top:24px;
-    border-top:1px solid var(--line);
-  }
-  .cas-clients-intro-strip .stat{
-    display:flex;
-    flex-direction:column;
-    gap:2px;
-  }
-  .cas-clients-intro-strip .stat .num{
-    font-family:var(--display);
-    font-size:1.5rem;
-    font-weight:700;
-    color:var(--accent);
-  }
-  .cas-clients-intro-strip .stat .label{
-    font-size:0.8rem;
-    color:var(--ink-soft);
-  }
+/* Méthode */
+.method-item{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:26px 0;border-top:1px solid var(--line);}
+.method-item:last-child{border-bottom:1px solid var(--line);}
+.method-step{font-family:var(--mono);font-size:0.95rem;color:var(--ink-faint);padding-top:2px;}
+.method-item h3{font-size:1.08rem;font-weight:600;margin-bottom:6px;}
+.method-item p{color:var(--ink-soft);font-size:0.95rem;max-width:62ch;}
 
-  /* ---------- Case cards ---------- */
-  section{padding:72px 0;}
-  .chip{
-    font-family:var(--mono);
-    font-size:0.72rem;
-    color:var(--ink);
-    background:var(--accent-soft);
-    border:1px solid #CFE6DA;
-    padding:5px 11px;
-    border-radius:100px;
-  }
+/* Compétences */
+.tools-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+.tool-card{background:var(--bg-card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;}
+.tool-card.hl{border-color:var(--accent);background:var(--accent-soft);}
+.tool-name{font-family:var(--display);font-weight:600;font-size:1rem;margin-bottom:4px;}
+.tool-desc{font-size:0.86rem;color:var(--ink-soft);}
+.tools-note{margin-top:22px;font-family:var(--mono);font-size:0.8rem;color:var(--ink-faint);}
 
-  .case-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:24px;
-  }
-  .case-card{
-    background:var(--bg-card);
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:32px;
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-    transition:border-color .15s ease, transform .15s ease, box-shadow .15s ease;
-  }
-  .case-card:hover{
-    border-color:var(--accent);
-    transform:translateY(-3px);
-    box-shadow:0 20px 44px -28px rgba(20,33,43,0.3);
-  }
-  .case-card-head{
-    display:flex;
-    align-items:flex-start;
-    gap:14px;
-  }
-  .case-icon{
-    flex-shrink:0;
-    width:44px;height:44px;
-    border-radius:10px;
-    background:var(--accent-soft);
-    border:1px solid #CFE6DA;
-    color:var(--accent);
-    display:flex;align-items:center;justify-content:center;
-    font-family:var(--mono);
-    font-size:0.78rem;
-    font-weight:600;
-  }
-  .case-tag{
-    font-family:var(--mono);
-    font-size:0.74rem;
-    color:var(--accent);
-    text-transform:uppercase;
-    letter-spacing:0.06em;
-    display:block;
-    margin-bottom:4px;
-  }
-  .case-card h3{
-    font-size:1.18rem;
-    font-weight:600;
-    line-height:1.3;
-  }
-  .case-steps{
-    position:relative;
-    padding-left:30px;
-    display:flex;
-    flex-direction:column;
-    gap:18px;
-  }
-  .case-steps::before{
-    content:'';
-    position:absolute;
-    left:9px;
-    top:8px;
-    bottom:8px;
-    width:1px;
-    background:var(--line);
-  }
-  .case-step{position:relative;}
-  .case-step::before{
-    content:'';
-    position:absolute;
-    left:-30px;
-    top:3px;
-    width:19px;height:19px;
-    border-radius:50%;
-    background:var(--bg-card);
-    border:2px solid var(--line);
-  }
-  .case-step .step-label{
-    font-family:var(--mono);
-    font-size:0.72rem;
-    color:var(--ink-faint);
-    text-transform:uppercase;
-    letter-spacing:0.05em;
-    display:block;
-    margin-bottom:4px;
-  }
-  .case-step p{
-    font-size:0.92rem;
-    color:var(--ink-soft);
-    line-height:1.55;
-  }
-  .case-step.result::before{
-    background:var(--accent);
-    border-color:var(--accent);
-  }
-  .case-step.result .step-label{color:var(--accent);}
-  .case-step.result p{
-    background:var(--accent-soft);
-    border:1px solid #CFE6DA;
-    border-radius:10px;
-    padding:12px 14px;
-    color:var(--ink);
-  }
-  .case-tools{
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-    margin-top:2px;
-    padding-top:18px;
-    border-top:1px solid var(--line);
-  }
-  .case-note{
-    margin-top:28px;
-    padding-top:24px;
-    border-top:1px solid var(--line);
-    font-family:var(--mono);
-    font-size:0.82rem;
-    color:var(--ink-faint);
-    text-align:center;
-  }
-  .case-note a{text-decoration:underline;text-underline-offset:3px;}
+/* Expérience */
+.timeline{position:relative;padding-left:28px;}
+.timeline::before{content:'';position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:var(--line);}
+.tl-item{position:relative;padding-bottom:34px;}
+.tl-item:last-child{padding-bottom:0;}
+.tl-item::before{content:'';position:absolute;left:-28px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--bg-card);border:2px solid var(--accent);}
+.tl-dates{font-family:var(--mono);font-size:0.78rem;color:var(--accent);margin-bottom:6px;display:block;}
+.tl-item h3{font-size:1.05rem;font-weight:600;margin-bottom:6px;}
+.tl-item h3 span{font-weight:400;color:var(--ink-soft);}
+.tl-item p{color:var(--ink-soft);font-size:0.94rem;max-width:62ch;}
 
-  /* ---------- Footer ---------- */
-  footer.site{
-    background:var(--ink);
-    color:#EDEFEC;
-    padding:64px 0 32px;
-  }
-  .footer-head{
-    display:grid;
-    grid-template-columns:1.2fr 1fr;
-    gap:50px;
-    padding-bottom:44px;
-    border-bottom:1px solid rgba(255,255,255,0.12);
-  }
-  footer.site h2{
-    color:#fff;
-    font-size:clamp(1.6rem, 2.4vw, 2rem);
-    margin-bottom:14px;
-  }
-  footer.site .lede{
-    color:#AEBAB8;
-    font-size:1rem;
-    max-width:44ch;
-  }
-  .contact-card{
-    display:flex;
-    flex-direction:column;
-    gap:16px;
-  }
-  .contact-row{
-    display:flex;
-    flex-direction:column;
-    gap:3px;
-    padding-bottom:14px;
-    border-bottom:1px solid rgba(255,255,255,0.1);
-  }
-  .contact-row:last-child{border-bottom:none;padding-bottom:0;}
-  .contact-row .k{
-    font-family:var(--mono);
-    font-size:0.72rem;
-    text-transform:uppercase;
-    letter-spacing:0.06em;
-    color:#7F9188;
-  }
-  .contact-row a, .contact-row .v{
-    font-family:var(--mono);
-    font-size:0.98rem;
-    color:#fff;
-    text-decoration:none;
-  }
-  .contact-row a:hover{color:#8FD6B8;}
-  .copy-btn{
-    background:none;
-    border:none;
-    color:#7F9188;
-    font-family:var(--mono);
-    font-size:0.72rem;
-    cursor:pointer;
-    padding:0;
-    margin-left:10px;
-    text-decoration:underline;
-  }
-  .copy-btn:hover{color:#8FD6B8;}
-  .footer-bottom{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding-top:26px;
-    flex-wrap:wrap;
-    gap:10px;
-  }
-  .footer-bottom p{
-    font-size:0.8rem;
-    color:#7F9188;
-  }
-  .footer-bottom .badges{
-    display:flex;
-    gap:8px;
-  }
-  .footer-bottom .chip{
-    background:rgba(255,255,255,0.06);
-    border-color:rgba(255,255,255,0.14);
-    color:#AEBAB8;
-  }
-  .social-row{
-    display:flex;
-    gap:14px;
-    flex-wrap:wrap;
-    margin-top:8px;
-  }
+/* Articles */
+.latest-list{display:flex;flex-direction:column;}
+.latest-list a{display:block;text-decoration:none;padding:16px 0;border-bottom:1px solid var(--line);}
+.latest-list a:first-child{border-top:1px solid var(--line);}
+.latest-list .t{display:block;font-family:var(--display);font-weight:600;font-size:1.02rem;transition:color .15s ease;}
+.latest-list a:hover .t{color:var(--accent);}
+.latest-list .d{display:block;font-family:var(--mono);font-size:0.74rem;color:var(--ink-faint);margin-bottom:4px;}
+.latest-list .x{display:block;font-size:0.9rem;color:var(--ink-soft);margin-top:3px;max-width:70ch;}
 
-  /* ---------- Responsive ---------- */
-  @media (max-width:860px){
-    .footer-head{grid-template-columns:1fr;}
-    .case-grid{grid-template-columns:1fr;}
-    .nav ul{
-      position:fixed;
-      top:60px;left:0;right:0;
-      background:var(--bg);
-      flex-direction:column;
-      gap:0;
-      border-bottom:1px solid var(--line);
-      max-height:0;
-      overflow-y:auto;
-      transition:max-height .25s ease;
-    }
-    .nav ul.open{
-      max-height: min(70vh, 500px);
-    }
-    .nav ul li{width:100%;}
-    .nav a.navlink{
-      display:block;
-      padding:14px 28px;
-      border-top:1px solid var(--line);
-    }
-    .nav-toggle{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      width:36px;height:36px;
-      background:none;
-      border:1px solid var(--line);
-      border-radius:8px;
-      cursor:pointer;
-    }
-  }
-  @media (max-width:600px){
-    .wrap{padding:0 20px;}
-    .page-hero{padding:52px 0 44px;}
-    section{padding:52px 0;}
-  }
+/* Footer */
+footer.site{background:var(--ink);color:#EDEFEC;padding:64px 0 32px;}
+.footer-head{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,0.12);}
+footer.site h2{color:#fff;font-size:clamp(1.6rem,2.4vw,2rem);margin-bottom:14px;}
+footer.site .lede{color:#AEBAB8;margin-bottom:22px;}
+.footer-links{display:flex;gap:12px;flex-wrap:wrap;}
+.footer-links .btn-ghost{border-color:rgba(255,255,255,0.25);color:#fff;}
+.contact-direct{margin-top:26px;font-family:var(--mono);font-size:0.85rem;color:#AEBAB8;}
+.contact-direct a{color:#fff;text-decoration:none;}
+.contact-direct a:hover{color:#8FD6B8;}
+.copy-btn{background:none;border:none;color:#AEBAB8;font-family:var(--mono);font-size:0.75rem;cursor:pointer;padding:0;margin-left:10px;text-decoration:underline;}
+form.contact{display:flex;flex-direction:column;gap:14px;}
+form.contact label{font-family:var(--mono);font-size:0.75rem;color:#AEBAB8;display:flex;flex-direction:column;gap:6px;}
+form.contact input,form.contact textarea,form.contact select{font:inherit;font-family:var(--body);font-size:0.95rem;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:8px;padding:11px 13px;}
+form.contact select option{color:#14212B;}
+form.contact textarea{min-height:110px;resize:vertical;}
+form.contact input:focus-visible,form.contact textarea:focus-visible,form.contact select:focus-visible{outline-color:#8FD6B8;}
+form.contact .btn-primary{background:#fff;color:var(--ink);align-self:flex-start;}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:26px;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{font-size:0.8rem;color:#9DAEA6;}
+.footer-bottom .chip{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.14);color:#AEBAB8;}
 
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
-  }
+/* Responsive */
+@media (max-width:860px){
+  .hero-inner,.profil-grid,.footer-head,.cases{grid-template-columns:1fr;gap:36px;}
+  .cases{gap:16px;}
+  .nav ul{position:absolute;top:100%;left:0;right:0;background:var(--bg);flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:max-height .25s ease;}
+  .nav ul.open{max-height:min(75vh,480px);overflow-y:auto;}
+  a.navlink{display:block;padding:14px 28px;border-top:1px solid var(--line);}
+  .nav-cta{margin:14px 28px;}
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:none;border:1px solid var(--line);border-radius:8px;cursor:pointer;font-size:1.1rem;color:var(--ink);}
+}
+@media (max-width:600px){
+  .tools-grid{grid-template-columns:1fr;}
+  .wrap{padding:0 20px;}
+  .hero{padding:52px 0 44px;}
+  section{padding:52px 0;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:0.001ms !important;transition-duration:0.001ms !important;}
+}
+
+/* Page cas clients */
+.page-hero{padding:64px 0 56px;}
+.page-hero h1{font-size:clamp(2rem,3.2vw,2.7rem);line-height:1.15;font-weight:700;margin-bottom:18px;}
+.page-hero .lede{max-width:58ch;margin-bottom:0;}
+.strip{display:flex;flex-wrap:wrap;gap:28px;margin-top:28px;padding-top:24px;border-top:1px solid var(--line);}
+.strip .stat{display:flex;flex-direction:column;gap:2px;}
+.strip .num{font-family:var(--display);font-size:1.5rem;font-weight:700;color:var(--accent);}
+.strip .label{font-size:0.8rem;color:var(--ink-soft);}
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.case-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:32px;display:flex;flex-direction:column;gap:20px;}
+.case-card-head{display:flex;align-items:flex-start;gap:14px;}
+.case-icon{flex-shrink:0;width:44px;height:44px;border-radius:10px;background:var(--accent-soft);border:1px solid #CFE6DA;color:var(--accent);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:0.72rem;font-weight:600;}
+.case-tag{font-family:var(--mono);font-size:0.74rem;color:var(--accent);display:block;margin-bottom:4px;}
+.case-card h3{font-size:1.18rem;font-weight:600;line-height:1.3;}
+.case-steps{position:relative;padding-left:30px;display:flex;flex-direction:column;gap:18px;}
+.case-steps::before{content:'';position:absolute;left:9px;top:8px;bottom:8px;width:1px;background:var(--line);}
+.case-step{position:relative;}
+.case-step::before{content:'';position:absolute;left:-30px;top:3px;width:19px;height:19px;border-radius:50%;background:var(--bg-card);border:2px solid var(--line);}
+.step-label{font-family:var(--mono);font-size:0.74rem;color:var(--ink-faint);display:block;margin-bottom:4px;}
+.case-step p{font-size:0.92rem;color:var(--ink-soft);}
+.case-step.result::before{background:var(--accent);border-color:var(--accent);}
+.case-step.result .step-label{color:var(--accent);}
+.case-step.result p{background:var(--accent-soft);border:1px solid #CFE6DA;border-radius:10px;padding:12px 14px;color:var(--ink);}
+.case-tools{display:flex;flex-wrap:wrap;gap:8px;padding-top:18px;border-top:1px solid var(--line);}
+.case-note{margin-top:28px;padding-top:24px;border-top:1px solid var(--line);font-family:var(--mono);font-size:0.82rem;color:var(--ink-faint);text-align:center;}
+.case-note a{color:var(--accent);text-decoration:underline;text-underline-offset:3px;}
+@media (max-width:860px){.case-grid{grid-template-columns:1fr;}}
+@media (max-width:600px){.page-hero{padding:52px 0 44px;}.case-card{padding:24px;}}
 </style>
 </head>
 <body>
@@ -464,19 +229,16 @@
 <header class="site">
   <div class="wrap nav">
     <a class="brand" href="/">
-      <img src="images/Beranto-Logo-Vector.svg" alt="Herinirina Beranto - Logo SEO" class="brand-logo">
-      <span class="brand-text">Beranto <span class="dot">.</span> seo</span>
+      <img src="/images/Beranto-Logo-Vector.svg" alt="Herinirina Beranto, logo SEO" width="36" height="36">
+      <span>Beranto <span class="dot">.</span> seo</span>
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navList">☰</button>
     <ul id="navList">
-      <li><a class="navlink" href="/#profil">Profil</a></li>
+      <li><a class="navlink" href="/cas-clients" aria-current="page" style="color:var(--accent);">Cas clients</a></li>
       <li><a class="navlink" href="/#methode">Méthode</a></li>
-      <li><a class="navlink" href="/html#competences">Compétences</a></li>
-      <li><a class="navlink" href="/#experience">Expérience</a></li>
-      <li><a class="navlink" href="cas-clients" aria-current="page" style="color:var(--accent);">Cas clients</a></li>
-      <li><a class="navlink" href="apropos">À propos</a></li>
       <li><a class="navlink" href="/blog/">Blog</a></li>
-      <li><a class="navlink" href="/#contact">Contact</a></li>
+      <li><a class="navlink" href="/apropos">À propos</a></li>
+      <li><a class="btn btn-primary nav-cta" href="/#contact">Me contacter</a></li>
     </ul>
   </div>
 </header>
@@ -487,88 +249,49 @@
       <span class="eyebrow">Cas clients</span>
       <h1>Des problèmes concrets, résolus.</h1>
       <p class="lede">Deux missions récentes, présentées ici de façon anonymisée pour préserver la confidentialité des clients. Noms disponibles sur demande, sous réserve d'accord de confidentialité.</p>
-      <div class="cas-clients-intro-strip">
+      <!-- Remplacez par des résultats chiffrés réels dès que vous les avez -->
+      <div class="strip">
         <div class="stat"><span class="num">2</span><span class="label">missions détaillées</span></div>
-        <div class="stat"><span class="num">4</span><span class="label">étapes par cas : problème → résultat</span></div>
-        <div class="stat"><span class="num">100%</span><span class="label">anonymisé</span></div>
+        <div class="stat"><span class="num">3</span><span class="label">domaines audités</span></div>
+        <div class="stat"><span class="num">FR · EN</span><span class="label">marchés couverts</span></div>
       </div>
     </div>
   </section>
 
-  <section id="cas-clients" style="background:var(--bg-card);border-top:1px solid var(--line);">
+  <section id="cas-clients" class="alt">
     <div class="wrap">
       <div class="case-grid">
 
-        <!-- Cas 1 -->
         <div class="case-card">
           <div class="case-card-head">
             <div class="case-icon">UK</div>
-            <div>
-              <span class="case-tag">Centre d'appels B2B · Marché UK & Europe</span>
-              <h3>Débloquer l'indexation d'un site entier</h3>
-            </div>
+            <div><span class="case-tag">Centre d'appels B2B · Marché UK &amp; Europe</span><h3>Débloquer l'indexation d'un site entier</h3></div>
           </div>
           <div class="case-steps">
-            <div class="case-step">
-              <span class="step-label">Problème</span>
-              <p>Malgré un contenu de qualité, une grande partie du site restait invisible dans les résultats de recherche, avec un trafic organique qui stagnait sur le marché anglophone visé.</p>
-            </div>
-            <div class="case-step">
-              <span class="step-label">Diagnostic</span>
-              <p>Un audit technique a révélé une erreur de canonicalisation appliquée globalement au niveau des réglages du site, redirigeant l'autorité de nombreuses pages vers une URL générique et empêchant leur indexation propre.</p>
-            </div>
-            <div class="case-step">
-              <span class="step-label">Action</span>
-              <p>Correction du paramétrage à la source, puis vérification page par page via l'inspection du code source. En parallèle, rédaction de contenu SEO natif en anglais pour capter une audience UK/Europe qualifiée.</p>
-            </div>
-            <div class="case-step result">
-              <span class="step-label">Résultat</span>
-              <p>Réindexation des pages concernées et reprise progressive du trafic organique qualifié sur le marché anglophone.</p>
-            </div>
+            <div class="case-step"><span class="step-label">Problème</span><p>Malgré un contenu de qualité, une grande partie du site restait invisible dans les résultats de recherche, avec un trafic organique qui stagnait sur le marché anglophone visé.</p></div>
+            <div class="case-step"><span class="step-label">Diagnostic</span><p>Un audit technique a révélé une erreur de canonicalisation appliquée globalement au niveau des réglages du site, redirigeant l'autorité de nombreuses pages vers une URL générique et empêchant leur indexation propre.</p></div>
+            <div class="case-step"><span class="step-label">Action</span><p>Correction du paramétrage à la source, puis vérification page par page via l'inspection du code source. En parallèle, rédaction de contenu SEO natif en anglais pour capter une audience UK/Europe qualifiée.</p></div>
+            <div class="case-step result"><span class="step-label">Résultat</span><p>Réindexation des pages concernées et reprise progressive du trafic organique qualifié sur le marché anglophone.</p></div>
           </div>
-          <div class="case-tools">
-            <span class="chip">Audit technique</span>
-            <span class="chip">Balises canonical</span>
-            <span class="chip">Rédaction EN native</span>
-          </div>
+          <div class="case-tools"><span class="chip">Audit technique</span><span class="chip">Balises canonical</span><span class="chip">Rédaction EN native</span></div>
         </div>
 
-        <!-- Cas 2 -->
         <div class="case-card">
           <div class="case-card-head">
             <div class="case-icon">FR/CA</div>
-            <div>
-              <span class="case-tag">Agence de recrutement tech · France & Canada</span>
-              <h3>Fiabiliser les données avant d'optimiser</h3>
-            </div>
+            <div><span class="case-tag">Agence de recrutement tech · France &amp; Canada</span><h3>Fiabiliser les données avant d'optimiser</h3></div>
           </div>
           <div class="case-steps">
-            <div class="case-step">
-              <span class="step-label">Problème</span>
-              <p>Les métriques Analytics des deux domaines paraissaient incohérentes, rendant impossible une lecture fiable de la performance SEO sur les deux marchés visés.</p>
-            </div>
-            <div class="case-step">
-              <span class="step-label">Diagnostic</span>
-              <p>L'analyse des anomalies dans GA4 a mis en évidence un volume de trafic de bots anormalement élevé, faussant les taux d'engagement et les rapports d'acquisition.</p>
-            </div>
-            <div class="case-step">
-              <span class="step-label">Action</span>
-              <p>Mise en place d'une protection Cloudflare pour filtrer le trafic non humain, puis élaboration d'une stratégie de contenu différenciée entre les deux domaines afin d'éviter toute cannibalisation entre marchés.</p>
-            </div>
-            <div class="case-step result">
-              <span class="step-label">Résultat</span>
-              <p>Données fiabilisées pour un pilotage SEO précis, et une architecture de contenu clarifiée entre les marchés français et canadien.</p>
-            </div>
+            <div class="case-step"><span class="step-label">Problème</span><p>Les métriques Analytics des deux domaines paraissaient incohérentes, rendant impossible une lecture fiable de la performance SEO sur les deux marchés visés.</p></div>
+            <div class="case-step"><span class="step-label">Diagnostic</span><p>L'analyse des anomalies dans GA4 a mis en évidence un volume de trafic de bots anormalement élevé, faussant les taux d'engagement et les rapports d'acquisition.</p></div>
+            <div class="case-step"><span class="step-label">Action</span><p>Mise en place d'une protection Cloudflare pour filtrer le trafic non humain, puis élaboration d'une stratégie de contenu différenciée entre les deux domaines afin d'éviter toute cannibalisation entre marchés.</p></div>
+            <div class="case-step result"><span class="step-label">Résultat</span><p>Données fiabilisées pour un pilotage SEO précis, et une architecture de contenu clarifiée entre les marchés français et canadien.</p></div>
           </div>
-          <div class="case-tools">
-            <span class="chip">GA4</span>
-            <span class="chip">Cloudflare</span>
-            <span class="chip">Stratégie multi-marché</span>
-          </div>
+          <div class="case-tools"><span class="chip">GA4</span><span class="chip">Cloudflare</span><span class="chip">Stratégie multi-marché</span></div>
         </div>
 
       </div>
-      <p class="case-note">Vous menez un projet similaire ? <a href="/#contact" style="color:var(--accent);">Discutons-en</a>.</p>
+      <p class="case-note">Vous menez un projet similaire ? <a href="#contact">Discutons-en</a>.</p>
     </div>
   </section>
 </main>
@@ -579,67 +302,68 @@
       <div>
         <h2>Travaillons ensemble.</h2>
         <p class="lede">Un projet de contenu SEO, un audit technique ou une refonte éditoriale ? Écrivez-moi, je réponds sous 24h.</p>
-        <div class="social-row">
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/herinirina-beranto-4b4932333" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,0.2);color:#fff;">LinkedIn</a>
+        <div class="footer-links">
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/herinirina-beranto-4b4932333" target="_blank" rel="noopener">LinkedIn</a>
         </div>
+        <p class="contact-direct">
+          <a href="mailto:herinirinaberanto@gmail.com">herinirinaberanto@gmail.com</a>
+          <button class="copy-btn" id="copyEmail" type="button">copier</button><br>
+          <a href="tel:+261342375859">+261 34 23 758 59</a> · Antananarivo, Madagascar
+        </p>
       </div>
-      <div class="contact-card">
-        <div class="contact-row">
-          <span class="k">Email</span>
-          <span>
-            <a href="mailto:herinirinaberanto@gmail.com" id="emailLink">herinirinaberanto@gmail.com</a>
-            <button class="copy-btn" id="copyEmail" type="button">copier</button>
-          </span>
-        </div>
-        <div class="contact-row">
-          <span class="k">Téléphone</span>
-          <a href="tel:+261342375859">+261 34 23 758 59</a>
-        </div>
-        <div class="contact-row">
-          <span class="k">Adresse</span>
-          <span class="v">Andoharanofotsy, Antananarivo 102, Madagascar</span>
-        </div>
-      </div>
+      <!-- Formulaire via Formspree : identifiant du formulaire -->
+      <form class="contact" id="contactForm" method="POST" action="https://formspree.io/f/xnpjywpw">
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>Nom<input type="text" name="nom" required autocomplete="name"></label>
+        <label>Email<input type="email" name="email" required autocomplete="email"></label>
+        <label>Type de projet
+          <select name="projet">
+            <option>Rédaction SEO</option>
+            <option>Audit technique</option>
+            <option>Stratégie éditoriale</option>
+            <option>Autre</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Envoyer le message</button>
+        <p id="formStatus" role="status" style="font-size:0.9rem;color:#8FD6B8;margin:0;"></p>
+      </form>
     </div>
     <div class="footer-bottom">
       <p>© 2026 Herinirina Beranto Rafalinjanahary</p>
-      <div class="badges">
-        <span class="chip">Disponible en freelance</span>
-      </div>
+      <span class="chip">Disponible en freelance</span>
     </div>
   </div>
 </footer>
 
 <script>
-  // Mobile nav toggle
-  (function(){
-    var btn = document.getElementById('navToggle');
-    var list = document.getElementById('navList');
-    if(!btn) return;
-    btn.addEventListener('click', function(){
-      var open = list.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+(function(){
+  var b=document.getElementById('navToggle'),l=document.getElementById('navList');
+  b.addEventListener('click',function(){var o=l.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+  l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open');b.setAttribute('aria-expanded','false');});});
+})();
+(function(){
+  var c=document.getElementById('copyEmail');
+  c.addEventListener('click',function(){
+    navigator.clipboard.writeText('herinirinaberanto@gmail.com').then(function(){
+      var o=c.textContent;c.textContent='copié !';setTimeout(function(){c.textContent=o;},1800);
     });
-    list.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        list.classList.remove('open');
-        btn.setAttribute('aria-expanded', 'false');
-      });
-    });
-  })();
-
-  // Copy email button
-  (function(){
-    var copyBtn = document.getElementById('copyEmail');
-    if(!copyBtn) return;
-    copyBtn.addEventListener('click', function(){
-      navigator.clipboard.writeText('herinirinaberanto@gmail.com').then(function(){
-        var original = copyBtn.textContent;
-        copyBtn.textContent = 'copié !';
-        setTimeout(function(){ copyBtn.textContent = original; }, 1800);
-      });
-    });
-  })();
+  });
+})();
+(function(){
+  var f=document.getElementById('contactForm'),st=document.getElementById('formStatus');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    st.textContent='Envoi en cours...';
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();st.textContent='Merci, votre message est envoyé. Je vous réponds sous 24h.';}
+        else{st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";}
+      })
+      .catch(function(){st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";});
+  });
+})();
 </script>
 
 </body>
