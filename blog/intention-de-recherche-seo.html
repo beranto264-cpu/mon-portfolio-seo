@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intention de recherche SEO : comment l'identifier | Beranto</title>
+<meta name="description" content="Intention de recherche : définition, les 4 types et une méthode en 5 étapes pour l'identifier dans les résultats Google avant d'écrire votre page.">
+<link rel="canonical" href="https://beranto-seo.com/blog/intention-de-recherche-seo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Intention de recherche SEO : comment l'identifier | Beranto">
+<meta property="og:description" content="Intention de recherche : définition, les 4 types et une méthode en 5 étapes pour l'identifier dans les résultats Google avant d'écrire votre page.">
+<meta property="og:url" content="https://beranto-seo.com/blog/intention-de-recherche-seo">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://beranto-seo.com/images/portrait-redaction-intention-recherche.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Intention de recherche SEO : comment l'identifier | Beranto">
+<meta name="twitter:description" content="Intention de recherche : définition, les 4 types et une méthode en 5 étapes pour l'identifier dans les résultats Google avant d'écrire votre page.">
+<meta name="twitter:image" content="https://beranto-seo.com/images/portrait-redaction-intention-recherche.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6F3;--bg-card:#FFFFFF;--ink:#14212B;--ink-soft:#51636D;--ink-faint:#66777F;--accent:#1F7A5C;--accent-soft:#E4F1EA;--link:#1A56DB;--line:#DDE2DE;--radius:14px;--display:'Space Grotesk', system-ui, sans-serif;--body:'Inter', system-ui, sans-serif;--mono:'JetBrains Mono', 'Courier New', monospace;--maxw:760px;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img,svg{display:block;max-width:100%;}
+a{color:var(--link);}
+h1,h2,h3{font-family:var(--display);letter-spacing:-0.01em;color:var(--ink);margin:0;}
+p{margin:0;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+header.site{position:sticky;top:0;z-index:50;background:rgba(245,246,243,0.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.nav{max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;}
+.nav .brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:0.85rem;font-weight:500;color:var(--ink);text-decoration:none;}
+.nav .brand .dot{color:var(--accent);}
+.nav .brand img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:1px solid var(--line);}
+.nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;}
+.nav a.navlink{text-decoration:none;font-size:0.88rem;color:var(--ink-soft);font-weight:500;transition:color .15s ease;}
+.nav a.navlink:hover{color:var(--accent);}
+.nav-toggle{display:none;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:9px;font-weight:600;font-size:0.92rem;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease;border:1px solid transparent;}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line);font-family:var(--mono);}
+.btn-ghost:hover{border-color:var(--ink);}
+.article-header{padding:56px 0 32px;}
+.breadcrumb{font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);margin-bottom:20px;text-decoration:none;display:inline-block;}
+.breadcrumb:hover{color:var(--accent);}
+.eyebrow{font-family:var(--mono);font-size:0.78rem;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:14px;}
+.article-header h1{font-size:clamp(1.9rem, 3.4vw, 2.5rem);line-height:1.18;font-weight:700;margin-bottom:16px;}
+.meta{font-family:var(--mono);font-size:0.8rem;color:var(--ink-faint);}
+.author{display:flex;align-items:center;gap:8px;margin-top:18px;font-size:0.92rem;color:var(--ink-soft);}
+.author a{color:var(--accent);font-weight:600;text-decoration:none;}
+.author a:hover{text-decoration:underline;}
+.hero-figure{margin:0 0 40px;}
+.hero-figure img{width:100%;height:auto;max-height:440px;object-fit:cover;border-radius:var(--radius);display:block;}
+article.content{padding-bottom:64px;font-size:1.05rem;color:var(--ink);}
+article.content p{margin:0 0 22px;color:var(--ink-soft);}
+article.content h2{font-size:1.4rem;font-weight:700;margin:44px 0 16px;color:var(--ink);}
+article.content h3{font-size:1.15rem;font-weight:600;margin:32px 0 12px;color:var(--ink);}
+article.content ul,article.content ol{margin:0 0 22px;padding-left:22px;color:var(--ink-soft);}
+article.content li{margin-bottom:8px;}
+article.content strong{color:var(--ink);}
+article.content em{font-style:italic;}
+article.content code{font-family:var(--mono);font-size:0.9em;background:var(--accent-soft);padding:2px 6px;border-radius:4px;}
+.pull-quote{background:var(--ink);border-radius:var(--radius);padding:32px 34px;margin:36px 0;position:relative;overflow:hidden;}
+.pull-quote p{font-family:var(--display);font-size:1.15rem;font-weight:600;color:#fff;line-height:1.45;margin:0;}
+.tldr{background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:var(--radius);padding:22px 26px;margin:0 0 32px;}
+article.content .tldr p{margin:0;color:var(--ink);}
+.author-box{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin:44px 0 0;}
+article.content .author-box p{margin:0;font-size:0.95rem;}
+hr.rule{border:none;border-top:1px solid var(--line);margin:44px 0;}
+.article-footer{padding:32px 0 64px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+.article-footer a{font-family:var(--mono);font-size:0.85rem;text-decoration:none;color:var(--accent);}
+footer.site{background:var(--ink);color:#EDEFEC;padding:64px 0 32px;}
+.footer-head{max-width:1080px;margin:0 auto;padding:0 28px 44px;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;border-bottom:1px solid rgba(255,255,255,0.12);}
+footer.site h2{color:#fff;font-size:clamp(1.6rem, 2.4vw, 2rem);margin-bottom:14px;}
+footer.site .lede{color:#AEBAB8;font-size:1rem;max-width:44ch;}
+.copy-btn{background:none;border:none;color:#7F9188;font-family:var(--mono);font-size:0.72rem;cursor:pointer;padding:0;margin-left:10px;text-decoration:underline;}
+.copy-btn:hover{color:#8FD6B8;}
+.footer-bottom{max-width:1080px;margin:0 auto;padding:26px 28px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{font-size:0.8rem;color:#7F9188;}
+.footer-bottom .badges{display:flex;gap:8px;}
+.chip{font-family:var(--mono);font-size:0.72rem;color:var(--ink);background:var(--accent-soft);border:1px solid #CFE6DA;padding:5px 11px;border-radius:100px;}
+.footer-bottom .chip{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.14);color:#AEBAB8;}
+@media (max-width:860px){
+.footer-head{grid-template-columns:1fr;}
+.nav ul{position:fixed;top:60px;left:0;right:0;background:var(--bg);flex-direction:column;gap:0;border-bottom:1px solid var(--line);max-height:0;overflow-y:auto;transition:max-height .25s ease;}
+.nav ul.open{max-height:min(70vh, 500px);}
+.nav ul li{width:100%;}
+.nav a.navlink{display:block;padding:14px 28px;border-top:1px solid var(--line);}
+.nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:none;border:1px solid var(--line);border-radius:8px;cursor:pointer;}
+}
+@media (max-width:700px){
+.hero-figure img{max-height:280px;}
+.wrap{padding:0 20px;}
+.article-header{padding:48px 0 28px;}
+}
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto;}
+*{animation-duration:0.001ms !important;transition-duration:0.001ms !important;}
+}
+.btn{font-family:var(--body);cursor:pointer;justify-content:center;}
+.btn-primary{background:var(--ink);color:#fff;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,33,43,0.18);}
+.nav ul{align-items:center;}
+.nav-cta{padding:9px 16px;font-size:0.85rem;}
+footer.site .lede{margin-bottom:22px;}
+.footer-links{display:flex;gap:12px;flex-wrap:wrap;}
+.footer-links .btn-ghost{border-color:rgba(255,255,255,0.25);color:#fff;}
+.contact-direct{margin-top:26px;font-family:var(--mono);font-size:0.85rem;color:#AEBAB8;}
+.contact-direct a{color:#fff;text-decoration:none;}
+.contact-direct a:hover{color:#8FD6B8;}
+.copy-btn{color:#AEBAB8;font-size:0.75rem;}
+form.contact{display:flex;flex-direction:column;gap:14px;}
+form.contact label{font-family:var(--mono);font-size:0.75rem;color:#AEBAB8;display:flex;flex-direction:column;gap:6px;}
+form.contact input,form.contact textarea,form.contact select{font:inherit;font-family:var(--body);font-size:0.95rem;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:8px;padding:11px 13px;}
+form.contact select option{color:#14212B;}
+form.contact textarea{min-height:110px;resize:vertical;}
+form.contact .btn-primary{background:#fff;color:var(--ink);align-self:flex-start;}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;}
+.footer-bottom p{color:#9DAEA6;}
+@media (max-width:860px){
+  .nav ul{position:absolute;top:100%;}
+  .nav-cta{margin:14px 28px;}
+  .nav-toggle{width:40px;height:40px;font-size:1.1rem;color:var(--ink);}
+}
+.table-wrap{overflow-x:auto;margin:0 0 26px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg-card);}
+article.content table{width:100%;border-collapse:collapse;font-size:0.92rem;min-width:560px;}
+article.content th{font-family:var(--mono);font-size:0.74rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);text-align:left;background:var(--accent-soft);padding:12px 14px;}
+article.content td{padding:12px 14px;border-top:1px solid var(--line);color:var(--ink-soft);vertical-align:top;}
+article.content td:first-child{color:var(--ink);}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BlogPosting",
+ "headline": "Intention de recherche : comment l'identifier avant d'écrire une page",
+ "description": "Intention de recherche : définition, les 4 types et une méthode en 5 étapes pour l'identifier dans les résultats Google avant d'écrire votre page.",
+ "image": "https://beranto-seo.com/images/portrait-redaction-intention-recherche.webp",
+ "mainEntityOfPage": "https://beranto-seo.com/blog/intention-de-recherche-seo",
+ "datePublished": "2026-10-28",
+ "dateModified": "2026-10-28",
+ "inLanguage": "fr",
+ "author": {
+  "@type": "Person",
+  "name": "Herinirina Beranto Rafalinjanahary",
+  "url": "https://beranto-seo.com/apropos"
+ },
+ "publisher": {
+  "@type": "Person",
+  "name": "Herinirina Beranto Rafalinjanahary",
+  "url": "https://beranto-seo.com/"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Qu'est-ce que l'intention de recherche en SEO ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "C'est le besoin qui motive une requête : s'informer, trouver un site, comparer des options ou passer à l'action. Elle détermine le type de contenu que Google juge pertinent pour cette requête, bien plus que les mots qui la composent."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Combien existe-t-il de types d'intention de recherche ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "On en distingue généralement quatre : informationnelle, navigationnelle, commerciale et transactionnelle. Google utilise sa propre terminologie (Know, Do, Website, Visit-in-person) dans les consignes données à ses évaluateurs, mais le principe est le même."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Comment connaître l'intention de recherche d'un mot-clé ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "En lisant la page de résultats : type de pages classées, format dominant, angle adopté, questions associées. Si vous disposez déjà d'un site, la Search Console complète l'analyse en montrant sur quelles requêtes vos pages apparaissent."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Peut-on cibler plusieurs intentions sur une même page ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "C'est déconseillé. Une page qui tente de répondre à une définition, à une comparaison et à une demande de devis ne satisfait pleinement aucune de ces attentes. Mieux vaut une page par intention, reliées entre elles par le maillage interne."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Un outil peut-il déterminer l'intention de recherche à ma place ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Certains outils SEO classent automatiquement les mots-clés par intention, ce qui fait gagner du temps sur de grandes listes. Ces classements restent des estimations : vérifiez toujours les mots-clés stratégiques en lisant la SERP."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="site">
+<div class="nav">
+<a class="brand" href="/">
+<img src="/images/Beranto-Logo-Vector.svg" alt="Herinirina Beranto - Logo SEO" width="36" height="36" class="brand-logo">
+<span class="brand-text">Beranto <span class="dot">.</span> seo</span>
+</a>
+<button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+<ul id="navList">
+      <li><a class="navlink" href="/cas-clients">Cas clients</a></li>
+      <li><a class="navlink" href="/#methode">Méthode</a></li>
+      <li><a class="navlink" href="/blog/" aria-current="page" style="color:var(--accent);">Blog</a></li>
+      <li><a class="navlink" href="/apropos">À propos</a></li>
+      <li><a class="btn btn-primary nav-cta" href="/#contact">Me contacter</a></li>
+    </ul>
+</div>
+</header>
+<main>
+<div class="wrap article-header">
+<a class="breadcrumb" href="/blog/">← Retour au blog</a>
+<span class="eyebrow">Rédaction SEO</span>
+<h1>Intention de recherche : comment l'identifier avant d'écrire une page</h1>
+<span class="meta">28 octobre 2026 · 10 min de lecture</span>
+<div class="author">Article écrit par <a href="/apropos">Beranto</a>, freelance SEO, plus de 7 ans d'expérience</div>
+</div>
+<div class="wrap">
+<figure class="hero-figure">
+<img src="/images/portrait-redaction-intention-recherche.webp" alt="Beranto analysant une page de résultats Google pour déterminer l'intention de recherche d'une requête" width="1200" height="440" fetchpriority="high">
+</figure>
+<article class="content">
+<p>Une page peut être bien écrite, bien structurée, correctement optimisée, et ne jamais décoller. Dans la plupart des audits que je mène, la cause n'est pas technique : la page répond à une question que Google ne juge pas posée par la requête. C'est un problème d'<strong>intention de recherche</strong>, et il se règle avant d'écrire la première ligne, pas après.</p>
+<p>Dans l'article sur la <a href="/blog/recherche-mots-cles-seo"><strong>recherche de mots-clés SEO</strong></a>, je recommandais de classer chaque mot-clé par intention avant de le confier à un brief. Cet article détaille l'étape suivante : comment lire cette intention concrètement, puis comment la traduire en contenu.</p>
+
+<div class="tldr">
+<p><strong>En bref :</strong> l'<strong>intention de recherche</strong> est la raison pour laquelle un internaute tape une requête : s'informer, trouver un site précis, comparer ou passer à l'action. On ne la devine pas, on la lit dans la <strong>page de résultats Google (SERP)</strong> : le type de pages classées, leur format et leur angle indiquent ce que Google juge attendu. Il reste à rédiger la page qui correspond à cette attente, pas celle qu'on aurait aimé publier.</p>
+</div>
+
+<h2>Qu'est-ce que l'intention de recherche ?</h2>
+<p>L'<strong>intention de recherche</strong> (ou <strong>search intent</strong>) désigne le besoin réel qui se cache derrière une requête. Deux internautes qui tapent les mêmes mots n'attendent pas forcément la même chose, et inversement, deux requêtes très différentes peuvent viser le même besoin.</p>
+<p>Il faut donc la distinguer du <strong>mot-clé</strong>. Le mot-clé est ce qu'on tape, l'intention est ce qu'on cherche à obtenir. Un exemple tiré de ce blog : la requête <em>cocon sémantique</em> appelle surtout une définition et une vue d'ensemble, alors que <em>cocon sémantique exemple</em> signale un autre besoin, celui d'un modèle concret à reproduire. Les deux requêtes partagent deux mots, mais elles ne méritent pas la même page. C'est la raison pour laquelle j'ai consacré un article à chacune : <a href="/blog/cocon-semantique-maillage-interne"><strong>la structure du cocon sémantique</strong></a> d'un côté, un <a href="/blog/cocon-semantique-exemple"><strong>exemple de cocon sémantique pas à pas</strong></a> de l'autre.</p>
+
+<h2>Les quatre types d'intention de recherche</h2>
+<p>La classification la plus courante distingue quatre grandes familles. Les trois premières (informationnelle, navigationnelle, transactionnelle) viennent des travaux de recherche sur le comportement des internautes, notamment la taxonomie proposée par Andrei Broder en 2002. La quatrième, l'<strong>intention commerciale</strong>, a été ajoutée par les praticiens du SEO pour isoler la phase de comparaison qui précède l'achat.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Type d'intention</th><th>Ce que veut l'internaute</th><th>Exemples de requêtes</th><th>Contenu attendu</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Informationnelle</strong></td><td>Comprendre, apprendre</td><td>qu'est-ce que le netlinking, comment rédiger une meta description</td><td>Guide, définition, tutoriel</td></tr>
+<tr><td><strong>Navigationnelle</strong></td><td>Accéder à un site ou une page précise</td><td>Search Console connexion, Semrush</td><td>Site officiel, page de connexion</td></tr>
+<tr><td><strong>Commerciale</strong></td><td>Comparer avant de choisir</td><td>meilleur outil de suivi de positions, Semrush ou Ahrefs</td><td>Comparatif, test, avis</td></tr>
+<tr><td><strong>Transactionnelle</strong></td><td>Passer à l'action (acheter, réserver, contacter)</td><td>rédacteur SEO freelance, devis audit SEO</td><td>Page de service, fiche produit, formulaire</td></tr>
+</tbody>
+</table>
+</div>
+<p>Google, de son côté, n'emploie pas ces étiquettes. Dans ses consignes aux évaluateurs de la qualité des résultats, il classe les requêtes en <strong>Know</strong> (savoir), <strong>Do</strong> (faire), <strong>Website</strong> (trouver un site) et <strong>Visit-in-person</strong> (se rendre sur place). Ces consignes servent à évaluer les résultats, pas à fixer un classement, mais elles confirment l'idée de fond : une requête exprime un besoin, et un bon résultat est celui qui le satisfait.</p>
+<p>Précision utile : beaucoup de requêtes ont une <strong>intention mixte</strong>. Le mot "SEO" tout seul peut désigner quelqu'un qui veut une définition, un outil ou un prestataire. Dans ce cas, la SERP affiche elle-même un mélange de formats, et c'est un signal de prudence : mieux vaut cibler une formulation plus précise que d'essayer de contenter tout le monde sur une seule page.</p>
+
+<h2>Pourquoi l'intention de recherche décide de votre classement</h2>
+<p>Google cherche à afficher les pages qui satisfont le mieux le besoin exprimé. Une page peut donc être excellente sur le fond et rester invisible si elle ne correspond pas à l'attente. Trois situations reviennent souvent :</p>
+<ul>
+<li><strong>Un format qui ne correspond pas</strong> : une page de service positionnée sur une requête où Google ne montre que des guides pédagogiques. Le contenu est bon, mais la page n'est pas du bon type.</li>
+<li><strong>Un niveau qui ne correspond pas</strong> : un article très technique sur une requête de débutant, ou l'inverse. L'internaute quitte la page, et le contenu ne répond pas à ce qu'il cherchait.</li>
+<li><strong>Deux pages sur la même attente</strong> : quand deux contenus servent la même intention, ils se concurrencent. C'est exactement le mécanisme décrit dans l'article sur la <a href="/blog/cannibalisation-seo-pages-qui-se-concurrencent"><strong>cannibalisation SEO</strong></a>.</li>
+</ul>
+
+<div class="pull-quote">
+<p>On n'optimise pas un mot-clé. On répond à une attente, et la page de résultats dit laquelle.</p>
+</div>
+
+<h2>Comment identifier l'intention de recherche en 5 étapes</h2>
+<p>Aucun outil ne remplace la lecture de la SERP. Voici la méthode que j'applique avant chaque brief, avec pour seuls outils un navigateur et, si le site existe déjà, la Search Console.</p>
+
+<h3>1. Lire les résultats comme un cahier des charges</h3>
+<p>Tapez la requête (en navigation privée, pour limiter l'effet de votre historique) et observez les dix premiers résultats. Trois questions suffisent :</p>
+<ul>
+<li><strong>Quel type de pages</strong> Google classe-t-il : articles, pages de service, fiches produit, comparatifs, vidéos, forums ?</li>
+<li><strong>Quel format</strong> domine : définition, liste, tutoriel, tableau comparatif ?</li>
+<li><strong>Quel angle</strong> : grand public ou expert, généraliste ou très pratique ?</li>
+</ul>
+<p>Si huit résultats sur dix sont des comparatifs, la requête a une <strong>intention commerciale</strong>, quelle que soit l'idée que vous vous en faisiez.</p>
+
+<h3>2. Repérer les éléments enrichis de la SERP</h3>
+<p>Les blocs <strong>People Also Ask</strong> (questions associées), l'extrait en position zéro, les <strong>AI Overviews</strong>, les vidéos ou les cartes locales sont autant d'indices. Ils montrent quelles sous-questions Google associe à la requête, et donc quelles sections votre page devra couvrir.</p>
+
+<h3>3. Explorer les suggestions et les recherches associées</h3>
+<p>L'autocomplétion et les recherches associées, en bas de page, révèlent comment les internautes reformulent leur besoin : ajout de "exemple", "prix", "gratuit", "avis", "pas à pas". Chacun de ces mots précise l'intention.</p>
+
+<h3>4. Croiser avec la Search Console</h3>
+<p>Si la page existe déjà, ouvrez le rapport de performances et regardez sur quelles requêtes elle s'affiche réellement. Quand une page apparaît sur des requêtes éloignées de son sujet, ou qu'elle stagne alors que son contenu est solide, l'intention est souvent mal ciblée. C'est aussi dans ce rapport qu'on repère les pages qui se disputent la même requête.</p>
+
+<h3>5. Formuler l'intention en une phrase</h3>
+<p>Avant d'écrire, notez dans le brief : <em>"L'internaute veut [objectif] et attend [format], à un niveau [débutant ou expert]."</em> Par exemple : <em>"L'internaute veut comprendre ce qu'est l'intention de recherche et savoir la repérer, il attend un guide pédagogique avec une méthode, à un niveau débutant à intermédiaire."</em> Si vous n'arrivez pas à écrire cette phrase, la requête n'est pas encore assez claire pour être commandée.</p>
+<p>Cette phrase prend sa place naturelle dans la <strong>carte mot-clé / URL</strong> dont je parle dans l'article sur la cannibalisation : chaque page y est associée à une requête principale et à une intention, ce qui évite de commander deux fois le même contenu.</p>
+
+<h2>Comment rédiger une page qui répond à l'intention de recherche</h2>
+<p>Une fois l'intention identifiée, la rédaction suit quelques principes simples.</p>
+<ul>
+<li><strong>Répondre dès les premières lignes.</strong> La réponse directe vient avant le contexte. Un lecteur pressé la trouve tout de suite, et un moteur de recherche ou une IA peut la reprendre telle quelle.</li>
+<li><strong>Nommer l'intention dans le titre et le H1.</strong> Les mots "comment", "exemple", "comparatif", "prix" ou "modèle" annoncent le type de réponse.</li>
+<li><strong>Calquer les sous-titres sur les sous-questions.</strong> Les questions associées de la SERP fournissent presque un plan prêt à l'emploi.</li>
+<li><strong>Adopter le format attendu</strong> : liste numérotée pour une méthode, tableau pour une comparaison, définition courte pour une notion.</li>
+<li><strong>Ne viser qu'une seule intention par page.</strong> Mélanger définition, comparatif et offre de service dilue le message et prépare la cannibalisation.</li>
+<li><strong>Ajouter ce que la SERP ne contient pas encore.</strong> Se contenter de reformuler les dix premiers résultats ne donne aucune raison de vous classer. Un exemple vécu, une méthode éprouvée ou une donnée de première main apportent ce que Google appelle, dans ses recommandations sur le <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener">contenu utile et fiable</a>, de la valeur originale.</li>
+</ul>
+<p>C'est le même raisonnement que celui de l'<a href="/blog/eeat-conventions-editoriales"><strong>EEAT</strong></a> : répondre à l'intention ne suffit pas, il faut aussi que la réponse soit crédible, avec un auteur identifiable et une expérience qui se voit dans le texte.</p>
+
+<h3>Un exemple tiré de mes audits</h3>
+<p>Dans l'article sur la cannibalisation, je racontais un cas où une page pilier trop générique captait des requêtes qui revenaient à ses pages satellites. Le problème n'était pas la qualité du contenu, mais la <strong>confusion des intentions</strong> : la page pilier répondait à des questions détaillées au lieu de donner une vue d'ensemble. La correction a consisté à la recentrer sur son rôle, et à renvoyer les questions précises vers les pages qui leur étaient destinées. C'est le principe que je rappelle systématiquement dans un <a href="/blog/cocon-semantique-maillage-interne"><strong>cocon sémantique</strong></a> : une intention, une page.</p>
+
+<h2>Intention de recherche et moteurs IA : ce qui change avec le GEO</h2>
+<p>Les moteurs de réponse générative reformulent la question de l'internaute, puis cherchent des passages qui y répondent. Cela renforce l'importance de l'intention : un contenu qui sait précisément à quelle question il répond est plus facile à reprendre qu'un texte qui tourne autour du sujet.</p>
+<p>Concrètement, un passage a plus de chances d'être exploitable quand il est <strong>court, autonome et explicite</strong> : une définition en deux phrases, une liste d'étapes, un tableau clair, une question en sous-titre suivie de sa réponse. Aucune technique ne garantit d'être cité, et c'est un point sur lequel je reste prudent dans l'article sur l'<a href="/blog/optimisation-moteurs-ia-geo-aeo"><strong>optimisation pour les moteurs IA</strong></a>. Mais une page qui répond nettement à une intention précise part avec un avantage, pour les résultats classiques comme pour les réponses générées.</p>
+
+<h2>Les erreurs fréquentes quand on travaille l'intention de recherche</h2>
+<ul>
+<li><strong>Partir du volume de recherche</strong> sans regarder la SERP. Un mot-clé très recherché peut avoir une intention qui ne correspond pas à votre offre.</li>
+<li><strong>Copier la structure des concurrents</strong> sans rien ajouter. On obtient un contenu interchangeable.</li>
+<li><strong>Cibler plusieurs intentions sur une même page</strong>, par peur de manquer du trafic.</li>
+<li><strong>Figer l'analyse une fois pour toutes.</strong> Les consignes de Google précisent elles-mêmes que le sens d'une requête peut évoluer avec le temps. Relisez la SERP avant chaque mise à jour d'un contenu.</li>
+<li><strong>Se fier uniquement à un outil de classification automatique.</strong> Il donne une indication, jamais une certitude. La lecture des résultats reste l'étape décisive.</li>
+</ul>
+
+<h2>Questions fréquentes sur l'intention de recherche</h2>
+<h3>Qu'est-ce que l'intention de recherche en SEO ?</h3>
+<p>C'est le besoin qui motive une requête : s'informer, trouver un site, comparer des options ou passer à l'action. Elle détermine le type de contenu que Google juge pertinent pour cette requête, bien plus que les mots qui la composent.</p>
+<h3>Combien existe-t-il de types d'intention de recherche ?</h3>
+<p>On en distingue généralement quatre : informationnelle, navigationnelle, commerciale et transactionnelle. Google utilise sa propre terminologie (Know, Do, Website, Visit-in-person) dans les consignes données à ses évaluateurs, mais le principe est le même.</p>
+<h3>Comment connaître l'intention de recherche d'un mot-clé ?</h3>
+<p>En lisant la page de résultats : type de pages classées, format dominant, angle adopté, questions associées. Si vous disposez déjà d'un site, la Search Console complète l'analyse en montrant sur quelles requêtes vos pages apparaissent.</p>
+<h3>Peut-on cibler plusieurs intentions sur une même page ?</h3>
+<p>C'est déconseillé. Une page qui tente de répondre à une définition, à une comparaison et à une demande de devis ne satisfait pleinement aucune de ces attentes. Mieux vaut une page par intention, reliées entre elles par le maillage interne.</p>
+<h3>Un outil peut-il déterminer l'intention de recherche à ma place ?</h3>
+<p>Certains outils SEO classent automatiquement les mots-clés par intention, ce qui fait gagner du temps sur de grandes listes. Ces classements restent des estimations : vérifiez toujours les mots-clés stratégiques en lisant la SERP.</p>
+
+<hr class="rule">
+<h3>Ce qu'il faut retenir</h3>
+<p>L'<strong>intention de recherche</strong> est le point de départ de toute page qui doit se classer : elle dit quel type de contenu produire, sous quel angle et dans quel format. Elle se lit dans la SERP, se résume en une phrase dans le brief, et se vérifie avant chaque commande de contenu. Bien travaillée, elle fait le lien entre les trois chantiers abordés dans les articles précédents : la <a href="/blog/recherche-mots-cles-seo"><strong>liste de mots-clés</strong></a> qui l'alimente, le <a href="/blog/cocon-semantique-maillage-interne"><strong>cocon sémantique</strong></a> qui l'organise, et la prévention de la <a href="/blog/cannibalisation-seo-pages-qui-se-concurrencent"><strong>cannibalisation</strong></a> qu'elle rend presque automatique.</p>
+
+<div class="author-box">
+<p><strong>À propos de l'auteur.</strong> Beranto est freelance SEO (rédaction, SEO technique et stratégie éditoriale) avec plus de 7 ans d'expérience. Pour voir comment ces méthodes s'appliquent sur des projets réels, consultez les <a href="/cas-clients">cas clients</a> ou la page <a href="/apropos">À propos</a>.</p>
+</div>
+</article>
+</div>
+<div class="wrap article-footer">
+<a href="/blog/">← Tous les articles</a>
+<a href="/#contact">Discuter d'un audit ou d'une refonte →</a>
+</div>
+</main>
+<footer class="site" id="contact">
+  <div class="footer-head">
+    <div>
+      <h2>Travaillons ensemble.</h2>
+      <p class="lede">Un projet de contenu SEO, un audit technique ou une refonte éditoriale ? Écrivez-moi, je réponds sous 24h.</p>
+      <div class="footer-links">
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/herinirina-beranto-4b4932333" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="contact-direct">
+        <a href="mailto:herinirinaberanto@gmail.com">herinirinaberanto@gmail.com</a>
+        <button class="copy-btn" id="copyEmail" type="button">copier</button><br>
+        <a href="tel:+261342375859">+261 34 23 758 59</a> · Antananarivo, Madagascar
+      </p>
+    </div>
+    <form class="contact" id="contactForm" method="POST" action="https://formspree.io/f/xnpjywpw">
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label>Nom<input type="text" name="nom" required autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Type de projet
+        <select name="projet">
+          <option>Rédaction SEO</option>
+          <option>Audit technique</option>
+          <option>Stratégie éditoriale</option>
+          <option>Autre</option>
+        </select>
+      </label>
+      <label>Message<textarea name="message" required></textarea></label>
+      <button class="btn btn-primary" type="submit">Envoyer le message</button>
+      <p id="formStatus" role="status" style="font-size:0.9rem;color:#8FD6B8;margin:0;"></p>
+    </form>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Herinirina Beranto Rafalinjanahary</p>
+    <div class="badges"><span class="chip">Disponible en freelance</span></div>
+  </div>
+</footer>
+<script>
+(function(){
+var btn=document.getElementById('navToggle'),list=document.getElementById('navList');
+btn.addEventListener('click',function(){var open=list.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});
+list.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){list.classList.remove('open');btn.setAttribute('aria-expanded','false');});});
+})();
+(function(){
+var c=document.getElementById('copyEmail');
+if(!c)return;
+c.addEventListener('click',function(){navigator.clipboard.writeText('herinirinaberanto@gmail.com').then(function(){var o=c.textContent;c.textContent='copié !';setTimeout(function(){c.textContent=o;},1800);});});
+})();
+</script>
+<script>
+(function(){
+  var f=document.getElementById('contactForm'),st=document.getElementById('formStatus');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    st.textContent='Envoi en cours...';
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();st.textContent='Merci, votre message est envoyé. Je vous réponds sous 24h.';}
+        else{st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";}
+      })
+      .catch(function(){st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";});
+  });
+})();
+</script>
+</body>
+</html>
