@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erreur de balise canonical : bloquer l'indexation | Beranto</title>
+<meta name="description" content="Une balise canonical mal configurée peut rendre des dizaines de pages invisibles sur Google. Diagnostic, correction et prévention, pas à pas.">
+<link rel="canonical" href="https://beranto-seo.com/blog/erreur-balise-canonical">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Erreur de balise canonical : comment elle peut bloquer toute l'indexation d'un site">
+<meta property="og:description" content="Une balise canonical mal configurée peut rendre des dizaines de pages invisibles sur Google. Diagnostic, correction et prévention, pas à pas.">
+<meta property="og:url" content="https://beranto-seo.com/blog/erreur-balise-canonical">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://beranto-seo.com/images/rapport-erreur-de-balise-canonical.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Erreur de balise canonical : comment elle peut bloquer toute l'indexation d'un site">
+<meta name="twitter:description" content="Une balise canonical mal configurée peut rendre des dizaines de pages invisibles sur Google. Diagnostic, correction et prévention, pas à pas.">
+<meta name="twitter:image" content="https://beranto-seo.com/images/rapport-erreur-de-balise-canonical.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6F3;--bg-card:#FFFFFF;--ink:#14212B;--ink-soft:#51636D;--ink-faint:#66777F;--accent:#1F7A5C;--accent-soft:#E4F1EA;--link:#1A56DB;--line:#DDE2DE;--radius:14px;--display:'Space Grotesk', system-ui, sans-serif;--body:'Inter', system-ui, sans-serif;--mono:'JetBrains Mono', 'Courier New', monospace;--maxw:760px;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img,svg{display:block;max-width:100%;}
+a{color:var(--link);}
+h1,h2,h3{font-family:var(--display);letter-spacing:-0.01em;color:var(--ink);margin:0;}
+p{margin:0;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+header.site{position:sticky;top:0;z-index:50;background:rgba(245,246,243,0.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.nav{max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;}
+.nav .brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:0.85rem;font-weight:500;color:var(--ink);text-decoration:none;}
+.nav .brand .dot{color:var(--accent);}
+.nav .brand img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:1px solid var(--line);}
+.nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;}
+.nav a.navlink{text-decoration:none;font-size:0.88rem;color:var(--ink-soft);font-weight:500;transition:color .15s ease;}
+.nav a.navlink:hover{color:var(--accent);}
+.nav-toggle{display:none;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:9px;font-weight:600;font-size:0.92rem;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease;border:1px solid transparent;}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line);font-family:var(--mono);}
+.btn-ghost:hover{border-color:var(--ink);}
+.article-header{padding:56px 0 32px;}
+.breadcrumb{font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);margin-bottom:20px;text-decoration:none;display:inline-block;}
+.breadcrumb:hover{color:var(--accent);}
+.eyebrow{font-family:var(--mono);font-size:0.78rem;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:14px;}
+.article-header h1{font-size:clamp(1.9rem, 3.4vw, 2.5rem);line-height:1.18;font-weight:700;margin-bottom:16px;}
+.meta{font-family:var(--mono);font-size:0.8rem;color:var(--ink-faint);}
+.author{display:flex;align-items:center;gap:8px;margin-top:18px;font-size:0.92rem;color:var(--ink-soft);}
+.author a{color:var(--accent);font-weight:600;text-decoration:none;}
+.author a:hover{text-decoration:underline;}
+.hero-figure{margin:0 0 40px;}
+.hero-figure img{width:100%;height:auto;border-radius:var(--radius);display:block;border:1px solid var(--line);box-shadow:0 20px 44px -22px rgba(20,33,43,0.28);}
+.hero-figure figcaption{font-family:var(--mono);font-size:0.76rem;color:var(--ink-faint);margin-top:10px;}
+article.content{padding-bottom:64px;font-size:1.05rem;color:var(--ink);}
+article.content p{margin:0 0 22px;color:var(--ink-soft);}
+article.content h2{font-size:1.4rem;font-weight:700;margin:44px 0 16px;color:var(--ink);}
+article.content h3{font-size:1.15rem;font-weight:600;margin:32px 0 12px;color:var(--ink);}
+article.content ul,article.content ol{margin:0 0 22px;padding-left:22px;color:var(--ink-soft);}
+article.content li{margin-bottom:8px;}
+article.content strong{color:var(--ink);}
+article.content em{font-style:italic;}
+article.content code{font-family:var(--mono);font-size:0.88em;background:var(--accent-soft);color:var(--ink);padding:2px 6px;border-radius:5px;}
+pre.code-block{background:var(--ink);color:#EDEFEC;border-radius:var(--radius);padding:20px 24px;margin:0 0 22px;overflow-x:auto;font-family:var(--mono);font-size:0.86rem;line-height:1.6;}
+pre.code-block code{background:none;color:inherit;padding:0;font-size:inherit;}
+.pull-quote{background:var(--ink);border-radius:var(--radius);padding:32px 34px;margin:36px 0;position:relative;overflow:hidden;}
+.pull-quote p{font-family:var(--display);font-size:1.15rem;font-weight:600;color:#fff;line-height:1.45;margin:0;}
+article.content .pull-quote p{color:#fff;margin:0;}
+hr.rule{border:none;border-top:1px solid var(--line);margin:44px 0;}
+.article-footer{padding:32px 0 64px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+.article-footer a{font-family:var(--mono);font-size:0.85rem;text-decoration:none;color:var(--accent);}
+footer.site{background:var(--ink);color:#EDEFEC;padding:64px 0 32px;}
+.footer-head{max-width:1080px;margin:0 auto;padding:0 28px 44px;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;border-bottom:1px solid rgba(255,255,255,0.12);}
+footer.site h2{color:#fff;font-size:clamp(1.6rem, 2.4vw, 2rem);margin-bottom:14px;}
+footer.site .lede{color:#AEBAB8;font-size:1rem;max-width:44ch;}
+.copy-btn{background:none;border:none;color:#7F9188;font-family:var(--mono);font-size:0.72rem;cursor:pointer;padding:0;margin-left:10px;text-decoration:underline;}
+.copy-btn:hover{color:#8FD6B8;}
+.footer-bottom{max-width:1080px;margin:0 auto;padding:26px 28px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{font-size:0.8rem;color:#7F9188;}
+.footer-bottom .badges{display:flex;gap:8px;}
+.chip{font-family:var(--mono);font-size:0.72rem;color:var(--ink);background:var(--accent-soft);border:1px solid #CFE6DA;padding:5px 11px;border-radius:100px;}
+.footer-bottom .chip{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.14);color:#AEBAB8;}
+@media (max-width:860px){
+.footer-head{grid-template-columns:1fr;}
+.nav ul{position:fixed;top:60px;left:0;right:0;background:var(--bg);flex-direction:column;gap:0;border-bottom:1px solid var(--line);max-height:0;overflow-y:auto;transition:max-height .25s ease;}
+.nav ul.open{max-height:min(70vh, 500px);}
+.nav ul li{width:100%;}
+.nav a.navlink{display:block;padding:14px 28px;border-top:1px solid var(--line);}
+.nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:none;border:1px solid var(--line);border-radius:8px;cursor:pointer;}
+}
+@media (max-width:700px){
+.wrap{padding:0 20px;}
+.article-header{padding:48px 0 28px;}
+pre.code-block{padding:16px 18px;font-size:0.8rem;}
+}
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto;}
+*{animation-duration:0.001ms !important;transition-duration:0.001ms !important;}
+}
+.btn{font-family:var(--body);cursor:pointer;justify-content:center;}
+.btn-primary{background:var(--ink);color:#fff;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,33,43,0.18);}
+.nav ul{align-items:center;}
+.nav-cta{padding:9px 16px;font-size:0.85rem;}
+footer.site .lede{margin-bottom:22px;}
+.footer-links{display:flex;gap:12px;flex-wrap:wrap;}
+.footer-links .btn-ghost{border-color:rgba(255,255,255,0.25);color:#fff;}
+.contact-direct{margin-top:26px;font-family:var(--mono);font-size:0.85rem;color:#AEBAB8;}
+.contact-direct a{color:#fff;text-decoration:none;}
+.contact-direct a:hover{color:#8FD6B8;}
+.copy-btn{color:#AEBAB8;font-size:0.75rem;}
+form.contact{display:flex;flex-direction:column;gap:14px;}
+form.contact label{font-family:var(--mono);font-size:0.75rem;color:#AEBAB8;display:flex;flex-direction:column;gap:6px;}
+form.contact input,form.contact textarea,form.contact select{font:inherit;font-family:var(--body);font-size:0.95rem;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:8px;padding:11px 13px;}
+form.contact select option{color:#14212B;}
+form.contact textarea{min-height:110px;resize:vertical;}
+form.contact .btn-primary{background:#fff;color:var(--ink);align-self:flex-start;}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;}
+.footer-bottom p{color:#9DAEA6;}
+@media (max-width:860px){
+  .nav ul{position:absolute;top:100%;}
+  .nav-cta{margin:14px 28px;}
+  .nav-toggle{width:40px;height:40px;font-size:1.1rem;color:var(--ink);}
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BlogPosting",
+ "headline": "Erreur de balise canonical : comment elle peut bloquer toute l'indexation d'un site (et comment la corriger)",
+ "description": "Une balise canonical mal configurée peut rendre des dizaines de pages invisibles sur Google. Diagnostic, correction et prévention, pas à pas.",
+ "image": "https://beranto-seo.com/images/rapport-erreur-de-balise-canonical.webp",
+ "mainEntityOfPage": "https://beranto-seo.com/blog/erreur-balise-canonical",
+ "datePublished": "2026-10-28",
+ "dateModified": "2026-10-28",
+ "inLanguage": "fr",
+ "author": {
+  "@type": "Person",
+  "name": "Herinirina Beranto Rafalinjanahary",
+  "url": "https://beranto-seo.com/apropos"
+ },
+ "publisher": {
+  "@type": "Person",
+  "name": "Herinirina Beranto Rafalinjanahary",
+  "url": "https://beranto-seo.com/"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Quelle est la différence entre une balise canonical et une redirection 301 ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "La redirection 301 envoie les visiteurs et Google vers une autre URL : l'ancienne page n'est plus accessible. La balise canonical laisse les deux pages accessibles, mais indique à Google laquelle doit être indexée. Elle ne remplace donc pas une redirection."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Google respecte-t-il toujours la balise canonical ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Non. La balise canonical est un signal, pas une directive. Google la prend en compte avec d'autres indices (redirections, sitemap, liens internes) et peut choisir une autre URL canonique s'il juge les signaux contradictoires."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Que signifie « Autre page avec balise canonique correcte » dans Search Console ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ce statut indique que Google a reconnu la balise canonique de la page et a choisi d'indexer l'URL désignée à la place. C'est normal pour une page volontairement dupliquée, mais c'est un problème si des pages importantes y apparaissent."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Peut-on avoir plusieurs balises canonical sur une page ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Non. Si plusieurs balises canonical contradictoires sont présentes, Google risque de toutes les ignorer. Chaque page ne doit en contenir qu'une seule, placée dans le head."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "La balise canonical fonctionne-t-elle avec les pages en noindex ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Il faut éviter de les combiner. Une canonical qui pointe vers une page en noindex envoie deux signaux contradictoires : la page canonique ne pourra pas être indexée, et la page d'origine non plus."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="site">
+<div class="nav">
+<a class="brand" href="/">
+<img src="/images/Beranto-Logo-Vector.svg" alt="Herinirina Beranto - Logo SEO" width="36" height="36" class="brand-logo">
+<span class="brand-text">Beranto <span class="dot">.</span> seo</span>
+</a>
+<button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+<ul id="navList">
+      <li><a class="navlink" href="/cas-clients">Cas clients</a></li>
+      <li><a class="navlink" href="/#methode">Méthode</a></li>
+      <li><a class="navlink" href="/blog/" aria-current="page" style="color:var(--accent);">Blog</a></li>
+      <li><a class="navlink" href="/apropos">À propos</a></li>
+      <li><a class="btn btn-primary nav-cta" href="/#contact">Me contacter</a></li>
+    </ul>
+</div>
+</header>
+<main>
+<div class="wrap article-header">
+<a class="breadcrumb" href="/blog/">← Retour au blog</a>
+<span class="eyebrow">SEO technique</span>
+<h1>Erreur de balise canonical : comment elle peut bloquer toute l'indexation d'un site (et comment la corriger)</h1>
+<span class="meta">28 octobre 2026 · 10 min de lecture</span>
+<div class="author">Article écrit par <a href="/apropos">Beranto</a></div>
+</div>
+<div class="wrap">
+<figure class="hero-figure">
+<img src="/images/rapport-erreur-de-balise-canonical.webp" alt="Rapport de couverture Google Search Console affichant l'erreur « URL avec balise canonical incorrecte » sur 124 pages exclues" width="800" height="560" fetchpriority="high">
+<figcaption>Search Console : l'erreur « URL avec balise canonical incorrecte » signalée sur 124 pages.</figcaption>
+</figure>
+<article class="content">
+<p>Une seule balise mal placée peut faire disparaître une grande partie de votre site des résultats Google. Pas de pénalité, pas d'alerte rouge, pas de message d'erreur sur le site : les pages sont simplement ignorées, et le trafic s'érode sans qu'on comprenne pourquoi.</p>
+<p>C'est le scénario typique d'une <strong>erreur de balise canonical</strong> à l'échelle d'un site. Une règle mal configurée dans le thème, un plugin SEO mal paramétré ou une migration bâclée, et des dizaines de pages indiquent à Google qu'elles ne sont pas la version à indexer.</p>
+<p>Dans cet article, vous allez voir comment fonctionne la <strong>balise canonical</strong>, comment diagnostiquer l'erreur dans la Search Console et dans le code source, comment la corriger étape par étape, et comment éviter qu'elle revienne. Je m'appuie sur un cas rencontré en audit technique, où l'indexation d'un site entier était bloquée par une seule règle.</p>
+
+<h2>Qu'est-ce qu'une balise canonical ?</h2>
+<p>La <strong>balise canonical</strong> (ou <strong>balise canonique</strong>, les deux formes sont utilisées en français) est une ligne de code placée dans le <code>&lt;head&gt;</code> d'une page. Elle indique à Google quelle est la version principale d'un contenu, quand plusieurs URL affichent la même chose ou presque.</p>
+<p>Voici à quoi ressemble une <strong>balise canonical HTML</strong> correcte :</p>
+<pre class="code-block"><code>&lt;link rel="canonical" href="https://exemple.com/page" /&gt;</code></pre>
+<p>Son rôle est de consolider les signaux. Si la même page existe avec et sans paramètres, en version imprimable ou en version mobile, les <strong>balises canoniques</strong> disent à Google : « Voici l'URL à indexer, et c'est elle qui doit récupérer le crédit des liens et du trafic. »</p>
+<p>Un point important : la canonical est un <strong>signal</strong>, pas un ordre. Google la prend en compte avec d'autres indices (redirections, sitemap, maillage interne), et peut choisir une autre URL s'il juge les signaux incohérents.</p>
+
+<h2>Pourquoi une erreur de balise canonical peut bloquer l'indexation</h2>
+<p>Le mécanisme est simple : si la canonical d'une page désigne une autre URL, Google considère que la page n'est qu'une copie et la laisse de côté. Si cette désignation est fausse, c'est la bonne page qui disparaît de l'index. Trois configurations reviennent régulièrement.</p>
+<h3>Une canonical qui pointe vers une mauvaise URL</h3>
+<p>Typiquement, un domaine de préproduction, un ancien domaine ou une version HTTP restée dans le thème. Dans le cas présenté en tête d'article, la balise pointait vers un domaine externe : toutes les pages concernées déclaraient que leur contenu appartenait à un autre site.</p>
+<h3>Une canonical qui pointe vers une page générique</h3>
+<p>Toutes les pages produits ou articles désignent la page d'accueil ou une page catégorie comme version de référence. Google en déduit que ces pages sont des doublons de la page générique, et ne les indexe pas.</p>
+<h3>Une canonical en boucle ou en conflit</h3>
+<p>La page A désigne la page B, qui désigne la page A. Ou bien la canonical entre en conflit avec une redirection, une balise <code>noindex</code> ou une balise hreflang. Face à des signaux contradictoires, Google fait son propre choix, rarement celui que vous espériez.</p>
+<h3>Les conséquences concrètes</h3>
+<ul>
+<li><strong>Pages non indexées</strong> : elles n'apparaissent plus dans les résultats, même sur leur titre exact.</li>
+<li><strong>Dilution de l'autorité</strong> : les liens entrants vers ces pages profitent à l'URL désignée, pas à vous.</li>
+<li><strong>Statuts dédiés dans la Search Console</strong> : « Autre page avec balise canonique correcte » ou « Page en double sans URL canonique sélectionnée par l'utilisateur ».</li>
+</ul>
+<p>Sur le site audité, la Search Console classait 124 pages dans l'erreur « URL avec balise canonical incorrecte », sur 326 pages exclues au total. Aucune alerte n'avait été remontée au client : le seul symptôme était une baisse progressive des impressions.</p>
+
+<h2>Comment diagnostiquer une erreur de balise canonical</h2>
+<h3>Via Google Search Console</h3>
+<p>C'est le point de départ. Ouvrez le rapport <strong>Indexation des pages</strong> et regardez la liste des motifs d'exclusion. Les statuts liés aux canonicals sont les suivants :</p>
+<ul>
+<li><strong>Autre page avec balise canonique correcte</strong> : Google a suivi la canonical et indexé une autre URL. Normal pour un vrai doublon, problématique pour une page stratégique.</li>
+<li><strong>Page en double sans URL canonique sélectionnée par l'utilisateur</strong> : Google a trouvé un doublon et aucune canonical ne l'aide à trancher.</li>
+<li><strong>Page en double : Google n'a pas choisi la même URL que l'utilisateur</strong> : votre canonical est ignorée au profit d'une autre URL.</li>
+</ul>
+<p>Cliquez ensuite sur un exemple d'URL, puis utilisez l'<strong>outil d'inspection d'URL</strong>. Il affiche côte à côte la canonique déclarée par l'utilisateur et celle que Google a retenue. Si les deux diffèrent, vous tenez le problème.</p>
+<h3>Via le code source</h3>
+<p>Affichez le code source de la page (<code>Ctrl + U</code>) et cherchez <code>rel="canonical"</code>. Vérifiez trois choses : la balise est unique, elle est dans le <code>&lt;head&gt;</code>, et son URL correspond bien à la page elle-même.</p>
+<p>Pour passer à l'échelle, plusieurs outils gratuits ou en version gratuite suffisent :</p>
+<ul>
+<li>une extension Chrome comme SEO Meta in 1 Click, pour lire la canonical en un clic ;</li>
+<li><strong>Screaming Frog</strong> en version gratuite (jusqu'à 500 URL), onglet « Canonicals », qui liste les pages dont la canonical diffère de l'URL.</li>
+</ul>
+<h3>Les signes qui doivent vous alerter</h3>
+<ul>
+<li>beaucoup de pages en « Détectée, actuellement non indexée » ou « Explorée, actuellement non indexée » ;</li>
+<li>une chute brutale des impressions, sans changement d'algorithme visible ;</li>
+<li>des <strong>balises canoniques</strong> qui pointent toutes vers la même URL ;</li>
+<li>un site récemment migré ou refondu, avec un thème ou un plugin SEO modifié.</li>
+</ul>
+
+<h2>Comment corriger une erreur de balise canonical</h2>
+<p>Voici la méthode que j'applique, dans l'ordre :</p>
+<ol>
+<li><strong>Identifier la bonne URL canonique</strong> de chaque page : en général, l'URL elle-même, en HTTPS, sans paramètres inutiles.</li>
+<li><strong>Corriger la balise à la source</strong> : réglage du plugin SEO, template du thème, ou code manuel. Corriger page par page est inutile si la règle fautive est globale.</li>
+<li><strong>Vérifier l'absence de conflit</strong> : plusieurs balises canonical, redirections, hreflang, noindex.</li>
+<li><strong>Mettre à jour le sitemap</strong> pour qu'il ne contienne que les URL canoniques, indexables et en statut 200.</li>
+<li><strong>Demander une nouvelle indexation</strong> dans la Search Console, via l'inspection d'URL pour les pages prioritaires, puis la validation de la correction pour le lot complet.</li>
+<li><strong>Suivre l'évolution sur 2 à 4 semaines</strong> : la réindexation n'est pas instantanée.</li>
+</ol>
+<h3>Cas particulier : l'erreur de canonicalisation globale</h3>
+<p>Quand l'erreur touche tout le site, la cause est presque toujours unique : une variable d'URL de base mal renseignée, une option de plugin ou un modèle de page commun. Cherchez la règle, pas les pages. Une fois la règle corrigée, toutes les canonicals se régénèrent d'un coup.</p>
+<h3>Bonnes pratiques de rédaction de la balise</h3>
+<ul>
+<li>utiliser une <strong>URL absolue</strong> (avec le domaine complet) ;</li>
+<li>toujours en <strong>HTTPS</strong>, avec ou sans « www » selon votre version principale, de façon cohérente ;</li>
+<li>sans paramètres de suivi (<code>?utm_source=...</code>) ;</li>
+<li>une seule balise par page, dans le <code>&lt;head&gt;</code>.</li>
+</ul>
+<pre class="code-block"><code>&lt;!-- Correct --&gt;
+&lt;link rel="canonical" href="https://monsite.com/produit-1" /&gt;
+
+&lt;!-- Erroné : domaine externe --&gt;
+&lt;link rel="canonical" href="https://autre-domaine.com/" /&gt;</code></pre>
+
+<h2>Erreurs fréquentes à éviter</h2>
+<ul>
+<li><strong>Pointer toutes les pages vers la homepage</strong> : Google les traite alors comme des doublons de l'accueil.</li>
+<li><strong>Utiliser une URL relative</strong> au lieu d'une URL absolue : elle peut être mal interprétée selon le contexte.</li>
+<li><strong>Avoir plusieurs balises canonical</strong> sur la même page, souvent à cause du thème et d'un plugin qui s'ajoutent l'un à l'autre.</li>
+<li><strong>Pointer vers une page en noindex ou redirigée</strong> : la page cible ne peut pas être indexée, donc personne ne l'est.</li>
+<li><strong>Oublier de mettre à jour les canonicals après une migration</strong> : elles continuent de désigner l'ancien domaine. J'en parle en détail dans l'article sur la <a href="/blog/migration-site-preserver-seo">migration de site sans perte de SEO</a>.</li>
+</ul>
+
+<div class="pull-quote">
+<p>Une canonical n'est jamais un détail technique. C'est une déclaration que votre site fait à Google, page après page : « voici ce qui compte ».</p>
+</div>
+
+<h2>Comment bien utiliser les balises canoniques au quotidien</h2>
+<h3>Quand les utiliser</h3>
+<ul>
+<li>URL avec <strong>paramètres</strong> (tri, filtres, suivi) qui affichent le même contenu ;</li>
+<li><strong>versions imprimables</strong> ou variantes d'une même page ;</li>
+<li>contenus très proches, comme des fiches produits quasi identiques ;</li>
+<li>contenu republié sur un autre site, avec une canonical vers la source d'origine.</li>
+</ul>
+<h3>Quand ne pas les utiliser</h3>
+<p>N'utilisez pas la canonical pour masquer un problème de fond. Deux pages qui ciblent le même mot-clé ne se règlent pas par une canonical : il faut trancher sur le fond, comme je l'explique dans l'article sur la <a href="/blog/cannibalisation-seo-pages-qui-se-concurrencent">cannibalisation SEO</a>. Et ne l'utilisez pas sur des pages réellement différentes en espérant les « regrouper ».</p>
+<h3>Canonical et redirection 301</h3>
+<p>La canonical <strong>ne remplace pas une redirection 301</strong>. Avec une 301, l'ancienne URL n'est plus accessible : le visiteur et Google sont envoyés vers la nouvelle. Avec une canonical, les deux URL restent accessibles et Google choisit celle qu'il indexe. Si une page a définitivement disparu, la redirection est la bonne réponse.</p>
+<h3>Cohérence avec le maillage interne et le sitemap</h3>
+<p>Les signaux doivent aller dans le même sens : les liens internes, le sitemap et la canonical doivent tous désigner la même URL. Un <a href="/blog/cocon-semantique-maillage-interne">cocon sémantique</a> bien construit y contribue naturellement, puisque chaque lien interne pointe vers la version principale de la page.</p>
+
+<h2>Cas pratique : comment j'ai débloqué l'indexation d'un site entier</h2>
+<p><strong>Contexte.</strong> Un site vitrine avec une centaine de pages de contenu, dont la fréquentation baissait de semaine en semaine sans modification éditoriale. Le client ne voyait aucune erreur sur le site.</p>
+<p><strong>Diagnostic.</strong> Dans la Search Console, le rapport d'indexation affichait 124 pages en erreur « URL avec balise canonical incorrecte », sur 326 exclusions. L'inspection d'URL montrait que la canonical déclarée désignait un domaine externe. Le code source confirmait : la même balise erronée sur chaque page concernée, ce qui pointait vers une règle globale plutôt que vers des erreurs individuelles.</p>
+<p><strong>Action corrective.</strong> J'ai retrouvé la règle fautive dans le réglage du thème, puis je l'ai remplacée par une génération automatique de la canonical à partir de l'URL de chaque page. Le sitemap a été régénéré et nettoyé, puis j'ai lancé la validation de la correction dans la Search Console et demandé l'indexation des pages prioritaires.</p>
+<p><strong>Résultat observé.</strong> Les pages sont revenues progressivement dans l'index en quelques semaines, et le rapport d'indexation s'est assaini au fil de la validation. Une seule correction à la source a suffi, parce que la cause était unique.</p>
+<p>Ce type de cas rappelle ce que j'écrivais dans l'article sur l'<a href="/blog/eeat-conventions-editoriales">EEAT</a> : un excellent contenu publié sur un site techniquement incohérent perd une grande partie de sa valeur.</p>
+
+<h2>FAQ sur la balise canonical</h2>
+<h3>Quelle est la différence entre balise canonical et redirection 301 ?</h3>
+<p>La redirection 301 déplace définitivement une URL vers une autre : l'ancienne n'est plus accessible. La balise canonical laisse les deux pages accessibles, mais indique à Google laquelle indexer.</p>
+<h3>Google respecte-t-il toujours la balise canonical ?</h3>
+<p>Non. C'est un signal parmi d'autres. Si vos redirections, votre sitemap et vos liens internes disent autre chose, Google peut choisir une autre URL canonique.</p>
+<h3>Que signifie « Autre page avec balise canonique correcte » dans Search Console ?</h3>
+<p>Google a reconnu la canonical de la page et a indexé l'URL désignée à la place. C'est normal pour un doublon voulu, mais c'est un problème si des pages stratégiques y apparaissent.</p>
+<h3>Peut-on avoir plusieurs balises canonical sur une page ?</h3>
+<p>Non. Si elles sont contradictoires, Google risque de toutes les ignorer. Une seule balise par page, dans le <code>&lt;head&gt;</code>.</p>
+<h3>La balise canonical fonctionne-t-elle avec les pages en noindex ?</h3>
+<p>Mieux vaut ne pas les combiner. Une canonical vers une page en noindex envoie deux signaux contradictoires : ni l'une ni l'autre ne sera indexée correctement.</p>
+
+<hr class="rule">
+<h2>Conclusion</h2>
+<p>Une <strong>balise canonical</strong> bien gérée protège votre indexation, une balise mal configurée peut la bloquer sans aucun message d'alerte. Retenez la démarche : repérer les statuts d'exclusion dans la Search Console, vérifier le code source, corriger la règle à la source, nettoyer le sitemap, puis suivre la réindexation sur 2 à 4 semaines.</p>
+<p>Si vos impressions baissent sans raison claire, ou si vous venez de migrer votre site, un audit des <strong>balises canoniques</strong> fait partie des premières vérifications à mener. Je réalise ce type d'<a href="/#contact">audit technique</a> et de correction pour des sites de toute taille.</p>
+</article>
+</div>
+<div class="wrap article-footer">
+<a href="/blog/">← Tous les articles</a>
+<a href="/#contact">Discuter d'un projet de contenu →</a>
+</div>
+</main>
+<footer class="site" id="contact">
+  <div class="footer-head">
+    <div>
+      <h2>Travaillons ensemble.</h2>
+      <p class="lede">Un projet de contenu SEO, un audit technique ou une refonte éditoriale ? Écrivez-moi, je réponds sous 24h.</p>
+      <div class="footer-links">
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/herinirina-beranto-4b4932333" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="contact-direct">
+        <a href="mailto:herinirinaberanto@gmail.com">herinirinaberanto@gmail.com</a>
+        <button class="copy-btn" id="copyEmail" type="button">copier</button><br>
+        <a href="tel:+261342375859">+261 34 23 758 59</a> · Antananarivo, Madagascar
+      </p>
+    </div>
+    <form class="contact" id="contactForm" method="POST" action="https://formspree.io/f/xnpjywpw">
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label>Nom<input type="text" name="nom" required autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Type de projet
+        <select name="projet">
+          <option>Rédaction SEO</option>
+          <option>Audit technique</option>
+          <option>Stratégie éditoriale</option>
+          <option>Autre</option>
+        </select>
+      </label>
+      <label>Message<textarea name="message" required></textarea></label>
+      <button class="btn btn-primary" type="submit">Envoyer le message</button>
+      <p id="formStatus" role="status" style="font-size:0.9rem;color:#8FD6B8;margin:0;"></p>
+    </form>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Herinirina Beranto Rafalinjanahary</p>
+    <div class="badges"><span class="chip">Disponible en freelance</span></div>
+  </div>
+</footer>
+<script>
+(function(){
+var btn=document.getElementById('navToggle'),list=document.getElementById('navList');
+btn.addEventListener('click',function(){var open=list.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});
+list.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){list.classList.remove('open');btn.setAttribute('aria-expanded','false');});});
+})();
+(function(){
+var c=document.getElementById('copyEmail');
+if(!c)return;
+c.addEventListener('click',function(){navigator.clipboard.writeText('herinirinaberanto@gmail.com').then(function(){var o=c.textContent;c.textContent='copié !';setTimeout(function(){c.textContent=o;},1800);});});
+})();
+</script>
+<script>
+(function(){
+  var f=document.getElementById('contactForm'),st=document.getElementById('formStatus');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    st.textContent='Envoi en cours...';
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();st.textContent='Merci, votre message est envoyé. Je vous réponds sous 24h.';}
+        else{st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";}
+      })
+      .catch(function(){st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";});
+  });
+})();
+</script>
+</body>
+</html>
