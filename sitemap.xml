@@ -1,68 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://beranto-seo.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://beranto-seo.com/apropos</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://beranto-seo.com/cas-clients</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://beranto-seo.com/</loc></url>
+  <url><loc>https://beranto-seo.com/apropos</loc></url>
+  <url><loc>https://beranto-seo.com/cas-clients</loc></url>
   <url>
     <loc>https://beranto-seo.com/blog/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-   <url>
-    <loc>https://beranto-seo.com/blog/eeat-conventions-editoriales</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
-    <loc>https://beranto-seo.com/blog/cocon-semantique-maillage-interne</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://beranto-seo.com/blog/erreur-balise-canonical</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
-    <url>
-    <loc>https://beranto-seo.com/blog/optimisation-moteurs-ia-geo-aeo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+  <url>
+    <loc>https://beranto-seo.com/blog/intention-de-recherche-seo</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
-   <url>
-    <loc>https://beranto-seo.com/blog/netlinking-backlinks-naturels</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-    <url>
-    <loc>https://beranto-seo.com/blog/cannibalisation-seo-pages-qui-se-concurrencent</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-   <url>
-    <loc>https://beranto-seo.com/blog/migration-site-preserver-seo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+  <url>
+    <loc>https://beranto-seo.com/blog/recherche-mots-cles-seo</loc>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://beranto-seo.com/blog/cocon-semantique-exemple</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-07</lastmod>
   </url>
-   <url>
-    <loc>https://beranto-seo.com/blog/recherche-mots-cles-seo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+  <url>
+    <loc>https://beranto-seo.com/blog/migration-site-preserver-seo</loc>
+    <lastmod>2026-09-22</lastmod>
   </url>
-    <url>
-    <loc>https://beranto-seo.com/blog/intention-de-recherche-seo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+  <url>
+    <loc>https://beranto-seo.com/blog/cannibalisation-seo-pages-qui-se-concurrencent</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://beranto-seo.com/blog/netlinking-backlinks-naturels</loc>
+    <lastmod>2026-09-09</lastmod>
+  </url>
+  <url>
+    <loc>https://beranto-seo.com/blog/optimisation-moteurs-ia-geo-aeo</loc>
+    <lastmod>2026-09-02</lastmod>
+  </url>
+  <url>
+    <loc>https://beranto-seo.com/blog/cocon-semantique-maillage-interne</loc>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://beranto-seo.com/blog/eeat-conventions-editoriales</loc>
+    <lastmod>2026-08-15</lastmod>
   </url>
 </urlset>
