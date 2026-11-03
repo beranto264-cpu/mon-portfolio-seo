@@ -292,6 +292,7 @@ form.contact textarea{min-height:110px;resize:vertical;}
 form.contact input:focus-visible,form.contact textarea:focus-visible,form.contact select:focus-visible{outline-color:#8FD6B8;}
 form.contact .btn-primary{background:#fff;color:var(--ink);align-self:flex-start;}
 .form-note{font-size:0.78rem;color:#9DAEA6;}
+.form-note a{color:#C5CFCC;}
 #formStatus{font-size:0.9rem;color:#8FD6B8;margin:0;}
 #formStatus.err{color:#FFB4A8;}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;}
@@ -569,17 +570,18 @@ form.contact .btn-primary{background:#fff;color:var(--ink);align-self:flex-start
         </label>
         <label>Message<textarea name="message" required></textarea></label>
         <button class="btn btn-primary" type="submit">Envoyer le message</button>
-        <p class="form-note">Vos données ne sont utilisées que pour répondre à votre message.</p>
+        <p class="form-note">Vos données ne servent qu'à répondre à votre message. <a href="/politique-de-confidentialite">En savoir plus</a></p>
         <p id="formStatus" role="status" aria-live="polite"></p>
       </form>
     </div>
     <div class="footer-bottom">
       <p>© <span id="year">2026</span> Herinirina Beranto Rafalinjanahary</p>
-      <!-- Quand ces pages existent, ajoutez : mentions légales, politique de confidentialité -->
       <ul class="footer-nav">
         <li><a href="/cas-clients">Cas clients</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/apropos">À propos</a></li>
+        <li><a href="/mentions-legales">Mentions légales</a></li>
+        <li><a href="/politique-de-confidentialite">Confidentialité</a></li>
       </ul>
       <span class="chip">Disponible en freelance</span>
     </div>
