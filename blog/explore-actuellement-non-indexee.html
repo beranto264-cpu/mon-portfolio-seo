@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explorée, actuellement non indexée : causes et solutions</title>
+<meta name="description" content="Explorée, actuellement non indexée : sens du statut, causes fréquentes et méthode pour décider page par page quoi améliorer, fusionner ou retirer.">
+<link rel="canonical" href="https://beranto-seo.com/blog/explore-actuellement-non-indexee">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Explorée, actuellement non indexée : causes et solutions">
+<meta property="og:description" content="Explorée, actuellement non indexée : sens du statut, causes fréquentes et méthode pour décider page par page quoi améliorer, fusionner ou retirer.">
+<meta property="og:url" content="https://beranto-seo.com/blog/explore-actuellement-non-indexee">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://beranto-seo.com/images/portrait-redaction-explore-non-indexee.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Explorée, actuellement non indexée : causes et solutions">
+<meta name="twitter:description" content="Explorée, actuellement non indexée : sens du statut, causes fréquentes et méthode pour décider page par page quoi améliorer, fusionner ou retirer.">
+<meta name="twitter:image" content="https://beranto-seo.com/images/portrait-redaction-explore-non-indexee.webp">
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/fonts.css">
+
+
+<style>
+:root{--bg:#F5F6F3;--bg-card:#FFFFFF;--ink:#14212B;--ink-soft:#51636D;--ink-faint:#66777F;--accent:#1F7A5C;--accent-soft:#E4F1EA;--link:#1A56DB;--line:#DDE2DE;--radius:14px;--display:'Space Grotesk', system-ui, sans-serif;--body:'Inter', system-ui, sans-serif;--mono:'JetBrains Mono', 'Courier New', monospace;--maxw:760px;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img,svg{display:block;max-width:100%;}
+a{color:var(--link);}
+h1,h2,h3{font-family:var(--display);letter-spacing:-0.01em;color:var(--ink);margin:0;}
+p{margin:0;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+header.site{position:sticky;top:0;z-index:50;background:rgba(245,246,243,0.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.nav{max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;}
+.nav .brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:0.85rem;font-weight:500;color:var(--ink);text-decoration:none;}
+.nav .brand .dot{color:var(--accent);}
+.nav .brand img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:1px solid var(--line);}
+.nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;}
+.nav a.navlink{text-decoration:none;font-size:0.88rem;color:var(--ink-soft);font-weight:500;transition:color .15s ease;}
+.nav a.navlink:hover{color:var(--accent);}
+.nav-toggle{display:none;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:9px;font-weight:600;font-size:0.92rem;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease;border:1px solid transparent;}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line);font-family:var(--mono);}
+.btn-ghost:hover{border-color:var(--ink);}
+.article-header{padding:56px 0 32px;}
+.breadcrumb{font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);margin-bottom:20px;text-decoration:none;display:inline-block;}
+.breadcrumb:hover{color:var(--accent);}
+.eyebrow{font-family:var(--mono);font-size:0.78rem;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:14px;}
+.article-header h1{font-size:clamp(1.9rem, 3.4vw, 2.5rem);line-height:1.18;font-weight:700;margin-bottom:16px;}
+.meta{font-family:var(--mono);font-size:0.8rem;color:var(--ink-faint);}
+.author{display:flex;align-items:center;gap:8px;margin-top:18px;font-size:0.92rem;color:var(--ink-soft);}
+.author a{color:var(--accent);font-weight:600;text-decoration:none;}
+.author a:hover{text-decoration:underline;}
+.hero-figure{margin:0 0 40px;}
+.hero-figure img{width:100%;height:auto;max-height:440px;object-fit:cover;border-radius:var(--radius);display:block;}
+article.content{padding-bottom:64px;font-size:1.05rem;color:var(--ink);}
+article.content p{margin:0 0 22px;color:var(--ink-soft);}
+article.content h2{font-size:1.4rem;font-weight:700;margin:44px 0 16px;color:var(--ink);}
+article.content h3{font-size:1.15rem;font-weight:600;margin:32px 0 12px;color:var(--ink);}
+article.content ul,article.content ol{margin:0 0 22px;padding-left:22px;color:var(--ink-soft);}
+article.content li{margin-bottom:8px;}
+article.content strong{color:var(--ink);}
+article.content em{font-style:italic;}
+article.content code{font-family:var(--mono);font-size:0.9em;background:var(--accent-soft);padding:2px 6px;border-radius:4px;}
+.pull-quote{background:var(--ink);border-radius:var(--radius);padding:32px 34px;margin:36px 0;position:relative;overflow:hidden;}
+.pull-quote p{font-family:var(--display);font-size:1.15rem;font-weight:600;color:#fff;line-height:1.45;margin:0;}
+.tldr{background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:var(--radius);padding:22px 26px;margin:0 0 32px;}
+article.content .tldr p{margin:0;color:var(--ink);}
+.author-box{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin:44px 0 0;}
+article.content .author-box p{margin:0;font-size:0.95rem;}
+hr.rule{border:none;border-top:1px solid var(--line);margin:44px 0;}
+.article-footer{padding:32px 0 64px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+.article-footer a{font-family:var(--mono);font-size:0.85rem;text-decoration:none;color:var(--accent);}
+footer.site{background:var(--ink);color:#EDEFEC;padding:64px 0 32px;}
+.footer-head{max-width:1080px;margin:0 auto;padding:0 28px 44px;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;border-bottom:1px solid rgba(255,255,255,0.12);}
+footer.site h2{color:#fff;font-size:clamp(1.6rem, 2.4vw, 2rem);margin-bottom:14px;}
+footer.site .lede{color:#AEBAB8;font-size:1rem;max-width:44ch;}
+.copy-btn{background:none;border:none;color:#7F9188;font-family:var(--mono);font-size:0.72rem;cursor:pointer;padding:0;margin-left:10px;text-decoration:underline;}
+.copy-btn:hover{color:#8FD6B8;}
+.footer-bottom{max-width:1080px;margin:0 auto;padding:26px 28px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{font-size:0.8rem;color:#7F9188;}
+.footer-bottom .badges{display:flex;gap:8px;}
+.chip{font-family:var(--mono);font-size:0.72rem;color:var(--ink);background:var(--accent-soft);border:1px solid #CFE6DA;padding:5px 11px;border-radius:100px;}
+.footer-bottom .chip{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.14);color:#AEBAB8;}
+@media (max-width:860px){
+.footer-head{grid-template-columns:1fr;}
+.nav ul{position:fixed;top:60px;left:0;right:0;background:var(--bg);flex-direction:column;gap:0;border-bottom:1px solid var(--line);max-height:0;overflow-y:auto;transition:max-height .25s ease;}
+.nav ul.open{max-height:min(70vh, 500px);}
+.nav ul li{width:100%;}
+.nav a.navlink{display:block;padding:14px 28px;border-top:1px solid var(--line);}
+.nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:none;border:1px solid var(--line);border-radius:8px;cursor:pointer;}
+}
+@media (max-width:700px){
+.hero-figure img{max-height:280px;}
+.wrap{padding:0 20px;}
+.article-header{padding:48px 0 28px;}
+}
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto;}
+*{animation-duration:0.001ms !important;transition-duration:0.001ms !important;}
+}
+.btn{font-family:var(--body);cursor:pointer;justify-content:center;}
+.btn-primary{background:var(--ink);color:#fff;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,33,43,0.18);}
+.nav ul{align-items:center;}
+.nav-cta{padding:9px 16px;font-size:0.85rem;}
+footer.site .lede{margin-bottom:22px;}
+.footer-links{display:flex;gap:12px;flex-wrap:wrap;}
+.footer-links .btn-ghost{border-color:rgba(255,255,255,0.25);color:#fff;}
+.contact-direct{margin-top:26px;font-family:var(--mono);font-size:0.85rem;color:#AEBAB8;}
+.contact-direct a{color:#fff;text-decoration:none;}
+.contact-direct a:hover{color:#8FD6B8;}
+.copy-btn{color:#AEBAB8;font-size:0.75rem;}
+form.contact{display:flex;flex-direction:column;gap:14px;}
+form.contact label{font-family:var(--mono);font-size:0.75rem;color:#AEBAB8;display:flex;flex-direction:column;gap:6px;}
+form.contact input,form.contact textarea,form.contact select{font:inherit;font-family:var(--body);font-size:0.95rem;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:8px;padding:11px 13px;}
+form.contact select option{color:#14212B;}
+form.contact textarea{min-height:110px;resize:vertical;}
+form.contact .btn-primary{background:#fff;color:var(--ink);align-self:flex-start;}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;}
+.footer-bottom p{color:#9DAEA6;}
+@media (max-width:860px){
+  .nav ul{position:absolute;top:100%;}
+  .nav-cta{margin:14px 28px;}
+  .nav-toggle{width:40px;height:40px;font-size:1.1rem;color:var(--ink);}
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BlogPosting",
+ "headline": "Explorée, actuellement non indexée : causes, diagnostic et solutions",
+ "description": "Explorée, actuellement non indexée : sens du statut, causes fréquentes et méthode pour décider page par page quoi améliorer, fusionner ou retirer.",
+ "image": "https://beranto-seo.com/images/portrait-redaction-explore-non-indexee.webp",
+ "mainEntityOfPage": "https://beranto-seo.com/blog/explore-actuellement-non-indexee",
+ "datePublished": "2026-11-04",
+ "dateModified": "2026-11-04",
+ "inLanguage": "fr",
+ "author": {
+  "@type": "Person",
+  "name": "Herinirina Beranto Rafalinjanahary",
+  "url": "https://beranto-seo.com/apropos"
+ },
+ "publisher": {
+  "@type": "Person",
+  "name": "Herinirina Beranto Rafalinjanahary",
+  "url": "https://beranto-seo.com/"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "« Explorée, actuellement non indexée » est-ce une pénalité de Google ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Non. C'est un statut du rapport d'indexation des pages de la Search Console, pas une action manuelle. Google a exploré la page mais ne l'a pas ajoutée à son index, pour l'instant. Elle peut être indexée plus tard."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Faut-il demander l'indexation plusieurs fois ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Non. Redemander l'indexation d'une page qui n'a pas changé ne modifie pas la décision de Google. Mieux vaut améliorer la page, renforcer son maillage interne, puis demander l'indexation une seule fois."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Quelle différence avec « Détectée, actuellement non indexée » ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Avec « Détectée », Google connaît l'URL mais ne l'a pas encore explorée. Avec « Explorée », il l'a explorée et a décidé de ne pas l'indexer. Le premier cas relève plutôt de l'exploration, le second de la valeur perçue de la page."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Combien de pages peuvent avoir ce statut sans problème ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Il n'existe pas de seuil officiel. Google n'indexe pas toutes les URL d'un site. Ce qui compte, c'est que les pages que vous voulez positionner (articles, pages de service, fiches produit) ne figurent pas dans cette liste."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Une page déjà indexée peut-elle passer en « Explorée, actuellement non indexée » ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui. Une page indexée peut être retirée de l'index lors d'une réévaluation, par exemple après une modification de contenu, un changement de canonical ou quand Google juge une autre page plus pertinente."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="site">
+<div class="nav">
+<a class="brand" href="/">
+<img src="/images/Beranto-Logo-Vector.svg" alt="Herinirina Beranto - Logo SEO" width="36" height="36" class="brand-logo">
+<span class="brand-text">Beranto <span class="dot">.</span> seo</span>
+</a>
+<button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+<ul id="navList">
+      <li><a class="navlink" href="/cas-clients">Cas clients</a></li>
+      <li><a class="navlink" href="/#methode">Méthode</a></li>
+      <li><a class="navlink" href="/blog/" aria-current="page" style="color:var(--accent);">Blog</a></li>
+      <li><a class="navlink" href="/apropos">À propos</a></li>
+      <li><a class="btn btn-primary nav-cta" href="/#contact">Me contacter</a></li>
+    </ul>
+</div>
+</header>
+<main>
+<div class="wrap article-header">
+<a class="breadcrumb" href="/blog/">← Retour au blog</a>
+<span class="eyebrow">SEO technique</span>
+<h1>Explorée, actuellement non indexée : causes, diagnostic et solutions</h1>
+<span class="meta">4 novembre 2026 · Mis à jour le 4 novembre 2026 · 11 min de lecture</span>
+<div class="author">Article écrit par <a href="/apropos">Beranto</a>, freelance SEO, plus de 7 ans d'expérience</div>
+</div>
+<div class="wrap">
+<figure class="hero-figure">
+<img src="/images/portrait-redaction-explore-non-indexee.webp" alt="Beranto au bureau, devant son ordinateur, en train de diagnostiquer des pages explorées mais non indexées" width="1200" height="440" fetchpriority="high">
+</figure>
+<article class="content">
+<p>Voir <strong>« Explorée, actuellement non indexée »</strong> dans la Search Console donne l'impression d'un échec. Google est bien passé sur la page, il l'a lue, et il a quand même décidé de ne pas l'afficher dans ses résultats. Aucun message d'erreur, aucune pénalité, juste une page invisible et une liste d'URL qui grossit semaine après semaine.</p>
+<p>Le réflexe est de traiter ce statut comme un bug technique à corriger en bloc. C'est rarement le bon angle. Le plus souvent, il traduit un <strong>arbitrage de Google sur la valeur de la page</strong>, et parfois un problème technique précis qu'il faut savoir isoler. Cet article vous donne la méthode pour faire la différence, puis décider page par page de ce qu'il faut améliorer, fusionner ou laisser tranquille.</p>
+
+<div class="tldr">
+<p><strong>En bref :</strong> « Explorée, actuellement non indexée » signifie que Googlebot a récupéré la page mais ne l'a pas ajoutée à l'<strong>index</strong>, pour l'instant. Ce n'est pas une pénalité. Les causes les plus fréquentes sont un <strong>contenu trop mince ou redondant</strong>, une <strong>intention déjà couverte</strong> par une autre page, une <strong>canonical</strong> incohérente et un <strong>maillage interne</strong> faible. La bonne méthode consiste à trier les URL par modèle, puis à décider page par page : améliorer, fusionner, mettre en noindex ou laisser.</p>
+</div>
+
+<h2>Que signifie « Explorée, actuellement non indexée » ?</h2>
+<p>« Explorée, actuellement non indexée » (« Crawled - currently not indexed » en anglais) est un <strong>statut du rapport d'indexation des pages</strong> de la Search Console. Il indique que Google a exploré l'URL sans l'ajouter à son index. D'après l'aide officielle de Google, la page peut être indexée plus tard ou ne jamais l'être, et il est inutile de la soumettre à nouveau pour exploration.</p>
+<p>Concrètement, Googlebot n'a rencontré ni blocage <code>robots.txt</code>, ni balise <code>noindex</code>. La page est accessible, elle a été lue. C'est l'étape suivante, la décision d'indexer, qui n'a pas abouti. Pour que ce statut ne soit pas confondu avec ses voisins, voici les trois plus proches :</p>
+<ul>
+<li><strong>Détectée, actuellement non indexée</strong> : Google connaît l'URL, mais ne l'a pas encore explorée. Le blocage se situe avant la lecture de la page.</li>
+<li><strong>Exclue par la balise « noindex »</strong> : c'est vous qui avez demandé que la page ne soit pas indexée.</li>
+<li><strong>Les statuts de doublon et de canonical</strong> : Google a retenu une autre URL comme version de référence.</li>
+</ul>
+<p>Cette distinction compte, parce que les solutions ne sont pas les mêmes. Avec « Détectée », on regarde plutôt l'exploration et le maillage. Avec « Explorée », on regarde la <strong>valeur de la page</strong> et ses signaux techniques.</p>
+
+<h2>Où trouver ce statut dans la Search Console</h2>
+<p>Le statut se trouve dans le rapport d'indexation des pages, dans la section qui liste les raisons pour lesquelles des pages ne sont pas indexées. Voici le chemin :</p>
+<ol>
+<li>Ouvrez la Search Console et sélectionnez votre propriété.</li>
+<li>Dans le menu de gauche, cliquez sur <strong>Indexation</strong>, puis sur <strong>Pages</strong>.</li>
+<li>Descendez jusqu'au tableau « Pourquoi les pages ne sont-elles pas indexées ? ».</li>
+<li>Cliquez sur la ligne <strong>Explorée, actuellement non indexée</strong> pour afficher les URL concernées, puis exportez la liste.</li>
+</ol>
+<p>Un point à garder en tête : la liste affichée est limitée à 1 000 exemples par motif. Elle ne contient donc pas forcément toutes les URL touchées, ce qui suffit pour repérer des tendances, mais pas pour un inventaire exhaustif sur un gros site.</p>
+
+<h2>Faut-il s'inquiéter ? Pages normales et pages problématiques</h2>
+<p>Pas systématiquement. Google n'indexe pas toutes les URL d'un site et n'a jamais promis de le faire. Une partie des pages en « Explorée, actuellement non indexée » ne doivent d'ailleurs pas l'être, ou ne présentent aucun enjeu.</p>
+<p>La question utile n'est donc pas « combien d'URL ? », mais <strong>« lesquelles ? »</strong>. Un tri rapide suffit :</p>
+<ul>
+<li><strong>Pages sans enjeu</strong> : pagination, paramètres de tri ou de filtre, archives de tags, anciennes URL. Les voir dans cette liste est souvent normal.</li>
+<li><strong>Pages stratégiques</strong> : articles de blog, pages de service, fiches produit, pages catégories. Si l'une d'elles figure dans cette liste, c'est un signal à traiter.</li>
+</ul>
+
+<div class="pull-quote">
+<p>Ce qui compte n'est pas le nombre de pages « Explorées, actuellement non indexées », mais la présence de vos pages stratégiques dans cette liste.</p>
+</div>
+
+<h2>Les sept causes les plus fréquentes</h2>
+<p>Google ne publie pas la liste de ses critères d'indexation. Les causes ci-dessous viennent de la documentation officielle et de ce que l'on observe en audit. Elles se recoupent souvent sur une même page.</p>
+
+<h3>1. Un contenu trop mince ou redondant</h3>
+<p>La documentation de Google indique que la qualité d'une page doit être suffisante pour justifier son indexation. Une page qui reformule ce que l'on trouve déjà partout, sans exemple, sans donnée, sans point de vue, n'apporte rien d'unique à l'index. C'est là que les critères d'<a href="/blog/eeat-conventions-editoriales"><strong>EEAT</strong></a> (expérience, expertise, autorité, fiabilité) deviennent concrets : un auteur identifié, des sources, un retour d'expérience vérifiable.</p>
+
+<h3>2. Une intention de recherche déjà couverte</h3>
+<p>Si votre site, ou les résultats de Google, couvrent déjà l'<a href="/blog/intention-de-recherche-seo"><strong>intention de recherche</strong></a> visée, une nouvelle page proche n'a pas de raison d'être indexée. Sur votre propre site, c'est la <a href="/blog/cannibalisation-seo-pages-qui-se-concurrencent"><strong>cannibalisation SEO</strong></a> : deux pages se disputent la même requête et Google en retient une seule.</p>
+
+<h3>3. Une balise canonical incohérente</h3>
+<p>Une page qui déclare une autre URL comme canonical, ou une canonical mal configurée à l'échelle du site, peut être explorée puis écartée. Dans ce cas, le problème n'est pas éditorial. Il se corrige à la source, dans le gabarit ou la configuration. J'ai détaillé le mécanisme dans l'article sur l'<a href="/blog/erreur-balise-canonical"><strong>erreur de balise canonical</strong></a>.</p>
+
+<h3>4. Un maillage interne trop faible</h3>
+<p>Une page orpheline, ou reliée seulement depuis des pages elles-mêmes non indexées, envoie un signal d'importance très faible. Google la lit, mais n'a aucune raison de la considérer comme utile au site. Un <a href="/blog/cocon-semantique-maillage-interne"><strong>cocon sémantique</strong></a> bien construit règle une grande partie de ce problème, comme le montre l'<a href="/blog/cocon-semantique-exemple">exemple pas à pas</a>.</p>
+
+<h3>5. Un site récent ou peu d'autorité</h3>
+<p>Sur un site jeune, ou qui publie beaucoup en peu de temps, Google teste les pages avant de leur faire confiance. Les signaux externes comptent : un <a href="/blog/netlinking-backlinks-naturels"><strong>netlinking naturel</strong></a> et des mentions cohérentes aident Google à juger que le site mérite d'être indexé plus largement.</p>
+
+<h3>6. Des pages générées automatiquement</h3>
+<p>Filtres, paramètres d'URL, archives, pages de recherche interne : ces pages se multiplient sans apporter de contenu propre. Google les explore, puis choisit de ne pas les indexer. C'est généralement le cas le plus simple à traiter, car ces URL n'ont pas besoin d'être positionnées.</p>
+
+<h3>7. Une migration ou une refonte récente</h3>
+<p>Après un changement d'hébergeur, de domaine ou de structure d'URL, Google réévalue les pages. Certaines passent temporairement dans ce statut le temps que les redirections, les canonical et le sitemap soient pris en compte. L'article sur la <a href="/blog/migration-site-preserver-seo"><strong>migration de site</strong></a> détaille ce qui protège les positions.</p>
+
+<h2>Comment diagnostiquer une page explorée mais non indexée</h2>
+<p>Plutôt que de lire la liste URL par URL, procédez par étapes. Cette méthode évite de corriger au hasard :</p>
+<ol>
+<li><strong>Exporter la liste et la trier par modèle d'URL</strong> : blog, catégories, paramètres, pagination. Les motifs se voient vite.</li>
+<li><strong>Séparer les pages stratégiques des pages sans enjeu</strong>, comme vu plus haut.</li>
+<li><strong>Inspecter une page stratégique avec l'outil d'inspection d'URL</strong> : comparez la canonical déclarée avec celle choisie par Google, et notez la date de dernière exploration.</li>
+<li><strong>Vérifier le sitemap et le maillage interne</strong> : la page y figure-t-elle, et combien de liens pointent vers elle depuis des pages indexées ?</li>
+<li><strong>Relire la page comme un lecteur</strong> : tapez la requête visée dans Google et comparez votre page aux résultats déjà classés. Apporte-t-elle quelque chose qu'ils n'ont pas ?</li>
+</ol>
+<p>Le test en direct de l'outil d'inspection confirme que la page est accessible, mais il ne prédit pas si Google l'indexera. C'est la comparaison avec les pages déjà classées qui donne la réponse la plus utile.</p>
+
+<h2>Solutions : décider page par page</h2>
+<p>Une fois la cause identifiée, quatre décisions couvrent presque tous les cas :</p>
+<ul>
+<li><strong>Améliorer la page</strong> : c'est la bonne réponse pour une page stratégique trop mince. Ajoutez ce que les autres n'ont pas : un exemple vécu, des données, des captures, un auteur identifié, des sources. C'est le levier principal quand le blocage est éditorial.</li>
+<li><strong>Fusionner et rediriger en 301</strong> : quand deux pages se concurrencent, on garde la plus solide, on y intègre ce que l'autre avait d'unique, puis on redirige l'URL faible vers elle.</li>
+<li><strong>Passer en noindex</strong> : pour les pages utiles aux visiteurs mais sans intérêt SEO (filtres, pages internes). Attention : ne bloquez pas ces pages dans le <code>robots.txt</code> si vous voulez qu'elles sortent de l'index, car Google ne verrait alors pas la balise <code>noindex</code>.</li>
+<li><strong>Supprimer ou laisser</strong> : une page obsolète sans valeur peut être supprimée avec une redirection pertinente. Une page sans enjeu peut simplement rester dans la liste.</li>
+</ul>
+<p>Une fois la page corrigée, renforcez son <strong>maillage interne</strong> depuis des pages déjà indexées, vérifiez qu'elle figure dans le sitemap, puis demandez l'indexation <strong>une seule fois</strong> via l'outil d'inspection d'URL. Cette demande ne garantit rien, mais elle signale à Google que la page a changé.</p>
+
+<div class="pull-quote">
+<p>Redemander l'indexation d'une page qui n'a pas changé, c'est reposer la même question à Google en espérant une autre réponse.</p>
+</div>
+
+<h2>Combien de temps faut-il pour voir un effet ?</h2>
+<p>Google ne donne aucun délai. Comptez généralement plusieurs semaines après une modification substantielle, parfois davantage selon la fréquence d'exploration du site. Suivez la page dans la Search Console plutôt que de juger au bout de quelques jours, et évitez de la modifier en continu pendant cette période, car chaque changement relance l'évaluation.</p>
+
+<h2>Comment je traite ce statut en audit</h2>
+<p>Sur un audit, je ne traite jamais ce statut URL par URL. Je commence par regrouper les pages par modèle, puis je cherche d'abord les causes techniques (canonical, redirections, sitemap), parce qu'elles se corrigent une fois pour des dizaines de pages. Ce n'est qu'ensuite que je regarde la valeur éditoriale page par page.</p>
+<p>Cette distinction compte. Sur un centre d'appels B2B ciblant l'Europe, une erreur de canonicalisation globale freinait l'indexation : le correctif était technique, à la source, et aucune réécriture n'aurait réglé le problème. À l'inverse, pour une page fine, la solution est éditoriale. Savoir faire la différence évite de perdre des semaines à corriger le mauvais levier. Vous pouvez retrouver ce type de situation dans les <a href="/cas-clients">cas clients</a>.</p>
+
+<h2>Questions fréquentes sur « Explorée, actuellement non indexée »</h2>
+<h3>« Explorée, actuellement non indexée » est-ce une pénalité de Google ?</h3>
+<p>Non. C'est un statut du rapport d'indexation, pas une action manuelle. Google a exploré la page mais ne l'a pas ajoutée à son index, pour l'instant. Elle peut être indexée plus tard.</p>
+<h3>Faut-il demander l'indexation plusieurs fois ?</h3>
+<p>Non. Redemander l'indexation d'une page qui n'a pas changé ne modifie pas la décision de Google. Mieux vaut améliorer la page, renforcer son maillage interne, puis demander l'indexation une seule fois.</p>
+<h3>Quelle différence avec « Détectée, actuellement non indexée » ?</h3>
+<p>Avec « Détectée », Google connaît l'URL mais ne l'a pas encore explorée. Avec « Explorée », il l'a explorée et a décidé de ne pas l'indexer. Le premier cas relève plutôt de l'exploration, le second de la valeur perçue de la page.</p>
+<h3>Combien de pages peuvent avoir ce statut sans problème ?</h3>
+<p>Il n'existe pas de seuil officiel. Google n'indexe pas toutes les URL d'un site. Ce qui compte, c'est que les pages que vous voulez positionner (articles, pages de service, fiches produit) ne figurent pas dans cette liste.</p>
+<h3>Une page déjà indexée peut-elle passer en « Explorée, actuellement non indexée » ?</h3>
+<p>Oui. Une page indexée peut être retirée de l'index lors d'une réévaluation, par exemple après une modification de contenu, un changement de canonical ou quand Google juge une autre page plus pertinente.</p>
+
+<hr class="rule">
+<h3>Ce qu'il faut retenir</h3>
+<p>« Explorée, actuellement non indexée » n'est ni une pénalité ni forcément un problème. C'est un statut qui demande un tri : quelles pages comptent vraiment, et pourquoi Google ne les retient pas. La réponse est parfois technique (canonical, redirections, sitemap), plus souvent éditoriale (contenu mince, intention déjà couverte, maillage faible). Traitez d'abord ce qui se corrige en bloc, puis décidez page par page. Pour aller plus loin sur la valeur d'un contenu aux yeux de Google, la documentation officielle sur le <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener">contenu utile</a> et l'aide sur le <a href="https://support.google.com/webmasters/answer/7440203" target="_blank" rel="noopener">rapport d'indexation des pages</a> restent les deux références à connaître.</p>
+
+<div class="author-box">
+<p><strong>À propos de l'auteur.</strong> Beranto est freelance SEO (rédaction, SEO technique et stratégie éditoriale) avec plus de 7 ans d'expérience. Pour voir comment ces méthodes s'appliquent sur des projets réels, consultez les <a href="/cas-clients">cas clients</a> ou la page <a href="/apropos">À propos</a>.</p>
+</div>
+</article>
+</div>
+<div class="wrap article-footer">
+<a href="/blog/">← Tous les articles</a>
+<a href="/#contact">Discuter d'un audit ou d'une refonte →</a>
+</div>
+</main>
+<footer class="site" id="contact">
+  <div class="footer-head">
+    <div>
+      <h2>Travaillons ensemble.</h2>
+      <p class="lede">Un projet de contenu SEO, un audit technique ou une refonte éditoriale ? Écrivez-moi, je réponds sous 24h.</p>
+      <div class="footer-links">
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/herinirina-beranto-4b4932333" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="contact-direct">
+        <a href="mailto:herinirinaberanto@gmail.com">herinirinaberanto@gmail.com</a>
+        <button class="copy-btn" id="copyEmail" type="button">copier</button><br>
+        <a href="tel:+261342375859">+261 34 23 758 59</a> · Antananarivo, Madagascar
+      </p>
+    </div>
+    <form class="contact" id="contactForm" method="POST" action="https://formspree.io/f/xnpjywpw">
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label>Nom<input type="text" name="nom" required autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Type de projet
+        <select name="projet">
+          <option>Rédaction SEO</option>
+          <option>Audit technique</option>
+          <option>Stratégie éditoriale</option>
+          <option>Autre</option>
+        </select>
+      </label>
+      <label>Message<textarea name="message" required></textarea></label>
+      <button class="btn btn-primary" type="submit">Envoyer le message</button>
+      <p id="formStatus" role="status" style="font-size:0.9rem;color:#8FD6B8;margin:0;"></p>
+    </form>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Herinirina Beranto Rafalinjanahary · <a href="/mentions-legales" style="color:#C5CFCC">Mentions légales</a> · <a href="/politique-de-confidentialite" style="color:#C5CFCC">Confidentialité</a></p>
+    <div class="badges"><span class="chip">Disponible en freelance</span></div>
+  </div>
+</footer>
+<script>
+(function(){
+var btn=document.getElementById('navToggle'),list=document.getElementById('navList');
+btn.addEventListener('click',function(){var open=list.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});
+list.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){list.classList.remove('open');btn.setAttribute('aria-expanded','false');});});
+})();
+(function(){
+var c=document.getElementById('copyEmail');
+if(!c)return;
+c.addEventListener('click',function(){navigator.clipboard.writeText('herinirinaberanto@gmail.com').then(function(){var o=c.textContent;c.textContent='copié !';setTimeout(function(){c.textContent=o;},1800);});});
+})();
+</script>
+<script>
+(function(){
+  var f=document.getElementById('contactForm'),st=document.getElementById('formStatus');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    st.textContent='Envoi en cours...';
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();st.textContent='Merci, votre message est envoyé. Je vous réponds sous 24h.';}
+        else{st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";}
+      })
+      .catch(function(){st.textContent="L'envoi a échoué. Écrivez-moi directement par email.";});
+  });
+})();
+</script>
+</body>
+</html>
