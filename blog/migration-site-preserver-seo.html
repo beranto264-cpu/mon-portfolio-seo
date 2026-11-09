@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Migration de site : comment ne pas perdre son SEO — Beranto</title>
-<meta name="description" content="Changer d'hébergeur ou de nom de domaine est un chantier technique, mais c'est d'abord un chantier SEO. Ce qui protège vraiment les positions pendant une migration.">
+<title>Migration SEO : ne pas perdre ses positions | Beranto</title>
+<meta name="description" content="Migration SEO : changer d'hébergeur ou de domaine sans perdre ses positions. Redirections 301, cartographie et suivi après le jour J.">
 <link rel="canonical" href="https://beranto-seo.com/blog/migration-site-preserver-seo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Migration de site : comment ne pas perdre son SEO — Beranto">
-<meta property="og:description" content="Changer d'hébergeur ou de nom de domaine est un chantier technique, mais c'est d'abord un chantier SEO. Ce qui protège vraiment les positions pendant une migration.">
+<meta property="og:title" content="Migration SEO : ne pas perdre ses positions | Beranto">
+<meta property="og:description" content="Migration SEO : changer d'hébergeur ou de domaine sans perdre ses positions. Redirections 301, cartographie et suivi après le jour J.">
 <meta property="og:url" content="https://beranto-seo.com/blog/migration-site-preserver-seo">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:image" content="https://beranto-seo.com/images/portrait-redaction-migration.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Migration de site : comment ne pas perdre son SEO — Beranto">
-<meta name="twitter:description" content="Changer d'hébergeur ou de nom de domaine est un chantier technique, mais c'est d'abord un chantier SEO. Ce qui protège vraiment les positions pendant une migration.">
+<meta name="twitter:title" content="Migration SEO : ne pas perdre ses positions | Beranto">
+<meta name="twitter:description" content="Migration SEO : changer d'hébergeur ou de domaine sans perdre ses positions. Redirections 301, cartographie et suivi après le jour J.">
 <meta name="twitter:image" content="https://beranto-seo.com/images/portrait-redaction-migration.jpg">
 <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -127,8 +127,8 @@ form.contact .btn-primary{background:#fff;color:var(--ink);align-self:flex-start
 {
  "@context": "https://schema.org",
  "@type": "BlogPosting",
- "headline": "Migration de site : comment ne pas perdre son SEO en changeant d'hébergeur ou de domaine",
- "description": "Changer d'hébergeur ou de nom de domaine est un chantier technique, mais c'est d'abord un chantier SEO. Ce qui protège vraiment les positions pendant une migration.",
+ "headline": "Migration SEO : comment ne pas perdre ses positions en changeant d'hébergeur ou de domaine",
+ "description": "Migration SEO : changer d'hébergeur ou de domaine sans perdre ses positions. Redirections 301, cartographie et suivi après le jour J.",
  "image": "https://beranto-seo.com/images/portrait-redaction-migration.jpg",
  "mainEntityOfPage": "https://beranto-seo.com/blog/migration-site-preserver-seo",
  "datePublished": "2026-09-22",
@@ -168,18 +168,18 @@ form.contact .btn-primary{background:#fff;color:var(--ink);align-self:flex-start
 <div class="wrap article-header">
 <a class="breadcrumb" href="/blog/">← Retour au blog</a>
 <span class="eyebrow">SEO technique</span>
-<h1>Migration de site : comment ne pas perdre son SEO en changeant d'hébergeur ou de domaine</h1>
-<span class="meta">22 septembre 2026 · 7 min de lecture</span>
-<div class="author">Article écrit par <a href="/apropos">Beranto</a></div>
+<h1>Migration SEO : ne pas perdre ses positions en changeant de domaine</h1>
+<span class="meta">22 septembre 2026 · 8 min de lecture</span>
+<div class="author">Article écrit par <a href="/apropos">Beranto</a> · <a href="/blog/eeat-conventions-editoriales">Conventions éditoriales EEAT</a></div>
 </div>
 <div class="wrap">
 <figure class="hero-figure">
 <img src="/images/portrait-redaction-migration.jpg" alt="Beranto au bureau, ordinateur ouvert, en train de préparer une migration de site" width="1200" height="440" fetchpriority="high">
 </figure>
 <article class="content">
-<p>Une <strong>migration de site</strong> (changement d'hébergeur, de nom de domaine, ou les deux) est souvent traitée comme un simple sujet technique : on déplace des fichiers, on reconfigure un DNS, et le site est en ligne ailleurs. Vu du SEO, c'est une tout autre histoire. Chaque URL qui change d'adresse sans redirection propre, chaque page qui disparaît du nouvel index avant que l'ancien ne soit désindexé, c'est de l'<strong>autorité accumulée</strong> qui part sans prévenir.</p>
+<p>Une <strong>migration SEO</strong> (changement d'hébergeur, de nom de domaine, ou les deux) est souvent traitée comme un simple sujet technique : on déplace des fichiers, on reconfigure un DNS, et le site est en ligne ailleurs. Vu du SEO, c'est une tout autre histoire. Chaque URL qui change d'adresse sans redirection propre, chaque page qui disparaît du nouvel index avant que l'ancien ne soit désindexé, c'est de l'<strong>autorité accumulée</strong> qui part sans prévenir.</p>
 <p>J'ai récemment migré mon propre portfolio d'un hébergeur à un autre, et le chantier ressemble beaucoup à ce que je gère pour mes clients : moins une question d'outils qu'une question de séquence. Ce qui suit est la checklist que je suis, dans l'ordre où elle compte vraiment.</p>
-<h2>Avant de migrer quoi que ce soit : cartographier l'existant</h2>
+<h2>Préparer sa migration SEO : cartographier l'existant</h2>
 <p>La première erreur, c'est de migrer d'abord et de vérifier ensuite. Avant de toucher au moindre fichier, il faut avoir une <strong>liste complète des URL indexées</strong> : un export Search Console, complété par un crawl (Screaming Frog fait l'affaire) pour attraper les pages que Search Console n'a pas encore remontées. Cette liste sert de référence tout au long du chantier, pour vérifier qu'aucune URL ne se perd en route.</p>
 <p>C'est aussi le moment de relever les <strong>signaux existants</strong> qu'il faudra reproduire à l'identique sur la nouvelle plateforme : balises title et meta description, structure des Hn, données structurées, sitemap.xml, fichier robots.txt. Un changement d'hébergeur ne devrait rien changer à ces éléments, mais c'est justement le genre de détail qui se perd dans la précipitation d'un déploiement.</p>
 <h2>Le cœur du sujet : les redirections 301</h2>
@@ -188,19 +188,31 @@ form.contact .btn-primary{background:#fff;color:var(--ink);align-self:flex-start
 <div class="pull-quote">
 <p>Une migration réussie, techniquement, c'est un site qui marche. Une migration réussie, en SEO, c'est un site qui marche et qui n'a rien oublié en chemin.</p>
 </div>
+<h2>Checklist de redirections pour une migration SEO</h2>
+<p>Avant de valider le plan de redirection, je passe chaque URL du fichier de référence dans cette liste :</p>
+<ul>
+<li><strong>Une ancienne URL, une seule destination</strong> : l'équivalent le plus proche, en <strong>301</strong> (redirection permanente), sans étape intermédiaire.</li>
+<li><strong>Aucune chaîne de redirections</strong> : passer de A à B puis à C ralentit le crawl et multiplie les risques d'erreur. Chaque ancienne URL doit arriver à destination en un seul saut.</li>
+<li><strong>Les variantes d'URL</strong> : http et https, avec et sans www, avec et sans slash final, version <code>.html</code>. Toutes doivent converger vers l'unique URL propre. Une variante oubliée reste indexée en double et divise le signal de la page.</li>
+<li><strong>Une canonical cohérente</strong> : chaque page de destination porte une canonical vers elle-même et figure dans le sitemap. Une canonical qui pointe encore vers l'ancienne adresse contredit la redirection, un mécanisme que je détaille dans mon article sur l'<a href="/blog/erreur-balise-canonical"><strong>erreur de balise canonical</strong></a> et que j'ai corrigé dans l'un de mes <a href="/cas-clients"><strong>cas clients SEO</strong></a>.</li>
+<li><strong>Des liens internes à jour</strong> : menu, pied de page et liens dans les articles pointent vers les nouvelles URL, pas vers des adresses qui redirigent.</li>
+<li><strong>Un test avant la bascule</strong> : crawl de la liste des anciennes URL pour vérifier que chacune renvoie un 301 vers une page en 200.</li>
+</ul>
 <h2>Le jour J : la fenêtre la plus fragile</h2>
 <p>Entre le moment où le nouveau site est en ligne et celui où Google a fini de le recrawler, il y a une fenêtre pendant laquelle les deux versions du site peuvent coexister aux yeux des moteurs. Quelques réflexes réduisent le risque :</p>
 <ul>
 <li><strong>Vérifier le robots.txt</strong> du nouvel environnement en priorité absolue. Un <code>Disallow: /</code> oublié depuis un environnement de test bloque l'indexation complète du nouveau site, souvent plusieurs jours avant qu'on ne s'en aperçoive.</li>
 <li><strong>Soumettre le nouveau sitemap.xml</strong> immédiatement dans Search Console, en vérifiant que la propriété correspond bien au nouveau domaine ou à la nouvelle configuration si l'hébergement change sans changement de domaine.</li>
+<li><strong>Utiliser l'outil de changement d'adresse</strong> de la Search Console en cas de changement de nom de domaine, une fois les deux propriétés vérifiées et les redirections 301 en place.</li>
 <li><strong>Contrôler l'indexation via <code>site:</code></strong> les jours suivants, pour repérer un écart anormal entre le nombre de pages connues et le nombre de pages réellement indexées.</li>
 </ul>
 <p>C'est exactement ce que j'ai suivi après ma propre bascule : nouvelle propriété vérifiée dans Search Console, sitemap mis à jour et soumis dès la mise en ligne effective, plutôt qu'après coup.</p>
 <h2>Après la migration : surveiller, pas seulement espérer</h2>
-<p>Les positions ne se stabilisent jamais instantanément après une migration. Une baisse temporaire de quelques jours à quelques semaines est normale, le temps que Google recrawle et réattribue les signaux aux nouvelles URL. Ce qui doit alerter, ce n'est pas une baisse passagère, c'est une <strong>baisse qui ne remonte pas</strong> passé ce délai, ou une requête qui disparaît complètement du classement alors qu'elle y figurait avant. Dans ce cas, le réflexe est le même que pour diagnostiquer une <strong>cannibalisation SEO</strong> : filtrer la requête dans Search Console et vérifier quelle URL Google associe désormais à cette page, pour confirmer que la redirection a bien été comprise et suivie.</p>
+<p>Les positions ne se stabilisent jamais instantanément après une migration. Une baisse temporaire de quelques jours à quelques semaines est normale, le temps que Google recrawle et réattribue les signaux aux nouvelles URL. Ce qui doit alerter, ce n'est pas une baisse passagère, c'est une <strong>baisse qui ne remonte pas</strong> passé ce délai, ou une requête qui disparaît complètement du classement alors qu'elle y figurait avant. Dans ce cas, le réflexe est le même que pour diagnostiquer une <a href="/blog/cannibalisation-seo-pages-qui-se-concurrencent"><strong>cannibalisation SEO</strong></a> : filtrer la requête dans Search Console et vérifier quelle URL Google associe désormais à cette page, pour confirmer que la redirection a bien été comprise et suivie.</p>
+<p>Un second signal mérite l'attention : les <a href="/blog/explore-actuellement-non-indexee"><strong>pages explorées mais non indexées après une migration</strong></a>. Si des URL migrées restent dans ce statut au-delà de quelques semaines, c'est souvent le signe d'un contenu jugé redondant, d'un maillage trop faible ou d'une canonical incohérente, à traiter page par page.</p>
 <hr class="rule">
 <h3>Ce qu'il faut retenir</h3>
-<p>Une migration de site n'est risquée que si elle est traitée comme un sujet purement technique. Cartographier l'existant avant de migrer, rediriger chaque URL individuellement plutôt qu'en bloc, vérifier le robots.txt et le sitemap dès la mise en ligne, puis surveiller les semaines qui suivent : ce sont quatre étapes simples, mais c'est leur ordre qui protège les positions acquises. Le reste (choix de l'hébergeur, configuration DNS, performance du nouveau serveur) est important, mais ne coûte jamais de trafic si les fondamentaux SEO de la bascule ont été respectés.</p>
+<p>Une migration SEO n'est risquée que si elle est traitée comme un sujet purement technique. Cartographier l'existant avant de migrer, rediriger chaque URL individuellement plutôt qu'en bloc, vérifier le robots.txt et le sitemap dès la mise en ligne, puis surveiller les semaines qui suivent : ce sont quatre étapes simples, mais c'est leur ordre qui protège les positions acquises. Le reste (choix de l'hébergeur, configuration DNS, performance du nouveau serveur) est important, mais ne coûte jamais de trafic si les fondamentaux SEO de la bascule ont été respectés.</p>
 </article>
 </div>
 <div class="wrap article-footer">
