@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://beranto-seo.com/</loc></url>
+  <url>
+    <loc>https://beranto-seo.com/</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
   <url><loc>https://beranto-seo.com/apropos</loc></url>
   <url><loc>https://beranto-seo.com/cas-clients</loc></url>
   <url>
     <loc>https://beranto-seo.com/blog/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://beranto-seo.com/blog/externalisation-madagascar</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://beranto-seo.com/blog/explore-actuellement-non-indexee</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://beranto-seo.com/blog/erreur-balise-canonical</loc>
@@ -29,7 +40,7 @@
   </url>
   <url>
     <loc>https://beranto-seo.com/blog/cannibalisation-seo-pages-qui-se-concurrencent</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://beranto-seo.com/blog/netlinking-backlinks-naturels</loc>
@@ -46,13 +57,5 @@
   <url>
     <loc>https://beranto-seo.com/blog/eeat-conventions-editoriales</loc>
     <lastmod>2026-08-15</lastmod>
-  </url>
-   <url>
-    <loc>https://beranto-seo.com/blog/explore-actuellement-non-indexee</loc>
-    <lastmod>2026-11-04</lastmod>
-  </url>
-  <url>
-    <loc>https://beranto-seo.com/blog/externalisation-madagascar</loc>
-    <lastmod>2026-11-12</lastmod>
   </url>
 </urlset>
